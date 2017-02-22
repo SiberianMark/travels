@@ -1,0 +1,17 @@
+{
+"status": 1,
+"now": 1487083955,
+"info": "获取成功",
+"data": {
+		"id": "1",
+		"web_title": "单方事故1", //首页标题
+		"web_keywords": "是大法官", //搜索关键字
+		"pc_logo": "/Public/Upload/image/588187e4dbef7.jpg",
+		"mobile_logo": "/Public/Upload/image/588187e4e286c.jpg", //手机端LOGO
+		"company_name": "申达股份", //公司名字
+		"company_addr": "第三方沪电股份1",  //公司地址
+		"web_id": " 申达股份", //网站备案号
+		"web_tel": "地方给对方 ", //公司电话
+		"main_color": "#00ff11"  //网站主色调
+	}
+}
