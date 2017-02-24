@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/head.meta.js"></script>
+	<title></title>
+	<link rel="stylesheet" href="./css/aliicon.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+	<script src="./js/head.css.js"></script>
+	<script src="./js/head.js.js"></script>
+</head>
+<body>
+	<div class="index-header">
+
+	</div>
+	<div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper" id="swiper-con" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="travel-menu">
+     
+    </div>
+    <div class="travel-type">
+    	<ul>
+    		<li>
+    			<div>
+	    			<a href=""><i class="iconfont icon-qianzheng"></i>
+						<span>签证</span>
+					</a>
+				</div>
+    		</li>
+    		<li>
+    			<div>
+    			<a href="#"><i class="iconfont icon-zijiayou"></i>
+				<span>自驾游</span>
+			</a>
+			</div>
+    		</li>
+    		<li>
+    			<div>
+    			<a href="#"><i class="iconfont icon-gaoduandingzhiyou"></i>
+				<span>定制游</span>
+				</a>
+			</div>
+    		</li>
+    		<li>
+    			<div>
+    			<a href="#"><i class="iconfont icon-zhutiyou"></i>
+			<span>主题游</span>
+			</a>
+			</div>
+    		</li>
+    	</ul>
+    </div>
+    <div class="travel-place-type sticky">
+    	
+    </div>
+    <div class="travel-place-box">
+        
+    </div>
+     
+    <div class="goodlists-box"></div>
+
+    <div class="footer">
+    	<div class="travel-nav">
+    		<ul>
+    			<li>客服</li>
+    			<li>登录</li>
+    			<li>注册</li>
+    			<li>电脑版</li>
+    			<li>回到首页</li>
+    		</ul>
+    	</div>
+    	<div class="copyright-info">
+    		
+    	</div>
+    </div>  
+<div class="no-consultant-prompt" style="display: none ;"><div></div> <span>还没有线路哦~晚点再来~</span> </div>
+</body>
+<script type="text/template" id="index-swiper">
+    {{~it.data:item:index}}
+            <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="http:www.baidu.com"></a><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></div></div>
+    {{~}}
+</script>
+<script type="text/template" id="index-head">
+    <div class="choose-city">
+            <span class="com-logo"><img src="{{=config.SERVER_URL+'/'+it.mobile_logo}}" alt=""></span>
+        </div>
+        <div class="search"><i class="iconfont icon-search"></i>
+            <p>{{=it.web_keywords}}</p>
+        </div>
+        <div class="my-center">
+            <a href="#"></a><i class="iconfont icon-my"></i> 
+        </div>
+</script>
+<script type="text/template" id="index-plate">
+
+       <ul>
+            {{~it.part1:item:index}}
+            <li><i class='"iconfont icon-"+{{=item.img}}'></i><p>{{=item.name}}</p></li>
+            {{~}}  
+        </ul>
+         <ul>
+            {{~it.part2:item:index}}
+            <li><i class='"iconfont icon-"+{{=item.img}}'></i><p>{{=item.name}}</p></li>
+            {{~}}  
+        </ul>
+</script>
+<script type="text/template" id="index-copyright">
+    <p>{{=it.company_name}}</p>
+    <p>{{=it.company_addr}}</p>
+    <p>Copyright  @2015 恒博旅行网</p>
+    <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
+    <p>{{=it.web_tel}}</p>
+</script>
+<script type="text/template" id="travel-place-type">
+    <ul>
+        {{~it:item:index}}
+            {{?index==0}}
+            <li class="travel-place-type-active travel-place-type-activefont" index={{=index+1}}>
+                <span  class="">{{=item.name}}</span>
+            </li>
+            {{??}}
+            <li index={{=index+1}}>
+                <span  class="">{{=item.name}}</span>
+            </li>
+            {{?}}
+        {{~}}
+    </ul>
+</script>
+<script type="text/template" id="travel-place-box">
+    {{~it:item:index}}
+        <div class='travel-place {{="index"+(index+1)}}'>
+            <ul>
+            {{~item.sub:subItem:subIndex}}
+                {{?subIndex==0}}
+                <li subindex={{="subindex"+index+subIndex}}>
+                    <div>
+                    <a href="javascript:"  class="first-important">
+                        <i>{{=subItem.name}}</i>
+                    </a></div>
+                </li>
+                {{??}}
+                <li subindex={{="subindex"+index+subIndex}}>
+                    <div>
+                    <a href="javascript:"  class="">
+                        <i>{{=subItem.name}}</i>
+                    </a></div>
+                </li>
+                {{?}}
+            {{~}}
+            </ul>
+            <div class="clear"></div>
+        </div>
+    {{~}}
+</script>
+<script type="text/template" id="goods-list">
+    {{~it:item:index}}
+        {{~item.sub:subitem:subIndex}}
+            {{?subitem.lists}}
+                {{?subIndex==0 && index==0}}
+                <div class="goodslist" subIndex={{="subindex"+index+subIndex}} style="display: block;">
+                    <ul>
+                    {{~subitem.lists:listitem:listindex}}
+                        <li goodid={{=listitem.id}}>   
+                            <div>
+                                <div class="good-img">
+                                    <div class="good-imgjpg"><img src="{{=config.SERVER_URL+'/'+listitem.img}}" alt=""></div>
+                                    <div class="good-type"><span>{{=listitem.line_type}} | {{=listitem.start_palce}}出发</span></div>
+                                    <div class="good-price"><small>￥</small><span>{{=listitem.price}}</span>起</div>
+                                </div>
+                                
+                            </div>
+                            <div class="good-desc">
+                                <div>
+                                   <p class="good-title">{{=listitem.main_name}},{{=listitem.sub_name}}</p>
+                                </div>
+                                <div class="good-labels">
+                                    <p class="sell-charge">立减</p>
+                                    <ul class="good-label">
+                                    {{~listitem.label:labellistitem:labelindex}}
+                                        <li>{{=labellistitem}}</li>
+                                    {{~}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    {{~}}
+                    </ul>
+                </div>
+                {{??}}
+                <div class="goodslist" subIndex={{="subindex"+index+subIndex}}>
+                    <ul>
+                    {{~subitem.lists:listitem:listindex}}
+                        <li goodid={{=listitem.id}}>   
+                            <div>
+                                <div class="good-img">
+                                    <div class="good-imgjpg"><img src="{{=config.SERVER_URL+'/'+listitem.img}}" alt=""></div>
+                                    <div class="good-type"><span>{{=listitem.line_type}} | {{=listitem.start_palce}}出发</span></div>
+                                    <div class="good-price"><small>￥</small><span>{{=listitem.price}}</span>起</div>
+                                </div>
+                                
+                            </div>
+                            <div class="good-desc">
+                                <div>
+                                   <p class="good-title">{{=listitem.main_name}},{{=listitem.sub_name}}</p>
+                                </div>
+                                <div class="good-labels">
+                                    <p class="sell-charge">立减</p>
+                                    <ul class="good-label">
+                                    {{~listitem.label:labellistitem:labelindex}}
+                                        <li>{{=labellistitem}}</li>
+                                    {{~}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    {{~}}
+                    </ul>
+                </div>
+                {{?}}
+            {{?}}
+        {{~}}
+    {{~}}
+</script>
+<!-- <script src="//at.alicdn.com/t/font_8s76tclc1uoko6r.js"></script> -->
+<script src="./js/swiper-3.4.1.jquery.min.js"></script>
+<script> 
+
+    var swiperRender=getDotRender('index-swiper');  
+    var headRender=getDotRender('index-head');
+    var copyrightRender=getDotRender('index-copyright');
+    var plateRender=getDotRender('index-plate');
+    var placetypeRender=getDotRender('travel-place-type');
+    var placeboxRender=getDotRender('travel-place-box');
+    var goodslistRender=getDotRender('goods-list');
+    var index=1;
+    var subIndex=1;
+    function appStart(){
+        var fixed=0;
+       
+        getswiperdata();
+        getindexdata();
+        getplatedata();
+        getLineSelect();
+        var swiper = new Swiper('.swiper-container',
+        {
+            pagination: '.swiper-pagination',
+            loop : true,
+            autoplay : 5000,
+            noSwiping : true,
+            watchSlidesProgress : true,
+            watchSlidesVisibility : true,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
+
+        });  
+        Endload(); 
+        $('.travel-place-type').on('click','>ul li',function(){
+            console.log("click");
+            $(this).addClass('travel-place-type-active').siblings().removeClass('travel-place-type-active');
+            $(this).addClass('travel-place-type-activefont').siblings().removeClass('travel-place-type-activefont');
+            var index=$(this).attr('index');
+            $(".travel-place").css('display','none');
+            $(".index"+index).css('display','block');
+            //同步切换线路列表
+            var goodslist=$('.goodslist');
+            for(var j=0;j<goodslist.length;j++){
+                $(goodslist[j]).css('display','none');
+                if($(goodslist[j]).attr("subindex").slice(-2,-1)==(index-1)){
+                    $(goodslist[j]).css('display','block');
+                }
+            }
+        }); 
+        $('.travel-place-box').on('click','.travel-place>ul li',function(){
+            console.log("click");
+            var sib=$(this).siblings();
+            console.log(sib);
+            for(var i=0;i<sib.length;i++){
+                $(sib[i]).find('a').removeClass('first-important');
+            }
+            $(this).find('a').addClass('first-important');
+            var subIndex=$(this).attr('subindex');
+            var goodslist=$('.goodslist');
+            for(var j=0;j<goodslist.length;j++){
+                $(goodslist[j]).css('display','none');
+                if($(goodslist[j]).attr("subindex")==subIndex){
+                    $(goodslist[j]).css('display','block');
+                }
+            }
+            // if($('.goodslist[subindex='+subIndex+']')==undefined){
+            //     $('.no-consultant-prompt').css('display','block');
+            // }
+
+        }); 
+        $('.my-center').on('click'){
+            if(isLogin()){
+                PageGoto('my-center',param);
+            }else{
+                PageGoto('login',param);
+            }
+        }
+    }   
+    function getswiperdata(){
+        ajaxJson(API.INDEX_SWIPER,{},function(data){
+            if(data.status==1){
+                console.log(data);
+                $('#swiper-con').prepend(swiperRender(data));
+            }
+        });
+        
+    } 
+    function getindexdata(){
+        ajaxJson(API.INDEX_INFO,{},function(res){
+            if(res.status==1){
+                console.log(res);
+                $('title').html(res.data.web_title);
+                $('.index-header').append(headRender(res.data));
+                $('.copyright-info').append(copyrightRender(res.data));
+            }
+        });
+    } 
+    function getplatedata(){
+        ajaxJson(API.INDEX_PLATE,{},function(res){
+            if(res.status==1){
+                console.log(res);   
+                $('.travel-menu').append(plateRender(res.data));
+            }
+        });
+    }
+    function getLineSelect(){
+        ajaxJson(API.INDEX_LINESELECT,{},function(res){
+            if(res.status==1){
+                console.log(res);
+                $('.travel-place-type').html(placetypeRender(res.data));
+                console.log(placeboxRender(res.data));
+                    $('.travel-place-box').append(placeboxRender(res.data));
+                    $('.goodlists-box').append(goodslistRender(res.data));      
+            }
+        })
+    }
+
+</script>
+
+</html>
