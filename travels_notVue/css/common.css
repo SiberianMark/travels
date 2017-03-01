@@ -1,0 +1,5 @@
+.tipsLayer{position: fixed;top: 40%;transform:translate(0,-50%); -webkit-transform:translate(0,-50%);z-index: 60000;width: 100%;background: none !important;}
+.tipsLayer>div{width: 15em;min-width: 15em;text-align: center;background-clip: padding-box;border-radius: 6px;line-height: 2em;font-size: 1.5rem;background-color: rgba(0,0,0,0.8);color: #fff;margin: 0 auto;position: static;}
+.tipsLayer>div>p{text-align: center;}
+.tipsLayer>div>p>img{width: 3rem;height: 3rem;}
+.tipsLayer.hide{display: none !important;}

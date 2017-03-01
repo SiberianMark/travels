@@ -25,36 +25,7 @@
      
     </div>
     <div class="travel-type">
-    	<ul>
-    		<li>
-    			<div>
-	    			<a href=""><i class="iconfont icon-qianzheng"></i>
-						<span>签证</span>
-					</a>
-				</div>
-    		</li>
-    		<li>
-    			<div>
-    			<a href="#"><i class="iconfont icon-zijiayou"></i>
-				<span>自驾游</span>
-			</a>
-			</div>
-    		</li>
-    		<li>
-    			<div>
-    			<a href="#"><i class="iconfont icon-gaoduandingzhiyou"></i>
-				<span>定制游</span>
-				</a>
-			</div>
-    		</li>
-    		<li>
-    			<div>
-    			<a href="#"><i class="iconfont icon-zhutiyou"></i>
-			<span>主题游</span>
-			</a>
-			</div>
-    		</li>
-    	</ul>
+    	
     </div>
     <div class="travel-place-type sticky">
     	
@@ -83,7 +54,7 @@
 </body>
 <script type="text/template" id="index-swiper">
     {{~it.data:item:index}}
-            <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="http:www.baidu.com"></a><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></div></div>
+            <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="{{=item.url}}"><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></a></div></div>
     {{~}}
 </script>
 <script type="text/template" id="index-head">
@@ -101,14 +72,16 @@
 
        <ul>
             {{~it.part1:item:index}}
-            <li><i class='"iconfont icon-"+{{=item.img}}'></i><p>{{=item.name}}</p></li>
+            <li><i class='{{="iconfont"+ " icon-" + item.img}}'></i><p>{{=item.name}}</p></li>
             {{~}}  
         </ul>
-         <ul>
+</script>
+<script type="text/template" id="index-travel-type">
+      <ul>
             {{~it.part2:item:index}}
-            <li><i class='"iconfont icon-"+{{=item.img}}'></i><p>{{=item.name}}</p></li>
+            <li><a href="javascript:"><i class='{{="iconfont"+" icon-" +item.img }}'></i><span>{{=item.name}}</span></a></li>
             {{~}}  
-        </ul>
+    </ul>
 </script>
 <script type="text/template" id="index-copyright">
     <p>{{=it.company_name}}</p>
@@ -238,6 +211,7 @@
     var placetypeRender=getDotRender('travel-place-type');
     var placeboxRender=getDotRender('travel-place-box');
     var goodslistRender=getDotRender('goods-list');
+    var travelType=getDotRender('index-travel-type');
     var index=1;
     var subIndex=1;
     function appStart(){
@@ -297,13 +271,15 @@
             // }
 
         }); 
-        $('.my-center').on('click'){
+        $('.index-header').on('click','.my-center',function(){
+            var param={};
+            param.fromPage='index';
             if(isLogin()){
-                PageGoto('my-center',param);
+                PageGoto('mycenter',param);
             }else{
                 PageGoto('login',param);
             }
-        }
+        })
     }   
     function getswiperdata(){
         ajaxJson(API.INDEX_SWIPER,{},function(data){
@@ -329,6 +305,7 @@
             if(res.status==1){
                 console.log(res);   
                 $('.travel-menu').append(plateRender(res.data));
+                 $('.travel-type').html(travelType(res.data));
             }
         });
     }

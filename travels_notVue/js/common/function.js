@@ -124,5 +124,134 @@ function getDotRender(_id){
 //页面跳转
 
 function PageGoto(_page,params){
-	window.location.hostname+"/"+_page+'.html?';
+      var url='';
+      if (params != '') {
+        if (PAGE[_page].indexOf('?') > -1) {
+            url = PAGE[_page] + '&' + objToUrl(params).substr(1);
+        } else {
+            url = PAGE[_page] + '?' + objToUrl(params).substr(1);
+        }
+    }
+	location.href=url;
+}
+
+//JS对象转URL参数
+function objToUrl(obj,key,encode){
+    if(obj==null) return '';
+    var objStr='';
+    var t= typeof(obj);
+    if(t === 'string' || t=== 'number' || t==='boolean'){
+        objStr+='&'+key+'='+((encode==null|| encode)?encodeURIComponent(obj):obj);
+    }else {
+        for (var i in obj) {
+            var k = key == null ? i : key + (obj instanceof Array ? '[' + i + ']' : '.' + i);
+            objStr += objToUrl(obj[i], k, encode);
+        }
+    }
+    return objStr;
+}
+
+//验证表单
+// function checkInput(type,params){
+//     if(typeof params != "object") return;
+//     var result=true;
+//     var phoneFilter=/^1\d{10}/;    
+//     if(!phoneFilter.test(params.phone)) return "请输入正确格式的手机号";
+    
+//     if(params.passwd!=undefined && (params.passwd.length<4 || params.passwd.length>16)) return "密码位数不合适,请重新输入";
+//     if(type =="RegR"){
+//         if(params.valid==undefined || params.valid=="") return "请输入验证码！";
+//     }
+//     if(type == 'RegR' || type == 'LogL' || type=='findL'){
+//         if(params.verify==undefined || params.verify=="") return "请输入手机验证码！";
+//     }   
+//     return true; 
+//    // return true;
+// }
+
+var is_tipstext_timeout;
+function tipsLayer(text,time){
+    var layerIcon=arguments[2]?arguments[2]:false;//是否显示图标
+    var iconNum=arguments[3]?arguments[3]:1;
+    var effect=Math.abs(iconNum);
+    var iconSrc='/web/travels/img/icon'+iconNum+'.png';
+    var hide=true;
+    if($('.tipsLayer').length==0){
+        if(!layerIcon){
+            $('body').append('<div class="tipsLayer hide"><div><span></span></div></div>');
+        }else if(iconNum>0){
+            $('body').append("<div class='tipsLayer hide'><div><p><img src='"+iconSrc+"'></p><span></span></div></div>");
+        }else{
+            $('body').append("<div class='tipsLayer hide'><div><p></p><span></span></div></div>");
+            createLoadingEffect(effect);
+        }   
+    }else if(!layerIcon){
+         $('.tipsLayer>div>p').remove();
+    }else if(layerIcon){
+        $('.tipsLayer>div>p').remove();
+        //if(!$('.inputTipsText>div').has('p').length)
+        if(iconNum>0){
+            $('.tipsLayer>div').prepend("<p><img src=''/></p>");
+            $('.tipsLayer>div>p>img').attr('src',iconSrc);
+        }else{
+            $('.tipsLayer>div').prepend("<p></p>");
+            createLoadingEffect(effect);
+        }
+    }
+    if(typeof(arguments[1])=='undefined'){
+        time=3000;//默认2秒自动隐藏提示框
+    }else if(arguments[1]==-1){
+        hide=false;//当参数 time == -1时，提示框常驻不会消失,需手动让其消失
+    }
+    if($('.tipsLayer').attr('class').indexOf('hide')>-1){//当提示框隐藏时
+        $('.tipsLayer>div>span').html(text);
+        $('.tipsLayer').removeClass('hide');
+        if(hide){
+            is_tipstext_timeout=setTimeout(function(){
+              $('.tipsLayer').addClass('hide');
+            },time);
+        }
+    }else{//提示框正在显示时
+        clearTimeout(is_tipstext_timeout);  //清除上一个倒计时
+        $('.tipsLayer>div>span').html(text);
+        $('.tipsLayer').removeClass('hide');
+        if(hide){
+            is_tipstext_timeout=setTimeout(function(){
+              $('.tipsLayer').addClass('hide');
+            },time);
+        }
+    }
+
+}
+function createLoadingEffect(effect){
+    var html="<div class='loading_eff_"+effect+"'>";
+    var load_inner_count = 0;
+    switch(effect){
+        case 1:
+        case 2:
+            load_inner_count=8;
+            break;
+        case 3:
+        case 4:
+        case 6:
+            load_inner_count=3;
+            break;
+        case 5:
+            load_inner_count=5;
+            break;
+        default:
+            load_inner_count=8;
+            break;
+    }
+    for(var i=0;i<load_inner_count;i++){html+='<div></div>'}
+    html+='</div>';
+    $('.tipsLayer>div>p').append(html);
+}
+
+function isLogin(){
+    var result= false;
+    if($.cookie('travelsUserId')){
+        result= true; 
+    };
+    return result;
 }
