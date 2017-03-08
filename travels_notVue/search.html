@@ -25,50 +25,82 @@
 	<section class="hot-search">
 		<header class="hot-search-title">热门搜索</header>
 		<div class="hot-search-list">
-			<ul>
-				<li>三亚</li>
-				<li>云南</li>
-				<li>日本</li>
-				<li>香港</li>
-				<li>厦门</li>
-				<li>巴厘岛</li>
-				<li>桂林</li>
-				<li>哈尔滨</li>
-				<li>韩国</li>
-				<li>珠海</li>
-				<li>北京</li>
-				<li>台湾</li>
-				<li>惠州</li>
-				<li>马尔代夫</li>
-				<li>丽江</li>
-			</ul>
-		</div>
-		<div class="more-hot-place">
-			<span><svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-globe"></use>
-                </svg></span></span>
-			<span>更多热门目的地</span>
+			
 		</div>
 	</section>
 	<section class="search-history">
 		<header>历史搜索</header>
 		<div class="history-list">
-			<ul>
-				<li>贵州</li>
-				<li>贵州</li>
-				<li>贵州</li>
-				<li>贵州</li>
-				<li>贵州</li>
-				<li>贵州</li>
-				<li>贵州</li>
-				<li>贵州</li>
-			</ul>
 		</div>
 	</section>
 	<section>
 		<div class="clear-history">清除历史</div>
 	</section>
 </body>
+<script type="text/template" id="hot-place-tmp">
+	<ul>
+	{{~it:item:index}}
+		<li>{{=item}}</li>
+	{{~}}
+	</ul>
+</script>
+<script type="text/template" id="search-his-tmp">
+	<ul>
+	{{?it.length>0}}
+		{{~it:item:index}}
+			<li>{{=item}}</li>
+		{{~}}
+	{{?}}
+	</ul>
+</script>
 <script src="//at.alicdn.com/t/font_weh4je3l15eqxgvi.js"></script>
+<script>
+	var hotPlaceRender=getDotRender('hot-place-tmp');
+	var hisRender=getDotRender('search-his-tmp');
+	function appStart(){
+		getHotPlace();
+		if(localStore('searchHistory')!='' && localStore('searchHistory')!=null){
+			var historys=localStore('searchHistory').split(',');
+			$('.history-list').html(hisRender(historys));
+		}	
+		Endload();
+		$('.do-search').on('click',function(){
+			var searchword=$(this).siblings().find('input').val();
+			if(searchword==''){tipsLayer("搜索关键字不能为空");return false;}
+			if(localStore('searchHistory') == undefined ||localStore('searchHistory') == '' ||localStore('searchHistory')==null){
+				localStore('searchHistory',searchword);
+			}else{
+				var value=localStore('searchHistory')+','+searchword;
+				localStore('searchHistory',value);
+			}
+			var param=new Object();
+			param.searchword=searchword;
+			PageGoto('searchresult',param);		
+		});
+		$('.back').on('click',function(){
+			PageGoto('index',{});	
+		});
+	}
 
+	function getHotPlace(){
+		ajaxJson(API.SEARCH_HOT_PLACE,{},function(data){
+			if(data.status==1){
+				$('.hot-search-list').html(hotPlaceRender(data.data));
+
+			}else{
+				tipsLayer(data.info);
+			}
+		});
+	}
+	function localStore(_name,_value){
+		if(_value==undefined){
+			return localStorage.getItem(_name);
+		}else{
+			localStorage.setItem(_name,_value);
+			return;
+		}
+		
+	}
+
+</script>
 </html>

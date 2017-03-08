@@ -255,3 +255,61 @@ function isLogin(){
     };
     return result;
 }
+
+/**
+ * 获取url参数
+ */
+function I(name) {
+    var def;  //默认值
+    if (typeof(arguments[1]) == "undefined") {
+        def = '';
+    } else {
+        def = arguments[1];
+    }
+    var param = window.location.search;  //URL参数
+    if (param == '') {
+        return def;
+    }
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = param.substr(1).match(reg);
+    if (r == null) {
+        return def;
+    }
+    return (r[2]);
+}
+
+
+// 日期弹窗配置
+ function datetimeDateInit() {
+    $(function () {
+
+        // Mobiscroll Date & Time initialization
+        $('#datetimeInvalid-riqizao').mobiscroll().date({
+            theme: 'Mobiscroll',      // Specify theme like: theme: 'ios' or omit setting to use default
+            lang: 'zh',    // Specify language like: lang: 'pl' or omit setting to use default
+            display:'bottom',  // Specify display mode like: display: 'bottom' or omit setting to use default
+            mode: 'scroller'         // More info about mode: https://docs.mobiscroll.com/3-0-0_beta3/datetime#!opt-mode
+        });
+           $('#datetimeInvalid-riqiwan').mobiscroll().date({
+            theme: 'Mobiscroll',      // Specify theme like: theme: 'ios' or omit setting to use default
+            lang: 'zh',    // Specify language like: lang: 'pl' or omit setting to use default
+            display:'bottom',  // Specify display mode like: display: 'bottom' or omit setting to use default
+            mode: 'scroller'         // More info about mode: https://docs.mobiscroll.com/3-0-0_beta3/datetime#!opt-mode
+        });
+
+        $('.datetimeInvalid-zuizao').click(function () {
+            $('#datetimeInvalid-riqizao').mobiscroll('show');
+            return false;
+        });
+        $('.datetimeInvalid-zuiwan').click(function () {
+            $('#datetimeInvalid-riqiwan').mobiscroll('show');
+            return false;
+        });
+
+        $('#datetimeDate-clear').click(function () {
+            $('#datetimeInvalid-riqi').mobiscroll('clear');
+            return false;
+        });
+
+    });
+}

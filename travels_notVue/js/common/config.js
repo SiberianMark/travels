@@ -18,11 +18,14 @@ var API={//后台数据API
 	LOGIN_VALIDATE:'/validate.php',//图形验证码
 	LOGIN_PHONEVAL:'/Home/APILogin/sendCode',//手机验证码
 	LOGIN_FINDPSW:'/Home/APILogin/findPasswd',//找回密码
+	SEARCH_HOT_PLACE:'/Home/APITravel/hot_search',//搜索热门目的地
 }
 var PAGE={//页面路由
-	index:'/web/travels/index.html',//首页
-	login:'/web/travels/login.html',//登录页面
-	regist:'/web/travels/register.html',//注册页面
-	forgetPSW:'/web/travels/find-psw.html',//忘记密码
-	mycenter:'/web/travels/mycenter.html',//我的个人中心
+	index:'./index.html',//首页
+	login:'./login.html',//登录页面
+	regist            :'./register.html',//注册页面
+	forgetPSW:'./find-psw.html',//忘记密码
+	mycenter:'./mycenter.html',//我的个人中心
+	searchresult:'./search-result.html',//查找结果
+	search:'./search.html',//搜索页面
 }

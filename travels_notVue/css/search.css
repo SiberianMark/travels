@@ -1,5 +1,5 @@
 body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
-
+li{list-style: none;}
 .icon {
 	       width: 1.5em; height: 1.5em;
 	       vertical-align: -0.15em;
