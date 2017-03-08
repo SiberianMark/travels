@@ -1,0 +1,46 @@
+*{margin:0; padding:0;}
+ body{background-color:#000!important;}
+ a{color: #333;}
+ .content-head{/*position: fixed;top: 0;z-index: 99;*/width:100%!important;}
+/*顶部导航*/
+.shop-order { width:100%; height:auto; border-left:0; border-right:0; border-bottom:0;font-size: 0;color: #666; }
+.ordersbox{position: fixed;z-index: 999;width: 100%;}
+.shop-order-nav{ width:100%; height:4.4rem; font-size:1.4rem; text-align:center; white-space:nowrap; background:#171717; }
+.shop-order-nav li{ width:16.6666%; height:4rem; line-height:4rem; font-size:1.4rem; text-align:center; color:#fff; display:inline-block; }
+.shop-order-nav li.cur{ color:#ff5555; border-bottom:0.2rem solid #ff5555; }
+.shop-order-nav li span{ display: block; height: 2rem; line-height: 2rem; margin-top: 1rem; width: 100%;font-size: 1.6rem;}
+.good-info .send-price{display: block;position: absolute;bottom: 0.4rem;left: 8.6rem;color: #f55;font-size: 1rem;}
+.good-info .send-price .big-price{font-size: 1.2rem;}
+
+.activity-header{position:relative;padding-top: 2.0rem;}
+.activity-header .report{width:100%;position:absolute;top:0; left: 0;background-color:#222;opacity:0.5;}
+.activity-header .report p{font-size:1.4rem;color:#999;padding:0.6rem 0 0.6rem 1.4rem;}
+.activity-header img{width: 100%;}
+.activity-body{margin-left: 0.9rem;/*padding-top: 14rem;*/margin-bottom:5rem;overflow:hidden;}
+.process{margin-top: 3rem;}
+.left-status-line{position:relative;width:0.9rem;display:inline-block;float: left;}
+.left-status-line .line-head{margin: 0 0.36rem;height: 10rem;/*border: 0.1rem solid #999;*/ position: absolute;width:0.3rem; background-color:#999;left:-0.05rem;}
+.left-status-line .line-circle{width: 0.9rem;height: 0.9rem; border-radius: 50%;background-color: #999; position: absolute; top: 1.7rem;}
+.left-status-line .line-end{margin: 0 0.36rem;height:17.5rem;/*border: 0.1rem solid #999;*/ position: absolute;top:10rem;width:0.3rem; background-color:#999;left:-0.05rem;}
+.right-activity-process{position:relative;display:inline-block;width:34.2rem;margin-left:1.6rem;}
+.right-activity-process .process-step{width:34.2rem; border-radius: 0.3rem;background-color:#333!important;}
+.process-step .step-header{position:relative;width:32.8rem;margin:0 auto;border-bottom:1px solid #999;}
+.process-step .step-header p.process-title{font-size:1.6rem; color:#999;padding:1rem 7rem 1rem 0.7rem;}
+.process-step .step-header div.process-time{position: absolute;right: 0;top: 1.1rem;font-size: 1.4rem;color: #999;}
+.process-step .process-detail{font-size: 1.4rem;color: #fff;padding: 1.4rem 1.4rem 5rem;line-height: 1.75rem;}
+.process-step .rule-desc{font:1rem; color:#607fa6;    padding: 0 0 3rem 1.4rem;}
+ .process-step .process-btn{width: 10.8rem;height: 2.6rem;background: #adadad;text-align: center;padding: 0.5rem;font-size: 1.2rem;position: absolute;bottom: 1.6rem;right: 0.85rem;border-radius: 0.2rem;}
+
+/*无数据*/
+.no-consultant-prompt {text-align: center;display:none;}
+.no-consultant-prompt>div {width: 100%; height: 20rem;text-align: center;background: url('/web/assets/image/smdg/jilu@3x(1).png')center 80% no-repeat;background-size: 8.6rem auto;}
+.no-consultant-prompt>span {font-size: 1.3rem;color: #999;}
+
+.font-start{color:#ff6600!important;}
+.font-wait{color:#999!important;}
+.border-start{background-color:#ff6600!important;}
+.border-wait{background-color:#999!important;}
+.background-start{background-color:#ff6600!important;}
+.background-wait{background-color:#999!important;}
+/*底部下载*/
+.app-download{bottom:0rem!important;}

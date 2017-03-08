@@ -1,0 +1,102 @@
+
+
+*{margin:0;padding:0;}
+html{font-size:20px;}
+body{background-color: rgb(238,238,238)}
+.body{width:100%;height:100%;position:relative;}
+.voucher-info{ width:100%;background-color: #fff;}
+.voucher-info .voucher-card{width:81.4%;height:32rem;margin:0rem auto;background-color: #fff;text-align:center;position:relative;background-image: url(/web/assets/image/smdg/vouter-card2.png);background-repeat: no-repeat;background-size:100%;}
+.voucher-info .voucher-card .voucher-title{margin:0rem 2rem 1.2rem 2rem;padding-top:2.2rem;font-size:1.4rem;color:#333;line-height:2.3rem;text-align:center;}
+.voucher-info .voucher-card .voucher-id{font-size:1.4rem; color:#333;}
+.voucher-info .voucher-card .voucher-id>span{font-size:1.8rem;margin-bottom:1rem;color:#333;}
+.voucher-info .voucher-card img{ width:12.4rem;height:12.4rem; margin-top:1.6rem;margin-bottom:0.5rem;}
+.voucher-info .voucher-card img+p{font-size:1.4rem;margin-top:0rem;}
+.voucher-detail{width:80%;height:30%;margin:0 auto;text-align:left;font-size:1.5rem;/*line-height: 4.5rem;*/}
+.voucher-detail p{vertical-align: bottom;padding:1.0rem 0;/*white-space:nowrap;overflow:hidden;text-overflow: ellipsis;*/color:#000;}
+.voucher-detail p{padding-left:6.9rem; text-indent:-6.9rem;}
+.voucher-detail p:nth-child(3) span:nth-child(2),.voucher-detail p:nth-child(4) span:nth-child(2){padding-left:1.5rem;}
+.voucher-detail p span:first-child{padding-right:0.6rem; text-indent:0.6rem;}
+.font-style{ color: rgb(188,188,188); }
+.notes{height:6.5rem;margin:0rem auto;font-size:1.5rem;color:#000;text-align:center;line-height: 6.5rem;vertical-align: middle;overflow: hidden;}
+.bottom-line{
+	border-bottom:1px solid rgb(238,238,238);
+}
+.mask-level{width:100%;position:fixed;top:0;bottom:0;background:rgba(0,0,0,0.7);z-index:1000;display:none; }
+.mask-level img{width:15.4rem;height:11.6rem;position:absolute;top:1rem;right:2rem; }
+
+/* 弹窗 */
+     .modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:hidden;-webkit-overflow-scrolling:touch;outline:0; height: 100%;width: 100%; background-color: rgba(0,0,0,0.7);}
+     .modal.fade{ display: block;}
+     .ol-content {
+        width: 23.9rem;
+        text-align: center;
+        }
+      .ol-pn {
+          font-size: 1.2rem;
+          padding: 1rem 0;
+          height:6rem;
+          color:#999;
+          line-height:4rem;
+      }
+      .ol-cover-btn {
+          height: 4rem;
+      }
+      .ol-cover-btn>a {
+          display: block;
+          float: left;
+          width: 50%;
+          line-height: 4rem;
+          font-size: 1.2rem;
+      }
+      .hv{color:#fc5755;}
+     .modal-content{ max-width:90%; position:relative; top: 40%; left: 50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); background-color:#fff; -webkit-background-clip:padding-box; background-clip:padding-box; border-radius:6px; outline:0; -webkit-box-shadow:0 3px 9px rgba(0,0,0,.5); box-shadow:0 3px 9px rgba(0,0,0,.5);}
+
+#foot-nav{
+height:4.4rem;
+width:100%;
+background-color:#fff;
+display:flex;
+font-size:1rem;
+padding:1rem 0;
+-webkit-box-align: center;
+display: -webkit-box;
+position: fixed;
+bottom:0;
+
+}
+
+#foot-nav > div{
+  -webkit-box-flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+}
+
+.son{
+height:100%;
+flex:1;
+text-align:center;
+}
+.icon-save-vouter{
+width:1.5rem;
+height:1.5rem;
+margin:0.2rem auto;
+background:url(/web/assets/image/smdg/iconfont-xiazai.png);
+background-size:100%; 
+background-repeat: no-repeat;
+
+}
+.icon-goto-avtivity{
+width:1.5rem;
+height:1.5rem;
+margin:0.2rem auto;
+background:url(/web/assets/image/smdg/liulan.png);
+background-size:100%;  
+background-repeat:no-repeat;}
+.icon-share{
+width:1.5rem;
+height:1.5rem;
+margin:0.2rem auto;
+background:url(/web/assets/image/smdg/iconfont-fenxiang01.png);
+background-size:100%; 
+background-repeat:no-repeat;}

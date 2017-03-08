@@ -1,0 +1,139 @@
+/*初始化样式环境*/
+*{margin:0;padding:0;}
+a{color:#323232;outline-style: none;text-decoration: none;}
+div{display:block;}
+img{border:0;vertical-align: bottom}
+header,footer,section{dispaly:block;}
+section, footer,nav,em,mark,span,ul,li,ol,h1,h2,h3,h4,input,textarea{margin:0;padding:0;font-weight:normal;list-style:none;font-style:normal;}
+/*整体内容块设置样式↓*/
+#content>div{margin:0.5rem 0;}
+/*无内容时样式设置↓*/
+.no-content{width:100%;margin:0;padding:0;text-align:center;display:none;}
+.no-content>div{width:100%;text-align:center;}
+.no-content .noimg{width:8rem;height:8rem;position:relative;margin:0 auto;text-align:center;margin-top: 9.9rem;}
+.no-content .noimg>img{width: 100%;height: 100%;}
+.nocontent .p1{font-size: 1.2rem;color: #666;text-align: center;margin-top: 1rem;}
+.nocontent .p2{font-size: 1.2rem;color: #999;text-align: center;}
+/*主内容块内容样式↓*/
+.note-main{padding:1.2rem 1rem 0.75rem 1rem;background: #FFF;margin-bottom:1rem;}
+/*新闻头样式↓*/
+#data-note{width:100%;height:100%;}
+h1{margin-bottom:1.5rem;margin-top:2rem;font-size:1.6rem;line-height: 1.6rem;word-wrap: break-word;word-break:break-all;color:#333;}
+
+.diray_info span{font-size:1.0rem; display:inline-block;vertical-align: middle;}
+.date{
+	margin-right:0.5rem;
+	font-size:1rem;
+	color:#999;
+}
+.author{
+	width:9rem;
+	color: #4a96fd;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*新闻内容样式↓*/
+
+.diray_txt{width:100%;margin:20px 0 10px 0;color:#333;font-size:1.2rem; }
+.diray_txt p{display: block;font-family: '微软雅黑';margin: 1em 0px;}
+.article p{width:100%; }
+.article img{width:100%;display:block;}
+.p-title{ width:100%; text-align:center; }
+.goods {padding: 1rem;background-color: #efefef;display: block;}
+.goods::after {content: "";display: table;clear: both;}
+.goods .goods-desc {font-size: 1.2rem; color:#333;}
+.goods .goods-price{margin-top: 1rem;}
+.goods > img {width: 25%;float: left;margin-right: 10px;}
+.goods .goods-price .priceKill0 {display: none;}
+.goods .goods-price .priceKill0 + span {font-size: 1.2rem;color: #ff5555;text-decoration: none;}
+.view_num{font-size: 1.1rem;color: #666;line-height: 34px;margin: 10px 0 !important;margin-top: 35px !important;}
+.view_num span:nth-child(1){margin-right: 14px;}
+.click{background: url("/web/assets/image/zan_ico.png") no-repeat;background-size: 13px;padding-left: 15px;background-position: 0px 0px;}
+.space{display: block;width: 100%;height: 5rem;line-height: 5rem;position: fixed;bottom: .8rem;left: 0;}
+.shop_info_m{margin: 0.9rem 0 0 0;padding: 0;height: 6.1rem;line-height: 6.1rem;background: #fff;}
+.shop_info_m div:nth-child(1){width: 3.5rem;height: 3.5rem;float: left;margin:0.9rem 0 0 1.6rem;}
+.shop_info_m div:nth-child(1) img{height: 100%;width: 100%;vertical-align: top !important;}
+.shop_info_m div:nth-child(2){width: 60%;height: 5rem;float: left;}
+.shop_info_m div:nth-child(2) p{padding-left: 0.5rem;}
+.shop_info_m div:nth-child(2) .shopname{line-height: 1.5rem;font-size: 1.2rem;color: #333;margin-top: 1.4rem;}
+.shop_info_m div:nth-child(2) .weixin{line-height: 1.2rem;font-size: 1.0rem;color: #999;margin-top: 0.2rem;}
+.shop_info_m div:nth-child(3){width: 20%;height: 4rem;float: left;padding: 0;margin-top: 1rem;text-align: center;}
+.shop_info_m div:nth-child(3) .gotoshop1{position: relative;display: block;margin-top: 0.5rem;font-size: 1.2rem;color: #666;padding-left: 8px !important;height: 1.5rem !important;line-height: 1.5rem !important;}
+.shop_info_m div:nth-child(3) .gotoshop2{position: relative;display: block;font-size: 1.2rem;color: #666;padding-left: 8px !important;height: 1.5rem !important;line-height: 1.5rem !important;}
+.no-content{width: 100%;margin: 0;padding:0;text-align: center;display: none;}
+.no-content>div{text-align: center;width: 100%;}
+.no-content .noimg{width: 8rem;height: 8rem; position:relative;margin:0 auto;text-align: center;margin-top: 9.9rem;}
+.no-content .noimg>img{width: 100%;height: 100%;}
+.no-content .p1{font-size: 1.2rem;color: #666;text-align: center;margin-top: 1rem;}
+.no-content .p2{font-size: 1.2rem;color: #999;text-align: center;}
+.messages .m-head{width: 88%;line-height: 5.5rem;height: 5.5rem;margin: 0 auto;text-align: center;}
+.messages .m-head>span{font-size: 1.3rem;color: #666;width: 7rem;display: inline-block;background: #eee;}
+.messages .m-head:after{content: '';width: 33%;height: 1px;position: absolute;background: #999;vertical-align: middle;left: 6%;margin-top: 2.725rem;}
+.messages .m-head:before{content: '';width: 33%;height: 1px;position: absolute;background: #999;vertical-align: middle;right: 6%;margin-top: 2.725rem;}
+.wrt-msg{font-size: 1.1rem;height: 1.1rem;line-height: 1.1rem;width: 4.5rem;color: #4a96fd;float: right;top:3.5rem;position: relative;text-align: left;}
+.wrt-msg{background-image: url(/web/assets/image/edit_ico.png);background-size: 1.1rem;background-repeat: no-repeat;background-position: right;right: 1.4rem;top: -1.5rem;}
+.send_p_info{background: #fff;margin: 0;padding: 0.8rem 0;height: 8.9rem;}
+.send_p_info div:nth-child(1){width: 3.2rem;height: 3.2rem;float: left;margin:1.6rem 0 0 1.6rem; border-radius: 50%;}
+.send_p_info div:nth-child(1) img{height: 100%;width: 100%;background-clip: padding-box;border-radius: 50%;}
+.send_p_info div:nth-child(2){width: 80%;height: 5rem;float: left;}
+.send_p_info div:nth-child(2) p{padding-left: 0.5rem;}
+.send_p_info div:nth-child(2) .nickname{line-height: 1.5rem; height: 1.5rem; font-size: 1.0rem; color: #999;width: 15rem;}
+.send_p_info div:nth-child(2) .zhufuyu{line-height: 1.5rem;font-size: 1.1rem;color: #333;margin-top: 0.6rem; height: 3rem; }
+.send_p_info div:nth-child(2) .rec_time{position: relative;display: block;float: right;right: 0.8rem;font-size: 1.1rem;color: #999;padding-left: 0 !important;height: 1rem !important;line-height: 1rem !important;}
+.send_p_info div:nth-child(2) .datetime{line-height: 1.5rem; height: 1.5rem; font-size: 1.0rem; color: #999;width: 15rem;margin-top: 0.8rem;}
+.send_p_info div:nth-child(2) .datetime .del{color: #4a96fd;margin-left: 1rem;}
+
+
+.chathl{position: relative; padding-bottom: 12rem; background-color: #fff;}
+.chathl img{ display: block; width: 100%; height: auto;}
+.chathl a{ display: block; width: 17rem; height: 3.6rem; line-height: 3.6rem; color: #fff; font-size: 1.2rem;-webkit-border-radius:6px;  border-radius:6px;
+position: absolute; left: 50%; bottom: 5.6rem; margin-left: -8.5rem; z-index: 999; background-color: #f55; text-align: center;
+}
+.chathl p{
+    text-align: center; font-size: .9rem; color: #999;position: absolute;  bottom: 3rem; width: 100%;
+}
+
+.goto-download{
+	width:100%;
+	height:5rem;
+	position:fixed;
+	z-index:9999;
+	bottom:0;
+	background-color:rgb(216,216,216);
+}
+#download-logo{
+	width:5rem;
+	height:5rem;
+	position:absolute;
+	bottom:1.5rem;
+	left:1.2rem;
+}
+.brand-info{
+	position:absolute;
+	left:7.4rem;
+}
+.brand-title{
+	margin:1rem 0 0 0 !important;
+}
+.margin-detail{
+	margin:0 !important;
+}
+.goto-now{
+	display:inline-block;
+	position:absolute;
+	top:1.5rem;
+	right:3.5rem;
+	border-radius: 12px;
+	color:#fff;
+	padding:0.5rem;
+	background-color:rgb(255,85,88);
+}
+#close-icon{
+	width:1rem;
+	height:1rem;
+	position:absolute;
+	top:1.7rem;
+	right:1rem;
+	margin:0.5rem;
+}

@@ -1,0 +1,33 @@
+npm init //初始化生成一个新的package.json文件
+npm help //查看命令帮助
+npm -l //列出所有命令的简单用法
+npm set //设置环境变量
+npm config //设置npm 本身工具的属性
+npm info [package] //查看特定模块的信息
+
+npm search <搜索词> //查找npm 仓库看是否有特定的模块，可以跟正则或者字符串
+
+npm list //列出当前项目所安装的所有模块
+
+npm install <package> //安装某个模块
+
+npm update,uninstall <package>//更新，卸载某个模块
+
+npm run //执行某个脚本
+
+npm bin //显示相对于当前目录，Node模块的可执行脚本所在的目录
+
+npm adduser //在npmjs.com增加一个用户,用于npm包开发
+
+npm publish  //发布当前模块到npmjs.com,用于npm包开发
+
+npm deprecate //如果想废弃某个版本的模块，可以使用npm deprecate命令。
+
+# 列出指定模块的维护者
+$ npm owner ls <package name>
+
+# 新增维护者
+$ npm owner add <user> <package name>
+
+# 删除维护者
+$ npm owner rm <user> <package name>

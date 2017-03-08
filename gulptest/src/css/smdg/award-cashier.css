@@ -1,0 +1,80 @@
+body{font-family: "PingFang-SC-Medium";}
+ul,p{margin:0;padding:0;}
+.user-info{text-align: center;}
+.user-img{width:7.1rem;height:7.1rem;margin:0 auto;margin-top:1.6rem;}
+.user-img img{width:7.1rem;height:7.1rem;border-radius: 50%;}
+.user-details{position: relative;margin-top:1rem;}
+.user-details span{margin-right:0.3rem;}
+.user-details .user-name{font-size:1.5rem;font-weight: bold;}
+.user-details .user-sex{width: 1.5rem;height: 1.5rem;display: inline-block;}
+.user-details .user-level{display: inline-block;width:1.5rem;height:1.5rem;vertical-align: bottom;margin-left:2.5rem;}
+.sex1{background:url(/web/assets/image/smdg/nan_ico@2x.png) no-repeat;background-size: 100%;}
+.sex2{background:url(/web/assets/image/smdg/nv_ico@2x.png) no-repeat;background-size: 100%;}
+.level4{background:url(/web/assets/image/smdg/v3.png)no-repeat;background-size: 100%;}
+.group-name{margin-top:1rem;font-size: 1.4rem;color:#f5b617;}
+.group-icon{display:inline-block;width:1.4rem;height:1.4rem;margin-right:0.5rem;background: url(/web/assets/image/smdg/wanjiahao@2x.png) no-repeat;background-size: 100%;}
+.award-price{margin-top:1.5rem;text-align: center;}
+
+.award-price ul li{display:inline-block;width:9rem;height:3.2rem;border:1px solid #cccccc;border-radius:32px;text-align: center;font-size:1.7rem;line-height: 3.2rem;margin:0 0.5rem;color:#333333; letter-spacing:1px;margin-bottom:1rem;}
+.award-active{color:#fff!important;background: #ff5555!important;font-style: italic!important;}
+.charge-pay{margin:1.5rem 1.5rem 0;}
+.charge-pay-left{display: inline-block;}
+.charge-pay .charge-icon{display:inline-block;width:3.5rem;height:3.5rem;
+background:url(/web/assets/image/smdg/lingqiangzhif@2x.png) no-repeat;background-size: 100%;vertical-align:bottom;}
+.charge-pay .charge-remain{display: inline-block;margin-left:1rem;line-height: 1.75rem;font-size:1.4rem;}
+.charge-pay .charge-remain p{margin-bottom: 0!important;color:#000!important;}
+.charge-pay .charge-remain small{font-size:1rem!important;color:#999999!important;}
+.charge-pay-right {float:right;width:2.3rem;height:2.3rem;display: inline-block;} 
+.unselect{background:url(/web/assets/image/smdg/btn_danxuan@2x.png) no-repeat;background-size: 100%;margin-top:0.6rem;}
+.select{background:url(/web/assets/image/smdg/btn_danxuan_td@2x.png) no-repeat;background-size: 100%;margin-top:0.6rem;}
+
+.pay-total,.net-pay-total{height: 3.3rem;line-height: 3.3rem;font-size: 1.4rem;margin:0 1.5rem;margin-top: 1rem;padding: 0 0rem 0 0rem;}
+.pay-total .text{color: #333;}
+.money:before,.rechage-money:before{content: '￥'}
+.money-m:before{content: '-￥'}
+.money,.rechage-money{color: #f55;float: right;right: 1.5rem;position: absolute;}
+
+/*mui confirm dialog css*/
+.mui-popup-title{display: none !important;}/*hide title*/
+.mui-popup-button.mui-popup-button-bold{
+font-weight: normal !important;
+color:#fff !important;
+background: #f55 !important;}
+.mui-popup-button{color:#333 !important;}/*no bold ,font color change*/
+pre{overflow: visible !important;white-space: normal;padding: 1rem 0;}/*break word*/
+.mui-popup-inner {padding:0.6rem !important;}
+.mui-popup-bott{position: relative;border-radius: 0 0 13px 13px;background: rgba(255,255,255,.95);padding:0.6rem 0;}
+.mui-popup-inner>i{
+    content: ''; display: block; width: 1.6rem; height: 1.6rem;background: url('/web/assets/image/lottery/error_ico.png') no-repeat;background-size: 100%;
+    position: absolute; right: 1rem; top:1rem;
+}
+.mui-popup-backdrop{background: rgba(0,0,0,.7) !important;}
+
+/*验证支付密码页面样式*/
+.mui-popup{
+    width: 23rem!important;
+}
+.verify-box{width:100%;background:rgba(255,255,255,.95);}
+.verify-box>p{width:100%;text-align: center;color:#999;}
+.verify-box>p:nth-of-type(1){font-size: 1.2rem;height:8rem;padding:4.8rem 0 2rem 0;line-height: 1.2rem;}
+.verify-box>p:nth-of-type(2){font-size: 1rem;height:6.9rem;padding:2.6rem 0 4.3rem 0;line-height: 1rem;}
+.verify-box>div{width:100%;margin:0 auto; padding:0 .5rem;}
+.verify-box>div:nth-of-type(1){height:4.4rem;background: rgba(255,255,255,.95);  position:relative;  }
+.verify-box>div:nth-of-type(2){margin: 0.6rem auto 0;height:3.5rem;width: 50%;-webkit-border-radius:6px;border-radius:6px;background-color:#f55;text-align: center;line-height: 3.5rem;color:#fff;}
+.verify-box>div:nth-of-type(2).change-color{color:#fff;background-color:#e54600;}
+.paw-box{width:100%;height:4.4rem;position:relative;}
+.pwd-box>input{width:100%;height:100%;opacity:0;position:absolute;left:0;top:0;z-index:1;letter-spacing: 3.5rem;padding-left:2rem;border:0;}
+.fake-box>input{font-size: 2rem;width:3.66rem;height:3.66rem;text-align: center;line-height: 3.66rem; background: rgba(255,255,255,.95);}
+
+.other-pay{margin:3.75rem 1.5rem 0;}
+.other-pay>header{font-size:1.4rem;line-height: 1.8rem;}
+.other-pay>ul>li{height:6rem;line-height: 6rem;border-bottom:1px solid #eee;}
+.other-pay>ul>li>div:first-child{font-size:1.2rem;height:2.3rem;line-height: 2.3rem;display: inline-block;}
+.other-pay .select-btn{float:right;width:2.3rem;height:2.3rem;display: inline-block;margin-top: 1.85rem}
+.other-pay>ul>li .wxicon{background: url(/web/assets/image/smdg/icon_weixin.png) no-repeat;background-size: 100%;display: inline-block;width:2.3rem;height:2.3rem;vertical-align: bottom;margin-right:1rem;}
+.other-pay>ul>li .zfbicon{background: url(/web/assets/image/smdg/zhifubao@2x.png) no-repeat;background-size: 100%;display: inline-block;width:2.3rem;height:2.3rem;vertical-align: bottom;margin-right:1rem;}
+.other-pay>ul>li .unionicon{background: url(/web/assets/image/smdg/yinlianzhifu@2x.png) no-repeat;background-size: 100%;display: inline-block;width:2.3rem;height:2.3rem;vertical-align: bottom;margin-right:1rem;}
+.other-pay>ul>li .yfbicon{background: url(/web/assets/image/smdg/weixinzhifu@2x.png) no-repeat;background-size: 100%;display: inline-block;width:2.3rem;height:2.3rem;vertical-align: bottom;margin-right:1rem;}
+.do-pay{width:30.4rem;height:4.3rem;margin:0.2rem auto 1rem;background: #ff5555;border-radius: 6px;text-align: center;line-height: 4.3rem;font-size:1.5rem;color:#fff;}
+.other-price-btn{    position: relative;}
+.other-price-active{width: 8rem;height: 2.2rem;border-radius: 32px;background: rgb(238,238,238);border: none;left: 0rem;position: absolute;top: 0.5rem;font-size: 1.7rem;text-align: center;display: none;}

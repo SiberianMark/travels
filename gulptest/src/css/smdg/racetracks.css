@@ -1,0 +1,62 @@
+body{background:#fff;}
+/*
+ ---- 场地列表
+*/
+.tow-ellipsis{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.racetracks-nav{height:4rem;background:#eee;padding-left:1.1rem;padding-right:1.1rem;white-space: nowrap;overflow: auto;}
+.racetracks-nav ul{font-size:0;padding:0;margin:0;}
+.racetracks-nav ul li{height:4rem;line-height:4rem;font-size:1.6rem;color:#000;display:inline-block;padding-left: 0.8rem;padding-right: 0.8rem;}
+.racetracks-nav ul li.cur{color:#F5b617;}
+.racetracks-container{padding:0;margin:0;width:100%;position:absolute;top:4rem;bottom:0;}
+.racetracks-adds{padding:0;margin:0;  }
+.racetracks-adds li{min-height:10.5rem;position:relative;margin-left:1.1rem;margin-right:1.1rem;border-bottom:1px solid #ccc;}
+.racetracks-adds li>img{width:9.6rem;height:7.3rem;position:absolute;left:0;top:1.6rem; }
+.racetracks-text{height:7.3rem;position:absolute;left:10.6rem;top:1.6rem;right:0;  }
+.racetracks-text h4{font-size:1.6rem;color:#000;text-align:left;font-weight:normal;margin:0;}
+.racetracks-text h4 i{width:2rem;height:1.25rem;display:inline-block;background: url("/web/assets/image/smdg/luzhi@2x.png") right center no-repeat;background-size:1.75rem auto;}
+.racetracks-text p{font-size:1.2rem;text-align:left;margin:0;}
+.racetracks-text p:nth-of-type(1){color:#999;}
+.racetracks-text p:nth-of-type(2){color:#F5b617;position: absolute;bottom: 0rem;}
+.competition-types{height: 11.5rem;position: relative;overflow: hidden;border-radius: 0.5rem;}
+.competition-types>img{width:35.5rem;height:11.5rem;position: absolute;}
+.competition-types>h2{width: 100%;height: 2rem;line-height: 100%;color: #fff;text-align: center;position:absolute;top:50%;z-index: 100;margin-top: -1rem;font-size: 2rem;font-weight:normal; }
+.mt{margin-top:1rem; }
+/*
+ ---- 场地详情
+*/
+.racetracks-map{width:100%;font-size:0;overflow:hidden; }
+.racetracks-map img{width:100%;}
+.race-dtls-nav{height:3.4rem;background:#eee; }
+.race-dtls-nav ul{height:3.4rem;margin:0;padding:0; }
+.race-dtls-nav li{width:33.3%;height:3.4rem;line-height:3.4rem;float:left;display:inline;text-align:center;}
+.race-dtls-nav li a{color:#000;font-size:1.6rem;}
+.race-dtls-nav li.cur a{color:#F5b617;}
+.race-info{margin:0 1.6rem;border-bottom: 1px solid #eee;}
+.race-info p{font-size:1.2rem;color:#333;position:relative;}
+.race-info p span{width: 7rem;display: inline-block;}
+.race-info p em{font-style:normal;}
+.race-info p .addcart-tip {width:auto;position:absolute;left:8rem;top:-1.5rem;color:#F5b617;font-size: 1.6rem;z-index: 10;opacity: 0;font-weight: bold;}
+.race-tese{margin:2rem 1.6rem auto 1.6rem;font-size:0;}
+.race-tese h4{font-size:1.4rem;margin-bottom: 1.5rem;margin-top: 2.6rem;}
+.race-tese span{height: 2.6rem;line-height: 2.6rem;display: inline-block;font-size: 1.4rem;color: #F5b617;border: 1px solid #F5b617;padding: 0 0.5rem;margin-right: 1.6rem;margin-bottom: 1rem;}
+.have-gone,.have-ungo{height:4.1rem;line-height:4.1rem;font-size:1.4rem;text-align:center;background:#f9f9f9;color:#000;border: 1px solid #ddd;margin:7rem 2rem 3.1rem 2rem; }
+div.have-gone{color:#999;}
+.racetracks-video{padding:0;margin:0;  }
+.racetracks-video li{min-height:10.4rem;position:relative;margin-left:1.1rem;margin-right:1.1rem;border-bottom:1px solid #ccc;}
+.video-box{width:13rem;height:8rem;position:absolute;left:0;top:1.2rem; }
+.video-box img{width:13rem;height:8rem;}
+.video-box .playbtn{width:3.05rem;height:3.05rem;position: absolute;left: 5rem;top: 2.5rem;}
+.racetracks-video-text{height:8rem;position:absolute;left:14rem;top:1.2rem;right:0;  }
+.racetracks-video-text h4{font-size:1.6rem;color:#000;text-align:left;font-weight:normal;margin:0;}
+.racetracks-video-text p{font-size:1.2rem;text-align:right;margin:0;color:#F5b617;position: absolute;bottom: 0rem;right: 0;}
+.racetracks-race{padding:0;margin:0;}
+.racetracks-race li{min-height:5.5rem;position:relative;padding:1rem 0;margin-left: 1.1rem;margin-right: 1.1rem;border-bottom: 1px solid #ccc;background:url('/web/assets/image/back_bar.png') center right no-repeat;background-size:.7rem 1.1rem;}
+.racetracks-race li h4{font-size: 1.6rem;color: #000;text-align: left;font-weight: normal;margin: 0;}
+.racetracks-race li h4 i {width:4rem;height:1.5rem;display: inline-block;background: url(/web/assets/image/smdg/live@2x.png) right center no-repeat;background-size:3.4rem auto;}
+.racetracks-race li p{font-size: 1.2rem;color:#999;text-align:left;margin:0.3rem 0 0 0;}
+.nullData{text-align: center;padding-top: 10rem;color: #666;}
+.nullData img{display: inline-block;width: 7rem;height: auto;margin-bottom: .2rem;}
+.nullData p{color:#999;}
+.racetracks-tuwen{font-size:0;padding: 1rem;}
+.racetracks-tuwen p{padding:0;margin:0;font-size:1.2rem;}
+.racetracks-tuwen img{width:100%;}

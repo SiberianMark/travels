@@ -1,0 +1,86 @@
+﻿/*public styles*/
+html,body{margin: 0;padding: 0;background: #eee;}
+body{width: 100%;height: 100%;}
+ul,ol,li{margin: 0;padding: 0;list-style: none;}
+p{margin: 0;padding: 0;}
+i{font-style: normal;}
+/*competitive-detail*/
+.competitive-wrap{
+
+}
+.competitive-wrap .pic-wrap{
+	width: 100%;height: 22rem;overflow: hidden;position: relative;
+}
+.competitive-wrap .pic-wrap .playV{
+	position: absolute;top: 50%;left: 50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);transform:translate(-50%,-50%);
+}
+.competitive-wrap .tabs-list{
+	font-size: 1.6rem;height: 3.3rem;line-height: 3.3rem;
+}
+.competitive-wrap .tabs-list li{
+	text-align: center;
+}
+.competitive-wrap .tabs-list li.cur{
+	color:rgb(245,182,23);
+}
+.competitive-wrap .tabs-con{
+	/*background-color: #ccc;*/
+}
+.competitive-wrap .tabs-con .explainItem{
+	display: block;padding: 1rem;position: relative;overflow: hidden;
+}
+.competitive-wrap .explainItem .explain-info{
+	margin-left: 14rem;margin-top: 0.6rem;
+}
+.competitive-wrap .explainItem .vedio-imgs{
+	display: block;width: 13rem;height: 8rem;float: left;position: relative;
+}
+.competitive-wrap .explainItem .vedios-btns{
+	position: absolute;top: 50%;left: 50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);transform:translate(-50%,-50%);
+}
+.competitive-wrap .explainItem img:first-child{
+	width: 100%;height: 100%;
+}
+.competitive-wrap .explainItem .explain-title{
+	font-size: 1.4rem;color:#000;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;
+}
+.competitive-wrap .explainItem .explain-time{
+	font-size: 1.2rem;text-align: right;position: absolute;bottom: 1rem;right: 1rem;color:rgb(153,153,153);
+}
+.competitive-wrap .tabs-con .competitive-introduce{
+	padding: 0 1.3rem 2rem;
+}
+.competitive-wrap .tabs-con .introduce-title,.competitive-wrap .competitive-introduce .wonderful-title{
+	font-size: 1.6rem;font-weight: bold;padding: 1rem 0;
+}
+.competitive-wrap .tabs-con .wonderful-list{
+	overflow: hidden;
+}
+.competitive-wrap .tabs-con .wonderful-list a{
+	display: block;overflow: hidden;position: relative;width: 25%;height: 8rem;float: left;padding: 0.3rem 0.24rem;
+}
+.competitive-wrap .tabs-con .wonderful-list img{
+	display: block;position: absolute;width: 100%;height: 100%;top: 0.4rem;left: 0.24rem;
+}
+.tabs-con li .car-infos span{width:0.7rem;height:0.7rem;background:url('/web/assets/image/smdg/men-24.png')no-repeat center center;background-size:0.7rem 0.7rem;}
+.tabs-con li .ranks{-webkit-box-flex:0.8;-webkit-flex:0.8;flex:0.8;}
+.tabs-con li .car-logo{-webkit-box-flex:3.8;-webkit-flex:3.8;flex:3.8;}
+.tabs-con li .car-infos{-webkit-box-flex:3.8;-webkit-flex:3.8;flex:3.8;}
+.tabs-con li .car-grade{-webkit-box-flex:1.6;-webkit-flex:1.6;flex:1.6;}
+/*.tabs-con{padding-bottom:4.8rem;}*/
+.tabs-con li{width: 100%;height: 4.8rem; padding:0 1rem;background-color:#fff;}
+.tabs-con li .car-grade,.tabs-con li .ranks{text-align: center;}
+.tabs-con li .ranks {height:4.8rem;line-height: 4.8rem;}
+.tabs-con li .ranks.one{background:url('/web/assets/image/smdg/jinjiangbei@2x.png')no-repeat center center;background-size:3.5rem 3.5rem}
+.tabs-con li .ranks.two{background:url('/web/assets/image/smdg/yinjiangbei@2x.png')no-repeat center center;background-size:3.5rem 3.5rem}
+.tabs-con li .ranks.three{background:url('/web/assets/image/smdg/tongjiangbei@2x.png')no-repeat center center;background-size:3.5rem 3.5rem}
+.tabs-con li .car-logo{ }
+.tabs-con li .car-infos{font-size:1.4rem;  position:relative;}
+.tabs-con li .car-grade{color:#f5b617;font-size:1.6rem;font-weight: 600;}
+.tabs-con li>div img{vertical-align: middle;-webkit-border-radius: 50%;border-radius: 50%;margin-right: 0.8rem}
+.tabs-con li .car-logo img{width: 3rem;height: 3rem;}
+.tabs-con li .car-infos img{width: 2.3rem;height: 2.3rem;}
+.tabs-con li .car-infos span{display: block;position:absolute;left:1.5rem;bottom:-0.2rem;}
+.tabs-con li .car-infos strong{font-weight: 500; overflow-y: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.tabs-con li .car-infos span.woman{;background:url('/web/assets/image/lottery/girl2.png')no-repeat center;background-size:0.7rem 0.7rem;}
+.tabs-introduce img{max-width: 100%;}

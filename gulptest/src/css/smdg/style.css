@@ -1,0 +1,978 @@
+
+/**
+ * 神马嘀馆
+ */
+*{
+    margin: 0;
+    padding: 0;
+}
+/*提示弹窗*/
+.m-dialog{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.m-dialoginfo{
+    width: 90%;
+    height: 14.4rem;
+    background-color: #fff;
+    -webkit-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -7.2rem;
+    margin-left: 5%;
+}
+.m-dltip{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    color: #999;
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+}
+.m-dltip .pinfo{
+    line-height: 2;
+    margin-top: 0.6rem;
+}
+.m-dltip .addlose{
+    font-size: 1.7rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    color: #333;
+}
+.m-dltip .addlose img{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.m-dlbtn{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f5b617;
+}
+.m-dlbtn span{
+    display: inline-block;
+    width: 50%;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    text-align: center;
+}
+/*弹窗结束*/
+.btn-sure{
+    height: 5rem;
+    line-height: 5rem;
+    border-top: 1px solid #ccc;
+    font-size: 1.6rem;
+    color: #f5b617;
+}
+.numinfo li{
+    width:100%;
+    height:4.5rem;
+    line-height:4.5rem;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+.numinfo li img{
+    width:3.2rem;
+    height:3.2rem;
+    border-radius:50%;
+    vertical-align:middle;
+    margin-right:1rem;
+}
+.numinfo-fl{
+    height:inherit;
+    float:left;
+    color:#333;
+}
+.numinfo-fl strong{
+    font-size:1.4rem;
+    font-weight:normal;
+}
+.eltime{
+    float:right;
+    font-size:1.2rem;
+    color:#999;
+}
+/*报名信息页*/
+.enroll-list{
+    background-color:#fff;
+    margin-bottom: 4.4rem;
+}
+.enroll-list li{
+    width:100%;
+    padding:0 1rem;
+    min-height:4.4rem;/*alter by mashaobin*/
+    height:100%;
+    line-height: 4.4rem;/*alter by mashaobin*/
+    font-size:1.5rem;/*alter by mashaobin*/
+    position:relative;
+}
+.enroll-list .textfl{
+    float:left;
+}
+.enroll-list .fr{
+    float:right;
+    width:80%;
+    text-align:end;
+}
+.fr label{
+    /*width: 32%;*/
+    display: inline-block;
+}
+
+.enroll-list li:last-child{
+    height:15rem;
+}
+
+/*去除input默认样式*/
+.enroll-list input[type=text],
+.enroll-list textarea{
+    border:none;
+    height:2.4rem;/*alter by mashaobin*/
+    margin-top:1rem;
+    font-size: 1.5rem;/*alter by mashaobin*/
+    text-align: end;
+    width:78%;/*alter by mashaobin*/
+}
+/*设置placeholder显示位置*/
+.enroll-list textarea::-webkit-input-placeholder{text-align: end;}
+/*选择性别*/
+.enroll-list .fr .radio{
+    width:7rem;
+    height:3rem;
+    line-height: 3rem;
+    border-radius: 0.3rem;
+    border: 1px solid #eee;
+    text-align: center;
+    color:#666;
+    margin-left: 1rem;
+    display: inline-block;
+}
+/*选中样式*/
+.enroll-list .fr .check{
+    border-color:#f55;
+    color:#f55;
+    position: relative;
+}
+.radio .select,
+.ckcar .select{
+    display:inline-block;
+    position: absolute;
+    /*width: 0;
+    height: 0;
+    border-bottom: 2rem solid #f55;
+    border-left: 2rem solid transparent;*/
+    width: 2rem;
+    height: 2rem;
+    background: url(/web/assets/image/smdg/check_ico@2x.png) center no-repeat;
+    background-size: 2rem 2rem;
+    right: -0.1rem;
+    bottom: -0.1rem;
+}
+/*选中后打钩*/
+/*.select:before, .select:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: 0.4rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow:0 0 0 0.15rem #fff;
+    content: ' ';
+}
+.select:before {
+    top: 1.7rem;
+    left: -1.25rem;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.select:after {
+    top: 1.5rem;
+    left: -1rem;
+    width: 1rem;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}*/
+#car{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#car:before {
+    content: "";
+    height: 4.4rem;
+    width: 0.65rem;
+    float: right;
+    margin-left: 0.6rem;
+    background: url(/web/assets/image/smdg/back--icon.png) center no-repeat;
+    background-size: 0.65rem 1.15rem;
+}
+/*所在大区*/
+.enroll-list .addarea{
+    height: 9rem;
+}
+.test{
+    width: 80%;
+    float: right;
+    margin-top: 0.7rem;
+}
+.test .area{
+    float: left;
+    width: 29%;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+    margin: 0 0rem 0.8rem 0.8rem;
+}
+/*留言信息*/
+.enroll-list textarea.fr{
+    float:none;/*add by mashaobin*/
+    resize: none;
+    line-height: 2rem;
+    height: 6rem;/*add by mashaobin*/
+    width: 69%;/*add by mashaobin*/
+    text-align: start;
+    text-indent:2em; /*alter by mashaobin*/
+}
+/*提示文字输入信息*/
+.texttip{
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    height: 2rem;
+    line-height: 2rem;
+}
+.texttip b,
+.texttip strong{
+    font-weight:normal;
+}
+.texttip strong{
+    color:red;
+}
+
+/*确认报名按钮*/
+.btn{
+    display: block;
+    height: 4.4rem;
+    width: 100%;
+    background-color: #F5B716;
+    color: #fff;
+    text-align: center;
+    line-height: 4.4rem;
+    font-size: 1.5rem;
+}
+#btnback{
+    background-color: #fff;
+    color: #000;
+    margin-top: 0.5rem;
+}
+
+/*神马明星*/
+.starshow{
+    overflow:hidden;
+}
+
+.pro-name{
+    margin-right: 4.2%;
+    margin-left: 1px;
+    padding: 0 0.3rem;
+}
+.pro-msg{
+    float:none;
+}
+.starshow .starlist{
+    width: 100%;
+    background-color:#fff;
+    position:relative;
+    margin-top: 1rem;
+}
+.starlist .detail{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.starlist .detail img {
+    width:100%;
+    height:16.2rem;
+}
+.starlist .detail:before{
+    content: "";
+    display: inline-block;
+    background: url(/web/assets/image/smdg/mingxing.png) top left no-repeat;
+    background-size: 6rem 6rem;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+}
+/*第一行*/
+.starshow .listtop{
+    height:6.5rem;
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+.starshow .listtop:before {
+    content: '';
+    display: inline-block;
+    width: 6.6rem;
+    height: 6.3rem;
+    position: absolute;
+    top: 0;
+    background: url(/web/assets/image/smdg/mingxing.png) top left no-repeat;
+    background-size: 6rem 6rem;
+}
+.topinfo {
+    height: 3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    width: 55%;
+    float: right;
+}
+.topinfo strong {
+    font-size: 1.4rem;
+    color: #f55;
+    margin-right: 1rem;
+    font-weight:normal;
+    display:inline;
+}
+.topinfo b{
+    font-size: 1.2rem;
+    vertical-align: top;
+    color: #333;
+    font-weight:normal;
+}
+.infotype {
+    padding-left: 14%;
+    font-size: 1rem;
+    width: 55%;
+    float: right;
+    color: #999;
+}
+/*头像*/
+.listmain img{
+    width:11rem;
+    height: 11rem;
+    border-radius:50%;
+    /*border:0.45rem solid #ccc;*/ /* 用border UC不兼容*/
+    box-shadow:0 0 0 0.45rem #ccc;
+    position: absolute;
+    top: 3rem;
+    left: 1.5rem;
+}
+/*详细信息展示*/
+.details{
+    float:right;
+    width: 55%;
+    text-indent: 2em;
+    padding: 0 1% 0 1%;
+    margin: 1rem 0 2rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    min-height: 6rem;
+    color: #333;
+}
+
+/*轮播*/
+/*表单样*/
+#enroll_form{
+    overflow-y: auto;
+    height: 90%; /*兼容不支持calc的*/
+    height: calc(100% - 4.4rem );
+}
+#enroll_form input[type='checkbox'],
+#enroll_form input[type='radio']{
+    border-radius: 50%;
+    background-color: #ddd;
+    border: .2rem solid #ddd;
+    display: inline-block;
+    height: 1.5rem;
+    margin: 0 .6rem;
+    vertical-align: text-bottom;
+    width: 1.5rem;
+ }
+#enroll_form input[type='checkbox']{border-radius: 3px;}
+#enroll_form input[type='checkbox']:checked,
+#enroll_form input[type='radio']:checked{
+    background-color: #f55;
+}
+#enroll_form select{width: 30%; border:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;background: url("/web/assets/image/lottery/selectbg.png") no-repeat scroll right center transparent;background-size: 1.2rem 1.2rem;padding-right: 14px;font-size: 1.5rem;color: #333;height: 2rem;line-height: 2rem;background-color: #eee;padding-left: 0.3rem;}
+
+/*嘉年华-报名信息*/
+.clinfo-list{
+    margin-bottom:1rem;
+}
+.clinfo-list li:last-child{
+    height:auto;
+}
+.clinfo-title {
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.clinfo-list #car{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.clinfo-list #car:before {
+    height: 5rem;
+}
+/*车logo*/
+ .clinfo-list #car img   {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+.clinfo-list  .ckcar{
+    width:23.9%;
+    width: calc(25% - 0.5rem );/*四列布局*/
+
+    height: 11rem;
+    border: 1px solid #eee;
+    border-radius:0.3rem;
+    margin: 0.25rem;
+    float: left;
+}
+.clinfo-list  .ckcar img{
+    height: 60%;
+    width: 100%;
+}
+.clinfo-list  .ckcar p{
+    height: 16%;
+    text-align: center;
+    font-size:1rem;
+    margin:0;
+}
+.clinfo-list  .ckcar .p-name{
+    font-size:1.2rem;
+}
+.clinfo-list .selectgroup{
+    width: 100%;
+    width: calc(100% + 0.25rem );/*四列布局*/
+    text-align: start;
+    line-height: normal;
+    margin-bottom: 0.25rem;
+}
+.quyu {
+    position:absolute;
+    font-size: 1.5rem;
+    left:58%;
+}
+.quyu span.down {
+    padding: 0 1rem;
+    background: url(/web/car-service/assets/image/back2@2x.png) no-repeat center;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+
+/*我的车库页面*/
+.garage-list li{
+    height:13.3rem;
+    margin: 1rem 0.75rem;
+    background-color: #fff;
+    position: relative;
+}
+.garage-list li .core{
+    margin:0 1rem 1rem 0;
+    background: url(/web/assets/image/smdg/back--icon.png) no-repeat right 6rem;
+    background-size: 0.7rem 1.4rem;
+}
+.garage-list li.default {
+    background: url(/web/assets/image/smdg/icon_moren.png) no-repeat top left #fff;
+    background-size: 2.6rem 2.6rem;
+}
+.garage-list li .car-img{
+    margin-top: 5rem;
+    width: 8rem;
+    height: 4rem;
+    float: left;
+}
+.garage-list li .car-icon{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.85rem;
+    right: 0.65rem;
+}
+.garage-list li p b{
+    color: #f5b617;
+    font-weight: normal;
+}
+.garage-list li .li-menu{
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    position: absolute;
+    right: 2.6rem;
+    left: 9rem;
+}
+.garage-list .li-menu .cartype{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1.2rem;
+}
+.garage-list li .joinclub{
+    background: url(/web/assets/image/smdg/icon_cheku_chedui.png) no-repeat center left;
+    background-size: 1.2rem 1.2rem;
+    text-indent: 1.8rem;
+}
+.garage-list .bottom-btn{
+    height: 3.3rem;
+    line-height: 3.3rem;
+    text-align: right;
+}
+.garage-list .bottom-btn .bbtn{
+    display: inline-block;
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    color: rgb(96,127,166);
+}
+/*点击添加车辆信息*/
+.add-carteam{
+    height: 4.4rem;
+    background-color: #fff;
+    line-height: 4.4rem;
+    font-size: 1.5rem;
+    margin: 1rem 0.75rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.addicon{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.6rem;
+}
+/*我的后尾箱页面*/
+
+.tailboxs .heading {
+    width: 100%;
+    height: 15rem;
+    background:  url(/web/assets/image/smdg/back.jpg) no-repeat top #fff;
+    background-size: 100% 11.75rem;
+    padding-top: 8.65rem;
+}
+.heading .headimg{
+    width: 6.15rem;
+    height: 6.15rem;
+    border-radius: 50%;
+    margin:0 0.95rem;
+    float: left;
+}
+.heading p{
+    margin-top: 0.7rem;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.user-sex{
+    height: 1.25rem;
+    position: static;
+    margin-left: 0.4rem;
+}
+.user-lv{
+    width: 1.85rem;
+    height: 1.2rem;
+    background: url(/web/assets/image/smdg/v0.png) no-repeat center;
+    background-size: 1.8rem 1.4rem;
+    display: inline-block;
+    margin-left: 0.8rem;
+}
+.user-lv.v1{
+    background: url(/web/assets/image/smdg/v1.png) no-repeat center;
+    background-size: 1.8rem 1.4rem;
+}
+.user-lv.v2{
+    background: url(/web/assets/image/smdg/v2.png) no-repeat center;
+    background-size: 1.8rem 1.4rem;
+}
+.user-lv.v3{
+    background: url(/web/assets/image/smdg/v3.png) no-repeat center;
+    background-size: 1.8rem 1.4rem;
+}
+.user-lv.v4{
+    background: url(/web/assets/image/smdg/v4.png) no-repeat center;
+    background-size: 1.8rem 1.4rem;
+}
+.private-letter{
+    width: 7.5rem;
+    height: 2.6rem;
+    float: right;
+    line-height: 2.6rem;
+    text-indent: 2.7rem;
+    background: url(/web/assets/image/smdg/icon_weixing_smg.png) no-repeat 1rem center #b4b5b3;
+    background-size: 1.3rem 1.4rem;
+    border-radius: 2.6rem 0 0 2.6rem;
+    margin-top: -1.45rem;
+}
+.showcar li{
+    padding:1.45rem 1.05rem;
+    background-color: #fff;
+}
+.showcar li .carimg{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 0.8rem;
+}
+.mark{
+    display: inline-block;
+    width: 3.2rem;
+    height: 2.15rem;
+    line-height: 2.15rem;
+    text-align: center;
+    margin:0 0.35rem 0.5rem;
+}
+.showcar li p{
+    width: calc(100% - 9rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.showcar li .buy{
+    display: inline-block;
+    width: 9rem;
+    height: 3.7rem;
+    line-height: 3.7rem;
+    text-align: center;
+    background-color: rgb(186,7,74);
+    color: #fff;
+    float: right;
+    margin-top: -3.4rem;
+}
+
+/*尾箱开通成功*/
+.tb-ok{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    line-height: 2rem;
+    padding-top:5rem;
+}
+.succeedimg{
+    width: 9rem;
+    height: 9rem;
+    display: block;
+    margin: 0 auto;
+}
+.tb-ok  b{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin:2rem 0 0 0;
+}
+.tb-code  b{
+    display: inline-block;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.tb-ok p,
+.tb-code  p{
+    margin-top: 1rem;
+}
+.tb-code{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    line-height: 2rem;
+    padding-top:5rem;
+}
+.tb-code .codeimg{
+    width: 14rem;
+    height: 14rem;
+    display: block;
+    margin: 0 auto;
+    border:2px solid rgb(245,182,23);
+}
+.arms{
+    margin: 0 auto;
+    width: 19.5rem;
+}
+.arms li{
+    width: 3.25rem;
+    height: 4.4rem;
+    background-color: rgba(1, 1, 1, 1);
+    font-size: 3rem;
+    line-height: 4.4rem;
+    text-align: center;
+    color: rgb(245,182,23);
+    float: left;
+}
+.tb-footer{
+    border-top: 1px solid #ccc;
+    position: fixed;
+    left: 1.85rem;
+    right: 1.85rem;
+    bottom: 0;
+    height: 7.55rem;
+    text-align: left;
+}
+.tb-footer .tf-btn{
+    width: 50%;
+    height:4.55rem;
+    margin:1.5rem 0;
+    display: inline-block;
+    background: url(/web/assets/image/smdg/ico_pinzheng@2x.png)  no-repeat center 0.55rem ;
+    background-size: 2.1rem 2.1rem;
+    text-align: center;
+    line-height: 8rem;
+}
+.tb-footer  .goactivity{
+    background: url(/web/assets/image/smdg/ico_huodong@2x.png)  no-repeat center 0.55rem ;
+    background-size: 2.1rem 2.1rem;
+    border-left:  1px solid #ccc;
+    float: right;
+}
+.btn-succ{
+    width: 18rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin:2.5rem auto;
+    background-color: #f8f8f8;
+    font-size: 1.5rem;
+}
+
+/*我的车队页面*/
+.join-team {
+    margin-bottom:4rem;
+}
+.join-team .head{
+    width: 100%;
+    height: 18rem;
+    background: url(/web/assets/image/smdg/cheduibeijing.png) no-repeat ;
+    background-size: 100% 18rem;
+    text-align: center;
+}
+.join-team .jh-logo{
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-right: 1rem;
+}
+.join-team .head .jh-info{
+    display: inline-block;
+    margin-top: 2rem;
+}
+.join-team .head p{
+    color: #fff;
+    line-height:2.2rem;
+    font-size: 1.3rem;
+    text-align: left;
+}
+.join-team .head .tname{
+    padding-top: 1.5rem;
+    font-weight: bold;
+    color: rgb(245,182,23);
+    font-size: 1.7rem;
+}
+
+.btn-download{
+    width: 22.3rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: url(/web/assets/image/smdg/juxing.png) no-repeat;
+    background-size: 22.3rem 3.4rem;
+    margin: 2.7rem auto;
+    text-align: center;
+}
+/*主体样式*/
+.jt-main{
+    background-color: #fff;
+}
+.jtm-title{
+    width: 100%;
+    height: 5.7rem;
+    line-height: 5.7rem;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+.mst-line{
+    width: 7rem;
+    height: 0.3rem;
+    background: rgb(245,182,23);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8.5rem;
+    -webkit-transition: transform .2s;
+    transition: transform .2s;
+}
+.jtm-title span{
+    display: inline-block;
+    width: 10rem;
+    height: 100%;
+    /* text-align: center; */
+    /*border-bottom: 0.3rem solid rgb(245,182,23);*/
+    font-size: 1.5rem;
+    text-indent: 3rem;
+}
+.jtm-title .team-member{
+    background: url(/web/assets/image/smdg/duiyuanhui.png) no-repeat 2rem center;
+    background-size: 2.4rem 2.1rem;
+}
+.jtm-title .team-member.active{
+    background: url(/web/assets/image/smdg/duiyuanhuang.png) no-repeat 2rem center;
+    background-size: 2.4rem 2.1rem;
+    /*border-bottom: 0.3rem solid rgb(245,182,23);*/
+    color: rgb(245,182,23);
+}
+.jtm-title .team-list{
+    background: url(/web/assets/image/smdg/bangdanhui.png) no-repeat 2rem center;
+    background-size: 2.4rem 2.1rem;
+}
+.jtm-title .team-list.active{
+    background: url(/web/assets/image/smdg/bangdanhuang.png) no-repeat 2rem center;
+    background-size: 2.4rem 2.1rem;
+    /*border-bottom: 0.3rem solid rgb(245,182,23);*/
+    color: rgb(245,182,23);
+}
+/*列表*/
+.fleet-list li{
+    width: 100%;
+    height: 5.7rem;
+}
+.ranking-list li{
+    background-color: #fafafa;
+}
+.fleet-list .team-name,
+.fleet-list .trophy,
+.fleet-list .integral{
+    height: 5.7rem;
+    line-height: 5.7rem;
+}
+.fleet-list .trophy{
+    display: inline-block;
+    width: 6rem;
+    vertical-align: top;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.fleet-list li:nth-child(1) .trophy{
+    background: url(/web/assets/image/smdg/jinjiangbei.png) no-repeat center;
+    background-size: 2.3rem 2.4rem;
+}
+.fleet-list li:nth-child(2) .trophy{
+    background: url(/web/assets/image/smdg/yinjiangbei.png) no-repeat center;
+    background-size: 2.3rem 2.4rem;
+}
+.fleet-list li:nth-child(3) .trophy{
+    background: url(/web/assets/image/smdg/tongjiangbei.png) no-repeat center;
+    background-size: 2.3rem 2.4rem;
+}
+.fleet-list .teamlogo{
+    width: 2.75rem;
+    height: 4.1rem;
+    margin: 0 3.2rem 0 0;
+    vertical-align: middle;
+}
+.fleet-list .team-name{
+    width: auto;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.fleet-list .integral{
+    float: right;
+    margin-right: 1rem;
+    text-align: right;
+}
+.integral .jifennum{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: rgb(245,182,23)
+}
+/*未上榜*/
+.ranking-list li.not-on:before{
+    border: 2px solid #f5b617;
+}
+
+/*队员列表*/
+.player-list li{
+    width: 100%;
+    height: 7.6rem;
+    padding-top: 1.45rem;
+    position: relative;
+}
+.ranking-list li:nth-child(2n){
+    background-color: #fff;
+}
+/*队员头像*/
+.player-list li .img-cons{position: relative;margin: 0 1.9rem 0 1.7rem;float: left;}
+.player-list li .playlogo{width: 4.6rem;height: 4.6rem;border-radius: 50%;}
+.player-list li .certified{position: absolute;bottom: 0;right: 0;width: 1.3rem;height: 1.5rem;background: url('/web/assets/image/smdg/renzheng.png') no-repeat;background-size: cover;}
+.player-list li .certify{position: absolute;bottom: 0;right: 0;width: 1.3rem;height: 1.5rem;}
+.is_captain{padding: 0.15rem 0.35rem;background-color: rgb(245,182,23);margin-left: 0.8rem;color:#fff;font-size: 1rem;}
+.view-info{position: absolute;right: 2rem;top: 1.45rem;}
+.del-btn{
+    position: absolute;right: 0;height: 7.6rem;line-height: 7.6rem;background-color: #ff5555;top: 0;color:#fff;padding: 0 1rem;z-index: 100;
+}
+/*队员列表文字信息*/
+.player-list li p{
+    line-height: 1.6rem;
+    float: left;
+    width: 54%;
+    color:rgb(102,102,102);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.player-list li .t1{
+    font-size: 1.4rem;
+    color: #000;
+}
+.player-list .integral{
+    float: right;
+    margin-right: 0.4rem;
+}
+
+/*加入车队*/
+.btn-jion{
+    width: 100%;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(245,182,23);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

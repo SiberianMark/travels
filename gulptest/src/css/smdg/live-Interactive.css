@@ -1,0 +1,61 @@
+html,body{font-size: 1.2rem;}
+*{margin: 0;padding: 0;}
+.out{background-color: #f4f8fb;width: 100%;position: relative;column-count: 2;}
+.act{width: 48%;float: left;padding-left: 3%;padding-top: 1rem;}
+.act-main{padding: 1.5rem 1rem 1rem;background-color: #fff;}
+.act-img{width: 100%;}
+.act-img>img{width: 100%;height: auto;}
+.act-comment{margin-bottom: 0.8rem;color: #666;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.act-name{float: left;line-height: 2.4rem;font-size: 1rem;}
+.act-msg>div:nth-child(2){float: right;line-height: 2.5rem;}
+.user-img{float: left;width: 2.5rem;height: 2.5rem;margin-right: 0.6rem;}
+.user-img>img{width: 100%;height: 100%;border-radius: 50%;}
+.user-name{float: left;width: 6.2rem;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;}
+.act-follow{background: url("/web/assets/image/smdg/star_ico.png") center no-repeat;width: 1.4rem;height: 2.5rem;background-size: 100%;display: block;float: left;margin-right: 0.6rem;}
+.follow{background: url("/web/assets/image/smdg/star_td_ico.png") center no-repeat;background-size: 100%;}
+.collections{float: left;}
+.release{position: fixed;bottom: 6rem;right: 0;background: url("/web/assets/image/smdg/xuanfuanniu.png") center no-repeat;width: 4rem;height: 4rem;background-size: 100%;display: none;z-index: 1000;}
+.release-td{background: url("/web/assets/image/smdg/xuanfuanniu_td.png") center no-repeat;background-size: 100%;}
+
+.app-download{height: 4.4rem;position: fixed;bottom: 0;width: 100%;left: 0;font-size: 1rem;background: #ccc;z-index: 1030;}
+.app-download .down_detail{margin-left: 5.5rem;margin-top: .8rem;}
+.app-download .down_btn{position: absolute;right: 3.5rem;padding: .5rem;border-radius: 6px;background: #ff5555;color: #fff;}
+.app-download img.close{position: absolute;width: 1.3rem;height: 1.3rem;right: 1.2rem;}
+.app-download img.logo{position: absolute;bottom: 1rem;left: 1.2rem;width: 4rem;height: 4rem;border-radius: 1rem;}
+.page-footer{position: fixed;width: 100%;height: 4.4rem;bottom: 0;left: 0;font-size: .8rem;}
+.page-footer div.flex-item{margin:.8rem auto;border-right: 1px solid #ddd;}
+.page-footer div.flex-item:last-child{border:none;}
+.page-footer img{width: 1.7rem;height: 1.7rem;}
+.page-footer .jump_btn{width: 10rem;background-color: #ff8a00;color: #fff;text-align: center;line-height: 4.4rem;font-size: 1.2rem;}
+.sharepic-right>img{width: 14.8rem;height: 10.4rem;float: right;right: 1em;position: relative;}
+.vc{-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);transform:translateY(-50%);top: 50%;}
+
+
+.mask { position: fixed; width: 100%; height: 100%; display: none; z-index: 99999;top: 0;right: 0;bottom: 0;left: 0;}
+
+.mask .box { width: 100%; height: 100%; overflow: hidden; background-color: rgba(0, 0, 0, 0.8); -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; flex-direction: column;position: relative;}
+.mask .box .pic, .mask .box .tab-con-list .list li .pic img, .tab-con-list .list li .pic .mask .box img { width: 25.5rem; height: 16.65rem; position: relative; background: url("/web/assets/image/seckill/yizhegou-pop.png") no-repeat; background-size: 100% 100%; }
+.mask .box .pic p, .mask .box .tab-con-list .list li .pic img p, .tab-con-list .list li .pic .mask .box img p { font-size: 1.5rem; color: #333; margin-top: 8.3rem; text-align: center; }
+.mask .box .pic span, .mask .box .tab-con-list .list li .pic img span, .tab-con-list .list li .pic .mask .box img span { position: absolute; background: url("/web/assets/image/seckill/close_btn.png") no-repeat; background-size: 100% 100%; display: block; content: ""; width: 2.6rem; height: 2.6rem; top: -1rem; right: -1rem; }
+.mask .box .pic .a, .tab-con-list .list li .pic .mask .box img .a { display: block; width: 13.5rem; height: 3.1rem; line-height: 3.1rem; margin: 1.8rem auto 0; color: #fff; background-color: #ff5454; font-size: 1.2rem; text-align: center; -webkit-border-radius: 20px; border-radius: 20px; }
+.mask .box .text{ width: 25.5rem; position: absolute; font-size: 1.2rem; background-color: #fff; text-align: center; border-radius: 5px;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.mask .box .text p{ font-size: 1.1rem; width: 100%; height: 7em; line-height: 7em; color:#ccc; border-bottom: 1px solid #999; }
+.mask .box .text span{ width: 50%; height: 3.5em; line-height: 3.5em; float: left; color:#333; border-right: 1px solid #ccc; }
+.mask .box .text div{ height: 3.5em; line-height: 3.5em; color:#f55; }
+
+.cart-nogoods {background: url(/web/assets/image/smdg/none-article_ico@3x.png) top no-repeat;width: 25rem;height: 25rem;background-size: 7.2rem;margin: 5rem auto;padding-top: 9rem;text-align: center;font-size: 1.2rem;line-height: 2.5em;}
+.cart-nogoods-empty {color: #999;font-size: 1.4rem;margin-bottom: 2rem;margin-top: 5rem;}
+.live-btn{width: 100%;line-height: 3.6rem;text-align: center;}
+.live-return{font-size: 1.4rem;border: 1px solid #f55;background-color: #fff;width: 60%;height: 3.6rem;line-height: 3.6rem;border-radius: 6px;    margin: 0 auto;color: #f55;}
+
+.top{position: fixed;bottom: 6rem;right: 0;background: url("/web/assets/image/smdg/up_750.png") center no-repeat;width: 4.3rem;height: 4.3rem;background-size: 4.3rem;z-index: 1000;display: none;}
+.top-add-release{bottom: 11.2rem;}
+
+/*顶部导航*/
+.shop-order { width:100%; height:auto; border-left:0; border-right:0; border-bottom:0;font-size: 0;color: #666; }
+.shop-order-nav{ width:100%; height:4.4rem; font-size:1.4rem; text-align:center; white-space:nowrap; background:#fff; }
+.shop-order-nav li{ width:16.6666%; height:4rem; line-height:4rem; font-size:1.4rem; text-align:center; color:#333; display:inline-block; }
+.shop-order-nav li.cur{ color:#ff5555; border-bottom:0.2rem solid #ff5555; }
+.shop-order-nav li span{ display: block; height: 2rem; line-height: 2rem; margin-top: 1rem; width: 100%;font-size: 1.6rem;}
+.good-info .send-price{display: block;position: absolute;bottom: 0.4rem;left: 8.6rem;color: #f55;font-size: 1rem;}
+.good-info .send-price .big-price{font-size: 1.2rem;}

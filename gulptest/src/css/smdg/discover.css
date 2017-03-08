@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+hr{float: right;width: 98%;}
+.dishead{padding: 2.2rem;font-size: 1.1rem;text-align: center;background-color: #fff;}
+.dishead ul li img{width: 4.9rem;height: auto;}
+.dishead ul li:nth-child(1){margin: 0 auto;position: relative;}
+.dishead .discover-status{background: url("/web/assets/image/smdg/discover/xin_@2x.png") no-repeat center;background-size: 1.4rem;height: 1.5rem;position: absolute;top: -0.7rem;right: -0.7rem;width: 1.4rem;}
+.discover-banner{overflow: hidden;}
+.discover-banner img{width: 100%;height: 11.6rem;}
+.trunk-market{padding: 0 1.1rem 0 1.4rem;height: 4.7rem;background-color: #fff;}
+.trunk-market>div:nth-child(1){font-size: 1.5rem;font-weight: bold;}
+.trunk-market>div:nth-child(2){font-size: 1.4rem;color: rgb(104,104,104);}
+.trunk-market>div:nth-child(2) .choose{font-size: 1.4rem;color: rgb(245,182,23);}
+.trunk-market div div{margin: 0 2rem;}
+.trunk-market .new{margin-right: 0;}
+.trunk-market div i{width: 0.15rem;height: 2rem;background: #ccc;}
+.trunk-market-list{padding: 0 0 0 1.5rem;background-color: #fff;}
+.trunk-market-list .trunk-market-range{padding: 0.85rem 2rem 0.85rem 0;}
+.trunk-market-list .trunk-market-image{width: 6.2rem;height: 6.2rem;border-radius: 6px;margin-right: 0.8rem;}
+.trunk-market-list .trunk-market-message{height: 6rem;font-size: 1.2rem;}
+.trunk-market-list .open-know{width: 6.4rem;height: 2.6rem;line-height: 2.6rem;text-align: center;color: #fff;border-radius: 6px;background-color: #f5b617;margin-left: 1rem;font-size: 1.2rem;}
+.trunk-market-list .trunk-market-message .trunk-market-nickname{font-size: 1.4rem;height: 1.4rem;line-height: 1.4rem;}
+.trunk-market-list .trunk-market-message .trunk-market-nickname>div{float: left;}
+.trunk-market-list .trunk-market-message .trunk-market-nickname .trunk-market-sex{width: 1.2rem;height: 1.4rem;line-height: 1.4rem;display: inline-block;}
+.trunk-market-list .trunk-market-message .man{background: url("/web/assets/image/smdg/discover/nan_ico-@2x.png") no-repeat center;background-size: 1.1rem;margin-left: 0.4rem;}
+.trunk-market-list .trunk-market-message .woman{background: url("/web/assets/image/smdg/discover/nv_@2x.png") no-repeat center;background-size: 1.1rem;margin-left: 0.4rem;}
+.trunk-market-list .trunk-market-message .trunk-market-lable{color: rgb(104,104,104);height: 1.2rem;line-height: 1.2rem;margin-top: 0.4rem;}
+.trunk-market-list .trunk-market-message .trunk-market-belong{color: rgb(245,182,23);height: 1.5rem;line-height: 1.5rem;margin-top: 1.25rem;}
+.trunk-market-list .trunk-market-message .trunk-market-belong .trunk-market-mark{float: left;background: url("/web/assets/image/smdg/discover/renzheng_@2x.png") no-repeat center;background-size: 1.3rem 1.5rem;width: 1.4rem;height: 1.6rem;line-height: 1.5rem;margin-right: 0.25rem;}
+.trunk-market-belong .authentication{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;}
+.trunk-market-list .trunk-market-line{width: 1px;height: 1px;}

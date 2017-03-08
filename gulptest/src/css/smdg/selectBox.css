@@ -1,0 +1,82 @@
+.select{
+    padding: 0 0.75rem; line-height: 4rem; color: #999; background-color: #fff; position: relative;font-size: 1.2rem;
+}
+.select i{
+    position: absolute; right: .6rem;  width: 4%; background: url("/web/assets/image/jiantou_ico.png") center no-repeat;  background-size: 0.8rem 1.3rem;  height: 1.3rem;  margin-top: 1.2rem;
+}
+.close{
+    width: 2.1rem; height: 2.1rem; position: absolute; display: block; right: .8rem; top:.8rem;background:url('/web/pub-acct/assets/image/close.png');background-size: 100%;
+}
+.select-box{
+    background-color: #fff;font-size: 1.2rem; padding-bottom: 7rem;width:100%;height:100%;position: relative;
+}
+.select-box .pic{
+    height: 10.8rem;padding-left: .8rem;position: absolute;top: 0;left: 0;
+}
+.detail-cons{position:absolute;top:10.8rem;bottom:4.4rem;left:0;overflow-y:scroll;width: 100%;}
+.select-box .pic img{
+    width: 8.4rem; height: 8.4rem; border: 1px solid #eee; display: block; float: left; position: relative; top:-1.65rem; margin-right: .8rem;
+}
+.select-box .pic p{
+    display: block; color:#f55; padding: 1.4rem 0 1.3rem;font-size: 1.8rem;
+}
+.select-box .pic p span{
+    font-size: 1.8rem;
+}
+.select-box span .store{
+    color: #333;
+}
+.select-box span .store{
+    margin-bottom: 0.8rem;
+}
+.select-box .sort{
+    padding-bottom: .8rem;padding-left: .8rem;
+}
+.select-box .sort .tit{
+    color: #333; padding: 1.2rem 0 1.6rem 0;font-size: 1.4rem;
+}
+.select-box .sort ul::after{
+    content: ''; display: block; clear: both;
+}
+.select-box .sort ul li{
+    float: left; font-size: 1.2rem; color: #333; background-color: #eee; padding: .5rem 1.2rem; border-radius: 4px; margin:0 1.2rem 1.6rem 0;
+}
+.select-box .sort ul li.no{
+    color: #999;
+}
+.select-box .sort ul li.cur{
+    background-color: rgb(245,182,23); color: #fff;border: 1px solid rgb(245,182,23);
+}
+.select-box .button{
+    text-align: center; line-height: 4.4rem;color: #fff; font-size: 1.4rem; background-color: rgb(245,182,23);position: absolute; bottom: 0; width: 100%;border: 1px solid rgb(221,221,221);
+}
+.select-box .buy-num {
+    height: 4.8rem;line-height: 4.8rem;color: #333;font-size: 1.4rem;padding-left: .8rem;
+}
+.select-box .buy-num .item-amount {
+    float: right;padding: 1rem 2.3rem 0 0;
+}
+.select-box .buy-num .item-amount a {
+    display: inline-block;width: 2.4rem;height: 2.4rem;text-align: center;line-height: 2.4rem;background-color: #f5f5f5;color: #999999;float: left;
+}
+.select-box .buy-num .item-amount input {
+    color: #333;font-size: 1.4rem;background-color: #f5f5f5;height: 2.4rem;line-height: 2.4rem;padding: 0 .2rem;margin: 0 .1rem;display: inline-block;width: 3rem;border: none;box-sizing: content-box;text-align: center;float: left;
+}
+.select-box .buy-num .item-amount a {
+    display: inline-block;width: 2.4rem;height: 2.4rem;text-align: center;line-height: 2.4rem;background-color: #f5f5f5;color: #999999;float: left;
+}
+.choose-specification {
+    position: absolute;top: 35%;left: 50%;transform: translate(-50%,-50%);width: 9.7rem;height: 9.7rem;background-color: #000;border-radius: 6px;padding-top: 1.6rem;text-align: center;opacity: 0.8;display: none;
+}
+.choose-specification .choose-img {
+    background: url(/web/assets/image/icon_zhu.png) no-repeat center;background-size: 3.2rem;width: 3.2rem;height: 3.2rem;margin: 0 auto;margin-bottom: 2rem;
+}
+.choose-specification .specification-tip {
+    font-size: 1.4rem;color: #fff;line-height: 1.4rem;
+}
+.detail-cons {position: absolute;top: 10.8rem;bottom: 4.4rem;left: 0;overflow-y: scroll;width: 100%;}
+.select-box .pic img {width: 8.4rem;height: 8.4rem;border: 1px solid #eee;display: block;float: left;position: relative;top: -1.65rem;margin-right: .8rem;}
+.select-box .sort {padding-bottom: .8rem;padding-left: .8rem;}
+.select-box .sort .tit {color: #333;padding: 1.2rem 0 1.6rem 0;font-size: 1.5rem;}
+.select-box .sort ul li {float: left;font-size: 1.2rem;color: #333;background-color: rgb(248,248,248);padding: .5rem 1.2rem;border-radius: 4px;margin: 0 1.2rem 1.6rem 0;border: 1px solid rgb(221,221,221)}
+.box-foot{font-size: 1.4rem;height: 4.8rem;line-height: 4.8rem;color: #a6a6a6;background-color: #fff;position: fixed;bottom: -1px;width: 100%;text-align: center;z-index: 2;display: -webkit-box;display: -webkit-flex;display: flex;}

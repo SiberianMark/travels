@@ -1,0 +1,18 @@
+/*body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}*/
+.mui-content{background-color:#fff!important;}
+a,a:hover,a:active,a:visited{text-decoration: none;color:#000;}
+ul,p{margin:0;padding:0;}
+.adward-records{width:100%;}
+.adward-records ul li{margin-bottom:1rem;padding:0rem 1rem 1rem;border-bottom:5px solid #f0f0f0;}
+.adward-records ul li .record-head{font-size:1.2rem;height:3rem;line-height: 3rem;border-bottom:1px solid #eee;}
+.adward-records ul li .record-head p:first-child{float:left;    color: grey;}
+.adward-records ul li .record-head p:first-child .adward-price{color:rgb(255,133,133);margin-left:1rem;}
+.adward-records ul li .record-head .adward-time{float:right;color:#999;font-size: 1rem;}
+.no-consultant-prompt{text-align: center;margin-top: 3rem;font-size: 1.6rem;color: #f5b617;}
+.clear{clear:both;}
+.adward-details{padding-top:1rem;position: relative;}
+.adward-details .adward-note{font-size: 1.4rem;width:17rem;float:left;font-weight: 500;}
+.adward-details .note-img{width:11.5rem;height:7.6rem;overflow: hidden;position: relative;float:right;}
+.adward-details .note-img img{width: 11.5rem;height: 7.6rem;}
+.adward-details .small-info{position:absolute;bottom:0rem;color:#999;}
+.adward-details .small-info span:last-child{margin-left: 0.5rem;}

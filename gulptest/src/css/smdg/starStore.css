@@ -1,0 +1,74 @@
+/*初始化样式环境*/
+*{padding:0;margin:0;}
+html,body {min-height: 100%}
+html{background-color: #eee;}
+li{
+	list-style: none;
+	border-top: 1px solid rgb(221,221,221);
+}
+.hide{display: none !important;}
+p{margin: 0;margin-bottom: 0 !important;}
+ul{width: 100%;color: #666;background-color: #eee;}
+/*头部样式*/
+.header{
+	width:100%;
+	height:4.4rem;
+	background-color: #000;
+	/*background-color: #FFF;*/
+	position: relative;
+}
+.back{
+	width:8rem;
+	height:2rem;
+	margin-left:1rem;
+	margin-top:1.2rem;
+
+	position:absolute;	
+	color:rgb(221,221,221);
+	/*color:#000;*/
+	font-size:1.5rem;
+	line-height:2rem;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.back-icon{
+	height:1.5rem;
+	width:1.5rem;
+	display:inline-block;	
+	color:#FFF;
+	background:url('/web/assets/image/smdg/back-icon.png') center no-repeat;background-size:1.2rem;
+}
+div.storeTitle{
+	height:2rem;
+	width:6rem;
+	position:absolute;
+	margin:0 auto;
+	color:rgb(221,221,221);
+	/*color:#000;*/
+	font-size:1.5rem;
+	left:50%;
+	top:50%;
+	margin-left:-1.5rem;
+	line-height:2rem;
+	overflow: hidden;
+	margin-top:-1rem;
+}
+/*
+店铺
+ */
+.starStoreContent{margin-top:-0.8rem;}
+ul.result-stores{padding: 0;margin:0.8rem 0 0;}
+ul.result-stores>li{background-color: #fff;display:list-item;}
+ul.result-stores>li>div{height:6.3rem;width:100%;background-color: #fff;margin-left:1rem;position:relative;}
+ul.result-stores>li>div
+ul.result-stores>li.hving,ul.result-stores>li.hving>div{background-color: #eee;}
+ul.result-stores>li>div>img{height: 4.4rem;width: 4.4rem;margin-top:0.95rem;background-clip: padding-box;border-radius: 5px;border:1px solid grey;}
+ul.result-stores>li>div>div{height: 6.3rem;width: 100%;position: absolute;top: 0;left: 0;margin-top: 0.6rem;padding-left: 6.4rem;font-size: 1.2rem;}
+ul.result-stores>li>div>div>p{height: 1.5em;padding: 0.1rem 0;line-height: 1.5em;}
+ul.result-stores>li>div>div>p:first-child{color: #333;}
+ul.result-stores>li>div>div>p:nth-child(2){color: #999;font-size: 0.9rem;}
+ul.result-stores>li>div>div>p:last-child{color: #333;font-size: 0.9rem;}
+i.ico-heart2{height: 1.2rem;width: 1.3rem;display: inline-block;background: url('/web/assets/image/smdg/heart_ico.png')center no-repeat;background-size:1.2rem;transform: translate(0,0.2rem);-webkit-transform:translate(0,0.2rem)}
+/*
+店铺结束
+ */

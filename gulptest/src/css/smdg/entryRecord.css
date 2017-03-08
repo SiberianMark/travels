@@ -1,0 +1,51 @@
+*{margin:0; padding:0;}
+ body{background-color:#fff!important;overflow:hidden;}
+/*顶部导航*/
+/*头部个人信息*/
+#pullrefresh{margin-top:35.3rem;}
+#pullrefresh .mui-pull-bottom-pocket{padding-bottom:3rem}
+header{background:#18181c;color:#fff;text-align:center; filter: Alpha(opacity=95); -moz-opacity:0.95; opacity:0.95;}
+header .bground{position:relative;}
+header .bground>img{display:block;width:100%;}
+header .bground .userinfo{position:absolute;left:11.7%;top:14%;padding-left:6.7rem;font-size:1.4rem;color:#333;width:60%;line-height:1.9rem;}
+header .bground li{text-align:left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+header .bground li span{color:#666;}
+header .bground .userpic{position:absolute;left:0;top:0;width:5.7rem;height:5.7rem;overflow:hidden;border-radius:50%;}
+header .bground .userpic img{width:100%;}
+header .bground .usertitle{position:absolute;top:1.5rem;right:2.8rem;width:16%;}
+header .bground .usertitle img{width:100%;}
+header .car-record{height:4rem;font-size:1.4rem;color:#f5b617;line-height:4rem;position:relative;padding-left:1rem;}
+header .car-record p{float:left;}
+header .car-record span{float:right;position:relative;width:2.4rem;height:4rem;margin-right:1.5rem;}
+header .car-record img{width:2.4rem;height:2.4rem;position:absolute;right:0;top:50%;margin-top:-1.2rem;}
+header .car-record i{position:absolute;width:1.8rem;height:0.9rem;bottom:0;left:50%;margin-left:-0.9rem;background:url("/web/assets/image/smdg/sanjiaoxing_qiehuan@2x.png");background-size:100% 100%;}
+header .wrap-head{height:7.9rem;line-height:7.9rem;font-size:1.4rem;color:#000;position:relative;padding:0 1.3rem;background:#fff;}
+header .wrap-head .car-pic{width:9.6rem;position:absolute;left:1.3rem;top:50%;margin-top:-2.5rem;}
+header .wrap-head span{float:right;width: 60%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+/*参赛记录内容*/
+section{text-align:center;position:relative;}
+section .wrap-box{background:#fff;padding:0.6rem 0;}
+section .wrap-box>li{position:relative;margin:0 1.3rem;margin-bottom:2.4rem;border:1px solid #eee;}
+section .wrap-box>li>p{position:absolute;font-size:1.2rem;color:#999;top:-0.7rem;padding:0 0.6rem;background:#fff;left:50%;margin-left:-3rem;}
+section .wrap-box>li .score{height:5.5rem;line-height:5.5rem;padding:0 1rem 0 3.2rem;position:relative;}
+section .wrap-box>li .score .scorename{float:left;font-size:1.4rem;color:#000;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width:60%;text-align:left;}
+section .wrap-box>li .score>i{position:absolute;width:1.3rem;height:1.3rem;background:url("/web/assets/image/smdg/saishi@2x.png");background-size:100% 100%;left:1.2rem;top:50%;margin-top:-0.65rem;}
+section .wrap-box>li .score .scoreico{float:right;width:40%;background:url("/web/assets/image/smdg/jifeng@2x.png");background-size:100% 100%;line-height:3rem;margin-top:1.25rem;text-align:center;color:#f5b617;}
+section .wrap-box>li .score .no-score{background:url("/web/assets/image/smdg/jifen_wu@2x.png");background-size:100% 100%;font-size:1.5rem;color:#999;}
+section .wrap-box>li .score .scoreico i{font-size:1.6rem;font-style:normal;}
+section .wrap-box>li .group{padding:0 1rem 1rem 4.5rem;line-height:1.2rem;font-size:1.2rem;color:#666;position:relative;}
+section .wrap-box>li .group>.double-wrap{position:absolute;width:2.4rem;height:4.5rem;background:url("/web/assets/image/smdg/yichangci@2x.png");background-size:100% 100%;left:1.7rem;top:-1.5rem;}
+section .wrap-box>li .group>.three-wrap{position:absolute;width:2.4rem;height:6.65rem;background:url("/web/assets/image/smdg/liangchangci@2x.png");background-size:100% 100%;left:1.7rem;top:-1.5rem;}
+/*section .wrap-box li .group>ul>.double-wrap{position:absolute;width:2.4rem;left:1.7rem;top:-1.5rem;}*/
+section .wrap-box>li .group>ul{position: absolute;left: 1.7rem;width: 2.4rem;}
+section .wrap-box>li .group>ul>li{width: 2.4rem;height: 2.1rem;background: url("/web/assets/image/smdg/yichangci+n@2x.png");background-size: 100% 100%;}
+section .wrap-box>li .group>ul>.double-wrap{width:2.4rem;height:4.5rem;background:url("/web/assets/image/smdg/yichangci@2x.png");background-size:100% 100%;margin-top:-1.5rem;}
+section .wrap-box>li .group>p span{float:left;font-size:1.2rem;color:#666;}
+section .wrap-box>li .group div p{margin-top:1rem;}
+section .wrap-box>li .group div p span{float:left;font-size:1.2rem;color:#666;}
+section .wrap-box>li .group div p span>i{font-style:normal;margin-left:0.5rem;padding:0 0.5rem;font-size:1rem;background:#f6b617;color:#fff;}
+/*缺省页*/
+section .nodata{margin-top: -4rem;}
+section .nodata .qsPic img{width:9.3rem;height:7rem;margin-top:7.3rem;}
+section .nodata .qsword{font-size:1.4rem;color:#999;margin-top:1.1rem;}
+section .nodata .goto{border:0.05rem solid #eee;border-radius:0.4rem;font-size:1.4rem;background:#f8f8f8;margin:4.7rem auto 1rem auto;width:20.5rem;height:4rem;line-height:4rem;}

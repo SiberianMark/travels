@@ -1,0 +1,37 @@
+/*车手参赛信息*/
+*{margin:0;padding:0;}
+section{/* background:#fff; */overflow:hidden;}
+section>div:nth-child(1){float:left;height: 10.4rem;width: 17.8rem;background: #FFF7DE;margin-top: 3.8rem;margin-left: 1.7rem;}
+section>div:nth-child(1) .per-info{width:100%;/* margin-top:2.6rem; */height:3.6rem;padding-left:0.8rem;padding-right:0.8rem;position:relative;}
+section>div:nth-child(1) img{width: 5.4rem;height: 5.4rem;border-radius:50%;position:absolute;top: -2.4rem;left: -1rem;}
+section>div:nth-child(1) .per-info>div{height:3.6rem;line-height:1.8rem;padding-left:4rem;font-size:1.2rem;color:#999;}
+section>div:nth-child(1) .per-info .sex{font-size:1.6rem;position:relative;color:#333;/* overflow: hidden; */white-space: nowrap;text-overflow: ellipsis;padding-top: 1rem;text-align: center;}
+section>div:nth-child(1) .per-info .sex>img{width:1.2rem;height:1.2rem;position:absolute;top: 1.8rem;left: -1.4rem;z-index: 1000;}
+section>div:nth-child(1) .per-integral{/* height:11.6rem; */position:relative;margin:0 1.4rem;}
+section>div:nth-child(1) .per-integral>p{position:absolute;width: 8.2rem;height: 5.5rem;background: url('/web/assets/image/smdg/xinxi.png') no-repeat;background-size:100% 100%;/* top:50%; *//* margin-top:-3.78rem; */left:50%;margin-left:-4.7rem;/* line-height:5.55rem; */text-align:center;}
+
+
+section>div:nth-child(1) .per-integral>p>span{font-size:2rem;color:#ff6600;}
+section>div:nth-child(2){float:left;height: 10.4rem;width: 16.7rem;margin: 3.8rem 0 0 0;position:relative;background: #fff;}
+section>div:nth-child(2)>div{position:absolute;font-size:3rem;top:50%;margin-top:-1.5rem;}
+
+section>div:nth-child(2)>img{width: 10.9rem;height: 6.6rem;margin-top:2rem;max-height: 6.6rem;right: 1rem;position: absolute;}
+section>div:nth-child(2) p{position:absolute;font-size: 1.3rem;color: #333;top: 1rem;padding-right: 1rem;/* -webkit-transform:translateX(-50%); *//* transform:translateX(-50%); */left: 2.9rem;}
+section>div:nth-child(2) p>img{position:absolute;width:1.8rem;height:1.8rem;left:-2.3rem;border-radius:50%;top:-0.2rem;}
+
+article>div:nth-child(1){height:4.4rem;line-height:4.4rem;text-align: center;}
+article>div:nth-child(1)>img{width:9.5rem;height:1.5rem;}
+
+article>header{height:3.2rem;font-size:1rem;color:#999;background:#fafafa;padding:1rem 0;}
+article>header>ul li{float:left;width:14.4%;text-align:center;height:1.2rem;}
+article .first-box{width:28%;}
+
+article #wrap-box{text-align:center;}
+article #wrap-box .nullRcord>img{width:25%;height:25%;margin-top:2rem;}
+article #wrap-box .nullRcord>p{font-size:1.4rem;color:#999;margin-top:1rem;}
+article #wrap-box .nullRcord>div{font-size:1.4rem;height:3rem;line-height:3rem;margin-top:1.5rem;}
+article #wrap-box .nullRcord>div>span{display:block;width:50%;margin:0 auto;height:100%;background:#fff;color:#ff5500;}
+article #wrap-box .nullRcord>div>span:before{border:none;border:1px solid #ff5500;border-radius:6px;}
+article #wrap-box ul{height:3.2rem;font-size:1rem;background:#fff;padding:1rem 0;text-align: center;}
+article ul li{float:left;width:14.4%;text-align:center;height:1.2rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+#pullrefresh{margin-top:21.9rem;}
