@@ -1,10 +1,62 @@
+/*
+***前期准备
+***安装gulp :cnpm install gulp --save-dev 
+*************3.2.3、--save：将保存配置信息至package.json（package.json是nodejs项目配置文件）；
+*************3.2.4、-dev：保存至package.json的devDependencies节点，不指定-dev将保存至dependencies节点；一般保存在dependencies的像这些express/ejs/body-parser等等。
+*************3.2.5、为什么要保存至package.json？因为node插件包相对来说非常庞大，所以不加入版本管理，将配置信息写入package.json并将其加入版本管理，其他开发者对应下载即可（命令提示符执行npm install，则会根据package.json下载所有需要的包，npm install --production只下载dependencies节点的包）。**
+*****************常用的插件*********************
+****	(1)sass的编译(gulp-sass)
+****    (2)自动添加css前缀(gulp-autoprefixer)
+****    (3)压缩css(gulp-minify-css)
+****    (4)js代码校验(gulp-jshint)
+****    (5)合并js文件(gulp-concat)
+****    (6)压缩js代码(gulp-uglify)
+****    (7)压缩图片(gulp-imagemin)
+****    (8)自动刷新页面(gulp-livereload)
+****    (9)图片缓存，只有图片替换了才压缩(gulp-cache)
+****    (10)更改提醒(gulp-notify)
+****    (11)less的编译(gulp-less)
+************************************************
+可以一键安装上面所以插件，指令：
+cnpm install gulp-less gulp-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache --save-dev	
+***安装可能需要的模块
+**************gulp-concat:文件合并
+**************gulp-uglify:js压缩
+************* gulp-sass:sass编译
+************* gulp-imagemin:图片压缩--------|图片会有所损耗
+************* imagemin-pngquant:深度压缩------|图片会有所损耗
+*************npm install gulp-imagemin imagemin-pngquant --save-dev
+***
+6. 注意事项（Attention）
+
+watch 的时候路径不要用 './path'，直接使用 '/path' 即可不然会导致新增文件无法被 watch。
+gulp 对于 one after one 的任务链，需要加 return，比如 gulp clean
+*/
+
+
+
 // 1.引入基础库gulp
 var gulp = require('gulp');
-//2.引入需完成任务所需的插件，如文件合并gulp-concat
+//2.引入需完成任务所需的插件，如文件合并gulp-concat，需先安装
 var concat=require('gulp-concat');
 var uglify=require('gulp-uglify');
 
+//图片压缩require
+var imagemin=require('gulp-imagemin');//图片压缩
+var pngquant=require('imagemin-pngquant');//深度压缩
 
+//图片压缩task
+gulp.task('imagemin',function(){
+	return gulp.src('./src/img/**/*.{png,jpg,gif,svg}')//导入源文件
+			   .pipe(imagemin({
+			   	 progressive:true,//无损压缩JPG
+			   	 svgoPlugins:[{removeViewBox:false}],
+			   	 use:[pngquant()]//使用pngquant进行深度压缩
+			   }))
+			   .pipe(gulp.dest('dist/image'));//输出路径
+});
+
+//网页自动刷新（文件变动后即时刷新页面）
 var paths=['./src/js/function.js','./src/js/common.js'];
 //3.利用四个gulp API 写项目的自动化构建任务，比如合并几个JS文件
 
