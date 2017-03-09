@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/head.meta.js"></script>
+	<title>我的个人信息</title>
+	<script src="./js/head.css.js"></script>
+	<script src="./js/head.js.js"></script>
+	<style>
+	.user-info-form{  padding-top:2rem;  background: #fff;}
+	.do-save{margin:1rem 1rem;text-align: center;line-height: 4rem;font-size: 1.4rem;background-color: var(--topic-color);color:#fff;}
+	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;padding:0 1rem;}
+	.user-info-form div label{padding-right:1rem;}
+	.user-info-form div input{border:none;height:3rem;width:70%;}
+	.zhengjian span,.sex-type span{float:right;}
+	.shenfenzheng{width:100%;height:20rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
+	.shenfenzheng ul{padding:0 1rem;}
+	.shenfenzheng ul li{line-height: 3rem;border-bottom: 1px solid #eee;}
+	.shenfenzheng ul li.active{color:var(--topic-color);}
+	.sex{width:100%;height:20rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
+	.sex ul{padding:0 1rem;}
+	.sex ul li{line-height: 3rem;border-bottom: 1px solid #eee;}
+	.sex ul li.active{color:var(--topic-color);}
+	.search-result-modal{position:fixed;opacity: 0;top:0;left:0;right:0;bottom:0;z-index: 999;display: none;}
+
+</style>
+</head>
+
+<body>
+	<div class="user-info-form">
+		<div class="phone-ipt"><label for="">手机号：</label><input type="phone"></div>
+		<div class="phone-ipt"><label for="">昵称：</label><input type="text"></div>	
+		<div class="phone-ipt"><label for="">姓名：</label><input type="text"></div>
+		<div class="sex-type"><label for="">性别：</label><span>></span></div>
+		<div class="zhengjian"><label for="">证件类型：</label><span>></span></div>
+		<div class="phone-ipt"><label for="">证件号：</label><input type="text"></div>
+		<div class="phone-ipt"><label for="">邮箱：</label><input type="mail"></div>
+		<div class="phone-ipt"><label for="">收货地址：</label><input type="text"></div>
+		
+	</div>
+	<div class="do-save">保存修改</div>
+	<div class="shenfenzheng">
+		<ul>
+			<li class="active">身份证</li>
+			<li>护照</li>
+			<li>港澳通行证</li>
+			<li>台湾通行证</li>
+			<li>回乡证</li>
+			<li>台胞证</li>
+			<li>客服联系我提供</li>
+		</ul>
+	</div>
+	<div class="sex">
+		<ul>
+			<li class="active">男</li>
+			<li>女</li>
+			<li>保密</li>
+		</ul>
+	</div>
+	<div class="search-result-modal"></div>
+</body>
+<script>
+	function appStart(){
+		Endload();
+
+		$('.zhengjian').on('click',function(){
+			$('.search-result-modal').css('display','block');
+			$('.shenfenzheng').css('display','block');
+			$('.shenfenzheng').animate({bottom:'0px'});
+		});
+		$('.search-result-modal').on('click',function(){
+			$(this).css('display','none');
+			$('.shenfenzheng').css('display','none');
+			$('.shenfenzheng').animate({bottom:'-30rem'});
+			$('.sex').css('display','none');
+			$('.sex').animate({bottom:'-30rem'});
+			
+		});
+		$('.sex-type').on('click',function(){
+			$('.search-result-modal').css('display','block');
+			$('.sex').css('display','block');
+			$('.sex').animate({bottom:'0px'});
+		});
+		$('.shenfenzheng li').on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+		$('.sex li').on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+	}
+</script>
+</html>

@@ -96,3 +96,6 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 .footer-filter div span{display: block;margin-top:0.3rem;}
 .footer-filter div i.icon{display: block;}
 .search-result-modal{position:fixed;opacity: 0;top:0;left:0;right:0;bottom:0;z-index: 999;display: none;}
+
+
+

@@ -49,10 +49,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
+body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-size: 1.4rem;}
 
 /*设置主题颜色*/
 :root {
   --base-font-size: 16px;
   --topic-color: #d30775;
 }
+
+
+.footer .travel-nav{margin:0.5rem;padding:0.5rem;}
+.footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
+.footer .travel-nav ul li{flex:1;text-align: center;}
+
+.footer .copyright-info{text-align: center;}
+
+.footer .copyright-info p{padding:0.5rem 0;}

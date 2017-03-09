@@ -1,0 +1,54 @@
+body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-size: 1.4rem;}
+li{list-style: none;}
+.icon {
+	      font-size: 2.4rem!important;
+	       vertical-align: -0.15em;
+	       fill: currentColor;
+	       overflow: hidden;
+	    }
+header.header-title {
+    height: 4rem;
+    font-weight: 400;
+    background: #fafafa;
+    color: #000;
+    position: relative;
+    text-align: center;
+    line-height: 4rem;
+    position:relative;
+    font-size:2rem;
+}
+header.header-title i{position:absolute;left:1rem;color:var(--topic-color);}
+.headertitle div{display: inline-block;}
+.user-info{ 
+	width:100%;
+    background: url(../img/index_star.png) center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color:#fff;
+}
+.user-info p{padding: 9rem 0 5rem 0;}
+.user-order{    margin-top: 1rem;}
+.user-order ul{
+	display: flex;
+    line-height: 3rem;
+}
+.user-order ul li{
+	flex: 1;
+    text-align: center;
+}
+.user-config{margin-top:1rem;}
+.icon-gerenziliao,.xiugaimima{    line-height: 4rem;}
+.icon-gerenziliao,.icon-xiugaimima{margin-left: 1rem;}
+.user-config p{display: inline-block;}
+.icon-xiangyou{float: right;
+    margin-right: 1rem;}
+
+.user-wallet{margin-top:1rem;position: relative;}
+.user-wallet i{font-size: 3rem!important;position: absolute;left:1rem;top:0.5rem;}
+.mycharge{display: inline-block;}
+.mycharge{width:50%;margin-left:4rem;position:relative;}
+.mycharge>div{display: inline-block;}
+.mycharge>div>p{line-height: 2rem;}
+.mycharge>p:last-child{float:right;position: absolute;right:0;bottom:0.25rem;}
+.user-wallet i,.mycharge>p:last-child span:nth-child(2),.mycharge>p:last-child span:nth-child(3),.charge-left>p:last-child>span:nth-child(2),.charge-left>p:last-child>span:nth-child(3){color:var(--topic-color);}
