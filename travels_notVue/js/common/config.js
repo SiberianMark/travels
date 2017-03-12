@@ -12,6 +12,9 @@ var API={//后台数据API
 	INDEX_INFO:'/Home/APITravel/web_info',//首页信息
 	INDEX_PLATE:'/Home/APITravel/plate',//首页栏目
 	INDEX_LINESELECT:'/Home/APITravel/first_lineselect',//精品路线选择
+	INDEX_LINESELECT1:'/Home/APITravel/first_tag1',//精品路线选项1
+	INDEX_LINESELECT2:'/Home/APITravel/first_tag2',//精品路线选项2
+	INDEX_LINESELECT3:'/Home/APITravel/first_lineselect',//精品路线选项2
 
 	LOGIN_LOGIN:'/Home/APILogin/login',//登录
 	LOGIN_REG:'/Home/APILogin/reg',//注册
