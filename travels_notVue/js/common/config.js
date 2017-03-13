@@ -16,6 +16,8 @@ var API={//后台数据API
 	INDEX_LINESELECT2:'/Home/APITravel/first_tag2',//精品路线选项2
 	INDEX_LINESELECT3:'/Home/APITravel/first_lineselect',//精品路线选项2
 
+	AREA_HOT_PLACE:'/Home/APITravel/hot_place',//区域游热门景点
+
 	LOGIN_LOGIN:'/Home/APILogin/login',//登录
 	LOGIN_REG:'/Home/APILogin/reg',//注册
 	LOGIN_VALIDATE:'/validate.php',//图形验证码

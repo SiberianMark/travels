@@ -4,15 +4,16 @@
 	<meta charset="UTF-8">
 	<script src="./js/head.meta.js"></script>
 	<title>国内游</title>
-	<link rel="stylesheet" href="./css/aliicon.css">
+	<!-- <link rel="stylesheet" href="./css/aliicon.css"> -->
 	<link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
     <link rel="stylesheet" href="./css/areatravel.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_m30h28fudqjjor.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
 </head>
 <body>
 	<div class="index-header">
-		<div class="choose-city">
+		<!-- <div class="choose-city">
 			<span class="com-logo">logo</span>
 		</div>
 		<div class="search">
@@ -26,7 +27,7 @@
 			<svg class="icon" aria-hidden="true">
 			    <use xlink:href="#icon-my"></use>
 			</svg>
-		</div>
+		</div> -->
 	</div>
 	<div class="swiper-container swiper-container-horizontal">
         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
@@ -40,8 +41,8 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-        <section class="hot-place">
-        <div class="hot-title"><p>热门目的地</p></div>
+    <section class="hot-place">
+       <!--  <div class="hot-title"><p>热门目的地</p></div>
         <div class="hot-place-list">
             <ul>
                 <li class="bordertop">三亚</li>
@@ -59,7 +60,7 @@
                 <div class="clear"></div>
             </ul>
 
-        </div>
+        </div> -->
     </section>
     <section class="hot-selled">
     <div class="qianggou bd">
@@ -430,29 +431,81 @@
     		</ul>
     	</div>
     	<div class="copyright-info">
-    		<p>深圳市前海摩天天下电子商务有限公司</p>
+    		<!-- <p>深圳市前海摩天天下电子商务有限公司</p>
     		<p>深圳市含香伙计旅行有限公司</p>
     		<p>Copyright  @2015 恒博旅行网</p>
-    		<p>经营许可编号：粤ICP备 13456765</p>
+    		<p>经营许可编号：粤ICP备 13456765</p> -->
     	</div>
     </div>
 </body>
+<script type="text/template" id="index-head">
+   <div class="choose-city">
+           <span class="com-logo"><img src="{{=config.SERVER_URL+'/'+it.mobile_logo}}" alt=""></span>
+        </div>
+        <div class="search">
+            <i class="iconfont icon icon-search"></i>
+            <p>国内游</p>
+        </div>
+        <div class="my-center">
+            <a href="#"></a>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-my"></use>
+            </svg>
+        </div>
+</script>
+<script type="text/template" id="index-copyright">
+    <p>{{=it.company_name}}</p>
+    <p>{{=it.company_addr}}</p>
+    <p>Copyright  @2015 恒博旅行网</p>
+    <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
+    <p>{{=it.web_tel}}</p>
+</script>
+<script type="text/template" id="hot-place-list">
+    <div class="hot-title"><p>{{=it.name}}</p></div>
+        <div class="hot-place-list">
+            <ul>
+                {{~it.lists:itemlist:listindex}}
+                {{?listindex<=2}}
+                    <li class="bordertop">{{=itemlist}}</li>
+                {{??listindex==3}}
+                    <li class="fixed-border bordertop">{{=itemlist}}</li>
+                {{??listindex==7}}  
+                    <li class="fixed-border">{{=itemlist}}</li>
+                {{??listindex+1==it.lists.length}}
+                    <li class="">{{=itemlist}}</li>
+                    <li class="fixed-border">更多</li>
+                {{??}}
+                    <li>{{=itemlist}}</li>
+                {{?}}
+                    
+                {{~}}
+                <div class="clear"></div>
+            </ul>
+
+        </div>
+</script>
 <script src="//at.alicdn.com/t/font_8s76tclc1uoko6r.js"></script>
 	<script src="./js/swiper-3.4.1.jquery.min.js"></script>
 	<script>
-		
-    var swiper = new Swiper('.swiper-container',
-    	{
-            pagination: '.swiper-pagination',
-    		loop : true,
-    		autoplay : 5000,
-    		noSwiping : true,
-    		watchSlidesProgress : true,
-			watchSlidesVisibility : true,
+    var headRender=getDotRender('index-head');
+    var copyrightRender=getDotRender('index-copyright');
+    var hotplacelistRender=getDotRender('hot-place-list');
+    var type=2;//1-周边游，2-国内游，3-出境游，4-港澳游
+    function appStart(){
+        var swiper = new Swiper('.swiper-container',
+         {
+                pagination: '.swiper-pagination',
+             loop : true,
+             autoplay : 5000,
+             noSwiping : true,
+             watchSlidesProgress : true,
+                watchSlidesVisibility : true,
 
-    	});
-    window.onload=function(){
-        var fixed=0;
+         });
+        getindexdata();
+        gethotplace();
+        Endload();
+         var fixed=0;
         $('.travel-place-type ul li').on('click',function(){
             console.log("click");
             $(this).addClass('travel-place-type-active').siblings().removeClass('travel-place-type-active');
@@ -460,6 +513,48 @@
             $(".travel-place").css('display','none');
             $(".index"+index).css('display','block');
         });
+    }
+    function getindexdata(){
+        ajaxJson(API.INDEX_INFO,{},function(res){
+            if(res.status==1){
+                console.log(res);
+                $('title').html(res.data.web_title);
+                $('.index-header').append(headRender(res.data));
+                $('.copyright-info').append(copyrightRender(res.data));
+            }
+        });
+    } 
+    function gethotplace(){
+        ajaxJson(API.AREA_HOT_PLACE,{'type':type},function(res){
+            if(res.status==1){
+                console.log('hotplace:/n');
+                 console.log(res);
+                 $('.hot-place').html(hotplacelistRender(res.data[0]));
+            }else{
+                console.log(res.info);
+            }
+        })
+    }
+		
+   //  var swiper = new Swiper('.swiper-container',
+   //  	{
+   //          pagination: '.swiper-pagination',
+   //  		loop : true,
+   //  		autoplay : 5000,
+   //  		noSwiping : true,
+   //  		watchSlidesProgress : true,
+			// watchSlidesVisibility : true,
+
+   //  	});
+   //  window.onload=function(){
+   //      var fixed=0;
+   //      $('.travel-place-type ul li').on('click',function(){
+   //          console.log("click");
+   //          $(this).addClass('travel-place-type-active').siblings().removeClass('travel-place-type-active');
+   //          var index=$(this).attr('index');
+   //          $(".travel-place").css('display','none');
+   //          $(".index"+index).css('display','block');
+   //      });
         // $(window).scroll(function(){
         //     console.log($('.travel-place-type').offset().top);
         //     console.log($(window).scrollTop());
@@ -473,6 +568,6 @@
         //         fixed=0;
         //     }
         // });
-    }
+    //}
 	</script>
 </html>
