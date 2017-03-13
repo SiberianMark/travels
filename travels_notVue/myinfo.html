@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<script src="./js/head.meta.js"></script>
 	<title>我的个人信息</title>
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_hb3t4ze1x4bfn7b9.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
 	<style>
@@ -12,16 +13,25 @@
 	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;margin:0 1rem;border-bottom: 1px solid #eee;}
 	.user-info-form div label{padding-right:1rem;}
 	.user-info-form div input{border:none;height:3rem;width:70%;}
-	.zhengjian span,.sex-type span{float:right;}
 	.shenfenzheng{width:100%;height:20rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
+	.sex-type i.iconfont,.zhengjian i.iconfont{float:right;}
 	.shenfenzheng ul{padding:0 1rem;}
 	.shenfenzheng ul li{line-height: 3rem;border-bottom: 1px solid #eee;}
 	.shenfenzheng ul li.active{color:var(--topic-color);}
-	.sex{width:100%;height:20rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
+	.sex{width:100%;height:10rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
 	.sex ul{padding:0 1rem;}
 	.sex ul li{line-height: 3rem;border-bottom: 1px solid #eee;}
 	.sex ul li.active{color:var(--topic-color);}
 	.search-result-modal{position:fixed;opacity: 0;top:0;left:0;right:0;bottom:0;z-index: 999;display: none;}
+
+	.footer{position: absolute;width: 100%;bottom: 0;}
+	.footer .travel-nav{margin:0.5rem;padding:0.5rem;}
+	.footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
+	.footer .travel-nav ul li{flex:1;text-align: center;}
+
+	.footer .copyright-info{text-align: center;}
+
+	.footer .copyright-info p{padding:0.5rem 0;}
 
 </style>
 </head>
@@ -31,8 +41,8 @@
 		<div class="phone-ipt"><label for="">手机号：</label><input type="phone"></div>
 		<div class="nick-name"><label for="">昵称：</label><input type="text"></div>	
 		<div class="user-name"><label for="">姓名：</label><input type="text"> </div>
-		<div class="sex-type" sex=0><label for="">性别：</label><span></span><span>></span></div>	
-		<div class="zhengjian"><label for="">证件类型：</label><span></span><span>></span></div>
+		<div class="sex-type" sex=0><label for="">性别：</label><span></span><i class="iconfont icon icon-xiangyou"></i></div>	
+		<div class="zhengjian"><label for="">证件类型：</label><span></span><i class="iconfont icon icon-xiangyou"></i></div>
 		<div class="id_num"><label for="">证件号：</label><input type="text"> </div>
 		<div class="user-email"><label for="">邮箱：</label><input type="mail"> </div>
 		<div class="user-addr"><label for="">收货地址：</label><input type="text"></div>		
@@ -40,22 +50,33 @@
 	<div class="do-save">保存修改</div>
 	<div class="shenfenzheng">
 		<ul>
-			<li class="active">身份证</li>
-			<li>护照</li>
-			<li>港澳通行证</li>
-			<li>台湾通行证</li>
-			<li>回乡证</li>
-			<li>台胞证</li>
-			<li>客服联系我提供</li>
+			<li class="active" id_type="1">身份证</li>			
+			<li id_type="2">港澳通行证</li>			
+			<li id_type="3">台胞证</li>
+			<li id_type="4">护照</li>
 		</ul>
 	</div>
 	<div class="sex">
 		<ul>
-			<li class="active">男</li>
-			<li>女</li>
-			<li>保密</li>
+			<li class="active" sex="1">男</li>
+			<li sex="2">女</li>
+			<li sex="0">保密</li>
 		</ul>
 	</div>
+	 <div class="footer">
+    	<div class="travel-nav">
+    		<ul>
+    			<li>客服</li>
+    			<li>登录</li>
+    			<li>注册</li>
+    			<li>电脑版</li>
+    			<li>回到首页</li>
+    		</ul>
+    	</div>
+    	<div class="copyright-info">
+    		
+    	</div>
+    </div>  
 	<div class="search-result-modal"></div>
 </body>
 <script type="text/template" id="user-my-info">
@@ -63,30 +84,44 @@
 		<div class="nick-name"><label for="">昵称：</label><input type="text" value="{{=it.data.nickname}}"></div>	
 		<div class="user-name"><label for="">姓名：</label><input type="text" value="{{=it.data.username}}"> </div>
 		{{?it.data.sex==0}}
-		<div class="sex-type" sex={{=it.data.sex}} ><label for="">性别：</label><span>保密</span><span>></span></div>
+		<div class="sex-type" sex={{=it.data.sex}} ><label for="">性别：</label><span>保密</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??it.data.sex==1}}
-		<div class="sex-type" sex={{=it.data.sex}}><label for="">性别：</label><span>男</span><span>></span></div>
+		<div class="sex-type" sex={{=it.data.sex}}><label for="">性别：</label><span>男</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??}}
-		<div class="sex-type" sex={{=it.data.sex}}><label for="">性别：</label><span>女</span><span>></span></div>
+		<div class="sex-type" sex={{=it.data.sex}}><label for="">性别：</label><span>女</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{?}}
 		{{?it.data.id_type==1}}
-		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>居民身份证</span><span>></span></div>
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>居民身份证</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??it.data.id_type==2}}
-		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>港澳通行证</span><span>></span></div>
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>港澳通行证</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??it.data.id_type==3}}
-		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>台胞证</span><span>></span></div>
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>台胞证</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??it.data.id_type==4}}
-		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>护照</span><span>></span></div>
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>护照</span><i class="iconfont icon icon-xiangyou"></i></div>
+		{{?}}
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span></span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{?}}
 		
 		<div class="id_num"><label for="">证件号：</label><input type="text" value="{{=it.data.id_num}}"> </div>
 		<div class="user-email"><label for="">邮箱：</label><input type="mail" value="{{=it.data.email}}"> </div>
 		<div class="user-addr"><label for="">收货地址：</label><input type="text" value="{{=it.data.addr}}"> </div>
 	</script>
+
+	<script type="text/template" id="index-copyright">
+	    <p>{{=it.company_name}}</p>
+	    <p>{{=it.company_addr}}</p>
+	    <p>Copyright  @2015 恒博旅行网</p>
+	    <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
+	    <p>{{=it.web_tel}}</p>
+	</script>
 <script>
 	var myInfoRender=getDotRender('user-my-info');
+	var copyrightRender=getDotRender('index-copyright');
+	var sex="0";//性别默认保密
+	var id_type="1"//默认居民身份证
 	function appStart(){
 		getData();
+		getindexdata();
 		Endload();
 
 		$('.zhengjian').on('click',function(){
@@ -109,30 +144,37 @@
 		});
 		$('.shenfenzheng li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			id_type=$(this).attr('id_type');
 		});
 		$('.sex li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			sex=$(this).attr('sex');
 		});
-		$('.do-save'){
+		$('.do-save').on('click',function(){
 			var obj=M();
 			obj.userid=getUserid();
 			obj.type=1;
 			obj.username=$('.user-name input').val();
-			obj.sex=$('.sex-type').attr('sex');
+			obj.sex=sex;
 			obj.nickname=$('.nick-name input').val();
 			obj.addr=$('.user-addr input').val();
 			obj.email=$('.user-email input').val();
-			obj.id_type=$('.zhengjian').attr('id_type');
+			obj.id_type=id_type;
 			obj.id_num=$('.id_num input').val();
-			ajaxJson(API.MY_INFO,obj,function(data){
-			if(data.status==1){
-				if(data.data!=undefined || data.data!=null || data.data!=''){
-					$('.user-info-form').html(myInfoRender(data));
-				}
-				
-			}
+			if(checkInput(obj)==true){
+				ajaxJson(API.MY_INFO,obj,function(data){
+					if(data.status==1){
+						if(data.data!=undefined || data.data!=null || data.data!=''){
+							$('.user-info-form').html(myInfoRender(data));
+						}
+						
+					}
+				});
+			};		
 		});
-		}
+	}
+	function checkInput(obj){
+
 	}
 	function getData(){
 		ajaxJson(API.MY_INFO,{'type':0,user_id:getUserid()},function(data){
@@ -144,6 +186,16 @@
 			}
 		});
 	}
+
+	//获取脚部信息
+    function getindexdata(){
+	    ajaxJson(API.INDEX_INFO,{},function(res){
+	        if(res.status==1){
+	            console.log(res);
+	            $('.copyright-info').append(copyrightRender(res.data));
+	        }
+	    });
+    } 
 	
 </script>
 </html>

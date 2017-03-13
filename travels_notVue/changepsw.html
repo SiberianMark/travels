@@ -13,6 +13,15 @@
 	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;padding:0 1rem;}
 	.user-info-form div label{padding-right:1rem;}
 	.user-info-form div input{border:none;height:3rem;width:70%;}
+
+	.footer{position: absolute;width: 100%;bottom: 0;}
+	.footer .travel-nav{margin:0.5rem;padding:0.5rem;}
+	.footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
+	.footer .travel-nav ul li{flex:1;text-align: center;}
+
+	.footer .copyright-info{text-align: center;}
+
+	.footer .copyright-info p{padding:0.5rem 0;}
 </style>
 <body>
 	<div class="user-info-form">	
@@ -22,26 +31,76 @@
 		
 	</div>
 	<div class="do-save">保存修改</div>
+
+	<div class="footer">
+    	<div class="travel-nav">
+    		<ul>
+    			<li>客服</li>
+    			<li>登录</li>
+    			<li>注册</li>
+    			<li>电脑版</li>
+    			<li>回到首页</li>
+    		</ul>
+    	</div>
+    	<div class="copyright-info">
+    		
+    	</div>
+    </div> 
 </body>
+
+	<script type="text/template" id="index-copyright">
+	    <p>{{=it.company_name}}</p>
+	    <p>{{=it.company_addr}}</p>
+	    <p>Copyright  @2015 恒博旅行网</p>
+	    <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
+	    <p>{{=it.web_tel}}</p>
+	</script>
 <script>
+
+	var copyrightRender=getDotRender('index-copyright');
 	function appStart(){
+		getindexdata();
 		Endload();
-		$('.do-save'){
+		$('.do-save').on('click',function(){
 			var obj=M();
 			obj.userid=getUserid();
 			obj.passwd_old=$('.old-psw input').val();;
 			obj.passwd_new1=$('.new-psw input').val();
-			obj.passwd_new1=$('.comfirm-psw input').val();
-			
-			ajaxJson(API.MY_INFO,obj,function(data){
-			if(data.status==1){
-				if(data.data!=undefined || data.data!=null || data.data!=''){
-					$('.user-info-form').html(myInfoRender(data));
+			obj.passwd_new2=$('.comfirm-psw input').val();
+			if(checkInput(obj)==true){
+				ajaxJson(API.CHANGEPSW,obj,function(data){
+				if(data.status==1){
+					var obj={};
+					tipsLayer(data.info);
+					PageGoto('mycenter',obj)
 				}
-				
+			});
 			}
+			
 		});
 	}
+	function checkInput(obj){
+		if(typeof obj != "object") return;
+		if( obj.passwd_old =='' ||obj.passwd_new1 =='' || obj.passwd_new2 ==''){
+			tipsLayer('请输入全部信息！');
+			return false;
+		}
+		if(obj.passwd_new1 != obj.passwd_new2){
+			tipsLayer('两次密码输入不一致，请重新输入!');
+			return false;
+		}
+		return true;
+	}
+
+	//获取脚部信息
+    function getindexdata(){
+	    ajaxJson(API.INDEX_INFO,{},function(res){
+	        if(res.status==1){
+	            console.log(res);
+	            $('.copyright-info').append(copyrightRender(res.data));
+	        }
+	    });
+    } 
 
 </script>
 </html>

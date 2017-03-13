@@ -9,7 +9,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 }  
 
 .icon {
-	       width: 1em; height: 1em;
+	       width: 2em; height: 2em;
 	       vertical-align: -0.15em;
 	       fill: currentColor;
 	       overflow: hidden;
@@ -20,6 +20,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 .index-header>div.choose-city{width:15%;text-align: center;}
 .index-header>div.search{width:72%;text-align: center;}
 .index-header>div.search p{width: 100%;height:3rem;border-radius: 4px;line-height: 3rem;font-size: 1.4rem;}
+.com-logo img{ width:100%; }
 .index-header>div.my-center{float:right;width:9%;}
 .my-center .icon{width:1.5rem;height:1.5rem;vertical-align: -0.4em;}
 .swiper-container{margin-top:1rem;}
@@ -35,11 +36,10 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 .travel-place-type{padding:0.5rem;height:4.4rem;background: #fff;margin-top: 0.5rem;overflow:hidden;z-index:999;}
 .travel-place-type .tabs{    height: 7rem;overflow-y: hidden;overflow-x: scroll;white-space: nowrap;}
 .travel-place-type ul li{display: inline-block;width:25%;height:100%;text-align: center;line-height: 4.4rem;font-size:1.4rem;}
-.travel-place-type-active{border-bottom:2px solid #d30775;}
-.travel-place-type-activefont{color:#d30775!important;}
+.travel-place-type ul li.active{border-bottom:2px solid #d30775;color:#d30775!important;}
 .travel-place{padding-left: 0.5rem;background-color: #fff;}
 .travel-place ul li{float:left;width:25%;height:4.4rem;text-align: center;line-height: 4.4rem;font-size:1rem;border-bottom:1px solid #eee;border-right:1px solid #eee;margin-right:-3px;}
-.travel-place ul li i{display: inline-block;width:3.5rem;padding:0.2rem 0;}
+.travel-place ul li i{display: inline-block;width:5rem;padding:0.2rem 0;}
 .first-important{border-radius: 25px;background: #d30775;color:#fff!important;padding:0.5rem;}
 .border-none{border-right:1px solid #fff!important;}
 .clear{clear:both;}
@@ -52,7 +52,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 .scrollFixedTop{position:fixed;top:0;}
 .scrollFixedTopfix{margin-top: 4.4rem}
 .search{position:relative;}
-.search .icon{position: absolute;left:0.5rem;top:0.75rem;width:1.5rem;height:1.5rem;}
+.search .icon{position: absolute;left:0.5rem;}
 .travel-menu{padding:0.5rem 0 0.5rem 0.5rem;background: #fff;margin-top:1rem;}
 
 .travel-menu ul{display: -webkit-box; -webkit-box-orient:horizontal;display: flex;}

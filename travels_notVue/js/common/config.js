@@ -12,6 +12,14 @@ var API={//后台数据API
 	INDEX_INFO:'/Home/APITravel/web_info',//首页信息
 	INDEX_PLATE:'/Home/APITravel/plate',//首页栏目
 	INDEX_LINESELECT:'/Home/APITravel/first_lineselect',//精品路线选择
+	INDEX_LINESELECT1:'/Home/APITravel/first_tag1',//精品路线选择一级菜单
+	INDEX_LINESELECT2:'/Home/APITravel/first_tag2',//精品路线选择二级菜单
+	INDEX_LINESELECT3:'/Home/APITravel/first_lineselect',//精品路线选择二级菜单
+
+	AREA_LINESELECT1:'/Home/APITravel/plate_tag1',//板块路线选择一级菜单
+	AREA_LINESELECT2:'/Home/APITravel/first_tag2',//板块路线选择一级菜单
+	AREA_LINESELECT3:'/Home/APITravel/plate_lines',//板块路线选择一级菜单
+
 
 	LOGIN_LOGIN:'/Home/APILogin/login',//登录
 	LOGIN_REG:'/Home/APILogin/reg',//注册
@@ -19,15 +27,16 @@ var API={//后台数据API
 	LOGIN_PHONEVAL:'/Home/APILogin/sendCode',//手机验证码
 	LOGIN_FINDPSW:'/Home/APILogin/findPasswd',//找回密码
 	SEARCH_HOT_PLACE:'/Home/APITravel/hot_search',//搜索热门目的地
+	AREA_HOT_PLACE:'/Home/APITravel/hot_place',//板块热门目的地
 
 	MY_CENTER:'/Home/APILogin/member_center',
 	MY_INFO:'/Home/APILogin/personal_info',
-	CHANGEINFO:'',
+	CHANGEPSW:'/Home/APILogin/changePasswd',
 }
 var PAGE={//页面路由
 	index:'./index.html',//首页
 	login:'./login.html',//登录页面
-	regist            :'./register.html',//注册页面
+	regist:'./register.html',//注册页面
 	forgetPSW:'./find-psw.html',//忘记密码
 	mycenter:'./mycenter.html',//我的个人中心
 	searchresult:'./search-result.html',//查找结果

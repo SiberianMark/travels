@@ -45,7 +45,7 @@
 				<li>
 					<i class="iconfont icon icon-weichuxing"></i>
 					<p>待出行</p>
-					<i class="order-num">{{it.data.not_travel}}</i>
+					<i class="order-num">{{=it.data.not_travel}}</i>
 				</li>
 			</ul>
 		</section>
@@ -101,6 +101,7 @@
 	var userinfoRender=getDotRender('main-info');
 	function appStart(){
 		getData();
+		getindexdata();
 		Endload();
 		$('.gerenziliao').on('click',function(){
 			PageGoto('myinfo');
@@ -116,5 +117,14 @@
 			}
 		});
 	}
+	//获取脚部信息
+    function getindexdata(){
+    ajaxJson(API.INDEX_INFO,{},function(res){
+        if(res.status==1){
+            console.log(res);
+            $('.copyright-info').append(copyrightRender(res.data));
+        }
+    });
+    } 
 </script>
 </html>

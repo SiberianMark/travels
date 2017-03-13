@@ -73,7 +73,7 @@
 
        <ul>
             {{~it.part1:item:index}}
-            <li><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></li>
+            <li><a href="./areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
             {{~}}  
         </ul>
 </script>
@@ -334,6 +334,7 @@
            // getLineSelect3($(this).attr(type_id),$($(this).attr(box_id)),1);
 
         }); 
+        //跳转个人中心
         $('.index-header').on('click','.my-center',function(){
             var param={};
             param.fromPage='index';
@@ -343,9 +344,16 @@
                 PageGoto('login',param);
             }
         });
+        //跳转搜索页面
         $('.index-header').on('click','.search',function(){
             PageGoto('search',{});
-        })
+        });
+        //搜索分块点击事件
+        $('.travel-type').on('click','ul li',function(){
+            var obj=new Object();
+            obj.word=$(this).find('span').html();
+            PageGoto('search',obj);
+        });
     }   
     function getswiperdata(){
         ajaxJson(API.INDEX_SWIPER,{},function(data){
