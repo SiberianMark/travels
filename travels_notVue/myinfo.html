@@ -38,14 +38,14 @@
 
 <body>
 	<div class="user-info-form">
-		<div class="phone-ipt"><label for="">手机号：</label><input type="phone"></div>
-		<div class="nick-name"><label for="">昵称：</label><input type="text"></div>	
-		<div class="user-name"><label for="">姓名：</label><input type="text"> </div>
+		<div class="phone-ipt"><label for="">手机号：</label><input placeholder="请输入手机号码" type="phone"></div>
+		<div class="nick-name"><label for="">昵称：</label><input placeholder="请输入昵称" type="text"></div>	
+		<div class="user-name"><label for="">姓名：</label><input placeholder="请输入姓名" type="text"> </div>
 		<div class="sex-type" sex=0><label for="">性别：</label><span></span><i class="iconfont icon icon-xiangyou"></i></div>	
 		<div class="zhengjian"><label for="">证件类型：</label><span></span><i class="iconfont icon icon-xiangyou"></i></div>
-		<div class="id_num"><label for="">证件号：</label><input type="text"> </div>
-		<div class="user-email"><label for="">邮箱：</label><input type="mail"> </div>
-		<div class="user-addr"><label for="">收货地址：</label><input type="text"></div>		
+		<div class="id_num"><label for="">证件号：</label><input placeholder="请输入证件号" type="text"> </div>
+		<div class="user-email"><label for="">邮箱：</label><input placeholder="请输入邮箱" type="mail"> </div>
+		<div class="user-addr"><label for="">收货地址：</label><input placeholder="请输入收货地址" type="text"></div>		
 	</div>
 	<div class="do-save">保存修改</div>
 	<div class="shenfenzheng">
@@ -79,10 +79,10 @@
     </div>  
 	<div class="search-result-modal"></div>
 </body>
-<script type="text/template" id="user-my-info">
-		<div class="phone-ipt"  userid="{{=it.data.id}}"><label for="">手机号：</label><input type="phone" value="{{=it.data.email}}"></div>
-		<div class="nick-name"><label for="">昵称：</label><input type="text" value="{{=it.data.nickname}}"></div>	
-		<div class="user-name"><label for="">姓名：</label><input type="text" value="{{=it.data.username}}"> </div>
+	<script type="text/template" id="user-my-info">
+		<div class="phone-ipt"  userid="{{=it.data.id}}"><label for="">手机号：</label><input placeholder="请输入手机号码" type="phone" value="{{=it.data.email}}"></div>
+		<div class="nick-name"><label for="">昵称：</label><input placeholder="请输入昵称" type="text" value="{{=it.data.nickname}}"></div>	
+		<div class="user-name"><label for="">姓名：</label><input placeholder="请输入姓名" type="text" value="{{=it.data.username}}"> </div>
 		{{?it.data.sex==0}}
 		<div class="sex-type" sex={{=it.data.sex}} ><label for="">性别：</label><span>保密</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??it.data.sex==1}}
@@ -98,13 +98,13 @@
 		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>台胞证</span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{??it.data.id_type==4}}
 		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>护照</span><i class="iconfont icon icon-xiangyou"></i></div>
-		{{?}}
+		{{??}}
 		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span></span><i class="iconfont icon icon-xiangyou"></i></div>
 		{{?}}
 		
-		<div class="id_num"><label for="">证件号：</label><input type="text" value="{{=it.data.id_num}}"> </div>
-		<div class="user-email"><label for="">邮箱：</label><input type="mail" value="{{=it.data.email}}"> </div>
-		<div class="user-addr"><label for="">收货地址：</label><input type="text" value="{{=it.data.addr}}"> </div>
+		<div class="id_num"><label for="">证件号：</label><input placeholder="请输入证件号" type="text" value="{{=it.data.id_num}}"> </div>
+		<div class="user-email"><label for="">邮箱：</label><input placeholder="请输入邮箱" type="mail" value="{{=it.data.email}}"> </div>
+		<div class="user-addr"><label for="">收货地址：</label><input placeholder="请输入收货地址" type="text" value="{{=it.data.addr}}"> </div>
 	</script>
 
 	<script type="text/template" id="index-copyright">
@@ -124,7 +124,7 @@
 		getindexdata();
 		Endload();
 
-		$('.zhengjian').on('click',function(){
+		$('.user-info-form').on('click','.zhengjian',function(){
 			$('.search-result-modal').css('display','block');
 			$('.shenfenzheng').css('display','block');
 			$('.shenfenzheng').animate({bottom:'0px'});
@@ -137,7 +137,7 @@
 			$('.sex').animate({bottom:'-30rem'});
 			
 		});
-		$('.sex-type').on('click',function(){
+		$('.user-info-form').on('click','.sex-type',function(){
 			$('.search-result-modal').css('display','block');
 			$('.sex').css('display','block');
 			$('.sex').animate({bottom:'0px'});
@@ -145,10 +145,13 @@
 		$('.shenfenzheng li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
 			id_type=$(this).attr('id_type');
+			$('.zhengjian').find('span').html($(this).text())
+
 		});
 		$('.sex li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
 			sex=$(this).attr('sex');
+			$('.sex-type').find('span').html($(this).text());
 		});
 		$('.do-save').on('click',function(){
 			var obj=M();
@@ -174,7 +177,14 @@
 		});
 	}
 	function checkInput(obj){
-
+		if(typeof obj != "object") return;
+		if( obj.passwd_old =='' ||obj.passwd_new1 =='' || obj.passwd_new2 ==''){
+			tipsLayer('请输入全部信息！');
+			return false;
+		};
+		var phoneFilter=/^1\d{10}/;    
+	    if(!phoneFilter.test(params.phone)) return "请输入正确格式的手机号"; 
+	    return true;
 	}
 	function getData(){
 		ajaxJson(API.MY_INFO,{'type':0,user_id:getUserid()},function(data){

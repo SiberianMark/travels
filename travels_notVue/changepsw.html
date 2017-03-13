@@ -26,7 +26,7 @@
 <body>
 	<div class="user-info-form">	
 		<div class="old-psw"><label for="">原密码：</label><input type="password" placeholder="请输入原密码"></div>
-		<div class="new-psw"><label for="">新密码：</label><input type="password" placeholder="请输入新密码"></div>
+		<div class="new-psw"><label for="">新密码：</label><input type="password" placeholder="请输入新密码6位到14位"></div>
 		<div class="comfirm-psw"><label for="">确认密码：</label><input type="password" placeholder="请输入确认密码"></div>
 		
 	</div>
@@ -59,7 +59,7 @@
 
 	var copyrightRender=getDotRender('index-copyright');
 	function appStart(){
-		getindexdata();
+		getindexdata();	
 		Endload();
 		$('.do-save').on('click',function(){
 			var obj=M();
@@ -89,6 +89,7 @@
 			tipsLayer('两次密码输入不一致，请重新输入!');
 			return false;
 		}
+		if(params.passwd!=undefined && (params.passwd.length<4 || params.passwd.length>16)) return "密码位数不合适,请重新输入";
 		return true;
 	}
 
