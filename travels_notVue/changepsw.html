@@ -8,7 +8,7 @@
 	<script src="./js/head.js.js"></script>
 </head>
 <style>
-	.user-info-form{  padding-top:2rem;  background: #fff;}
+	.user-info-form{padding-top:2rem;background: #fff;}
 	.do-save{margin:1rem 1rem;text-align: center;line-height: 4rem;font-size: 1.4rem;background-color: var(--topic-color);color:#fff;}
 	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;padding:0 1rem;}
 	.user-info-form div label{padding-right:1rem;}
@@ -16,9 +16,9 @@
 </style>
 <body>
 	<div class="user-info-form">	
-		<div class="old-psw"><label for="">原密码：</label><input type="text" placeholder="请输入原密码"></div>
-		<div class="new-psw"><label for="">新密码：</label><input type="text" placeholder="请输入新密码"></div>
-		<div class="comfirm-psw"><label for="">确认密码：</label><input type="text" placeholder="请输入确认密码"></div>
+		<div class="old-psw"><label for="">原密码：</label><input type="password" placeholder="请输入原密码"></div>
+		<div class="new-psw"><label for="">新密码：</label><input type="password" placeholder="请输入新密码"></div>
+		<div class="comfirm-psw"><label for="">确认密码：</label><input type="password" placeholder="请输入确认密码"></div>
 		
 	</div>
 	<div class="do-save">保存修改</div>
@@ -26,6 +26,22 @@
 <script>
 	function appStart(){
 		Endload();
+		$('.do-save'){
+			var obj=M();
+			obj.userid=getUserid();
+			obj.passwd_old=$('.old-psw input').val();;
+			obj.passwd_new1=$('.new-psw input').val();
+			obj.passwd_new1=$('.comfirm-psw input').val();
+			
+			ajaxJson(API.MY_INFO,obj,function(data){
+			if(data.status==1){
+				if(data.data!=undefined || data.data!=null || data.data!=''){
+					$('.user-info-form').html(myInfoRender(data));
+				}
+				
+			}
+		});
 	}
+
 </script>
 </html>

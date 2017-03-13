@@ -1,0 +1,64 @@
+body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-size: 1.4rem;}
+li{list-style: none;}
+.icon {
+	      font-size: 1.4rem!important;
+	       vertical-align: -0.15em;
+	       fill: currentColor;
+	       overflow: hidden;
+	    }
+header.header-title {
+    height: 4rem;
+    font-weight: 400;
+    background: #fafafa;
+    color: #000;
+    position: relative;
+    text-align: center;
+    line-height: 4rem;
+    position:relative;
+    font-size:2rem;
+    background-color: var(--topic-color);
+    color:#fff;
+}
+header.header-title>div{    display: inline-block;}
+header.header-title i:first-child{position:absolute;left:1rem;}
+header.header-title i:last-child{position:absolute;right:1rem;}
+.headertitle div{display: inline-block;}
+.swiper-container img{width:100%;}
+.good-info-head{background-color: #fff;padding:0 1rem;font-size:1.2rem;}
+.good-info-head .good-title{padding:1.5rem 0rem;font-weight: bold;font-size: 1.6rem;}
+.good-info-head .good-price{line-height: 3rem;color:var(--topic-color);}
+.good-info-head .good-price i{padding-right:1rem;}
+.good-info-head .good-price .price-count{font-size:2rem;}
+
+.good-liscece{padding:0 1rem;margin-top:0.5rem;background-color: #fff;}
+.good-liscece .liscence-title ul li{display: inline-block; padding:0 0.5rem;line-height: 4rem;}
+.good-liscece .liscence-title ul li .icon{  padding-right:0.5rem;  vertical-align: bottom;color:var(--topic-color)}
+.good-liscece .liscence-desc{font-size:1.2rem;padding-bottom:1rem;color:var(--topic-color);}
+.travel-depart-info{margin-top:1rem;}
+.travel-depart-info .depart-place{padding-left:1rem;line-height: 4rem;background-color: #fff;width:50%;}
+.depart-time{background:#fff;position: relative;}
+.depart-time .depart-time-title{padding-left:1rem;}
+.depart-time .depart-time-title small{font-size:1.2rem;color:#666;margin-left:1rem;line-height: 3rem;}
+.depart-time .depart-time-list{margin-top:0.5rem;padding-bottom:1rem;}
+.depart-time .depart-time-list ul{width:95%;}
+.depart-time .depart-time-list .jiantou{position:absolute;right:1rem;bottom:2.8rem;}
+.depart-time .depart-time-list .jiantou .icon{font-size: 2.4rem!important;}
+.depart-time .depart-time-list ul li{display: inline-block;text-align: center;width:23%;height:4rem;border:1px solid #eee;font-size:1.2rem;}
+.depart-time .depart-time-list ul li p:first-child{margin-top:1rem;line-height:1.4rem;}
+.depart-time .depart-time-list ul li p:last-child{color:var(--topic-color);}
+
+.good-desc{margin-top:0.5rem;background-color: #fff;}
+.good-desc-title ul{display: flex;line-height: 4rem;font-size: 1.4rem;border-bottom: 1px solid #eee;}
+.good-desc-title ul li{flex:1;text-align: center;}
+.good-desc-title ul li.active{color:var(--topic-color);border-bottom: 2px solid var(--topic-color);}
+
+.good-desc-detail{margin:1rem 1rem 0 1rem;}
+.good-desc-detail .xingcheng .date-rank>.icon{vertical-align: bottom; color:var(--topic-color);}
+.good-desc-detail .xingcheng .date-rank>div{display: inline-block;font-weight: bold;}
+.good-desc-detail .xingcheng .eat-and-house{margin-left:1.5rem;}
+.good-desc-detail .xingcheng .eat-and-house .eatfoot{margin-top:0.5rem;}
+.good-desc-detail .xingcheng .eat-and-house i{color:var(--topic-color);vertical-align: bottom;}
+.bre-lun-dir{line-height: 2rem;display: inline-block;vertical-align: text-top;}
+.zhusu{line-height: 3rem;}
+.xingcheng span{font-size:1.4rem;}
+.xingcheng-more-detail{display: none;}

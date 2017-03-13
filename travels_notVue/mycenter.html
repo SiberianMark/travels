@@ -8,46 +8,59 @@
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_hb3t4ze1x4bfn7b9.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
+	<style>	
+		.user-order li{position:relative;}
+		.order-num{line-height:2rem;position: absolute;right:2rem;top:0;border-radius: 50%;display: block;width:2rem;height:2rem;background-color: var(--topic-color);color:#fff;}
+	}
+	</style>
 </head>
 <body>
-	<header class="header-title">
-		<i class="iconfont icon icon-home"></i>
-		<div class="title">我的个人中心</div>
-	</header>
-	<section class="user-info"> 
-		<i class="user-icon iconfont icon icon-"></i>
-		<p class="phone">18876567655</p>
-	</section>
-	<section class="user-order">
-		<ul>
-			<li>
-				<i class="iconfont icon icon-quanbudingdan"></i>
-				<p>全部订单</p>
-			</li>
-			<li>
-				<i class="iconfont icon icon-daishenhe"></i>
-				<p>待审核</p>
-			</li>
-			<li>
-				<i class="iconfont icon icon-daizhifu"></i>
-				<p>待支付</p>
-			</li>
-			<li>
-				<i class="iconfont icon icon-weichuxing"></i>
-				<p>待出行</p>
-			</li>
-		</ul>
-	</section>
-	<section class="user-wallet">
-		<i class="iconfont icon icon-shangchengxitongtubiaozitihuayuanwenjian60"></i>
-		<div class="mycharge">
-		<div class="charge-left">
-			<p>我的零钱</p>
-			<p><span>现金</span><span>￥</span><span>10.5</span></p>
-		</div>
-		<p><span>返现</span><span>￥</span><span>10.5</span></p>
-		</div>
-	</section>
+	<div id="content">	</div>
+	<script type="text/template" id="main-info">	
+		<header class="header-title">
+			<i class="iconfont icon icon-home"></i>
+			<div class="title">我的个人中心</div>
+		</header>
+		<section class="user-info"> 
+			<i class="user-icon iconfont icon icon-"></i>
+			<p class="phone">{{=it.data.mobile}}</p>
+		</section>
+		<section class="user-order">
+			<ul>
+				<li>
+					<i class="iconfont icon icon-quanbudingdan"></i>
+					<p>全部订单</p>
+					<i class="order-num">{{=it.data.total}}</i>
+				</li>
+				<li>
+					<i class="iconfont icon icon-daishenhe"></i>
+					<p>待审核</p>
+					<i class="order-num">{{=it.data.not_confirm}}</i>
+				</li>
+				<li>
+					<i class="iconfont icon icon-daizhifu"></i>
+					<p>待支付</p>
+					<i class="order-num">{{=it.data.not_pay}}</i>
+				</li>
+				<li>
+					<i class="iconfont icon icon-weichuxing"></i>
+					<p>待出行</p>
+					<i class="order-num">{{it.data.not_travel}}</i>
+				</li>
+			</ul>
+		</section>
+		<section class="user-wallet">
+			<i class="iconfont icon icon-shangchengxitongtubiaozitihuayuanwenjian60"></i>
+			<div class="mycharge">
+			<div class="charge-left">
+				<p>我的零钱</p>
+				<p><span>现金</span><span>￥</span><span>{{=it.data.cash}}</span></p>
+			</div>
+			<p><span>返现</span><span>￥</span><span>{{=it.data.back_cash}}</span></p>
+			</div>
+		</section>
+	</script>
+	
 	<section class="user-config">
 	<div class="gerenziliao">
 		<i class="iconfont icon icon-gerenziliao"></i>
@@ -85,8 +98,23 @@
 </script>
 <script>
 	var copyrightRender=getDotRender('index-copyright');
+	var userinfoRender=getDotRender('main-info');
 	function appStart(){
+		getData();
 		Endload();
+		$('.gerenziliao').on('click',function(){
+			PageGoto('myinfo');
+		});
+		$('.xiugaimima').on('click',function(){
+			PageGoto('changepsw');
+		});
+	}
+	function getData(){
+		ajaxJson(API.MY_CENTER,{'id':getUserid()},function(data){
+			if(data.status==1){
+				$('#content').html(userinfoRender(data));
+			}
+		});
 	}
 </script>
 </html>

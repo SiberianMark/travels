@@ -252,8 +252,24 @@ function isLogin(){
     var result= false;
     if($.cookie('travelsUserId')){
         result= true; 
+    }else{
+       // PageGoto('login');
     };
     return result;
+}
+
+/**
+ * 获取userid
+ */
+function getUserid() {
+    var userid = I('travelsUserId', '');
+    if (userid == '') {
+        userid = $.cookie('travelsUserId');
+    }
+    if (typeof(userid) == "undefined" || userid == 0) {
+        userid = 0;
+    }
+    return userid;
 }
 
 /**

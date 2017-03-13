@@ -9,7 +9,7 @@
 	<style>
 	.user-info-form{  padding-top:2rem;  background: #fff;}
 	.do-save{margin:1rem 1rem;text-align: center;line-height: 4rem;font-size: 1.4rem;background-color: var(--topic-color);color:#fff;}
-	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;padding:0 1rem;}
+	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;margin:0 1rem;border-bottom: 1px solid #eee;}
 	.user-info-form div label{padding-right:1rem;}
 	.user-info-form div input{border:none;height:3rem;width:70%;}
 	.zhengjian span,.sex-type span{float:right;}
@@ -29,14 +29,13 @@
 <body>
 	<div class="user-info-form">
 		<div class="phone-ipt"><label for="">手机号：</label><input type="phone"></div>
-		<div class="phone-ipt"><label for="">昵称：</label><input type="text"></div>	
-		<div class="phone-ipt"><label for="">姓名：</label><input type="text"></div>
-		<div class="sex-type"><label for="">性别：</label><span>></span></div>
-		<div class="zhengjian"><label for="">证件类型：</label><span>></span></div>
-		<div class="phone-ipt"><label for="">证件号：</label><input type="text"></div>
-		<div class="phone-ipt"><label for="">邮箱：</label><input type="mail"></div>
-		<div class="phone-ipt"><label for="">收货地址：</label><input type="text"></div>
-		
+		<div class="nick-name"><label for="">昵称：</label><input type="text"></div>	
+		<div class="user-name"><label for="">姓名：</label><input type="text"> </div>
+		<div class="sex-type" sex=0><label for="">性别：</label><span></span><span>></span></div>	
+		<div class="zhengjian"><label for="">证件类型：</label><span></span><span>></span></div>
+		<div class="id_num"><label for="">证件号：</label><input type="text"> </div>
+		<div class="user-email"><label for="">邮箱：</label><input type="mail"> </div>
+		<div class="user-addr"><label for="">收货地址：</label><input type="text"></div>		
 	</div>
 	<div class="do-save">保存修改</div>
 	<div class="shenfenzheng">
@@ -59,8 +58,35 @@
 	</div>
 	<div class="search-result-modal"></div>
 </body>
+<script type="text/template" id="user-my-info">
+		<div class="phone-ipt"  userid="{{=it.data.id}}"><label for="">手机号：</label><input type="phone" value="{{=it.data.email}}"></div>
+		<div class="nick-name"><label for="">昵称：</label><input type="text" value="{{=it.data.nickname}}"></div>	
+		<div class="user-name"><label for="">姓名：</label><input type="text" value="{{=it.data.username}}"> </div>
+		{{?it.data.sex==0}}
+		<div class="sex-type" sex={{=it.data.sex}} ><label for="">性别：</label><span>保密</span><span>></span></div>
+		{{??it.data.sex==1}}
+		<div class="sex-type" sex={{=it.data.sex}}><label for="">性别：</label><span>男</span><span>></span></div>
+		{{??}}
+		<div class="sex-type" sex={{=it.data.sex}}><label for="">性别：</label><span>女</span><span>></span></div>
+		{{?}}
+		{{?it.data.id_type==1}}
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>居民身份证</span><span>></span></div>
+		{{??it.data.id_type==2}}
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>港澳通行证</span><span>></span></div>
+		{{??it.data.id_type==3}}
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>台胞证</span><span>></span></div>
+		{{??it.data.id_type==4}}
+		<div class="zhengjian" id_type={{=it.data.id_type}}><label for="">证件类型：</label><span>护照</span><span>></span></div>
+		{{?}}
+		
+		<div class="id_num"><label for="">证件号：</label><input type="text" value="{{=it.data.id_num}}"> </div>
+		<div class="user-email"><label for="">邮箱：</label><input type="mail" value="{{=it.data.email}}"> </div>
+		<div class="user-addr"><label for="">收货地址：</label><input type="text" value="{{=it.data.addr}}"> </div>
+	</script>
 <script>
+	var myInfoRender=getDotRender('user-my-info');
 	function appStart(){
+		getData();
 		Endload();
 
 		$('.zhengjian').on('click',function(){
@@ -87,6 +113,37 @@
 		$('.sex li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
 		});
+		$('.do-save'){
+			var obj=M();
+			obj.userid=getUserid();
+			obj.type=1;
+			obj.username=$('.user-name input').val();
+			obj.sex=$('.sex-type').attr('sex');
+			obj.nickname=$('.nick-name input').val();
+			obj.addr=$('.user-addr input').val();
+			obj.email=$('.user-email input').val();
+			obj.id_type=$('.zhengjian').attr('id_type');
+			obj.id_num=$('.id_num input').val();
+			ajaxJson(API.MY_INFO,obj,function(data){
+			if(data.status==1){
+				if(data.data!=undefined || data.data!=null || data.data!=''){
+					$('.user-info-form').html(myInfoRender(data));
+				}
+				
+			}
+		});
+		}
 	}
+	function getData(){
+		ajaxJson(API.MY_INFO,{'type':0,user_id:getUserid()},function(data){
+			if(data.status==1){
+				if(data.data!=undefined || data.data!=null || data.data!=''){
+					$('.user-info-form').html(myInfoRender(data));
+				}
+				
+			}
+		});
+	}
+	
 </script>
 </html>
