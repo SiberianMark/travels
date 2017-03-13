@@ -11,13 +11,14 @@
 	<script src="./js/head.js.js"></script>
 	<link href="./css/date.3.0.min.css" rel="stylesheet" type="text/css" />
     <script src="./js/date.3.0.min.js" type="text/javascript"></script>
+    <script src="./js/JMDate.js"></script>
 </head>
 <style>
 	
 </style>
 <body>
 	<header class="header">
-		<div class="back"><i class="iconfont icon icon-home"></i></div>
+		<div class="home"><i class="iconfont icon icon-home"></i></div>
         <div class="search-input">
         	<i class="iconfont icon icon-search"></i>
         <input type="text" placeholder="目的地/关键字">
@@ -28,58 +29,13 @@
 	<section class="search-result">
 		<div class="travel-place-type sticky"> 
 			<ul>   
-				<li class="travel-place-type-active travel-place-type-activefont" index="1"> <span class="">产品推荐</span> </li>    
-				<li index="2"> <span class="">跟团游</span> </li>    
-				<li index="3"> <span class="">自由行</span> </li>    
+				<li class="active" index="1" type=0> <span class="">产品推荐</span> </li>    
+				<li index="2" type=1> <span class="">跟团游</span> </li>    
+				<li index="3" type=2> <span class="">自由行</span> </li>    
 			</ul>
 		</div>
 		<div class="search-result-body">
-			<ul>
-				<li>
-					<div>
-						<div class="left-img">
-							
-							<div class="good-uimg">
-							<div class="depart">深圳出发</div>
-							<div class="travels-type">跟团游</div><img src="http://pic.lvmama.com/pics//uploads/pc/place2/2016-12-02/362e167e-a630-4494-80bd-5ee3de6d708e_480_320.jpg" alt=""></div>	
-						</div>
-						<div class="right-good-info">
-							<p class="title"><厦门-鼓浪屿-土楼双飞5日游>爆款，寻梦大鱼海棠，景点全面，市区连铸不挪窝顶顶顶顶</p>
-							<div class="good-label">
-								<ul>
-									<li>优惠</li>
-									<li>牛人专线</li>
-									<li>丰富景点</li>
-									<li>典雅土楼</li>
-								</ul>
-							</div>
-							<p class="good-date">
-								<i class="iconfont icon icon-riqi" style="font-size:1rem!important;vertical-align: baseline;"></i>
-								<span>团期：</span>
-								<span>12/13</span>
-								<span>12/17</span>
-								<span>12/20</span>
-								<span>12/21</span>
-								<span>...</span>
-							</p>
-							<div class="good-price">
-								<p class="left-price">
-									<span class="topicColor">￥</span>
-									<span class="topicColor numprice">1279</span>
-									<small>起</small>
-								</p>
-								<p>
-									<span>1213</span>
-									<span>人出游</span>
-									<span>95%</span>
-									<span>满意</span>
-								</p>
-							</div>
-						</div>
-						
-					</div>
-				</li>
-			</ul>
+			
 		</div>
 	</section>
 	<section class="footer-filter">
@@ -123,34 +79,29 @@
 				</ul>
 			</div>
 			<div class="riqirdatetime riqioff">
-					<div class="zuizao datetimeInvalid-show">
-						<!-- <p>最早出发日期</p> -->
-						<input id="datetimeInvalid-riqizao" class="datetimeInvalid-zuizao" placeholder="最早出发日期" style="" />
-						<i class="youjiantou iconfont icon icon-xiangyou"></i>
-					</div>
-					<div class="zuiwan datetimeInvalid-show">
-						<!-- <p>最晚出发日期</p> -->
-						<input id="datetimeInvalid-riqiwan" class="datetimeInvalid-zuiwan" placeholder="最晚出发日期" style="" />
-						<i class="youjiantou iconfont icon icon-xiangyou"></i>
-					</div>
-					<div class="yuefen">
-						<p>你也可以直接选月份：</p>
-						<ul>
-							<li  class="active">不限<br/>月份</li>
-							<li>2017年3月</li>
-							<li>2017年4月</li>
-							<li>2017年5月</li>
-							<li>2017年6月</li>
-							<li>2017年7月</li>
-							<li>2017年8月</li>
-						</ul>
-					</div>
+				<div class="zuizao datetimeInvalid-show">
+					<!-- <p>最早出发日期</p> -->
+					<input id="datetimeInvalid-riqizao" class="datetimeInvalid-zuizao" placeholder="最早出发日期" style="" />
+					<i class="youjiantou iconfont icon icon-xiangyou"></i>
 				</div>
+				<div class="zuiwan datetimeInvalid-show">
+					<!-- <p>最晚出发日期</p> -->
+					<input id="datetimeInvalid-riqiwan" class="datetimeInvalid-zuiwan" placeholder="最晚出发日期" style="" />
+					<i class="youjiantou iconfont icon icon-xiangyou"></i>
+				</div>
+				<div class="yuefen">
+					<p>你也可以直接选月份：</p>
+					<ul id="month-select">
+						
+					</ul>
+				</div>	
+			</div>
 		</div>
 	</div>
 	<div class="jiagequjian">
 		<ul>
-			<li class="active">100以下</li>
+			<li class="active">不限</li>
+			<li>100以下</li>
 			<li>101-500</li>
 			<li>501-1000</li>
 			<li>1001-2000</li>
@@ -161,28 +112,167 @@
 		</ul>
 	</div>
 	<div class="biaoqianfilter">
-		<ul>
-			<li class="active">海滨</li>
-			<li>都市</li>
-			<li>亲子</li>
-			<li>潜水</li>
-		</ul>
+		
 	</div>
 	<div class="paixufilter">
 		<ul>
-			<li class="active">新品推荐</li>
-			<li>价格从低到高</li>
-			<li>价格从高到低</li>
-			<li>好评度从高到低</li>
-			<li>好评度从低到高</li>
+			<li class="active" type=0>新品推荐</li>
+			<li type=1>价格从低到高</li>
+			<li type=2>价格从高到低</li>
+			<li type=3>好评度从高到低</li>
 		</ul>
 	</div>
 	<div class="search-result-modal"></div>
 </body>
+<!-- 搜索结果模板 -->
+<script type="text/template" id="result-body-tmp">
+	<ul>
+		{{~it:item:index}}
+			<li goodid="{{=item.id}}">
+				<div>
+					<div class="left-img">
+						
+						<div class="good-uimg">
+						<div class="depart">{{=item.start_palce}}</div>
+						<div class="travels-type">{{=item.line_type}}</div><img src="{{=config.SERVER_URL+item.img}}" alt=""></div>	
+					</div>
+					<div class="right-good-info">
+						<p class="title"><{{=item.main_name}} | {{=item.sub_name}} | {{=item.keywords}}</p>
+						<div class="good-label">
+							<ul>
+							{{~item.label:lbitem:lbindex}}
+								<li>{{=lbitem}}</li>
+							{{~}}
+							</ul>
+						</div>
+						<p class="good-date">
+							<i class="iconfont icon icon-riqi" style="font-size:1rem!important;vertical-align: baseline;"></i>
+							<span>团期：</span>
+							{{~item.date:dateitem:dateindex}}
+							<span dateid={{=dateitem.id}}>{{=dateitem.line_date}}</span>
+							{{~}}
+							<span>...</span>
+						</p>
+						<div class="good-price">
+							<p class="left-price">
+								<span class="topicColor">￥</span>
+								<span class="topicColor numprice">{{=item.price}}</span>
+								<small>起</small>
+							</p>
+							<p>
+								<span>{{=item.travel_sum}}</span>
+								<span>人出游</span>
+								<span>{{=item.hot_level}}<span>%</span></span>
+								<span>满意</span>
+							</p>
+						</div>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+
+			</li>
+		{{~}}
+	</ul>
+</script>
+<!-- 月份选择渲染 -->
+<script type="text/template" id="date-select-tmp">
+	<li  class="active">不限<br/>月份</li>
+	{{~it:item:index}}
+	<li>{{=item}}</li>
+	{{~}}
+</script>
+<!-- 特色标签模板 -->
+<script type="text/template" id="label-tmp">
+	<ul>
+	{{~it:item:index}}
+		{{?index==0}}
+		<li class="active" Lid={{=item.id}}>{{=item.label_name}}</li>
+		{{??}}
+		<li Lid={{=item.id}}>{{=item.label_name}}</li>
+		{{?}}
+	{{~}}
+	</ul>
+</script>
 <script>
+	var travelDate=new Date();
+	var type=0;//默认搜索类型
+	var order=0;//默认排序
+	var searchword=I('searchword');
+	var sMonth=travelDate.Format('yyyy-MM');//默认出游月份为当月
+	var sDate=travelDate.Format('yyyy-MM-dd');//默认最早出游日期为当天
+	var eDate=travelDate.DateAdd('d',7);//默认最晚出游日期为当天延后七天
+	var label=''//特色标签默认为空
+	var price='不限'//价格区间默认为空
+	var day_num='不限'//出游天数默认不限
+
+	var resultBodyRen=getDotRender('result-body-tmp');
+	var MonRen=getDotRender('date-select-tmp');
+	var labelRen=getDotRender('label-tmp');
 	function appStart(){
 		datetimeDateInit();
+		console.log(sMonth);
+		var param=new Object();
+		param.keyword=searchword;
+		param.type=type;
+		param.order=order;
+		param.month=sMonth;
+		param.sdate=sDate;
+		param.edate=eDate;
+		getSelectMonth();
+
+		getData(param);
+		getLabel();//获取标签
 		Endload();
+		//搜索处理
+		$('.do-search').on('click',function(){
+			var searchword=$(this).siblings().find('input').val();
+			if(searchword==''){tipsLayer("搜索关键字不能为空");return false;}
+			if(localStore('searchHistory') == undefined ||localStore('searchHistory') == '' ||localStore('searchHistory')==null){
+				localStore('searchHistory',searchword);
+			}else{
+				var value=localStore('searchHistory')+','+searchword;
+				localStore('searchHistory',value);
+			}
+			var param=new Object();
+			param.keyword=searchword;
+			param.type=type;
+			param.order=order;
+			param.month=sMonth;
+			param.sdate=sDate;
+			param.edate=eDate;
+			param.label=label;
+			param.price=price;
+			param.day_num=day_num;
+			getData(param);
+				
+		});
+
+		//返回首页
+		$('.home').on('click',function(){
+			PageGoto('index',{});
+		})
+		//切换类型
+		$('.travel-place-type ul li').on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			type=$(this).attr('type');
+			var param={};
+			param.keyword=searchword;
+			param.type=type;
+			param.order=order;
+			param.month=sMonth;
+			param.sdate=sDate;
+			param.edate=eDate;
+			param.label=label;
+			param.price=price;
+			param.day_num=day_num;
+			getData(param);
+		});
+		//跳转到路线详情
+		$('.search-result-body').on('click','li',function(){
+			var obj={};
+			obj.id=$(this).attr('goodid');
+			PageGoto('goodDetail',obj);
+		})
 		/*****************底板导航效果start*****************/
 		$('.riqifilterdiv').on('click',function(){
 			$('.search-result-modal').css('display','block');
@@ -231,6 +321,7 @@
 		});
 		//日期筛选右框效果
 		$('.riqifright li').on('click',function(){
+
 			
 			if($(this).find('.iconfont').hasClass('icon-gouxuankuang3')){
 				$(this).find('.iconfont').removeClass('icon-gouxuankuang3').addClass('icon-gouxuankuang21');
@@ -241,19 +332,39 @@
 			}
 			
 		});
+		// 清空
 		$('.qingkongriqi').on('click',function(){
 			$('.riqifright li').each(function(){
 				$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');
 				$(this).removeClass('active');
 			});
 		});
+		// 取消
 		$('.riqifheader .cancel').on('click',function(){
 			$('.riqifilter').css('display','none');
 			$('.riqifilter').animate({bottom:'-50rem'});
 		});
+		//确定
 		$('.riqifheader .doriqifil').on('click',function(){
 			$('.riqifilter').css('display','none');
 			$('.riqifilter').animate({bottom:'-50rem'});
+			day_num=$('.riqirdatenum[class="active"]').text();
+			// 重置筛选条件
+			sMonth=$('#month-select ul li[class="active"]').html().toString().replace(/年/,'-');
+			sDate=$('.datetimeInvalid-riqizao').val();
+			eDate=$('.datetimeInvalid-riqiwan').val();
+			var param={};
+			param.keyword=searchword;
+			param.type=type;
+			param.order=order;
+			param.month=sMonth;
+			param.sdate=sDate;
+			param.edate=eDate;
+			param.label=label;
+			param.price=price;
+			param.day_num=day_num;
+			getData(param);
+
 		});
 		$('.riqirdatetime .yuefen li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
@@ -265,14 +376,69 @@
 		$('.jiagequjian li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
 		});
-		$('.biaoqianfilter li').on('click',function(){
+		$('.biaoqianfilter').on('click','li',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			label=$(this).html();
+			var param={};
+			param.keyword=searchword;
+			param.type=type;
+			param.order=order;
+			param.month=sMonth;
+			param.sdate=sDate;
+			param.edate=eDate;
+			param.label=label;
+			param.price=price;
+			param.day_num=day_num;
+			getData(param);
 		});
 		$('.paixufilter li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			order=$(this).attr('type');
+			var param={};
+			param.keyword=searchword;
+			param.type=type;
+			param.order=order;
+			param.month=sMonth;
+			param.sdate=sDate;
+			param.edate=eDate;
+			param.label=label;
+			param.price=price;
+			param.day_num=day_num;
+			getData(param);
 		});
 		/****************************价格筛选弹窗end***************************************/
 
+
+	}
+	//获取搜索结果
+	function getData(obj){
+		ajaxJson(API.SEARCH_RESULT,obj,function(res){
+			if(res.status==1){
+				console.log(res);
+				$('.search-result-body').html(resultBodyRen(res.data));
+			}else{
+				tipsLayer(data.info);
+			}
+		})
+	}
+	//渲染当前选择月份菜单
+	function getSelectMonth(){
+		var monList=[];
+		for(var i=0;i<6;i++){
+			monList.push(travelDate.DateAdd('m',i).toString().replace(/\//,'年').replace(/\//,'月'));
+		}
+		$('#month-select').html(MonRen(monList));
+	}
+	//获取搜索标签
+	function getLabel(){
+		ajaxJson(API.SEARCH_LABEL,{},function(res){
+			if(res.status==1){
+				console.log(res);
+				$('.biaoqianfilter').html(labelRen(res.data));
+			}else{
+				tipsLayer(data.info);
+			}
+		})
 	}
 </script>
 </html>

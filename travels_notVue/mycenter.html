@@ -119,12 +119,12 @@
 	}
 	//获取脚部信息
     function getindexdata(){
-    ajaxJson(API.INDEX_INFO,{},function(res){
-        if(res.status==1){
-            console.log(res);
-            $('.copyright-info').append(copyrightRender(res.data));
-        }
-    });
+	    ajaxJson(API.INDEX_INFO,{},function(res){
+	        if(res.status==1){
+	            console.log(res);
+	            $('.copyright-info').append(copyrightRender(res.data));
+	        }
+	    });
     } 
 </script>
 </html>

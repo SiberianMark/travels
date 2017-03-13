@@ -64,6 +64,7 @@
 			$('.history-list').html(hisRender(historys));
 		}	
 		Endload();
+		//搜索处理
 		$('.do-search').on('click',function(){
 			var searchword=$(this).siblings().find('input').val();
 			if(searchword==''){tipsLayer("搜索关键字不能为空");return false;}
@@ -77,8 +78,26 @@
 			param.searchword=searchword;
 			PageGoto('searchresult',param);		
 		});
+		//返回
 		$('.back').on('click',function(){
 			PageGoto('index',{});	
+		});
+		//热门
+		$('.hot-search-list').on('click','ul li',function(){
+			var param=new Object();
+			param.searchword=$(this).text();
+			PageGoto('searchresult',param);	
+		});
+		//历史
+		$('.history-list').on('click','ul li',function(){
+			var param=new Object();
+			param.searchword=$(this).text();
+			PageGoto('searchresult',param);	
+		});
+		//清除历史
+		$('.clear-history').on('click',function(){
+			localStorage.removeItem("searchHistory");
+			$('.history-list').html('');
 		});
 	}
 

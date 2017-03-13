@@ -29,9 +29,12 @@ var API={//后台数据API
 	SEARCH_HOT_PLACE:'/Home/APITravel/hot_search',//搜索热门目的地
 	AREA_HOT_PLACE:'/Home/APITravel/hot_place',//板块热门目的地
 
-	MY_CENTER:'/Home/APILogin/member_center',
-	MY_INFO:'/Home/APILogin/personal_info',
-	CHANGEPSW:'/Home/APILogin/changePasswd',
+	MY_CENTER:'/Home/APILogin/member_center',//我的个人中心
+	MY_INFO:'/Home/APILogin/personal_info',//我的信息
+	CHANGEPSW:'/Home/APILogin/changePasswd',//修改密码
+
+	SEARCH_RESULT:'/Home/APITravel/search',//搜索结果
+	SEARCH_LABEL:'/Home/APITravel/search_label'//搜索标签
 }
 var PAGE={//页面路由
 	index:'./index.html',//首页
@@ -43,4 +46,5 @@ var PAGE={//页面路由
 	search:'./search.html',//搜索页面
 	myinfo:'./myinfo.html',//我的信息
 	changepsw:'./changepsw.html',//修改密码
+	goodDetail:'./goodinfo.html',//路线详情
 }

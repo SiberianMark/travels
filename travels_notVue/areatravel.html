@@ -196,7 +196,7 @@
                 <div>
                     <div>
                         <div class="good-img">
-                            <div class="good-imgjpg"><img src="{{=item.img}}" alt=""></div>
+                            <div class="good-imgjpg"><img src="{{=config.SERVER_URL+item.img}}" alt=""></div>
                             <div class="good-type"><span>{{=item.line_type}} | {{=item.start_palce}}</span></div>
                             <div class="good-price"><small>￥</small><span>{{=item.price}}</span>起</div>
                         </div>
@@ -216,6 +216,7 @@
                         </div>
                     </div>
                 </div>
+                
             </li>
         {{~}}
         </ul>
@@ -294,7 +295,7 @@
             // }
             // if($('.goodslist[subindex='+subIndex+']')==undefined){
             //     $('.no-consultant-prompt').css('display','block');
-            // }
+            // }config.SERVER_URL+
            // getLineSelect3($(this).attr(type_id),$($(this).attr(box_id)),1);
 
         }); 

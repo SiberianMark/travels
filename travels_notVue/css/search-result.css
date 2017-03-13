@@ -15,11 +15,10 @@ li{list-style: none;}
 .search-input{position: relative;width:68%;display: inline-block;}
 .header .search-input .icon{position: absolute;top:.15rem; left:0.5rem;color:var(--topic-color);}
 
-.travel-place-type{padding:0.5rem;height:4.4rem;background: #fff;margin-top: 0.5rem;z-index:999; }
+.travel-place-type{padding:0.5rem;height:4.4rem;background: #fff;margin-top: 0.5rem;z-index:1000; }
 
 .travel-place-type ul li{float:left;width:25%;height:100%;text-align: center;line-height: 4.4rem;font-size:1.4rem;}
-.travel-place-type-active{border-bottom:2px solid var(--topic-color);}
-.travel-place-type-activefont{color:var(--topic-color)!important;}
+.travel-place-type ul li.active{border-bottom:2px solid var(--topic-color);color:var(--topic-color)!important;}
 .sticky {  
 position: -webkit-sticky;  
 position: -moz-sticky;  
@@ -29,24 +28,25 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 
 } 
 .topicColor{color:var(--topic-color)}
-.search-result{}
+.search-result .search-result-body ul li{margin-bottom: 0.5rem;border-bottom:1px solid #eee;padding-bottom: 0.5rem;}
 .search-result .good-uimg{ width: 95px;height: 96px;float: left;position: relative;}
 .search-result .good-uimg img{    opacity: 1;background-size: 120% 120%;background-position: 50%; -webkit-transform: translateZ(0);transform: translateZ(0);-webkit-transition: all .7s ease-in-out; transition: all .7s ease-in-out;height: 96px;}
 .search-result .depart{position: absolute;top:0;left:1rem;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
 .search-result .travels-type{position: absolute;bottom:0rem;left:1rem;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
-.search-result-body{margin:1rem 0.5rem 5rem 0.5rem;}
-.search-result .right-good-info{margin-left: 150px;font-size:1.2rem;}
+.search-result-body{margin:1rem 0rem 5rem 0rem;padding:0 0.8rem;background-color: #fff;}
+.search-result .right-good-info{margin-left: 13rem;font-size:1.2rem;}
 .search-result .right-good-info>p:first-child{width:100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 2rem;}
 .search-result .right-good-info ul{line-height: 1.5rem;}
 .search-result .right-good-info ul li{display: inline-block;padding:0 0.1rem;border:1px solid #333;margin-left:0.5rem;}
 .good-label,.good-date,.good-price{color:#666;}
 .good-date{margin-top:.5rem;}
+.good-date span{padding: 0.2rem;}
 .good-price{margin-top:.5rem;position: relative;}
 .good-price p{display: inline-block;}
 .numprice{font-size:2rem;}
 .good-price p:last-child{    position: absolute;right: 0;bottom: 0;}
 
-.riqifilter{position:absolute;bottom:-50px;z-index: 1000;width: 100%;display: none;}
+.riqifilter{position:fixed;bottom:-50px;z-index: 1000;width: 100%;display: none;}
 .riqifilter .riqifheader{background-color: #38495d;color:#fff;font-size:1.4rem;}
 .riqifilter .riqifheader p{display: inline-block;text-align: center;line-height: 3rem;}
 .riqifilter .cancel{width:10%;}
