@@ -34,7 +34,10 @@ var API={//后台数据API
 	CHANGEPSW:'/Home/APILogin/changePasswd',//修改密码
 
 	SEARCH_RESULT:'/Home/APITravel/search',//搜索结果
-	SEARCH_LABEL:'/Home/APITravel/search_label'//搜索标签
+	SEARCH_LABEL:'/Home/APITravel/search_label',//搜索标签
+
+	GOOD_DATE_PRICE:'/Home/APILine/line_date',//线路日期对应价格
+	CREATE_ORDER:'/Home/APILine/create_order',//创建订单
 }
 var PAGE={//页面路由
 	index:'./index.html',//首页
@@ -47,4 +50,5 @@ var PAGE={//页面路由
 	myinfo:'./myinfo.html',//我的信息
 	changepsw:'./changepsw.html',//修改密码
 	goodDetail:'./goodinfo.html',//路线详情
+
 }
