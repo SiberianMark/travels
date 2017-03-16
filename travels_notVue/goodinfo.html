@@ -5,7 +5,7 @@
 	<script src="./js/head.meta.js"></script>
 	<title>产品详情</title>
 	<link rel="stylesheet" href="./css/goodinfo.css">
-		<link rel="stylesheet" href="//at.alicdn.com/t/font_m30h28fudqjjor.css">
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_gjrk2yx1a8t73nmi.css">
 		<link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
@@ -17,7 +17,7 @@
 			<div class="title">产品详情</div>
 			<i class="iconfont icon icon-wode"></i>
 		</header>
-		<div class="swiper-container swiper-container-horizontal">
+		<div id="swiper-good-headimg" class="swiper-container swiper-container-horizontal">
         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
             <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="http:www.baidu.com"></a><div class="swiper-img"><img src="./img/goodslist.jpg" alt=""></div></div></div>
             <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="http:www.baidu.com"></a><div class="swiper-img"><img src="./img/goodslist.jpg" alt=""></div></div></div>
@@ -27,7 +27,7 @@
             <div class="swiper-slide swiper-no-swiping swiper-slide-visible swiper-slide-next" style="width: 100%;"><div><a href="http:www.baidu.com"></a><div class="swiper-img"><img src="./img/goodslist.jpg" alt=""></div></div></div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div id="pagination-headimg" class="swiper-pagination"></div>
     </div>
     <div class="good-info-head">
     	<p class="good-title">香港直飞往返【越南】胡志明-头顿•美奈5天纯玩团</p>
@@ -65,15 +65,15 @@
     	</div>
     </div>
     <section class="good-desc">
-    	<div class="good-desc-title">
+    	<div class="good-desc-title sticky">
     		<ul>
-    			<li class="active"><span>6</span>日行程</li>
-    			<li>产品特色</li>
-    			<li>费用说明</li>
-    			<li>预定须知</li>
+    			<li class="active"><a href="#xingcheng"><span>6</span>日行程</a></li>
+    			<li><a href="#tese">产品特色</a></li>
+    			<li><a href="#feiyong">费用说明</a></li>
+    			<li><a href="#xuzhi">预定须知</a></li>
     		</ul>
     	</div>
-    	<div class="good-desc-detail">
+    	<div id='xingcheng' class="good-desc-detail">
     			<div class="xingcheng">
     				<ul>
     					<li>
@@ -271,46 +271,88 @@
     					</li>
     				</ul>
     			</div>
-    			<div class="good-tese">
-    				<div class="good-test-title">
-    					产品特色
-    				</div>
-    				<div class="good-tese-content">
-    					&lt;p&gt;&lt;span style=\"font-size:13px;line-height:115%;font-family:&amp;#39;微软雅黑&amp;#39;,&amp;#39;sans-serif&amp;#39;\"&gt;【&lt;/span&gt;&lt;strong&gt;&lt;span style=\"font-size:13px;line-height:115%;font-family:&amp;#39;微软雅黑&amp;#39;,&amp;#39;sans-serif&amp;#39;\"&gt;参考航班&lt;/span&gt;&lt;/strong&gt;&lt;span style=\"font-size:13px;line-height:115%;font-family:&amp;#39;微软雅黑
-    				</div>
+            </div>
+			<div id='tese' class="good-tese">
+                <div class="good-test-title">
+                    产品特色
+                </div>
+                <div class="good-tese-content">
+                    &lt;p&gt;&lt;span style=\"font-size:13px;line-height:115%;font-family:&amp;#39;微软雅黑&amp;#39;,&amp;#39;sans-serif&amp;#39;\"&gt;【&lt;/span&gt;&lt;strong&gt;&lt;span style=\"font-size:13px;line-height:115%;font-family:&amp;#39;微软雅黑&amp;#39;,&amp;#39;sans-serif&amp;#39;\"&gt;参考航班&lt;/span&gt;&lt;/strong&gt;&lt;span style=\"font-size:13px;line-height:115%;font-family:&amp;#39;微软雅黑
+                </div>
+            </div>
+			<div id='feiyong' class="feiyong">
+				<div class="feiyong-include">
+					费用包含
+				</div>
+				<div class="feiyong-in-content">
+					a:9:{s:7:\"traffic\";a:14:{s:5:\"plane\";s:1:\"1\";s:6:\"交通\";s:189:\"往返经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）、当地旅游巴士、去程船票，出境港口至香港机场去程交通船票\";s:10:\"plane_type\";s:6:\"往返\";s:9:\"plane_fee\";s:99:\"经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）
+				</div>
+    			<div class="feiyong-notinclude">
+    				自费费用
     			</div>
-    			<div class="feiyong">
-    				<div class="feiyong-include">
-    					费用包含
-    				</div>
-    				<div class="feiyong-in-content">
-    					a:9:{s:7:\"traffic\";a:14:{s:5:\"plane\";s:1:\"1\";s:6:\"交通\";s:189:\"往返经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）、当地旅游巴士、去程船票，出境港口至香港机场去程交通船票\";s:10:\"plane_type\";s:6:\"往返\";s:9:\"plane_fee\";s:99:\"经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）
-    				</div>
-	    			<div class="feiyong-notinclude">
-	    				自费费用
-	    			</div>
-	    			<div class="feiyong-notin-con">
-	    				a:9:{s:7:\"traffic\";a:14:{s:5:\"plane\";s:1:\"1\";s:6:\"交通\";s:189:\"往返经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）、当地旅游巴士、去程船票，出境港口至香港机场去程交通船票\";s:10:\"plane_type\";s:6:\"往返\";s:9:\"plane_fee\";s:99:\"经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）
-	    			</div>
+    			<div class="feiyong-notin-con">
+    				a:9:{s:7:\"traffic\";a:14:{s:5:\"plane\";s:1:\"1\";s:6:\"交通\";s:189:\"往返经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）、当地旅游巴士、去程船票，出境港口至香港机场去程交通船票\";s:10:\"plane_type\";s:6:\"往返\";s:9:\"plane_fee\";s:99:\"经济舱机票（团队机票将统一出票，散客机票因实时计价预订后即刻出票）
     			</div>
-    			<div class="yudingxuzhi">
-	    			<div class="yudingxuzhi-title"><span>预定须知</span><i class="iconfont icon icon-xiangyou"></i></div>
-	    			<div class="xuzhi-content">
-	    				&lt;p style=\"margin-bottom:0;margin-bottom:0;line-height: 21px\"&gt;&lt;strong&gt;&lt;span style=\"font-size:13px;font-family:&amp;#39;微软雅黑&amp;#39;,&amp;#39;sans-serif&amp;#39;;color:red\"&gt;签证说明：&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt
-	    			</div>
-    				
+			</div>
+			<div id='xuzhi' class="yudingxuzhi">
+    			<div class="yudingxuzhi-title"><span>预定须知</span><i class="iconfont icon icon-xiangyou"></i></div>
+    			<div class="xuzhi-content">
+    				&lt;p style=\"margin-bottom:0;margin-bottom:0;line-height: 21px\"&gt;&lt;strong&gt;&lt;span style=\"font-size:13px;font-family:&amp;#39;微软雅黑&amp;#39;,&amp;#39;sans-serif&amp;#39;;color:red\"&gt;签证说明：&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt
     			</div>
-    		</div>	
+				
+			</div>
+    			
     </section>
     <section class="guess-you-like">
     	<div class="you-like-title"><i class="iconfont icon icon-aixin"></i><span>猜你喜欢</span></div>
     	<div class="you-like-swiper">
-    		
+    		<div id="swiper-youkike" class="swiper-container swiper-container-horizontal swiper-container-multirow">
+                <div class="swiper-wrapper" style="width: 584px; transition-duration: 0ms; transform: translate3d(-233.333px, 0px, 0px);">
+                    <div class="swiper-slide" data-swiper-column="0" data-swiper-row="0" style="order: 0; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg);height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-column="0" data-swiper-row="1" style="-webkit-box-ordinal-group: 5; order: 5; margin-top: 30px; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg);height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-column="1" data-swiper-row="0" style="-webkit-box-ordinal-group: 1; order: 1; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg);height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-column="1" data-swiper-row="1" style="-webkit-box-ordinal-group: 6; order: 6; margin-top: 30px; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem;"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide" data-swiper-column="2" data-swiper-row="0" style="-webkit-box-ordinal-group: 2; order: 2; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide" data-swiper-column="2" data-swiper-row="1" style="-webkit-box-ordinal-group: 7; order: 7; margin-top: 30px; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                         <div class="swiper-slide" data-swiper-column="0" data-swiper-row="0" style="order: 0; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-column="0" data-swiper-row="1" style="-webkit-box-ordinal-group: 5; order: 5; margin-top: 30px; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-column="1" data-swiper-row="0" style="-webkit-box-ordinal-group: 1; order: 1; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-column="1" data-swiper-row="1" style="-webkit-box-ordinal-group: 6; order: 6; margin-top: 30px; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide" data-swiper-column="2" data-swiper-row="0" style="-webkit-box-ordinal-group: 2; order: 2; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                    <div class="swiper-slide" data-swiper-column="2" data-swiper-row="1" style="-webkit-box-ordinal-group: 7; order: 7; margin-top: 30px; width: 86.6667px; margin-right: 30px;">
+                        <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url(http://pic.lvmama.com/uploads/pc/place2/2015-11-26/524b520f-1add-436e-a4d7-b13e49b01a2d_180_120.jpg); height:8rem"></div><div class="name">仅剩17份</div></div><div class="prd-info"><p>【珠海长隆2人双园 2天1晚自由行特卖】住1晚企鹅酒店＋海洋王国＋横琴岛剧院马戏表演</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>1868<i>起</i></span></div></div></a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div id="pagination-youlike" class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+            </div>
     	</div>
     </section>
     <section class="flot-menu">
-    	<div class="xingcheng-detail"></div>
-    	<div class="gototop"></div>
+    	<div class="xingcheng-detail"><span>行程详情</span></div>
+    	<div class="gototop"><i class="iconfont icon icon-gototop"></i></div>
     </section>
     
     <section class="footer">
@@ -322,9 +364,9 @@
 </body>
 <script>
 	function appStart(){
-		 var swiper = new Swiper('.swiper-container',
+		 var swiper = new Swiper('#swiper-good-headimg',
 	    	{
-	            pagination: '.swiper-pagination',
+	            pagination: '#pagination-headimg',
 	    		loop : true,
 	    		autoplay : 5000,
 	    		noSwiping : true,
@@ -332,7 +374,36 @@
 				watchSlidesVisibility : true,
 
 	    	});
+          var swiper_you_like = new Swiper('#swiper-youkike',
+            {
+                pagination: '#pagination-youlike',
+                slidesPerView: 2,
+                slidesPerColumn: 2,
+                paginationClickable: true,
+                spaceBetween: 30
+
+            });
+    
 			Endload();
+            //商品描述菜单切换
+            $('.good-desc-title').on('click','li',function(){
+                if($(this).hasClass('active')){
+                    return;
+                }else{
+                    $(this).addClass('active').siblings().removeClass('active');
+                }
+            });
+            //行程须知切换
+            $('.yudingxuzhi-title').on('click',function(){
+                if($(this).find('i').hasClass('icon-xiangyou')){
+                    $(this).find('i').removeClass('icon-xiangyou').addClass('icon-xiangxia');
+                    $('.xuzhi-content').show();
+                }else{
+                    $(this).find('i').removeClass('icon-xiangxia').addClass('icon-xiangyou');
+                    $('.xuzhi-content').hide();
+                }
+                
+            })
 		}
 </script>
 </html>
