@@ -5,7 +5,7 @@
 	<script src="./js/head.meta.js"></script>
 	<title>订单填写</title>
 	<link rel="stylesheet" href="./css/determin-order.css">
-	<link rel="stylesheet" href="//at.alicdn.com/t/font_jn5h004vsqkhuxr.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_e233we6x20uow29.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
 	<script src="./js/JMCalender.js"></script>
@@ -44,39 +44,42 @@
 	</div>
 	<div class="order-form">
 		<ul>
-			<li>
+			<li class="adult">
 				<div>成人</div>
-				<div class="price"><span>￥</span><span>1050</span><span>元/人</span></div>
+				<div class="price"><span>￥</span><span class="price_num">0</span><span>元/人</span></div>
 				<div class="count">
-					<i class="iconfont icon icon-jianhao"></i>
-					<div><span class="input">0</span></div>
-					<i class="iconfont icon icon-jiahao"></i>
+					<i class="iconfont icon icon-jianhao sub adt-sub"></i>
+					<span id="adt_num" class="input">0</span>
+					<i class="iconfont icon icon-jiahao plus adt-plus"></i>
+					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
 			</li>
-			<li>
+			<li class='child'>
 				<div>儿童</div>
-				<div class="price"><span>￥</span><span>1050</span><span>元/人</span></div>
+				<div class="price"><span>￥</span><span class="price_num">0</span><span>元/人</span></div>
 				<div class="count">
-					<i class="iconfont icon icon-jianhao"></i>
-					<div><span class="input">0</span></div>
-					<i class="iconfont icon icon-jiahao"></i>
+					<i class="iconfont icon icon-jianhao sub child-sub"></i>
+					<span id="child_num" class="input">0</span>
+					<i class="iconfont icon icon-jiahao plus child-plus"></i>
+					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
 			</li>
-			<li>
+			<li class='room-cha'>
 				<div>单房差</div>
-				<div class="price"><span>￥</span><span>1050</span><span>元/人</span></div>
+				<div class="price"><span>￥</span><span class="price_num">0</span><span>元/人</span></div>
 				<div class="count">
-					<i class="iconfont icon icon-jianhao"></i>
-					<div><span class="input">0</span></div>
-					<i class="iconfont icon icon-jiahao"></i>
+					<i class="iconfont icon icon-jianhao sub room-sub"></i>
+					<span id="room_num" class="input">0</span>
+					<i class="iconfont icon icon-jiahao plus room-plus"></i>
+					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
 			</li>
 			<li class="remark-info">
 				<label>备注信息：</label>
-				<input type="text" placeholder="如果有其他需求请在这里输入">
+				<input id="note-info" type="text" placeholder="如果有其他需求请在这里输入">
 			</li>
 		</ul>
 	</div>
@@ -84,11 +87,25 @@
 		<i class="iconfont icon icon-gouxuankuang3"></i>
 		<p>请在提交前确认你已经阅读<span><a href="javascript:;"  class="price-gind">费用说明</a></span></p>
 	</div>
-	<dic class="footer">
-		<div class="total-price">订单总额：<span  class="price-num"><span>￥</span><span>3456</span></span></div>
+	<div class="footer">
+		<div class="total-price">订单总额：<span  class="price-num"><span>￥</span><span>0</span></span></div>
 		<div class="do-order">确认订单</div>
-	</dic>
+	</div>
+	<div class="price-details-modal">
+		
+	</div>
 </body>
+<script type='text/template' id="price-details-tmp">
+	<h3>费用说明</h3>
+		<div class="price-include">
+			<p class="title">费用包含：</p>
+			<p class="details">{{=it.include}}</p>
+		</div>
+		<div class="price-not-include">
+			<p class="title">费用不包含：</p>
+			<p class="details">{{=it.not_include}}</p>
+		</div>
+</script>
 <script>
 	var TDate=new Date();
 	var Y=TDate.getFullYear();//年
@@ -98,23 +115,99 @@
 	var currentMon=mon;
 	var currentMonth=Y+'-'+mon;
 	var monlimit=5;//只能查当前月向后推5个月的旅游数据
+
+	var lineid=I('lineid',100002),//线路id
+	    date_id=0,//价格日期id
+	    adult_num=1,//成人数量
+	    child_num=1,//儿童数量
+	    single_num,//单房差数量
+	    note='';//备注信息
+
+	var adult_price=0;//团期成人价
+	var child_price=0;//团期儿童价
+	var single_room=0;//团期房价差
+
+	var goparam={};//登录跳转参数
+		goparam.frompage='determinorder',
+		goparam.lineid=lineid;
+
+	var priceDetailsRender=getDotRender('price-details-tmp');
 	function appStart(){
 		// var calenderContainer=document.getElementById('calendar');
 		// var calendar=new JMCalender(calenderContainer,month);
 		// calendar.init();
-
-		getData(month);
+		if(isLogin(goparam)){
+			getData(month);
+			getPriceDtails();
+		}
 		Endload();
+		//团期选择
 		$('#calendar').on('click','li',function(){
-			if($(this).hasClass('active')){
-				//同步修改表单信息
-				syncOrderInfo();
-				$(this).removeClass('active');
-			}else{
-				$(this).addClass('active');
+			if($(this).hasClass('hasPrice')){
+				if($(this).hasClass('active')){
+					//同步修改表单信息
+					var priceobj=$(this).find('.price');
+					syncOrderInfo(priceobj,0);
+					$(this).removeClass('active');
+					date_id=0;
+				}else{
+					var priceobj=$(this).find('.price');
+					syncOrderInfo(priceobj,1);
+					$(this).addClass('active');
+					date_id=$(this).find('.price').attr('date_id');
+				}
+			}	
+		});
+		//团游数量+
+		$('.plus').on('click',function(){
+			var result=false;
+			$('#calendar li').each(function(index,val){
+				if($(val).hasClass('active')){
+					result=true;
+				};
+				
+			});
+			if(result==false){
+					return;
 			}
+			var curnum=parseInt($(this).siblings('.input').text());
+			var curprice=parseFloat($(this).parent('.count').siblings('.price').find('price_num').text());
+			curnum+=1;
+			$(this).siblings('.input').text(curnum);
+			if($(this).hasClass('adt-plus')){
+				curprice=adult_price*curnum;
+			}else if($(this).hasClass('child-plus')){
+				curprice=child_price*curnum;
+			}else{
+				curprice=room*curnum;
+			}	
+			$(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
+			//计算总价
+			countTotal();
 			
 		});
+		// 团期数量-
+		$('.sub').on('click',function(){
+			var curnum=parseInt($(this).siblings('.input').text());
+			if(curnum==0){
+				return;
+			}
+			var curprice=parseFloat($(this).parent('.count').siblings('.price').find('price_num').text());
+			curnum-=1;
+			$(this).siblings('.input').text(curnum);
+			if($(this).hasClass('adt-sub')){
+				curprice=adult_price*curnum;
+			}else if($(this).hasClass('child-sub')){
+				curprice=child_price*curnum;
+			}else{
+				curprice=single_room*curnum;
+			}	
+			$(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
+			//计算总价
+			countTotal();
+			
+		});
+		//前一个月
 		$('.premon').on('click',function(){
 			if(currentMon==mon){
 				return;
@@ -137,6 +230,7 @@
 				getData(currentMonth);
 			}
 		});
+		//后一个月
 		$('.nextmon').on('click',function(){
 			if(currentMon==mon+monlimit){	
 				return false;
@@ -158,6 +252,53 @@
 				getData(currentMonth);
 			}
 		});
+		//提交订单
+		$('.do-order').on('click',function(){
+			var obj={};
+			obj.userid=getUserid();
+			obj.lineid=lineid;
+			obj.dateid=date_id;
+			obj.adult_num=$('#adt_num').text();
+			obj.child_num=$('#child_num').text();;
+			obj.single_room=$('#room_num').text();;
+			obj.note=$('#note-info').val();
+			if(checkorderpram(obj)){
+				ajaxJson(API.CREATE_ORDER,obj,function(res){
+					if(res.info=="下单成功"){
+						console.log(res);
+						var param={};
+						param.order_id=res.data.order_id;
+						param.order_no=res.data.order_no;
+						PageGoto('orderresult',param)
+					}else{
+						tipsLayer(res.info);
+					}	
+				});
+			}
+		});
+		//点击费用说明
+		$('.price-gind').on('click',function(){
+			$('.price-details-modal').css('display','block');
+		});
+		$('.price-details-modal').on('click',function(){
+			$(this).css('display','none');
+		});
+		//勾选费用说明
+		$('.confirm-info i').on('click',function(){
+			if($(this).hasClass('icon-gouxuankuang3')){
+				$(this).removeClass('icon-gouxuankuang3').addClass('icon-xuanzhong');
+			}else{
+				$(this).removeClass('icon-xuanzhong').addClass('icon-gouxuankuang3');
+			}
+		});
+	}
+	//验证订单参数
+	function checkorderpram(obj){
+		if(typeof obj != "object")return false;
+		if(obj.dateid==0){tipsLayer('请选择团期！');return false;}
+		if(obj.adult_num==0 && obj.child_num==0 && obj.single_num==0){tipsLayer('请选择数量!');return false;}
+		if(!$('.confirm-info i').hasClass('icon-xuanzhong')){tipsLayer('请确保已经阅读费用说明并勾选！');return false;}
+		return true;
 	}
 	//处理跨年的年月
 	function formatMonth(){
@@ -169,6 +310,7 @@
 			currentMon=currentMon+12;
 		}
 	}
+	//获取页面数据
 	function getData(curmonth){
 		ajaxJson(API.GOOD_DATE_PRICE,{'lineid':lineid,'month':curmonth},function(res){
 			if(res.status==1){
@@ -181,8 +323,49 @@
 			}
 		});
 	}
-	function syncOrderInfo(){
+	//获取费用说明
+	function getPriceDtails(){
+		ajaxJson(API.PRICE_DETAILS,{lineid:lineid},function(res){
+			if(res.status==1){
+				console.log(res);
+				$('.price-details-modal').html(priceDetailsRender(res.data));
+			}else{
+				tipsLayer(res.info);
+			}
+		})
+	}
+	//处理表单同步信息
+	function syncOrderInfo(obj,num){
+		if(num==1){
+			adult_price=obj.attr('adult_price');
+			child_price=obj.attr('child_price');
+			single_room=obj.attr('single_room');
+			$('.order-form').find('.adult').find('.price_num').text(adult_price);
+			$('.order-form').find('#adt_num').text(num);
+			$('.order-form').find('.child').find('.price_num').text(child_price);
+			$('.order-form').find('#child_num').text(num);
+			$('.order-form').find('.room-cha').find('.price_num').text(single_room);
+			$('.order-form').find('#room_num').text(num);
+			// 总价格
+			countTotal();
+		}else if(num==0){
+			$('.order-form').find('.adult').find('.price_num').text('0');
+			$('.order-form').find('#adt_num').text(num);
+			$('.order-form').find('.child').find('.price_num').text('0');
+			$('.order-form').find('#child_num').text(num);
+			$('.order-form').find('.room-cha').find('.price_num').text('0');
+			$('.order-form').find('#room_num').text(num);
+			countTotal();
+		}
 		
+	}
+	//计算总价
+	function countTotal(){
+		var totalP=0;
+		$('.order-form .price_num').each(function(index,ele){
+			totalP=totalP+parseFloat($(ele).text());
+		});
+		$('.total-price').find('.price-num').html('<span>￥</span><span>'+totalP+'</span>');
 	}
 </script>
 </html>

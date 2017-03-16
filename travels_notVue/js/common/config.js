@@ -38,6 +38,8 @@ var API={//后台数据API
 
 	GOOD_DATE_PRICE:'/Home/APILine/line_date',//线路日期对应价格
 	CREATE_ORDER:'/Home/APILine/create_order',//创建订单
+	PRICE_DETAILS:'/Home/APILine/money_detail',//费用说明
+
 }
 var PAGE={//页面路由
 	index:'./index.html',//首页
@@ -50,5 +52,7 @@ var PAGE={//页面路由
 	myinfo:'./myinfo.html',//我的信息
 	changepsw:'./changepsw.html',//修改密码
 	goodDetail:'./goodinfo.html',//路线详情
+	determinorder:'./determin-order.html',//订单确认页面
+	orderresult:'./order-result.html',//下订单结果
 
 }

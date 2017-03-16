@@ -248,12 +248,14 @@ function createLoadingEffect(effect){
     $('.tipsLayer>div>p').append(html);
 }
 
-function isLogin(){
+function isLogin(goparam){
     var result= false;
     if($.cookie('travelsUserId')){
         result= true; 
     }else{
-       // PageGoto('login');
+        var obj={};
+        obj=goparam;
+        PageGoto('login',obj);
     };
     return result;
 }
@@ -293,7 +295,18 @@ function I(name) {
     }
     return (r[2]);
 }
-
+//url参数转化为对象
+function urlparamToobj(){
+    var param=window.location.search.substring(1);
+    var params = param.split('&');
+    var res = {};
+    for(var i = 0;i<params.length;i++){
+        var str = params[i].split('=');
+        res[str[0]]=str[1];
+    }
+    return res
+        
+}
 
 // 日期弹窗配置
  function datetimeDateInit() {

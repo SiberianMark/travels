@@ -65,12 +65,14 @@
 						yuliang.appendChild(textyuliang);
 						price.className="price";
 						price.setAttribute("child_price",data[i].detail.child_price); // 设置  
+						price.setAttribute("adult_price",data[i].detail.adult_price); 
 						price.setAttribute("single_room",data[i].detail.single_room);
-						price.setAttribute("id",data[i].detail.id);
+						price.setAttribute("date_id",data[i].detail.id);
 						price.setAttribute("line_date",data[i].detail.line_date);
 						price.setAttribute("single_room",data[i].detail.single_room);
 						fragmentp.appendChild(price);
 						fragmentp.appendChild(yuliang);
+						lis[i].className="hasPrice";
 						lis[i].appendChild(fragmentp);
 					}
 				}

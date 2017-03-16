@@ -85,6 +85,9 @@
 </body>
 <script type="text/javascript" src="//at.alicdn.com/t/font_9m5y5nghp7tu766r.js"></script>
 <script>
+ 	var goparam=urlparamToobj();//获取所有参数并转化为json对象
+ 	var frompage=goparam.frompage;
+ 	delete goparam.frompage;
 	function appStart(){
 		$('.code-image').attr('src',config.SERVER_URL+'/validate.php');
 		Endload();
@@ -109,7 +112,8 @@
 		            if(data.status==1){
 		                console.log(data);
 		                $.cookie('travelsUserId',param.phone, { expires: 1, path: '/' });
-		                PageGoto('index');        
+
+		                PageGoto(frompage,goparam);        
 		            }else{	
 		            	tipsLayer(data.info);
 		            }
@@ -129,7 +133,7 @@
 		            if(data.status==1){
 		                console.log(data);
 		                $.cookie('travelsUserId',param.phone, { expires: 1, path: '/' });
-		                PageGoto('index');        
+		                PageGoto(frompage,goparam);        
 		            }else{	
 		            	tipsLayer(data.info);
 		            }
@@ -177,5 +181,6 @@
 	    return true; 
 	   // return true;
 	}
+
 </script>
 </html>
