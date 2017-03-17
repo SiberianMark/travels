@@ -16,6 +16,7 @@ var API={//后台数据API
 	INDEX_LINESELECT2:'/Home/APITravel/first_tag2',//精品路线选择二级菜单
 	INDEX_LINESELECT3:'/Home/APITravel/first_lineselect',//精品路线选择二级菜单
 
+	PLATE_SLIDE:'/Home/APITravel/plate_slide',//板块轮播图
 	AREA_LINESELECT1:'/Home/APITravel/plate_tag1',//板块路线选择一级菜单
 	AREA_LINESELECT2:'/Home/APITravel/first_tag2',//板块路线选择一级菜单
 	AREA_LINESELECT3:'/Home/APITravel/plate_lines',//板块路线选择一级菜单

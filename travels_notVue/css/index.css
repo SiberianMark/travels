@@ -60,7 +60,7 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 }  
 .swiper-container{margin-top:1rem;}
 
-.goodlists-box .goodslist{display: none;}
+/*.goodlists-box .goodslist{display: none;}*/
 .goodslist ul li .good-img{position:relative;}
 .goodslist ul li .good-img img{width:100%;}
 .goodslist ul li .good-type{position:absolute;top:0.5rem;left:1rem;line-height: 2rem; font-size:1rem;text-align: center;background: #333;opacity: 0.8;color:#fff;padding:0 0.5rem;}
