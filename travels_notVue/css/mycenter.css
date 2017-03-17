@@ -53,7 +53,7 @@ header.header-title i{position:absolute;left:1rem;color:var(--topic-color);}
 .mycharge>p:last-child{float:right;position: absolute;right:0;bottom:0.25rem;}
 .user-wallet i,.mycharge>p:last-child span:nth-child(2),.mycharge>p:last-child span:nth-child(3),.charge-left>p:last-child>span:nth-child(2),.charge-left>p:last-child>span:nth-child(3){color:var(--topic-color);}
 
-.footer{position: absolute;width: 100%;bottom: 0;}
+.footer{width: 100%;bottom: 0;}
 .footer .travel-nav{margin:0.5rem;padding:0.5rem;}
 .footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
 .footer .travel-nav ul li{flex:1;text-align: center;}

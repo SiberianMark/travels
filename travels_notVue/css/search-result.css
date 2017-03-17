@@ -31,8 +31,8 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 .search-result .search-result-body ul li{margin-bottom: 0.5rem;border-bottom:1px solid #eee;padding-bottom: 0.5rem;}
 .search-result .good-uimg{ width: 95px;height: 96px;float: left;position: relative;}
 .search-result .good-uimg img{    opacity: 1;background-size: 120% 120%;background-position: 50%; -webkit-transform: translateZ(0);transform: translateZ(0);-webkit-transition: all .7s ease-in-out; transition: all .7s ease-in-out;height: 96px;}
-.search-result .depart{position: absolute;top:0;left:1rem;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
-.search-result .travels-type{position: absolute;bottom:0rem;left:1rem;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
+.search-result .depart{position: absolute;top:0;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
+.search-result .travels-type{position: absolute;bottom:0rem;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
 .search-result-body{margin:1rem 0rem 5rem 0rem;padding:0 0.8rem;background-color: #fff;}
 .search-result .right-good-info{margin-left: 13rem;font-size:1.2rem;}
 .search-result .right-good-info>p:first-child{width:100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 2rem;}

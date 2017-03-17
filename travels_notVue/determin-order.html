@@ -116,6 +116,7 @@
 	var currentMonth=Y+'-'+mon;
 	var monlimit=5;//只能查当前月向后推5个月的旅游数据
 
+	var fromDate=I('date');
 	var lineid=I('lineid',100002),//线路id
 	    date_id=0,//价格日期id
 	    adult_num=1,//成人数量
@@ -137,8 +138,17 @@
 		// var calendar=new JMCalender(calenderContainer,month);
 		// calendar.init();
 		if(isLogin(goparam)){
+			if(fromDate){//如果是选择了日期跳转
+				var list=fromDate.split('-');
+				var mon=list[1];
+				month=mon;
+				var date=list[2];
+			}
 			getData(month);
+			var priceobj=$('#calendar li[class*="active"]');
+			syncOrderInfo(priceobj,0);
 			getPriceDtails();
+
 		}
 		Endload();
 		//团期选择

@@ -73,6 +73,9 @@
 						fragmentp.appendChild(price);
 						fragmentp.appendChild(yuliang);
 						lis[i].className="hasPrice";
+						if(fromDate){
+							lis[i].className="hasPrice active";
+						}
 						lis[i].appendChild(fragmentp);
 					}
 				}

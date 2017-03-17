@@ -10,7 +10,7 @@
 	<script src="./js/head.js.js"></script>
 	<style>	
 		.user-order li{position:relative;}
-		.order-num{line-height:2rem;position: absolute;right:2rem;top:0;border-radius: 50%;display: block;width:2rem;height:2rem;background-color: var(--topic-color);color:#fff;}
+		.order-num{line-height:1.5rem;position: absolute;right:2rem;top:0;border-radius: 50%;display: block;width:1.5rem;height:1.5rem;background-color: var(--topic-color);color:#fff;}
 	}
 	</style>
 </head>
@@ -99,9 +99,13 @@
 <script>
 	var copyrightRender=getDotRender('index-copyright');
 	var userinfoRender=getDotRender('main-info');
+	var goparam={};
+	goparam.frompage='mycenter';
 	function appStart(){
-		getData();
-		getindexdata();
+		if(isLogin(goparam)){
+			getData();
+			getindexdata();
+		}
 		Endload();
 		$('.gerenziliao').on('click',function(){
 			PageGoto('myinfo');

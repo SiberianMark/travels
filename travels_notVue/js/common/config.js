@@ -36,6 +36,9 @@ var API={//后台数据API
 	SEARCH_RESULT:'/Home/APITravel/search',//搜索结果
 	SEARCH_LABEL:'/Home/APITravel/search_label',//搜索标签
 
+	GOOD_LINE_DETAIL:'/Home/APILine/line',//线路详情
+	GUESS_YOU_LIKE:'/Home/APITravel/guess_like',//猜您喜欢 	
+
 	GOOD_DATE_PRICE:'/Home/APILine/line_date',//线路日期对应价格
 	CREATE_ORDER:'/Home/APILine/create_order',//创建订单
 	PRICE_DETAILS:'/Home/APILine/money_detail',//费用说明
