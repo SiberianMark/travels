@@ -5,7 +5,7 @@
 	<script src="./js/head.meta.js"></script>
 	<title>搜索结果</title>
 	<link rel="stylesheet" href="./css/search-result.css">
-	<link rel="stylesheet" href="//at.alicdn.com/t/font_caxm916tfsd4e7b9.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_ycnmy3wzvp5pnwmi.css">
 
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
@@ -60,7 +60,7 @@
 			</div>
 			<div class="riqifright riqion">
 				<ul class="riqirdatenum">
-					<li class="active"><span>不限</span><i class="iconfont icon icon-gouxuankuang21"></i></li>
+					<li id="nolimit" class="active"><span>不限</span><i class="iconfont icon icon-gouxuankuang21"></i></li>
 					<li><span>1</span>天<i class="iconfont icon icon-gouxuankuang3"></i></li>
 					<li><span>2</span>天<i class="iconfont icon icon-gouxuankuang3"></i></li>
 					<li><span>3</span>天<i class="iconfont icon icon-gouxuankuang3"></i></li>
@@ -82,11 +82,13 @@
 				<div class="zuizao datetimeInvalid-show">
 					<!-- <p>最早出发日期</p> -->
 					<input id="datetimeInvalid-riqizao" class="datetimeInvalid-zuizao" placeholder="最早出发日期" style="" />
+					<i class="youjiantou iconfont icon icon-chacha"></i>
 					<i class="youjiantou iconfont icon icon-xiangyou"></i>
 				</div>
 				<div class="zuiwan datetimeInvalid-show">
 					<!-- <p>最晚出发日期</p> -->
 					<input id="datetimeInvalid-riqiwan" class="datetimeInvalid-zuiwan" placeholder="最晚出发日期" style="" />
+					<i class="youjiantou iconfont icon icon-chacha"></i>
 					<i class="youjiantou iconfont icon icon-xiangyou"></i>
 				</div>
 				<div class="yuefen">
@@ -100,7 +102,7 @@
 	</div>
 	<div class="jiagequjian">
 		<ul>
-			<li class="active">不限</li>
+			<li id="jiage-nolimit" class="active">不限</li>
 			<li>100以下</li>
 			<li>101-500</li>
 			<li>501-1000</li>
@@ -130,11 +132,7 @@
 		{{~it:item:index}}
 			<li goodid="{{=item.id}}">
 				<div>
-					<div class="left-img">
-						
-						<div class="good-uimg">
-						<div class="depart">{{=item.start_palce}}</div>
-						<div class="travels-type">{{=item.line_type}}</div><img src="{{=config.SERVER_URL+item.img}}" alt=""></div>	
+					<div class="img"><img src="{{=config.SERVER_URL+item.img}}"><span class="from from-type-1">{{=item.start_palce}}</span><span class="category">{{=item.line_type}}</span>
 					</div>
 					<div class="right-good-info">
 						<p class="title"><{{=item.main_name}} | {{=item.sub_name}} | {{=item.keywords}}</p>
@@ -145,14 +143,16 @@
 							{{~}}
 							</ul>
 						</div>
-						<p class="good-date">
+						<div class="good-date">
 							<i class="iconfont icon icon-riqi" style="font-size:1rem!important;vertical-align: baseline;"></i>
 							<span>团期：</span>
 							{{~item.date:dateitem:dateindex}}
+							{{?dateindex<3}}
 							<span dateid={{=dateitem.id}}>{{=dateitem.line_date}}</span>
+							{{?}}
 							{{~}}
 							<span>...</span>
-						</p>
+						</div>
 						<div class="good-price">
 							<p class="left-price">
 								<span class="topicColor">￥</span>
@@ -176,7 +176,7 @@
 </script>
 <!-- 月份选择渲染 -->
 <script type="text/template" id="date-select-tmp">
-	<li  class="active">不限<br/>月份</li>
+	<li  id="yuefen-nolimit"  class="active">不限<br/>月份</li>
 	{{~it:item:index}}
 	<li>{{=item}}</li>
 	{{~}}
@@ -200,10 +200,12 @@
 	var searchword=I('searchword');
 	var sMonth=travelDate.Format('yyyy-MM');//默认出游月份为当月
 	var sDate=travelDate.Format('yyyy-MM-dd');//默认最早出游日期为当天
-	var eDate=travelDate.DateAdd('d',7);//默认最晚出游日期为当天延后七天
+	var eDate=travelDate.DateAdd('d',7).toString();//默认最晚出游日期为当天延后七天
+	eDate=eDate.replace(/\//g,'-');
 	var label=''//特色标签默认为空
-	var price='不限'//价格区间默认为空
-	var day_num='不限'//出游天数默认不限
+	var price=''//价格区间默认为空
+	var day_num=''//出游天数默认不限
+	var monthSelected=false;//已经选择了月份
 
 	var resultBodyRen=getDotRender('result-body-tmp');
 	var MonRen=getDotRender('date-select-tmp');
@@ -218,7 +220,7 @@
 		param.month=sMonth;
 		param.sdate=sDate;
 		param.edate=eDate;
-		getSelectMonth();
+		getSelectMonth(monthSelected);
 
 		getData(param);
 		getLabel();//获取标签
@@ -270,7 +272,7 @@
 		//跳转到路线详情
 		$('.search-result-body').on('click','li',function(){
 			var obj={};
-			obj.id=$(this).attr('goodid');
+			obj.lineid=$(this).attr('goodid');
 			PageGoto('goodDetail',obj);
 		})
 		/*****************底板导航效果start*****************/
@@ -321,23 +323,59 @@
 		});
 		//日期筛选右框效果
 		$('.riqifright li').on('click',function(){
-
-			
-			if($(this).find('.iconfont').hasClass('icon-gouxuankuang3')){
-				$(this).find('.iconfont').removeClass('icon-gouxuankuang3').addClass('icon-gouxuankuang21');
-				$(this).addClass('active');
+			if($(this).attr('id')=='nolimit'){//点击的是不限的按钮
+				if($(this).hasClass('active')){//已经选中
+					$(this).removeClass('active');
+					$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');//换未选中图标
+				}else{
+					$(this).addClass('active');
+					$(this).find('.iconfont').removeClass('icon-gouxuankuang3').addClass('icon-gouxuankuang21');//换选中图标
+					$(this).siblings().each(function(index,val){//清空限制
+						$(val).removeClass('active');
+						$(val).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');//换未选中图标
+					})
+				}
 			}else{
-				$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');
-				$(this).removeClass('active');
+				if($(this).hasClass('active')){//已经选中
+					$(this).removeClass('active');
+					$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');//换未选中图标
+				}else{
+					$(this).addClass('active');
+					$(this).find('.iconfont').removeClass('icon-gouxuankuang3').addClass('icon-gouxuankuang21');//换选中图标
+					//清空限制
+					$('#nolimit').removeClass('active');
+					$('#nolimit').find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');//换未选中图标
+				}
 			}
+			
+			// if($(this).find('.iconfont').hasClass('icon-gouxuankuang3')){
+			// 	$(this).find('.iconfont').removeClass('icon-gouxuankuang3').addClass('icon-gouxuankuang21');
+			// 	$(this).addClass('active');
+			// }else{
+			// 	$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');
+			// 	$(this).removeClass('active');
+			// }
 			
 		});
 		// 清空
 		$('.qingkongriqi').on('click',function(){
 			$('.riqifright li').each(function(){
-				$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');
-				$(this).removeClass('active');
+				if($(this).attr('id')!='nolimit'){
+					$(this).find('.iconfont').removeClass('icon-gouxuankuang21').addClass('icon-gouxuankuang3');
+					$(this).removeClass('active');
+				}
+					
 			});
+			$('#month-select li').each(function(){
+				if($(this).attr('id')!='yuefen-nolimit'){
+					$(this).removeClass('active');
+				}
+					
+			});
+			$('#nolimit').addClass('active');
+			$('#nolimit').find('.iconfont').removeClass('icon-gouxuankuang3').addClass('icon-gouxuankuang21');
+			$('#yuefen-nolimit').addClass('active');
+			$('.icon-chacha').click();
 		});
 		// 取消
 		$('.riqifheader .cancel').on('click',function(){
@@ -348,9 +386,23 @@
 		$('.riqifheader .doriqifil').on('click',function(){
 			$('.riqifilter').css('display','none');
 			$('.riqifilter').animate({bottom:'-50rem'});
-			day_num=$('.riqirdatenum[class="active"]').text();
-			// 重置筛选条件
-			sMonth=$('#month-select ul li[class="active"]').html().toString().replace(/年/,'-');
+			//天数
+			if($('#nolimit').hasClass('active')){
+				day_num='';
+			}else{
+				$('.riqirdatenum li').each(function(index,val){
+					if($(val).hasClass('active')){
+						day_num=day_num+','+index;
+					}
+				});
+			}
+			
+			//月份
+			if($('#yuefen-nolimit').hasClass('active')){
+				sMonth=''
+			}else{
+				sMonth=$('#month-select').find('.active').html().substring(0,6);
+			};	
 			sDate=$('.datetimeInvalid-riqizao').val();
 			eDate=$('.datetimeInvalid-riqiwan').val();
 			var param={};
@@ -367,7 +419,34 @@
 
 		});
 		$('.riqirdatetime .yuefen li').on('click',function(){
+			if($(this).attr('id')!='yuefen-nolimit'){
+				monthSelected=true;
+				$('.zuizao').css('display','none');
+				$('.zuiwan').css('display','none');
+
+			}else{
+				$('.zuizao').css('display','block');
+				$('.zuiwan').css('display','block');
+			}
 			$(this).addClass('active').siblings().removeClass('active');
+			
+			
+		});
+		//
+		$('.riqirdatetime').on('change','input',function(){
+			if($('.datetimeInvalid-zuizao').val()!='' || $('.datetimeInvalid-zuiwan').val()!=''){
+				$('.riqirdatetime .yuefen').css('display','none');
+			}else{
+				$('.riqirdatetime .yuefen').css('display','block');
+			}
+		});
+		$('.icon-chacha').on('click',function(){
+			$(this).prev().val('');
+			if($('.datetimeInvalid-zuizao').val()!='' || $('.datetimeInvalid-zuiwan').val()!=''){
+				$('.riqirdatetime .yuefen').css('display','none');
+			}else{
+				$('.riqirdatetime .yuefen').css('display','block');
+			}
 		})
 		/****************************日期筛选弹窗end***************************************/
 
@@ -375,9 +454,36 @@
 
 		$('.jiagequjian li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			$('.jiagequjian').css('display','none');
+			$('.jiagequjian').animate({bottom:'-50rem'});
+			if($(this).attr('id')=="jiage-nolimit"){
+				price='';
+			}else{
+				price=$(this).html();
+			}
+			
+			//天数
+			day_num=day_num;
+			sMonth=sMonth;
+			sDate=sDate
+			eDate=eDate
+			var param={};
+			param.keyword=searchword;
+			param.type=type;
+			param.order=order;
+			param.month=sMonth;
+			param.sdate=sDate;
+			param.edate=eDate;
+			param.label=label;
+			param.price=price;
+			param.day_num=day_num;
+			getData(param);
 		});
 		$('.biaoqianfilter').on('click','li',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.biaoqianfilter').css('display','none');
+			$('.biaoqianfilter').animate({bottom:'-50rem'});
 			label=$(this).html();
 			var param={};
 			param.keyword=searchword;
@@ -393,6 +499,10 @@
 		});
 		$('.paixufilter li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			$(this).addClass('active').siblings().removeClass('active');
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.paixufilter').css('display','none');
+			$('.paixufilter').animate({bottom:'-50rem'});
 			order=$(this).attr('type');
 			var param={};
 			param.keyword=searchword;
@@ -425,7 +535,7 @@
 	function getSelectMonth(){
 		var monList=[];
 		for(var i=0;i<6;i++){
-			monList.push(travelDate.DateAdd('m',i).toString().replace(/\//,'年').replace(/\//,'月'));
+			monList.push(travelDate.DateAdd('m',i).toString().replace(/\//,'-').replace(/\//,'-'));
 		}
 		$('#month-select').html(MonRen(monList));
 	}
@@ -440,5 +550,6 @@
 			}
 		})
 	}
+
 </script>
 </html>

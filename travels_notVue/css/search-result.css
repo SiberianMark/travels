@@ -29,22 +29,59 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 } 
 .topicColor{color:var(--topic-color)}
 .search-result .search-result-body ul li{margin-bottom: 0.5rem;border-bottom:1px solid #eee;padding-bottom: 0.5rem;}
-.search-result .good-uimg{ width: 95px;height: 96px;float: left;position: relative;}
-.search-result .good-uimg img{    opacity: 1;background-size: 120% 120%;background-position: 50%; -webkit-transform: translateZ(0);transform: translateZ(0);-webkit-transition: all .7s ease-in-out; transition: all .7s ease-in-out;height: 96px;}
+.search-result .img {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+}
+.search-result .img img {
+    width: 100px;
+    height: 100px;
+}
+.search-result .img .from {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #394a59;
+    height: 16px;
+    line-height: 16px;
+}
+.saerch-result .img .from.from-type-1 {
+    background-color: #2dbb55;
+}
+.search-result .img .category {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background-color: rgba(76, 90, 101, 0.96);
+    color: #ccd6dd;
+    font-size: 10px;
+}
 .search-result .depart{position: absolute;top:0;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
 .search-result .travels-type{position: absolute;bottom:0rem;background: #000;opacity: 0.8;z-index: 999;color:#fff;line-height: 2rem;padding: 0 0.5rem;}
 .search-result-body{margin:1rem 0rem 5rem 0rem;padding:0 0.8rem;background-color: #fff;}
-.search-result .right-good-info{margin-left: 13rem;font-size:1.2rem;}
+.search-result .right-good-info{margin-left: 8rem;font-size:1.2rem;}
 .search-result .right-good-info>p:first-child{width:100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 2rem;}
 .search-result .right-good-info ul{line-height: 1.5rem;}
 .search-result .right-good-info ul li{display: inline-block;padding:0 0.1rem;border:1px solid #333;margin-left:0.5rem;}
 .good-label,.good-date,.good-price{color:#666;}
-.good-date{margin-top:.5rem;}
+.good-date{margin-top:.5rem;    word-break: break-all;}
 .good-date span{padding: 0.2rem;}
 .good-price{margin-top:.5rem;position: relative;}
 .good-price p{display: inline-block;}
 .numprice{font-size:2rem;}
-.good-price p:last-child{    position: absolute;right: 0;bottom: 0;}
+.good-price p:last-child{position: absolute;right: 0;bottom: 0;}
 
 .riqifilter{position:fixed;bottom:-50px;z-index: 1000;width: 100%;display: none;}
 .riqifilter .riqifheader{background-color: #38495d;color:#fff;font-size:1.4rem;}
@@ -69,10 +106,10 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 .mbsc-fr-popup{background:#fff!important;font-size:1.4rem!important;}
 .mbsc-fr-hdr{line-height: 5rem!important;}
 .mbsc-fr-btn-cont{height:2.5rem!important;}
-.riqirdatetime .zuizao .datetimeInvalid-zuizao,.riqirdatetime .zuiwan .datetimeInvalid-zuiwan{border: none;width: 90%;height: 4rem;font-size: 1.4rem;}
+.riqirdatetime .zuizao .datetimeInvalid-zuizao,.riqirdatetime .zuiwan .datetimeInvalid-zuiwan{border: none;width: 80%;height: 4rem;font-size: 1.4rem;}
 .riqirdatetime .icon-xiangyou{float:right;}
 .riqirdatetime .yuefen p{line-height: 3rem;font-size:1.4rem;}
-.riqirdatetime .yuefen ul li{display: inline-block; line-height: 2rem;border:1px solid #eee; text-align: center;   width: 5rem;padding: 0.5rem;}
+.riqirdatetime .yuefen ul li{word-break: break-all;display: inline-block; line-height: 2rem;border:1px solid #eee; text-align: center;   width: 4rem;padding: 0.5rem;}
 .riqirdatetime .yuefen ul li.active{color: var(--topic-color);border-color: var(--topic-color);}
 
 .jiagequjian{width:100%;height:20rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;}
@@ -97,5 +134,6 @@ top: 0px; /*// 使用和 Fixed 同样的方式设定位置*/
 .footer-filter div i.icon{display: block;}
 .search-result-modal{position:fixed;opacity: 0;top:0;left:0;right:0;bottom:0;z-index: 999;display: none;}
 
-
+.icon-chacha{position: absolute;
+right: 5rem;}
 

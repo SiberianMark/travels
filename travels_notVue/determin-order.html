@@ -163,7 +163,7 @@
 				}else{
 					var priceobj=$(this).find('.price');
 					syncOrderInfo(priceobj,1);
-					$(this).addClass('active');
+					$(this).addClass('active').siblings().removeClass('active');
 					date_id=$(this).find('.price').attr('date_id');
 				}
 			}	

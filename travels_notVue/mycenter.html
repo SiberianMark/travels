@@ -113,6 +113,9 @@
 		$('.xiugaimima').on('click',function(){
 			PageGoto('changepsw');
 		});
+		$('#content').on('click','.icon-home',function(){
+			PageGoto('index');
+		})
 	}
 	function getData(){
 		ajaxJson(API.MY_CENTER,{'id':getUserid()},function(data){
