@@ -18,9 +18,9 @@
 
 
 //写入公共js
-document.writeln('<script src="./js/common/config.js?v=2.4.0"><\/script>');
-document.writeln('<script src="./js/common/jquery.min.js?v=2.4.0"><\/script>');
-document.writeln('<script src="./js/common/jquery.cookie.js?v=2.4.0"><\/script>');
-document.writeln('<script src="./js/common/doT.min.js?v=2.4.0"><\/script>');
-document.writeln('<script src="./js/common/common.js?v=2.4.0"><\/script>');
-document.writeln('<script src="./js/common/function.js?v=2.4.0"><\/script>');
+document.writeln('<script src="/web/js/common/config.js?v=2.4.0"><\/script>');
+document.writeln('<script src="/web/js/common/jquery.min.js?v=2.4.0"><\/script>');
+document.writeln('<script src="/web/js/common/jquery.cookie.js?v=2.4.0"><\/script>');
+document.writeln('<script src="/web/js/common/doT.min.js?v=2.4.0"><\/script>');
+document.writeln('<script src="/web/js/common/common.js?v=2.4.0"><\/script>');
+document.writeln('<script src="/web/js/common/function.js?v=2.4.0"><\/script>');

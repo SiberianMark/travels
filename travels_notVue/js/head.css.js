@@ -1,2 +1,2 @@
-document.writeln('<link rel="stylesheet" href="./css/reset.css" />');
-document.writeln('<link rel="stylesheet" href="./css/common.css" />');
+document.writeln('<link rel="stylesheet" href="/web/css/reset.css" />');
+document.writeln('<link rel="stylesheet" href="/web/css/common.css" />');
