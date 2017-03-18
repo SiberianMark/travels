@@ -13,21 +13,6 @@
 </head>
 <body>
 	<div class="index-header">
-		<!-- <div class="choose-city">
-			<span class="com-logo">logo</span>
-		</div>
-		<div class="search">
-			<svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-search"></use>
-                </svg>
-			<p>国内游</p>
-		</div>
-		<div class="my-center">
-			<a href="#"></a>
-			<svg class="icon" aria-hidden="true">
-			    <use xlink:href="#icon-my"></use>
-			</svg>
-		</div> -->
 	</div>
 	<div class="swiper-container swiper-container-horizontal">
         <div id="area-head-swiper" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
@@ -37,25 +22,7 @@
         <div class="swiper-pagination"></div>
     </div>
     <section class="hot-place">
-       <!--  <div class="hot-title"><p>热门目的地</p></div>
-        <div class="hot-place-list">
-            <ul>
-                <li class="bordertop">三亚</li>
-                <li class="bordertop">云南</li>
-                <li class="bordertop">东北</li>
-                <li class="fixed-border bordertop">厦门</li>
-                <li>桂林</li>
-                <li>北京</li>
-                <li>华东</li>
-                <li class="fixed-border">四川</li>
-                <li>湖南</li>
-                <li>西北</li>
-                <li>新疆</li>
-                <li class="fixed-border">更多</li>
-                <div class="clear"></div>
-            </ul>
-
-        </div> -->
+      
     </section>
     <section class="hot-selled">
     <div class="qianggou bd">
@@ -148,7 +115,7 @@
 </script>
 <script type="text/template" id="hot-sell-tmp">
 {{~it.lists:item:index}}
-    <a class="cmAddClick" data-cm="H-1" href="javascript:;">
+    <a class="cmAddClick" data-cm="H-1" href="javascript:;" lineid={{=item.id}}>
         <div class="img-wrap">
             <div class="prd-pic" style="background-image: url({{=config.SERVER_URL+item.img}})">
             </div>
@@ -183,7 +150,7 @@
 <!-- 牛人专线等二级菜单模板 -->
 <script type="text/template" id="travel-place">
     <ul tag1id={{=it.tag1}}>
-    {{~it:item:index}}
+    {{~it.lists:item:index}}
         {{?index==0}}
             <li tag2id="{{=item.id}}">
                 <div>
@@ -206,12 +173,12 @@
         <div class="clear"></div>
 </script>
 
-<!-- 牛人专线等二级菜单模板 -->
+<!-- 路线列表模板 -->
 <script type="text/template" id="good-list">
         <ul tag1id={{=it.tag1}} tag2id={{=it.tag2}}>
 
         {{~it.lists:item:index}}
-            <li id={{=item.id}}>
+            <li lineid={{=item.id}}>
                 <div>
                     <div>
                         <div class="good-img">
@@ -263,7 +230,10 @@
         getTraveList(1,1,1)
         Endload();
         var fixed=0;
-   
+        //顶部搜索
+        $('.index-header').on('click','.search',function(){
+            PageGoto('search');
+        });
         //跳转个人中心
         $('.index-header').on('click','.my-center',function(){
             var param={};
@@ -277,18 +247,24 @@
         //热门目的地点击
         $('.hot-place').on('click','ul li',function(){
             var obj={};
-            obj.word=$(this).html();
-            PageGoto('search',obj);
+            obj.searchword=$(this).html();
+            PageGoto('searchresult',obj);
         });
-        //切换路线菜单
+        //跳转路线详情
+        $('.prd-list').on('click','a.cmAddClick',function(){
+            var obj={};
+            obj.lineid=$(this).attr('lineid');
+            PageGoto('goodDetail',obj);
+        });
+        //点击一级菜单切换
         $('.travel-place-type').on('click',' ul li',function(){
             console.log("click");
             $(this).addClass('active').siblings().removeClass('active');
-            var index=$(this).attr('index');
-            $(".travel-place").css('display','none');
-            $(".index"+index).css('display','block');
+            var tag1=$(this).attr('tag1id');
+            getTravelP(tag1);
+            getTraveList(tag1,1,1);
         });
-        //二级菜单切换
+        //点击二级菜单切换
         $('.travel-place').on('click','ul li',function(){
             console.log("click");
             var sib=$(this).siblings();
@@ -297,20 +273,18 @@
                 $(sib[i]).find('a').removeClass('first-important');
             }
             $(this).find('a').addClass('first-important');
-            // var subIndex=$(this).attr('subindex');
-            // var goodslist=$('.goodslist');
-            // for(var j=0;j<goodslist.length;j++){
-            //     $(goodslist[j]).css('display','none');
-            //     if($(goodslist[j]).attr("subindex")==subIndex){
-            //         $(goodslist[j]).css('display','block');
-            //     }
-            // }
-            // if($('.goodslist[subindex='+subIndex+']')==undefined){
-            //     $('.no-consultant-prompt').css('display','block');
-            // }config.SERVER_URL+
-           // getLineSelect3($(this).attr(type_id),$($(this).attr(box_id)),1);
+            var tag1=$(this).parent().attr('tag1id');
+            var tag2=$(this).parent().attr('tag2id');
+             getTraveList(tag1,tag2,1);
+            
+        });
+        //列表跳转
+        $('.goodslist').on('click',function(){
+            var obj={};
+            obj.lineid=$(this).attr('lineid');
+            PageGoto('goodDetail',obj)
+        });
 
-        }); 
     }
     // 获取轮播图数据
     function getswiperdata(){
@@ -371,6 +345,7 @@
     function getTravelP(tag1){
         ajaxJson(API.AREA_LINESELECT2,{'type':type,'tag1':tag1},function(res){
             if(res.status==1){
+                  console.log(travelPRender(res.data));
                 $('.travel-place').html(travelPRender(res.data));
             }else{
                 tipsLayer(data.info);
@@ -382,6 +357,7 @@
     function getTraveList(tag1,tag2,page){
         ajaxJson(API.AREA_LINESELECT3,{'type':type,'tag1':tag1,'tag2':tag2,'page':page},function(res){
             if(res.status==1){
+
                 $('.goodslist').html(travelListRender(res.data));
             }else{
                 tipsLayer(data.info);
@@ -389,38 +365,5 @@
         });
     }
 		
-   //  var swiper = new Swiper('.swiper-container',
-   //  	{
-   //          pagination: '.swiper-pagination',
-   //  		loop : true,
-   //  		autoplay : 5000,
-   //  		noSwiping : true,
-   //  		watchSlidesProgress : true,
-			// watchSlidesVisibility : true,
-
-   //  	});
-   //  window.onload=function(){
-   //      var fixed=0;
-   //      $('.travel-place-type ul li').on('click',function(){
-   //          console.log("click");
-   //          $(this).addClass('travel-place-type-active').siblings().removeClass('travel-place-type-active');
-   //          var index=$(this).attr('index');
-   //          $(".travel-place").css('display','none');
-   //          $(".index"+index).css('display','block');
-   //      });
-        // $(window).scroll(function(){
-        //     console.log($('.travel-place-type').offset().top);
-        //     console.log($(window).scrollTop());
-        //     if((($('.travel-place-type').offset().top-$('.travel-place-type').scrollTop())<=0) && fixed==0){
-        //         $('.travel-place-type').addClass('scrollFixedTop');
-        //         $('.travel-place').addClass('scrollFixedTop');
-        //         fixed=1;
-        //     }else{
-        //          $('.travel-place-type').removeClass('scrollFixedTop');
-        //         $('.travel-place').removeClass('scrollFixedTop');
-        //         fixed=0;
-        //     }
-        // });
-    //}
 	</script>
 </html>

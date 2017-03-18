@@ -82,7 +82,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 .goodslist ul li .good-img{position:relative;}
 .goodslist ul li .good-img img{width:100%;}
 .goodslist ul li .good-type{position:absolute;top:0.5rem;left:1rem;line-height: 2rem; font-size:1rem;text-align: center;background: #333;opacity: 0.8;color:#fff;padding:0 0.5rem;}
-.goodslist ul li .good-price{position:absolute;bottom:2rem;right:0rem;line-height: 2rem;font-size: 1.4rem;text-align: center; background:#d30775;padding:0 0.5rem;}
+.goodslist ul li .good-price{    color: #fff;position:absolute;bottom:2rem;right:0rem;line-height: 2rem;font-size: 1.4rem;text-align: center; background:#d30775;padding:0 0.5rem;}
 .goodslist ul li .good-desc{padding:1rem 1rem;}
 .goodslist ul li .good-desc .good-title{font-size:1.4rem;width:100%;font-weight: bold;}
 .goodslist ul li .good-desc div>p.sell-charge{color:#d30775;border:1px solid #d30775;display: inline;}

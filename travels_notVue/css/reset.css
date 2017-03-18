@@ -69,6 +69,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-siz
 /*flex-x-about---子元素x左右分布*****flex-x-center--子元素X左右分布，Y居中*/
 .flex-x-about,.flex-x-center{-webkit-box-pack:justify;-webkit-justify-content: space-between;justify-content: space-between}
 
+.
 .footer .travel-nav{margin:0.5rem;padding:0.5rem;}
 .footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
 .footer .travel-nav ul li{flex:1;text-align: center;}

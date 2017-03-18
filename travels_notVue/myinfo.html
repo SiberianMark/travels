@@ -4,39 +4,18 @@
 	<meta charset="UTF-8">
 	<script src="./js/head.meta.js"></script>
 	<title>我的个人信息</title>
-	<link rel="stylesheet" href="//at.alicdn.com/t/font_hb3t4ze1x4bfn7b9.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_ycnmy3wzvp5pnwmi.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
-	<style>
-	.user-info-form{  padding-top:2rem;  background: #fff;}
-	.do-save{margin:1rem 1rem;text-align: center;line-height: 4rem;font-size: 1.4rem;background-color: var(--topic-color);color:#fff;}
-	.user-info-form div{line-height: 4rem;font-size:1.4rem;color:#000;margin:0 1rem;border-bottom: 1px solid #eee;}
-	.user-info-form div label{padding-right:1rem;}
-	.user-info-form div input{border:none;height:3rem;width:70%;}
-	.shenfenzheng{width:100%;height:20rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
-	.sex-type i.iconfont,.zhengjian i.iconfont{float:right;}
-	.shenfenzheng ul{padding:0 1rem;}
-	.shenfenzheng ul li{line-height: 3rem;border-bottom: 1px solid #eee;}
-	.shenfenzheng ul li.active{color:var(--topic-color);}
-	.sex{width:100%;height:10rem;background-color: #fff;position:fixed;bottom:0;z-index: 1000;overflow: scroll; font-size: 1.4rem;display: none;overflow: scroll;}
-	.sex ul{padding:0 1rem;}
-	.sex ul li{line-height: 3rem;border-bottom: 1px solid #eee;}
-	.sex ul li.active{color:var(--topic-color);}
-	.search-result-modal{position:fixed;opacity: 0;top:0;left:0;right:0;bottom:0;z-index: 999;display: none;}
-
-	.footer{width: 100%;bottom: 0;}
-	.footer .travel-nav{margin:0.5rem;padding:0.5rem;}
-	.footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
-	.footer .travel-nav ul li{flex:1;text-align: center;}
-
-	.footer .copyright-info{text-align: center;}
-
-	.footer .copyright-info p{padding:0.5rem 0;}
-
-</style>
+	<link rel="stylesheet" href="./css/myinfo.css">
 </head>
 
 <body>
+	<header class="header-title">
+		<i class="iconfont icon icon-xiangzuo"></i>
+		<div class="title"><i class="iconfont icon icon-logo"></i><span>我的个人信息</span>
+		</div>
+	</header>
 	<div class="user-info-form">
 		<div class="phone-ipt"><label for="">手机号：</label><input placeholder="请输入手机号码" type="phone"></div>
 		<div class="nick-name"><label for="">昵称：</label><input placeholder="请输入昵称" type="text"></div>	
@@ -80,7 +59,7 @@
 	<div class="search-result-modal"></div>
 </body>
 	<script type="text/template" id="user-my-info">
-		<div class="phone-ipt"  userid="{{=it.data.id}}"><label for="">手机号：</label><input placeholder="请输入手机号码" type="phone" value="{{=it.data.email}}"></div>
+		<div class="phone-ipt"  userid="{{=it.data.id}}"><label for="">手机号：</label><input placeholder="请输入手机号码" type="phone" value="{{=it.data.mobile}}"></div>
 		<div class="nick-name"><label for="">昵称：</label><input placeholder="请输入昵称" type="text" value="{{=it.data.nickname}}"></div>	
 		<div class="user-name"><label for="">姓名：</label><input placeholder="请输入姓名" type="text" value="{{=it.data.username}}"> </div>
 		{{?it.data.sex==0}}
@@ -154,8 +133,9 @@
 			$('.sex-type').find('span').html($(this).text());
 		});
 		$('.do-save').on('click',function(){
-			var obj=M();
+			var obj={};
 			obj.userid=getUserid();
+			obj.phone=$('.phone-ipt input').val()
 			obj.type=1;
 			obj.username=$('.user-name input').val();
 			obj.sex=sex;
@@ -164,15 +144,21 @@
 			obj.email=$('.user-email input').val();
 			obj.id_type=id_type;
 			obj.id_num=$('.id_num input').val();
-			if(checkInput(obj)==true){
+			var checkrs=checkInput(obj)
+			if(checkrs==true){
 				ajaxJson(API.MY_INFO,obj,function(data){
 					if(data.status==1){
 						if(data.data!=undefined || data.data!=null || data.data!=''){
-							$('.user-info-form').html(myInfoRender(data));
+							tipsLayer(data.info);
+							setTimeout(getData,1000);
 						}
 						
+					}else{
+						tipsLayer(data.info);
 					}
 				});
+			}else{
+				tipsLayer(checkrs);
 			};		
 		});
 	}
@@ -183,7 +169,7 @@
 			return false;
 		};
 		var phoneFilter=/^1\d{10}/;    
-	    if(!phoneFilter.test(params.phone)) return "请输入正确格式的手机号"; 
+	    if(!phoneFilter.test(obj.phone)) return "请输入正确格式的手机号"; 
 	    return true;
 	}
 	function getData(){

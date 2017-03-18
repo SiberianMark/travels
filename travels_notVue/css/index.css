@@ -7,9 +7,9 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 .index-header>div.search{width:72%;text-align: center;}
 .index-header>div.search p{width: 80%;height:3rem;border-radius: 4px;line-height: 3rem;font-size: 1.4rem;    margin-left: 2rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .index-header>div.my-center{float:right;width:9%;}
-.my-center .icon{width:1.5rem;height:1.5rem;vertical-align: -0.4em;}
+.my-center .icon{width:1.5rem;height:1.5rem;/*vertical-align: -0.4em;*/}
 .swiper-container img{width:100%;}
-.icon {width: 1em; height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
+.icon {vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
 
 .travel-type{padding:0.5rem;height:4.4rem;background: #fff;margin-top: 0.5rem;}
 .travel-type ul li{float:left;width:25%;height:100%;text-align: center;line-height: 4.4rem;font-size:1.4rem;}
@@ -39,7 +39,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
 .scrollFixedTop{position:fixed;top:0;}
 .scrollFixedTopfix{margin-top: 4.4rem}
 .search{position:relative;}
-.search .icon{position: absolute;left:0.5rem;top:0.75rem;width:1.5rem;height:1.5rem;}
+.search .icon{position: absolute;left:0.5rem;}
 .travel-menu{padding:0.5rem 0 0.5rem 0.5rem;background: #fff;margin-top:1rem;}
 
 .travel-menu ul{display: -webkit-box; -webkit-box-orient:horizontal;display: flex;margin-top: 0.5rem;}

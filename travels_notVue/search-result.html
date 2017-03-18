@@ -197,7 +197,7 @@
 	var travelDate=new Date();
 	var type=0;//默认搜索类型
 	var order=0;//默认排序
-	var searchword=I('searchword');
+	var searchword=decodeURIComponent(I('searchword'));
 	var sMonth=travelDate.Format('yyyy-MM');//默认出游月份为当月
 	var sDate=travelDate.Format('yyyy-MM-dd');//默认最早出游日期为当天
 	var eDate=travelDate.DateAdd('d',7).toString();//默认最晚出游日期为当天延后七天
@@ -211,6 +211,7 @@
 	var MonRen=getDotRender('date-select-tmp');
 	var labelRen=getDotRender('label-tmp');
 	function appStart(){
+		$('.search-input input').val(searchword);
 		datetimeDateInit();
 		console.log(sMonth);
 		var param=new Object();
