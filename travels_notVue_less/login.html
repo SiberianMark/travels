@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/head.meta.js"></script>
+	<title>登录</title>
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_ycnmy3wzvp5pnwmi.css">
+	<script src="./js/head.css.js"></script>
+	<script src="./js/head.js.js"></script>
+	<link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body>
+	<header class="header-title">
+		<i class="iconfont icon icon-xiangzuo"></i>
+		<div class="title"><i class="iconfont icon icon-logo"></i><span>登录</span>
+		</div>
+		
+	</header>
+	<nav class="login-nav">
+	<ul>
+		<li class="userid-login on">账号登录</li>
+		<li class="message-login">动态密码登录</li>
+	</ul>
+		
+
+	</nav>
+	<section class="login-sec">
+		<div class="userid-sec">
+			<div class="userid">
+				<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-shoujihaoma"></use>
+                </svg>
+				<div><input type="text" placeholder="请输入手机号">
+			</div></div>
+			<div class="password">
+				<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-mima"></use>
+                </svg>
+				<div><input type="password" placeholder="请输入密码"></div>
+			</div>
+		</div>
+		<div class="do-login">登录</div>
+		<div class="other-opera-login">
+			<div class="regist">注册新用户</div>
+			<div class="foget-psw">忘记密码？</div>
+		</div>
+	</section>
+	<section class="message-sec">
+		<div class="userid">
+			<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-shoujihaoma"></use>
+                </svg>
+			<div><input type="phone" placeholder="请输入手机号"></div>
+		</div>
+		<div class="img-code">
+			<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-yanzhengma"></use>
+                </svg>
+			<div class="code-input"><input type="text" placeholder="验证码"></div>
+			<div class="rig"> <img class="code-image j_refresh" src="" alt="验证码"> </div>			
+		</div>
+		<div class="message-code">
+			<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-iconfontcolor11"></use>
+                </svg>
+			<div class="code-input"><input type="text" placeholder="动态密码"></div>
+			<div class="msg-code">获取动态密码</div>			
+		</div>
+		<div class="do-login">登录</div>
+	</section>
+</body>
+<script type="text/javascript" src="//at.alicdn.com/t/font_9m5y5nghp7tu766r.js"></script>
+<script>
+ 	var goparam=urlparamToobj();//获取所有参数并转化为json对象
+ 	var frompage=goparam.frompage;
+ 	delete goparam.frompage;
+	function appStart(){
+		$('.code-image').attr('src',config.SERVER_URL+'/validate.php');
+		Endload();
+		$('.login-nav li').on('click',function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			if($(this).hasClass('userid-login')){
+				
+				$('.login-sec').css('display','block');
+				$('.message-sec').css('display','none');
+			}else{
+				$('.login-sec').css('display','none');
+				$('.message-sec').css('display','block');
+			}
+		});
+		$('.login-sec .do-login').on('click',function(){
+			var param={};	
+			param.phone=$('.login-sec .userid input').val();
+			param.passwd=$('.login-sec .password input').val();
+			var checkresult=checkInput(0,param);
+			if(checkresult ==true){
+				ajaxJson(API.LOGIN_LOGIN,param,function(data){
+		            if(data.status==1){
+		                console.log(data);
+		                $.cookie('travelsUserId',param.phone, { expires: 1, path: '/' });
+
+		                PageGoto(frompage,goparam);        
+		            }else{	
+		            	tipsLayer(data.info);
+		            }
+		        });
+	        }else{
+	        	tipsLayer(checkresult);
+	        };
+		});
+		$('.message-sec .do-login').on('click',function(){
+			var param={};	
+			param.phone=$('.message-sec .userid input').val();
+			param.valid=$('.img-code input').val();
+			param.verify=$('.message-code input').val();
+			var checkresult=checkInput(1,param);
+			if(checkresult ==true){
+				ajaxJson(API.LOGIN_LOGIN,param,function(data){
+		            if(data.status==1){
+		                console.log(data);
+		                $.cookie('travelsUserId',param.phone, { expires: 1, path: '/' });
+		                PageGoto(frompage,goparam);        
+		            }else{	
+		            	tipsLayer(data.info);
+		            }
+		        });
+	        }else{
+	        	tipsLayer(checkresult);
+	        };
+		});
+		$('.regist').on('click',function(){
+			PageGoto('regist');
+		});
+		$('.foget-psw').on('click',function(){
+			PageGoto('forgetPSW');
+		});
+		$('.msg-code').on('click',function(){
+			var _this=$(this);
+			var param={};
+			param.phone=$('.message-sec .userid input').val();
+			param.valid=$('.message-sec .img-code input').val();
+			var checkresult=checkInput(2,param);
+			if(checkresult ==true){
+				ajaxJson(API.LOGIN_PHONEVAL,param,function(data){
+		            if(data.status==1){
+		               _this.html('已发送');        
+		            }else{	
+		            	tipsLayer(data.info);
+		            }
+		        });
+			}
+		})
+	}
+	function checkInput( type,params){
+	    if(typeof params != "object") return;
+	    var result=true;
+	    var phoneFilter=/^1\d{10}/;    
+	    if(!phoneFilter.test(params.phone)) return "请输入正确格式的手机号"; 
+	    if(type==0){//密码登录验证
+	    	if(params.passwd!=undefined && (params.passwd.length<4 || params.passwd.length>16)) return "密码位数不合适,请重新输入";
+	    }else if(type==1){//验证码登录
+	    	if(params.valid==undefined || params.valid=="") return "请输入验证码！";
+        	if(params.verify==undefined || params.verify=="") return "请输入手机验证码！";
+	    }else if(type==2){//获取手机验证码
+	    	if(params.valid==undefined || params.valid=="") return "请输入验证码！";
+	    }
+	    return true; 
+	   // return true;
+	}
+
+</script>
+</html>
