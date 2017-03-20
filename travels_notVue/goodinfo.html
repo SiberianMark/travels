@@ -103,7 +103,7 @@
 <!-- 路线详情 -->
 <script type="text/template" id="line-desc-tmp">
     <div class="good-desc-title">
-            <ul>
+            <ul class="desc-menu sticky JMsticky">
                 <li class="active"><a href="#xingcheng"><span>6</span>日行程</a></li>
                 <li><a href="#tese">产品特色</a></li>
                 <li><a href="#feiyong">费用说明</a></li>
@@ -194,13 +194,15 @@
 </script>
 <script type="text/template" id="you-like-tmp">
     <div id="swiper-youkike" class="swiper-container swiper-container-horizontal swiper-container-multirow">
+        <div class="swiper-wrapper" >
         {{~it:item:index}}
-            <div lineid="{{=item.id}}" class="swiper-wrapper" >
-                <div class="swiper-slide swiper-slide-active" data-swiper-column="0" data-swiper-row="0" style="order: 0;">
+            
+                <div class="swiper-slide swiper-slide-active" data-swiper-column="0" data-swiper-row="0" style="order: 0;" lineid="{{=item.id}}">
                     <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url({{=config.SERVER_URL+item.img}});height:8rem"></div><div class="name"><span>{{=item.start_palce}}</span>|s<span>{{=item.line_type}}</span></div></div><div class="prd-info"><p>{{=item.main_name}}|{{=item.sub_name}}</p><div class="prd-pri"><span>¥2687</span><span><i>¥</i>{{=item.price}}<i>起</i></span></div></div></a>
                 </div>
-            </div>
+           
         {{~}}
+         </div>
                 <!-- Add Pagination -->
                 <div id="pagination-youlike" class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
 </script>
@@ -213,7 +215,7 @@
     var youlikeRender=getDotRender('you-like-tmp');
 	function appStart(){
         getData(); 
-        getlikeData();  
+        getlikeData(); 
 		Endload();
         //商品描述菜单切换
         $('#line-desc-info').on('click','.good-desc-title li',function(){
@@ -301,6 +303,8 @@
                         } 
 
                     });
+                //如sticky无法兼容，则采用js方法进行处理固定
+                JMsticky(); 
             }else{
                 tipsLayer(res.info);
             }
@@ -318,7 +322,7 @@
                     slidesPerView: 2,
                     slidesPerColumn: 2,
                     paginationClickable: true,
-                    spaceBetween: 0,
+                    spaceBetween: 10,
                     observer:true,//修改swiper自己或子元素时，自动初始化swiper 
                     observeParents:true,//修改swiper的父元素时，自动初始化swiper 
                     onSlideChangeEnd: function(swiper){ 

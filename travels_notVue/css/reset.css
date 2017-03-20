@@ -54,7 +54,7 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-siz
 /*设置主题颜色*/
 :root {
   --base-font-size: 16px;
-  --topic-color: #d30775;
+  --topic-color: #01AF63;
   --sup-topic-color:#01AF63;
 }
 .clear{clear:both;}

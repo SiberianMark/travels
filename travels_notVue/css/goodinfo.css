@@ -1,3 +1,7 @@
+
+
+
+
 body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-size: 1.4rem;}
 li{list-style: none;}
 .icon {
@@ -62,6 +66,7 @@ header.header-title i:last-child{position:absolute;right:1rem;font-size: 3rem!im
 
 .good-desc{margin-top:0.5rem;}
 .good-desc-title{background-color: #fff;}
+.desc-menu{background-color: #fff;}
 
 .good-desc-title ul{display: flex;line-height: 4rem;font-size: 1.4rem;border-bottom: 1px solid #eee;}
 .good-desc-title ul li{flex:1;text-align: center;}

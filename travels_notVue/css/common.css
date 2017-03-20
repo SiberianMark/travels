@@ -3,3 +3,9 @@
 .tipsLayer>div>p{text-align: center;}
 .tipsLayer>div>p>img{width: 3rem;height: 3rem;}
 .tipsLayer.hide{display: none !important;}
+
+
+
+
+.fixed{position: fixed;top: 0;  }  
+.JMsticky {width: 100%;	text-transform: uppercase;  }  

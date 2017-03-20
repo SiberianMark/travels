@@ -36,7 +36,7 @@
         </div>
     </section>
    
-    <div class="travel-place-type sticky">
+    <div class="travel-place-type JMsticky">
     </div>
      <div class="travel-place index1">
     	
@@ -222,12 +222,15 @@
      var hotsellRender=getDotRender('hot-sell-tmp');
     var type=2;//1-周边游，2-国内游，3-出境游，4-港澳游
     function appStart(){
+        
         getswiperdata();
         getindexdata();
         gethotplace();
         getTravelTP();
         getTravelP(1);
-        getTraveList(1,1,1)
+        getTraveList(1,1,1);
+        //如sticky无法兼容，则采用js方法进行处理固定
+        JMsticky();
         Endload();
         var fixed=0;
         //顶部搜索

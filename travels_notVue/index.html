@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="./web/js/head.meta.js"></script>
+	<script src="/web/js/head.meta.js"></script>
 	<title></title>
-	<!-- <link rel="stylesheet" href="./web/css/aliicon.css"> -->
-	<link rel="stylesheet" href="./web/css/swiper-3.4.1.min.css">
-    <link rel="stylesheet" href="./web/css/index.css">
-    <!-- <link rel="stylesheet" href="./web/css/iconfont.css"> -->
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_m30h28fudqjjor.css">
-	<script src="./web/js/head.css.js"></script>
-	<script src="./web/js/head.js.js"></script>
+	<!-- <link rel="stylesheet" href="/web/css/aliicon.css"> -->
+	<link rel="stylesheet" href="/web/css/swiper-3.4.1.min.css">
+    <link rel="stylesheet" href="/web/css/index.css">
+    <!-- <link rel="stylesheet" href="/web/css/iconfont.css"> -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_7hcxkwrjqkuo9a4i.css">
+	<script src="/web/js/head.css.js"></script>
+	<script src="/web/js/head.js.js"></script>
+    <style>
+        /*.travel-place-type{position: fixed;}*/
+    </style>
 </head>
 <body>
 	<div class="index-header">
@@ -28,14 +31,18 @@
     <div class="travel-type">
     	
     </div>
-    <div class="travel-place-type sticky">
-    	
-    </div>
-    <div class="travel-place-box">
+    <div class="travel-info-container">
+         <div class="travel-place-type sticky JMsticky">
         
+        </div>
+        <div class="travel-place-box">
+            
+        </div>
+         
+        <div class="goodlists-box"></div>
+
     </div>
-     
-    <div class="goodlists-box"></div>
+   
 
     <div class="footer">
     	<div class="travel-nav">
@@ -75,7 +82,7 @@
 
        <ul>
             {{~it.part1:item:index}}
-            <li><a href="./web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
+            <li><a href="/web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
             {{~}}  
         </ul>
 </script>
@@ -261,7 +268,8 @@
     </div>
 </script>
 <!-- <script src="//at.alicdn.com/t/font_8s76tclc1uoko6r.js"></script> -->
-<script src="./web/js/swiper-3.4.1.jquery.min.js"></script>
+<script src="/web/js/swiper-3.4.1.jquery.min.js"></script>
+<!-- <script src="/web/js/pin.jquery.js"></script> -->
 <script> 
 
     var swiperRender=getDotRender('index-swiper');  
@@ -281,14 +289,16 @@
 
     function appStart(){
         var fixed=0;
-       
+        
         getswiperdata();
         getindexdata();
         getplatedata();
         getLineSelect1();
         getLineSelect2(1);
         getLineSelect3(1,1,1);
-        
+        // $('.pinned').pin();
+        //如sticky无法兼容，则采用js方法进行处理固定
+        JMsticky();
         Endload(); 
         $('.travel-place-type').on('click','>ul li',function(){
             console.log("click");
