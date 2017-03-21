@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/head.meta.js"></script>
+	<title>注册</title>
+	<link rel="stylesheet" href="./css/register.css">
+	<!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/register.less"> -->
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_ycnmy3wzvp5pnwmi.css">
+	<script src="./js/head.css.js"></script>
+	<script src="./js/head.js.js"></script>
+	
+	
+
+</head>
+<body>
+	<header class="header-title">
+		<i class="iconfont icon icon-xiangzuo"></i>
+		<div class="title"><i class="iconfont icon icon-logo"></i><span>注册</span>
+		</div>
+	</header>
+	<section class="message-sec">
+		<div class="userid">
+			<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-shoujihaoma"></use>
+                </svg>
+			<div><input type="phone" placeholder="请输入手机号"></div>
+		</div>
+		<div class="img-code">
+			<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-yanzhengma"></use>
+                </svg>
+			<div class="code-input"><input type="text" placeholder="验证码"></div>
+			<div class="rig"> <img class="code-image j_refresh" src="" alt="验证码"> </div>			
+		</div>
+		<div class="message-code">
+			<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-iconfontcolor11"></use>
+                </svg>
+			<div class="code-input"><input type="text" placeholder="动态密码"></div>
+			<div class="msg-code">获取动态密码</div>			
+		</div>
+		<div class="password">
+				<svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-mima"></use>
+                </svg>
+				<div><input type="password" placeholder="请输入密码"></div>
+			</div>
+		<div class="user-liscence">
+			<input type="checkbox"/>
+			<p>我已阅读并同意<span class="licence-rk" style="color:var(--topic-color)">《XX旅游协议》</span></p>
+		</div>
+		<div class="do-login">注册</div>
+	</section>
+	<div class="licence-content">
+		<p class="header">用户协议</p>
+		<p class="licence-con"> 1.行程中所列航班号及时间仅供参考，将根据实际情况做出合理的调整<br/> 2.行程中所注明的城市间距离，参照境外地图，仅供参考，视当地交通状况进行调整 <br/>3.请您在境外期间遵守当地的法律法规，以及注意自己的人身安全<br/> 4.此参考行程和旅游费用，我公司将根据参团人数、航班、签证及目的地国临时变化保留调整的权利 <br/>5.依照旅游业现行作业规定，本公司有权依据最终出团人数情况，调整房间分房情况 6.贵重物品(现金，护照等)<br/>请随身携带或寄放在住宿饭店的保险箱内，絶不可放在车上或房间内等，如有遗失旅客必须自行负责，与接待旅行社责任无关<br/> 7.住宿饭店内请先观察紧急出口所在，若是饭店警报铃响，请勿慌张。并请由紧急出口迅速离开。休息时请加扣房间内之安全锁，对陌生人不要乱开门。勿将衣物披挂在饭店的灯上，及勿在床上抽烟，烟蒂不能乱丢，以防造成火灾形责或饭店物品损坏而要求住客赔赏 <br/>8.饭店游泳池如时间未开放及无救生人员在现场，请勿自入泳池内，否则如有意外发生须自行负责<br/>1.行程中所列航班号及时间仅供参考，将根据实际情况做出合理的调整 </p>
+		<div class="icon-close"></div>
+	</div>
+</body>
+<script type="text/javascript" src="//at.alicdn.com/t/font_9m5y5nghp7tu766r.js"></script>
+<script>
+	function appStart(){
+		$('.code-image').attr('src',config.SERVER_URL+'/validate.php');
+		Endload();
+		$('.licence-rk').on('click',function(){
+			$('.licence-content').css('display','block');
+		});
+		$('.icon-close').on('click',function(){
+			$('.licence-content').css('display','none');
+		});
+		$('.do-login').on('click',function(){
+			if($('.user-liscence input').is(':checked')==true){
+				var obj={};
+				obj.phone=$('.userid input').val();
+				obj.passwd=$('.password input').val();
+				obj.valid=$('.img-code input').val();
+				obj.verify=$('.message-code input').val();
+				var checkresult=checkInput(0,obj);
+				if(checkresult==true){
+						ajaxJson(API.LOGIN_REG,obj,function(){
+						if(data.status==1){
+							console.log(data.info);
+							PageGoto('index');
+						}else{
+							console.log(data.info);
+						}
+					});
+				}else{
+					tipsLayer(checkresult);
+				};
+			}	
+		});
+
+		$('.msg-code').on('click',function(){
+			var $this=$(this);
+			var obj={};
+			obj.phone=$('.message-sec .userid input').val();
+			obj.valid=$('.code-input input').val();
+			var checkresult=checkInput(1,obj);
+			if(checkresult==true){
+				ajaxJson(API.LOGIN_PHONEVAL,obj,function(data){
+					if(data.status==1){
+						tipsLayer(data.info);
+						$this.html('已发送');
+					}else{
+						tipsLayer(data.info);
+					}
+					
+				});
+			}else{
+				tipsLayer(checkresult);
+			};			
+		});
+		$('.user-liscence input').on('click',function(){
+			if($(this).is(':checked')==true){
+				$('.do-login').css({'background-color':'#01af63','color':'#fff'});			
+			}else{
+				$('.do-login').css({'background-color':'#999','color':'#eee'});
+			}
+		})
+		
+	}
+	function checkInput(type,params){
+	    if(typeof params != "object") return;
+	    var result=true;
+	    var phoneFilter=/^1\d{10}/;    
+	    if(!phoneFilter.test(params.phone)) return "请输入正确格式的手机号"; 
+	    if(type==0){//密码注册
+	    	if(params.passwd!=undefined && (params.passwd.length<4 || params.passwd.length>16)) return "密码位数不合适,请重新输入";
+	    	if(params.valid==undefined || params.valid=="") return "请输入验证码！";
+        	if(params.verify==undefined || params.verify=="") return "请输入手机验证码！";
+	    }else if(type==1){//获取手机验证码
+	    	if(params.valid==undefined || params.valid=="") return "请输入验证码！";
+	    	if(params.valid==undefined || params.valid=="") return "请输入验证码！";
+	    }
+	    return true; 
+	   // return true;
+	}
+</script>
+</html>

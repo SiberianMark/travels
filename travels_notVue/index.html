@@ -7,6 +7,7 @@
 	<!-- <link rel="stylesheet" href="/web/css/aliicon.css"> -->
 	<link rel="stylesheet" href="/web/css/swiper-3.4.1.min.css">
     <link rel="stylesheet" href="/web/css/index.css">
+    <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/index.less"> -->
     <!-- <link rel="stylesheet" href="/web/css/iconfont.css"> -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_7hcxkwrjqkuo9a4i.css">
 	<script src="/web/js/head.css.js"></script>
@@ -60,6 +61,7 @@
     	</div>
     </div>  
 <div class="no-consultant-prompt" style="display: none ;"><div></div> <span>还没有线路哦~晚点再来~</span> </div>
+<div class="gototop"><i class="iconfont icon icon-gototop"></i></div>
 </body>
 <!-- 轮播图模板 -->
 <script type="text/template" id="index-swiper">
@@ -252,7 +254,8 @@
                 </div>
                 <div class="good-desc">
                     <div>
-                       <p class="good-title">{{=listitem.main_name}},{{=listitem.sub_name}}</p>
+                       <p class="good-title">{{=listitem.main_name}}</p>
+                       <p  class="sub-title">{{=listitem.sub_name}}</p>
                     </div>
                     <div class="good-labels">
                         <p class="sell-charge">立减</p>
@@ -371,7 +374,12 @@
             var param={};
             param.lineid=$(this).attr('goodid');
             PageGoto('goodDetail',param);
-        })
+        });
+        //滚动到顶部
+        $('.gototop').on('click',function(){
+             var speed=200;//滑动的速度
+             $('body').animate({ scrollTop: 0 }, speed);   
+        });
     }   
     //轮播图数据
     function getswiperdata(){

@@ -1,0 +1,48 @@
+	@import url('./common.less');
+	body{font-size: 1.4rem}
+	.icon {
+		       font-size: 2rem!important;
+		       vertical-align: -0.15em;
+		       fill: currentColor;
+		       overflow: hidden;
+		    }
+	.head{line-height: 4rem;font-size: 2rem;background-color: #fff;text-align: center;border-bottom: 1px solid #eee;}
+	.good-title{padding:1rem 0.5rem;background-color: #fff;}
+	.good-title p{padding-top:1rem;}
+	.good-title .price{line-height: 2rem;float:right;}
+	.good-title .price>span{font-size:2rem;color:@topic-color;}
+	.good-calerder{margin-top:1rem;background-color: #fff;}
+	.calendar-box{padding:0.5rem 0;}
+	.calendar-head{border-bottom:1px solid #eee;width:100%; line-height: 4rem;font-size: 2rem;justify-content: space-around;}
+	.calendar-head li.active{color:@topic-color;}
+	.calendar-section .calendar .flex{width: 100%;justify-content: space-around;line-height: 4rem;}
+	.calendar-section #calendar li{ color:#b2b2b2;line-height:1.6rem; float:left;width: 14.2%;text-align: center;padding:1rem 0 0 0rem;height: 5rem;}
+	.calendar-section #calendar li.active{background-color:@sup-topic-color!important;opacity: 0.4;color:#fff!important;}
+	.calendar-section #calendar .hasPrice{color:#000;}
+	.calendar-section #calendar li.notactive{color:#b2b2b2;}
+	.calendar-section #calendar li .price{color:@topic-color;}
+	.calendar-section #calendar li.active{color:#000;}
+
+	.order-form{background: #fff;margin-top: 1rem;}
+	.order-form ul li{border-bottom: 1px solid #eee;padding:1rem 0;}
+	.order-form ul li div:first-child{float:left;width:30%;padding-left:2rem;}
+	.order-form ul li div.price{width:30%;float:left;color:@topic-color;}
+	.order-form ul li div.count{width:30%;float:left;}
+	.order-form ul li div.count span.input{display: inline-block;height: 1rem;width: 3rem;text-align: center;border: 1px solid #666;padding: 0.5rem 0;}
+	.order-form ul li div.count div{display: inline-block;}
+	.order-form ul li.remark-info label{padding-left:2rem;}
+	.order-form ul li.remark-info input{line-height: 3rem;border: none;width: 70%;}
+	.order-form ul li{clear:both;}
+
+	.confirm-info i.icon{margin-left:2rem; color:var(--sup-topic-color); vertical-align: baseline;font-size: 2rem; }
+	.confirm-info .price-gind{color:var(--sup-topic-color);font-size:2rem;}
+	.confirm-info p{display: inline-block;margin-left:1rem;line-height: 3rem;}
+	.footer{line-height: 5rem;width:100%;}
+	.footer div{width:49.4%;display: inline-block;}
+	.footer .total-price{background-color: #fff;text-align: center;}
+	.footer .total-price .price-num{color:@topic-color;font-size: 2rem;}
+	.footer .do-order{background-color: @topic-color;text-align: center;color:#fff;font-size: 2rem;}
+
+	.price-details-modal{display:none;word-break: break-all;position: fixed;top:0;left:0;right:0;bottom:0;background-color: #000;opacity: 0.5;color:#fff;padding:1rem 1rem;overflow: scroll;width:100%;}
+	.price-details-modal>h3{height:4rem;line-height: 4rem;font-size: 2rem;padding-left:1rem;border-bottom: 1px solid #fff;}
+	.price-details-modal>div .details{font-size: 1.4rem;padding-left:1rem;padding: 0 2rem;word-break: break-all;}
