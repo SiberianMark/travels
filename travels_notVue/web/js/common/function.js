@@ -358,4 +358,13 @@ function JMsticky(){
 function loadModernizr(){
     console.log('下载兼容性检测库Modernizr');
 }
-
+function gotoScroll(){
+    document.addEventListener('scroll',function(){
+        if(scrollY>=500){
+             $('.gototop').css('display','block');
+        }else{
+            $('.gototop').css('display','none');
+        }
+       
+    })
+}
