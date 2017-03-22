@@ -6,7 +6,6 @@
 	<title>登录</title>
 	<link rel="stylesheet" href="./css/login.css">
 	<!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/login.less"> -->
-	<link rel="stylesheet" href="//at.alicdn.com/t/font_ycnmy3wzvp5pnwmi.css">
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
 	
@@ -31,15 +30,11 @@
 	<section class="login-sec">
 		<div class="userid-sec">
 			<div class="userid">
-				<svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-shoujihaoma"></use>
-                </svg>
+				<i class="iconfont icon icon-shoujihaoma"></i>
 				<div><input type="text" placeholder="请输入手机号">
 			</div></div>
 			<div class="password">
-				<svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-mima"></use>
-                </svg>
+			<i class="iconfont icon icon-mima"></i>
 				<div><input type="password" placeholder="请输入密码"></div>
 			</div>
 		</div>
@@ -51,22 +46,16 @@
 	</section>
 	<section class="message-sec">
 		<div class="userid">
-			<svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-shoujihaoma"></use>
-                </svg>
+			<i class="iconfont icon icon-shoujihaoma"></i>
 			<div><input type="phone" placeholder="请输入手机号"></div>
 		</div>
 		<div class="img-code">
-			<svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-yanzhengma"></use>
-                </svg>
+			<i class="iconfont icon icon-yanzhengma"></i>
 			<div class="code-input"><input type="text" placeholder="验证码"></div>
 			<div class="rig"> <img class="code-image j_refresh" src="" alt="验证码"> </div>			
 		</div>
 		<div class="message-code">
-			<svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-iconfontcolor11"></use>
-                </svg>
+			<i class="iconfont icon icon-iconfontcolor11"></i>
 			<div class="code-input"><input type="text" placeholder="动态密码"></div>
 			<div class="msg-code">获取动态密码</div>			
 		</div>
@@ -154,7 +143,10 @@
 		            }
 		        });
 			}
-		})
+		});
+		$('.icon-xiangzuo').on('click',function(){
+			PageGoto(frompage);
+		});
 	}
 	function checkInput( type,params){
 	    if(typeof params != "object") return;

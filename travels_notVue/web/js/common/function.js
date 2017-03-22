@@ -1,5 +1,7 @@
 var jObj = new Object();
-
+var pull_action='down';
+var tag1=1,//一级菜单id
+    tag2=1;//二级菜单id
 function ajaxJson(_url,param){
 	var callback = arguments[2]?arguments[2]:"ajaxCallback";
 	var type=arguments[3]?arguments[3]:config.JSONMETHOD;
@@ -48,11 +50,7 @@ function ajaxJson(_url,param){
     	dataType:dataType,
     	async:async,
     	success:function(data){
-    		if(data.status==1){
-    			eval(callback(data));
-    		}else{
-    			alert(data.info);
-    		}    		
+    			eval(callback(data));  		
     	},
     	error:function(){
     		return false;
@@ -250,7 +248,7 @@ function createLoadingEffect(effect){
 
 function isLogin(goparam){
     var result= false;
-    if($.cookie('user_id')!= "null" && $.cookie('user_id')!= "" && $.cookie('user_id')!= undefined){
+    if($.cookie('travelsUserId')){
         result= true; 
     }else{
         var obj={};
@@ -358,13 +356,51 @@ function JMsticky(){
 function loadModernizr(){
     console.log('下载兼容性检测库Modernizr');
 }
-function gotoScroll(){
-    document.addEventListener('scroll',function(){
-        if(scrollY>=500){
-             $('.gototop').css('display','block');
-        }else{
-            $('.gototop').css('display','none');
+
+//mui上拉下拉刷新初始化
+function mui_init(){
+    mui.init({
+      pullRefresh : {
+        container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+        // down : {//下拉配置
+        //   height:50,//可选,默认50.触发下拉刷新拖动距离,
+        //   auto: true,//可选,默认false.自动下拉刷新一次
+        //   contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+        //   contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+        //   contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+        //   callback :pullDown //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+        // },
+        up : {//上拉配置
+          height:50,//可选.默认50.触发上拉加载拖动距离
+          auto:true,//可选,默认false.自动上拉加载一次
+          contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+          //contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+          callback :pullUp //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
         }
-       
-    })
+
+      }
+    });
+    //普通列表刷新设置停止上次刷新
+    mui('#refreshContainer').pullRefresh().setStopped(true);
+}
+// //下拉业务处理函数
+// function pullDown(){
+//     console.log('pulldownRefresh down');
+//     pull_action='down';
+//     getData(tag1,tag2);
+//     // 加载完数据之后结束正在加载字样
+//     mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+//     //重置上拉刷新
+//     mui('#refreshContainer').pullRefresh().refresh(true);
+    
+// }
+//上拉业务处理函数
+function pullUp(){
+    console.log('pulldownRefresh up');
+    pull_action='up';
+    getData(tag1,tag2);
+    // 加载完数据之后结束正在加载字样
+    mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+    //重置上拉刷新
+    mui('#refreshContainer').pullRefresh().refresh(true);
 }

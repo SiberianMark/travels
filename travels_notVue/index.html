@@ -47,13 +47,13 @@
    
 
     <div class="footer">
-    	<div class="travel-nav">
-    		<ul>
-    			<li>客服</li>
-    			<li>登录</li>
-    			<li>注册</li>
-    			<li>电脑版</li>
-    			<li>回到首页</li>
+    	<div class="travel-nav ">
+    		<ul class="flex">
+    			<li class="flex-c">客服</li>
+    			<li class="flex-c">登录</li>
+    			<li class="flex-c">注册</li>
+    			<li class="flex-c">电脑版</li>
+    			<li class="flex-c">回到首页</li>
     		</ul>
     	</div>
     	<div class="copyright-info">
@@ -83,9 +83,9 @@
 </script>
 <script type="text/template" id="index-plate">
 
-       <ul>
+       <ul class="flex">
             {{~it.part1:item:index}}
-            <li><a href="/web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
+            <li class="flex-c"><a href="/web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
             {{~}}  
         </ul>
 </script>
@@ -303,7 +303,6 @@
         // $('.pinned').pin();
         //如sticky无法兼容，则采用js方法进行处理固定
         JMsticky();
-        gotoScroll();
         Endload(); 
         $('.travel-place-type').on('click','>ul li',function(){
             console.log("click");
@@ -374,6 +373,7 @@
         $('.goodlists-box').on('click','ul li',function(){
             var param={};
             param.lineid=$(this).attr('goodid');
+            param.frompage='index';
             PageGoto('goodDetail',param);
         });
         //滚动到顶部

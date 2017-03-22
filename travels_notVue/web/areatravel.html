@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./css/areatravel.css">
     <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/areatravel.less"> -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_m30h28fudqjjor.css">
+     <link rel="stylesheet" type="text/css" href="./css/mui_2_7_0.css">
 	<script src="./js/head.css.js"></script>
+     <script src="./js/mui_2_7_0.js" charset="utf-8"></script>
 	<script src="./js/head.js.js"></script>
+   
 </head>
 <body>
 	<div class="index-header">
@@ -46,15 +49,24 @@
     
 
     <div class="goodslist">
+            <!--下拉刷新容器-->
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+              <div  class="mui-scroll">
+                <!--数据列表-->
+                <ul id="goodlistcontainer" class="mui-table-view mui-table-view-chevron">
+                  
+                </ul>
+       </div>
+    </div>
     </div>
     <div class="footer">
     	<div class="travel-nav">
-    		<ul>
-    			<li>客服</li>
-    			<li>登录</li>
-    			<li>注册</li>
-    			<li>电脑版</li>
-    			<li>回到首页</li>
+    		<ul class="flex">
+    			<li class="flex-c">客服</li>
+    			<li class="flex-c">登录</li>
+    			<li class="flex-c">注册</li>
+    			<li class="flex-c">电脑版</li>
+    			<li class="flex-c">回到首页</li>
     		</ul>
     	</div>
     	<div class="copyright-info">
@@ -179,10 +191,9 @@
 
 <!-- 路线列表模板 -->
 <script type="text/template" id="good-list">
-        <ul tag1id={{=it.tag1}} tag2id={{=it.tag2}}>
 
         {{~it.lists:item:index}}
-            <li lineid={{=item.id}}>
+            <li lineid={{=item.id}} tag1id={{=it.tag1}} tag2id={{=it.tag2}}>
                 <div>
                     <div>
                         <div class="good-img">
@@ -210,7 +221,6 @@
                 
             </li>
         {{~}}
-        </ul>
 </script>
 
 
@@ -225,18 +235,21 @@
      var travelPRender=getDotRender('travel-place');//路线选择二级菜单
      var travelListRender=getDotRender('good-list');//路线列表
      var hotsellRender=getDotRender('hot-sell-tmp');
+     var page=1;
     var type=2;//1-周边游，2-国内游，3-出境游，4-港澳游
+    var tag1=1,
+        tag2=1;
     function appStart(){
-        
+        mui_init();
         getswiperdata();
         getindexdata();
         gethotplace();
         getTravelTP();
         getTravelP(1);
-        getTraveList(1,1,1);
+        getData(1,1);
         //如sticky无法兼容，则采用js方法进行处理固定
         JMsticky();
-        gotoScroll();
+        // gotoScroll();
         Endload();
         var fixed=0;
         //顶部搜索
@@ -263,6 +276,7 @@
         $('.prd-list').on('click','a.cmAddClick',function(){
             var obj={};
             obj.lineid=$(this).attr('lineid');
+            obj.frompage='areatravel';
             PageGoto('goodDetail',obj);
         });
         //点击一级菜单切换
@@ -271,7 +285,7 @@
             $(this).addClass('active').siblings().removeClass('active');
             var tag1=$(this).attr('tag1id');
             getTravelP(tag1);
-            getTraveList(tag1,1,1);
+            getData(tag1,1);
         });
         //点击二级菜单切换
         $('.travel-place').on('click','ul li',function(){
@@ -282,15 +296,16 @@
                 $(sib[i]).find('a').removeClass('first-important');
             }
             $(this).find('a').addClass('first-important');
-            var tag1=$(this).parent().attr('tag1id');
-            var tag2=$(this).parent().attr('tag2id');
-             getTraveList(tag1,tag2,1);
+            tag1=$(this).attr('tag1id');
+            tag2=$(this).attr('tag2id');
+             getData(tag1,tag2,1);
             
         });
         //列表跳转
-        $('.goodslist').on('click',function(){
+        $('.goodslist').on('click','li',function(){
             var obj={};
             obj.lineid=$(this).attr('lineid');
+            obj.frompage='areatravel';
             PageGoto('goodDetail',obj)
         });
         //滚动到顶部
@@ -298,6 +313,7 @@
              var speed=200;//滑动的速度
              $('body').animate({ scrollTop: 0 }, speed);   
         });
+
     }
     // 获取轮播图数据
     function getswiperdata(){
@@ -367,13 +383,31 @@
     }
 
      //获取路线选择路线列表
-    function getTraveList(tag1,tag2,page){
+    function getData(tag1,tag2){
         ajaxJson(API.AREA_LINESELECT3,{'type':type,'tag1':tag1,'tag2':tag2,'page':page},function(res){
             if(res.status==1){
-
-                $('.goodslist').html(travelListRender(res.data));
+                if(page==1){
+                     $('#goodlistcontainer').html(travelListRender(res.data));
+                 }else{
+                     $('#goodlistcontainer').append(travelListRender(res.data));
+                 }
+                 setTimeout(function(){mui('#refreshContainer').pullRefresh().setStopped(false);},200);
+                page++;
+                if(pull_action ==  'up'){
+                    mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+                }
+                else if(pull_action == 'down'){
+                    mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+                }
+               
             }else{
-                tipsLayer(data.info);
+                if(pull_action ==  'up'){
+                    mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+                }
+                else if(pull_action == 'down'){
+                    mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+                }
+                setTimeout(function(){mui('#refreshContainer').pullRefresh().setStopped(false);},200);
             }
         });
     }

@@ -59,6 +59,7 @@ var PAGE={//页面路由
 	goodDetail:'/web/goodinfo.html',//路线详情
 	determinorder:'/web/determin-order.html',//订单确认页面
 	orderresult:'/web/order-result.html',//下订单结果
+	areatravel:'/web/areatravel.html',//区域游
 
 
 }

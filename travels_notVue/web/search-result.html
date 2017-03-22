@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="./css/search-result.css">
 	<!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/search-result.less"> -->
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_ycnmy3wzvp5pnwmi.css">
-
 	<script src="./js/head.css.js"></script>
 	<script src="./js/head.js.js"></script>
 	<link href="./css/date.3.0.min.css" rel="stylesheet" type="text/css" />
@@ -136,7 +135,8 @@
 					<div class="img"><img src="{{=config.SERVER_URL+item.img}}"><span class="from from-type-1">{{=item.start_palce}}</span><span class="category">{{=item.line_type}}</span>
 					</div>
 					<div class="right-good-info">
-						<p class="title"><{{=item.main_name}} | {{=item.sub_name}} | {{=item.keywords}}</p>
+						<p class="title"><{{=item.main_name}}</p>
+						<p>{{=item.sub_name}}</p>
 						<div class="good-label">
 							<ul>
 							{{~item.label:lbitem:lbindex}}
@@ -275,6 +275,7 @@
 		$('.search-result-body').on('click','li',function(){
 			var obj={};
 			obj.lineid=$(this).attr('goodid');
+			obj.frompage='searchresult';
 			PageGoto('goodDetail',obj);
 		})
 		/*****************底板导航效果start*****************/

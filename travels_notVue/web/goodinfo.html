@@ -34,7 +34,7 @@
     </section>
     <section class="flot-menu">
     	<div class="xingcheng-detail"><span>行程详情</span></div>
-    	<div class="gototop"><i class="iconfont icon icon-gototop"></i></div>
+    	<div class="gototopm"><i class="iconfont icon icon-gototop"></i></div>
     </section>
     
     <section class="footer">
@@ -104,11 +104,11 @@
 <!-- 路线详情 -->
 <script type="text/template" id="line-desc-tmp">
     <div class="good-desc-title">
-            <ul class="desc-menu sticky JMsticky">
-                <li class="active"><a href="#xingcheng"><span>6</span>日行程</a></li>
-                <li><a href="#tese">产品特色</a></li>
-                <li><a href="#feiyong">费用说明</a></li>
-                <li><a href="#xuzhi">预定须知</a></li>
+            <ul class="desc-menu sticky JMsticky  flex">
+                <li class="active flex-c"><a href="#xingcheng"><span>6</span>日行程</a></li>
+                <li class="flex-c"><a href="#tese">产品特色</a></li>
+                <li class="flex-c"><a href="#feiyong">费用说明</a></li>
+                <li class="flex-c"><a href="#xuzhi">预定须知</a></li>
             </ul>
         </div>
         <div id='xingcheng' class="good-desc-detail">
@@ -209,7 +209,7 @@
 </script>
 <script>
     var lineid=I('lineid',100002);
-
+    var frompage=I('frompage','index');
     var lineImgRender=getDotRender('line-img-tmp');
     var lineheadRender=getDotRender('line-head-tmp');
     var lineDescRender=getDotRender('line-desc-tmp');
@@ -237,7 +237,7 @@
 
         });
         //滚动到顶部
-        $('.gototop').on('click',function(){
+        $('.gototopm').on('click',function(){
              var speed=200;//滑动的速度
              $('body').animate({ scrollTop: 0 }, speed);   
         });
@@ -258,7 +258,7 @@
         });
         $('#line-desc-info').on('click','.tel-cancel',function(){
              
-             $('.tel-content').animate({bottom:'-30rem'});
+             $('.tel-content').animate({bottom:'-45rem'});
         });
         //立即预定
         $('.order-good').on('click',function(){
@@ -280,6 +280,10 @@
         //跳转到个人中心
         $('.icon-wode').on('click',function(){
             PageGoto('mycenter',{});
+        });
+        //返回上一页
+        $('.icon-fanhui').on('click',function(){
+            PageGoto(frompage);
         });
 	}
    
@@ -333,6 +337,13 @@
     
             }else{
                 tipsLayer(res.info);
+                if(pull_action ==  'up'){
+                    mui('#pullrefresh').pullRefresh().endPullupToRefresh(true);
+                }
+                else if(pull_action == 'down'){
+                    mui('#pullrefresh').pullRefresh().endPulldownToRefresh();
+                }
+                setTimeout(function(){mui('#pullrefresh').pullRefresh().setStopped(false);},200);
             }
         },'get','json',true);
     }
