@@ -1,0 +1,48 @@
+[ 2016-10-08T09:14:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-08T13:42:26+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-10-08T13:50:40+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T14:25:40+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-10-08T16:30:03+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-10-08T16:30:24+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T17:15:04+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-10-08T17:19:58+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+ERR: 无法加载模块:Welcome
+

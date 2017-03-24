@@ -1,0 +1,222 @@
+[ 2016-08-05T11:37:39+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003418s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-08-05T11:37:39+08:00 ] 127.0.0.1 /lib/jquery/1.9.1/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014397s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-05T11:37:39+08:00 ] 127.0.0.1 /static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014377s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-05T11:37:39+08:00 ] 127.0.0.1 /static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013435s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-05T11:37:39+08:00 ] 127.0.0.1 /lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013504s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-05T11:37:40+08:00 ] 127.0.0.1 /static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001724s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-05T11:37:40+08:00 ] 127.0.0.1 /static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-05T11:37:41+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002224s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-05T11:38:00+08:00 ] 127.0.0.1 /article-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+ERR: 无法加载模块:Article-list
+
+[ 2016-08-05T11:38:02+08:00 ] 127.0.0.1 /picture-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+ERR: 无法加载模块:Picture-list
+
+[ 2016-08-05T11:38:04+08:00 ] 127.0.0.1 /product-brand.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+ERR: 无法加载模块:Product-brand
+
+[ 2016-08-05T11:38:04+08:00 ] 127.0.0.1 /product-category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+ERR: 无法加载模块:Product-category
+
+[ 2016-08-05T11:38:05+08:00 ] 127.0.0.1 /product-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+ERR: 无法加载模块:Product-list
+
+[ 2016-08-05T11:38:07+08:00 ] 127.0.0.1 /feedback-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+ERR: 无法加载模块:Feedback-list
+
+[ 2016-08-05T11:38:10+08:00 ] 127.0.0.1 /feedback-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001254s ]
+ERR: 无法加载模块:Feedback-list
+
+[ 2016-08-05T11:38:12+08:00 ] 127.0.0.1 /member-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+ERR: 无法加载模块:Member-list
+
+[ 2016-08-05T11:38:13+08:00 ] 127.0.0.1 /member-level.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+ERR: 无法加载模块:Member-level
+
+[ 2016-08-05T11:38:13+08:00 ] 127.0.0.1 /member-scoreoperation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001521s ]
+ERR: 无法加载模块:Member-scoreoperation
+
+[ 2016-08-05T11:38:13+08:00 ] 127.0.0.1 /member-record-browse.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001402s ]
+ERR: 无法加载模块:Member-record-browse
+
+[ 2016-08-05T11:38:14+08:00 ] 127.0.0.1 /member-record-download.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001516s ]
+ERR: 无法加载模块:Member-record-download
+
+[ 2016-08-05T11:38:14+08:00 ] 127.0.0.1 /member-record-share.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+ERR: 无法加载模块:Member-record-share
+
+[ 2016-08-05T11:38:16+08:00 ] 127.0.0.1 /admin-role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+ERR: 无法加载模块:Admin-role
+
+[ 2016-08-05T11:38:16+08:00 ] 127.0.0.1 /admin-permission.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+ERR: 无法加载模块:Admin-permission
+
+[ 2016-08-05T11:38:17+08:00 ] 127.0.0.1 /admin-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+ERR: 无法加载模块:Admin-list
+
+[ 2016-08-05T11:38:18+08:00 ] 127.0.0.1 /charts-4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001384s ]
+ERR: 无法加载模块:Charts-4
+
+[ 2016-08-05T11:38:19+08:00 ] 127.0.0.1 /charts-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+ERR: 无法加载模块:Charts-3
+
+[ 2016-08-05T11:38:20+08:00 ] 127.0.0.1 /charts-2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+ERR: 无法加载模块:Charts-2
+
+[ 2016-08-05T11:38:21+08:00 ] 127.0.0.1 /charts-7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+ERR: 无法加载模块:Charts-7
+
+[ 2016-08-05T11:38:22+08:00 ] 127.0.0.1 /charts-4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+ERR: 无法加载模块:Charts-4
+
+[ 2016-08-05T11:38:56+08:00 ] 127.0.0.1 /system-shielding.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001677s ]
+ERR: 无法加载模块:System-shielding
+
+[ 2016-08-05T12:18:11+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002049s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-08-05T12:18:12+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000574s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004618s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-08-05T12:18:14+08:00 ] 127.0.0.1 /picture-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+ERR: 无法加载模块:Picture-list
+
+[ 2016-08-05T12:18:16+08:00 ] 127.0.0.1 /product-list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+ERR: 无法加载模块:Product-list
+
+[ 2016-08-05T12:18:18+08:00 ] 127.0.0.1 /system-data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+ERR: 无法加载模块:System-data
+
+[ 2016-08-05T12:33:11+08:00 ] 127.0.0.1 /article-add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001644s ]
+ERR: 无法加载模块:Article-add
+
+[ 2016-08-05T12:33:39+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+ERR: 无法加载模块:Welcome
+

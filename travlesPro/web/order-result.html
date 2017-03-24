@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+	<script src="./js/head.meta.js"></script>
+	<title>下单成功</title>
+	<link rel="stylesheet" href="./css/order-result.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_lwlmta3n0cat6gvi.css">
+	<script src="./js/head.css.js"></script>
+	<script src="./js/head.js.js"></script>
+</head>
+
+<body>
+<div class="success-info">
+	<div class="success-icon"><i class="iconfont icon icon-chenggong"></i></div>
+	<div class="success-desc">
+		<p>我们已经收到您的订单，此产品为非及时确认产品，当前无需支付</p>
+		<small>稍后会有客服人员与您沟通，请您保持电话通畅</small>
+	</div>
+</div>
+<div class="btn">
+	<div class="orderdetail">查看订单详情</div>
+	<div class="gotoindex">返回首页</div>
+</div>
+</body>
+<script>
+	function appStart(){
+		Endload();
+		$('.gotoindex').on('click',function(){
+			PageGoto('index',{});
+		});
+		$('.orderdetail').on('click',function(){
+			tipsLayer('暂时未开通此页面！');
+		})
+	}
+</script>
+</html>

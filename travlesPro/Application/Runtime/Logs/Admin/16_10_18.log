@@ -1,0 +1,2157 @@
+[ 2016-10-18T09:17:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021259s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0925s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.396112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.396477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008483s ]
+
+[ 2016-10-18T09:17:26+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.162233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-10-18T09:17:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_admin` WHERE `phone` = '13425157494' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\test\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000745s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002469s ]
+
+[ 2016-10-18T09:17:44+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-10-18T09:17:44+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-10-18T09:24:39+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-10-18T09:24:42+08:00 ] 127.0.0.1 /Admin/Employee/adminDepaEdit/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `id` = '12' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 50 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2016-10-18T09:24:52+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaEdit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: UPDATE `myz_admin_depa` SET `name`='豆腐干2',`detail`='大商股份2',`rules`='2,5,6',`addtime`='2016-10-18 09:24:52' WHERE `id` = '12' [ RunTime:0.8399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-10-18T09:24:55+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepa.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2016-10-18T09:24:58+08:00 ] 127.0.0.1 /Admin/Employee/adminDepaEdit/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `id` = '12' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 50 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2016-10-18T09:25:23+08:00 ] 127.0.0.1 /Admin/Employee/depaDel?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: DELETE FROM `myz_admin_depa` WHERE `id` = '11' [ RunTime:0.0710s ]
+
+[ 2016-10-18T09:25:23+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepa.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-10-18T09:25:40+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+
+[ 2016-10-18T09:25:42+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2016-10-18T09:25:43+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001466s ]
+
+[ 2016-10-18T09:25:44+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-10-18T09:25:46+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+
+[ 2016-10-18T09:25:52+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2016-10-18T09:25:52+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-10-18T10:45:10+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014541s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.1148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000695s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000926s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.455384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.455772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015603s ]
+
+[ 2016-10-18T10:45:20+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-10-18T10:45:21+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-10-18T10:45:22+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-10-18T10:45:23+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-10-18T10:45:24+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-10-18T10:45:25+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-10-18T10:45:25+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2016-10-18T10:45:26+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-10-18T10:45:30+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-18T10:45:31+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-10-18T10:45:32+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-10-18T10:45:32+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2016-10-18T10:45:33+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.1068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-18T10:46:50+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-10-18T11:30:53+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.312071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.312290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032363s ]
+
+[ 2016-10-18T11:30:55+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.378641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.378864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-10-18T11:30:58+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-10-18T13:45:40+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.094664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.094891s ]
+
+[ 2016-10-18T13:45:41+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-10-18T13:45:41+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+
+[ 2016-10-18T13:45:43+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-10-18T13:45:45+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-10-18T13:45:45+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-10-18T13:46:22+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007330s ]
+
+[ 2016-10-18T13:46:22+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T13:46:55+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-10-18T13:47:36+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-10-18T13:47:36+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T13:47:52+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-10-18T13:47:55+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2016-10-18T13:47:57+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-10-18T13:47:59+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+
+[ 2016-10-18T14:09:15+08:00 ] 127.0.0.1 /admin/employee/member-add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+ERR: 非法操作:member-add
+
+[ 2016-10-18T14:09:41+08:00 ] 127.0.0.1 /admin/employee/change-password.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+ERR: 非法操作:change-password
+
+[ 2016-10-18T14:29:55+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006910s ]
+
+[ 2016-10-18T14:30:22+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.904894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.905112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2016-10-18T14:30:22+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T14:30:23+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+
+[ 2016-10-18T14:30:23+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-10-18T14:30:23+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T14:30:26+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0894s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0191s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.1180s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.729956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.730279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2016-10-18T14:30:30+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000801s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.236461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002266s ]
+
+[ 2016-10-18T14:30:31+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-10-18T14:30:31+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T14:30:39+08:00 ] 127.0.0.1 /admin/employee/member-add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+ERR: 非法操作:member-add
+
+[ 2016-10-18T15:16:31+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.284213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.284509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015119s ]
+
+[ 2016-10-18T15:16:32+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T15:16:32+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2016-10-18T15:16:32+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T15:16:33+08:00 ] 127.0.0.1 /Admin/Employee/emplAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-18T15:17:58+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2016-10-18T15:17:58+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T15:17:59+08:00 ] 127.0.0.1 /Admin/Employee/emplAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001253s ]
+
+[ 2016-10-18T15:55:47+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018068s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.340570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.340854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007147s ]
+
+[ 2016-10-18T15:55:49+08:00 ] 127.0.0.1 /Admin/Employee/adminDepaAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0392s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004157s ]
+
+[ 2016-10-18T15:56:06+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+NOTIC: [2] implode(): Invalid arguments passed E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 46 行.
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 26 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `name` = '财务部' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-10-18T15:57:14+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2016-10-18T15:57:15+08:00 ] 127.0.0.1 /Admin/Employee/adminDepaAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-10-18T15:57:24+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 26 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `name` = '财务部' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001514s ]
+
+[ 2016-10-18T15:57:27+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-10-18T15:57:39+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 26 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `name` = '豆腐干2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-10-18T15:57:42+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\8158898535bc8c5308fbdf23fbc6db1b.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2016-10-18T15:58:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0768s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.436425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.436648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
+
+[ 2016-10-18T15:59:01+08:00 ] 127.0.0.1 /admin/employee/adminDepa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2016-10-18T15:59:04+08:00 ] 127.0.0.1 /Admin/Employee/adminDepaEdit/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 50 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-10-18T15:59:22+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaEdit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `name` = '豆腐干2' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-10-18T15:59:25+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepa.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-18T15:59:27+08:00 ] 127.0.0.1 /Admin/Employee/adminDepaEdit/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\MenuModel.class.php 第 50 行.
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '15' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '16' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '8' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '12' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '9' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '11' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '13' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '2' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '5' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '6' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '1' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '18' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '3' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '4' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '7' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '14' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = '17' AND `isshow` = 1 AND `type` = 1 ORDER BY orderid ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Admin\Controller\EmployeeController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+NOTIC: [8] Undefined index: child E:\wamp\www\test\Application\Runtime\Cache\Admin\b28cce4c259f0e18c7728f7f6ca2efb0.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-10-18T15:59:35+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepaEdit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT * FROM `myz_admin_depa` WHERE `name` = '财务部' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+
+[ 2016-10-18T15:59:38+08:00 ] 127.0.0.1 /index.php/Admin/Employee/adminDepa.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT d.id,d.name,d.detail,d.rules,d.addtime,count(a.department) as num FROM myz_admin_depa d LEFT JOIN myz_admin as a ON a.department = d.id  GROUP BY d.id  [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-10-18T16:00:07+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-10-18T16:00:07+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T16:20:40+08:00 ] 127.0.0.1 /Admin/TravelInfo/travelinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+NOTIC: [8] Undefined variable: where E:\wamp\www\test\Application\Admin\Controller\TravelInfoController.class.php 第 169 行.
+NOTIC: [2048] Declaration of Admin\Model\TravelInfoModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelInfoModel.class.php 第 111 行.
+SQL: SELECT COUNT(*) AS tp_count FROM travel_info i WHERE i.startDate >= 1475251200 LIMIT 1   [ RunTime:0.0447s ]
+SQL: SELECT i.id as iid,i.adminId,i.visitorType,i.lineType,i.lineName,i.startDate,i.endDate,i.visitorNum,i.guideCollection,i.visitorNote,i.deposit,i.agency,i.agencyLinkman,i.agencyPhone,i.orderCode,i.source,i.payType,i.contractId,i.systemId,i.receiptId,i.remark,i.time,i.insurance FROM travel_info i WHERE i.startDate >= 1475251200 ORDER BY i.startDate DESC LIMIT 0,10   [ RunTime:0.0277s ]
+NOTIC: [2048] Declaration of Admin\Model\TravelMemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelMemberModel.class.php 第 47 行.
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '43' ORDER BY ifLeader DESC  [ RunTime:0.0278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000638s ]
+NOTIC: [8] Undefined variable: startDate1 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 58 行.
+NOTIC: [8] Undefined variable: startDate2 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 62 行.
+NOTIC: [8] Undefined variable: lineName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 65 行.
+NOTIC: [8] Undefined variable: trueName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.604957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.605289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006595s ]
+
+[ 2016-10-18T16:20:46+08:00 ] 127.0.0.1 /admin/TravelInfo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 56 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 57 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 70 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 74 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 76 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 80 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 82 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 84 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 88 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 90 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 94 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 96 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 127 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 129 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 133 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 135 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 137 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 142 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 150 行.
+NOTIC: [8] Undefined variable: member E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 152 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 162 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 163 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002479s ]
+
+[ 2016-10-18T16:20:47+08:00 ] 127.0.0.1 /Admin/TravelInfo/infoselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-10-18T16:21:00+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.451670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.451868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-10-18T16:21:00+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T16:21:05+08:00 ] 127.0.0.1 /Admin/Employee/emplAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-10-18T16:23:24+08:00 ] 127.0.0.1 /Admin/Employee/emplAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-10-18T17:50:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016294s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.705115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.705370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011567s ]
+
+[ 2016-10-18T17:51:17+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-10-18T17:51:17+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T17:51:18+08:00 ] 127.0.0.1 /Admin/Employee/emplAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT `id`,`name` FROM `myz_admin_depa`  [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-10-18T17:59:49+08:00 ] 127.0.0.1 /admin/employee/emplList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-10-18T17:59:49+08:00 ] 127.0.0.1 /admin/employee/lib/datatables/1.10.0/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+ERR: 非法操作:lib
+
+[ 2016-10-18T17:59:50+08:00 ] 127.0.0.1 /Admin/Employee/emplAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 12 行.
+SQL: SELECT `id`,`name` FROM `myz_admin_depa`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+

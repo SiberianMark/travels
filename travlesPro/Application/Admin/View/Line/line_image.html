@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>编辑线路</title>
+    <include file="Public/H-ui_js_css"/>
+    <link rel="stylesheet" type="text/css" href="/Application/Admin/View/Public/webuploader/0.1.5/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="/Application/Admin/View/Public/webuploader/0.1.5/style.css" />
+    <!--图片放大缩小jquery-->
+    <script type="text/javascript" src="/Public/BJs/content_zoom.js"></script>
+    <style>
+        body{
+            font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";
+
+        }
+        .placeholder {
+            z-index: 0;
+        }
+        #wrapper {
+            width: 52em;
+        }
+        .bar {
+            width: 65em;
+            height: 3em;
+            border-bottom: 1px solid #0053AA;
+        }
+        .bar .bar_list{
+            float: left;
+            border: 1px solid #0053AA;
+            border-top-left-radius: 0.25em;
+            border-top-right-radius: 0.25em;
+            border-bottom: 0 solid #0053AA;
+            margin-right: 0.25em;
+            line-height:3em;
+            cursor: pointer;
+        }
+        .bar .bar_list .bar_link{
+            display: inline-block;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 1em;
+            color: #0053AA;
+            text-decoration:none;
+        }
+        .bar .bar_list .bar_link:hover{
+            font-weight: 700;
+        }
+        .current{
+            font-weight: 700;
+            background-color: #d1d3d5;
+        }
+    </style>
+</head>
+<body>
+<nav class="breadcrumb" style="font-size: 13px"><i class="Hui-iconfont">&#xe67f;</i> 线路管理 <span class="c-gray en">&gt;</span> 编辑线路 </nav>
+<div class="mt-20 ml-40" >
+
+        <ul class="bar ml-20">
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/base_info/id/{$lineid}">基本信息</a></li>
+            <li class="bar_list current"><a class="bar_link" href="/Admin/Line/line_image/id/{$lineid}">轮播图</a></li>
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/line_journey/id/{$lineid}">行程介绍</a></li>
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/money_include/id/{$lineid}">费用包含</a></li>
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/not_include/id/{$lineid}">费用不含</a></li>
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/notice/id/{$lineid}">预订须知</a></li>
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/reference/id/{$lineid}">推荐活动</a></li>
+            <li class="bar_list"><a class="bar_link" href="/Admin/Line/time_price/id/{$lineid}">团期价格</a></li>
+        </ul>
+
+        <div class="mt-20 mb-40">
+            <span  class="ml-40">线路编号：{$lineid}</span>
+            <input type="hidden" name="id" id="lineid" value="{$lineid}"/>
+            <div class="page-container" style="margin-top: 2px;padding-top: 2px">
+                <volist name="image" id="vo" key="k">
+                    <div class="l mr-10">
+                        <div class="album-img" style="width: 150px;">
+                            <div class="maskWraper"  style="width: 150px;">
+                                <span href="#zoom-{$k}" style="cursor:pointer">
+                                    <img src="{$vo.url}" height="84px"/>
+                                </span>
+                                <div id="zoom-{$k}" style="display:none;">
+                                    <img src="<?php echo $vo['url'];?>" />
+                                </div>
+                                <div class="maskBar text-c">{$vo.id}</div>
+                            </div>
+                            <div class="btn-group text-c" style="padding-top:2px;">
+                                <if condition="$vo.is_cover eq 1">
+                                    <span class="btn btn-success size-S">封面图</span>
+                                <else/>
+                                    <span class="btn btn-default size-S" onclick="isCover({$lineid},{$vo.id})">设为封面图</span>
+                                </if>
+                                <span class="btn btn-default size-S" onclick="delimage({$vo.id})">删除</span>
+                            </div>
+                        </div>
+                    </div>
+                </volist>
+                <div style="clear: both;"></div>
+            </div>
+
+            <if condition="count($image) elt 6">
+                <div id="wrapper">
+                    <div id="container">
+                        <!--头部，相册选择和格式选择-->
+                        <div id="uploader">
+                            <div class="queueList">
+                                <div id="dndArea" class="placeholder">
+                                    <div id="filePicker"></div>
+                                    <p>或将照片拖到这里，单次最多可选5张</p>
+                                    <p>建议图片像素为500*280</p>
+                                </div>
+                            </div>
+                            <div class="statusBar" style="display:none;">
+                                <div class="progress">
+                                    <span class="text">0%</span>
+                                    <span class="percentage"></span>
+                                </div><div class="info"></div>
+                                <div class="btns">
+                                    <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </if>
+        </div>
+</div>
+
+
+<!--<script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>-->
+<script type="text/javascript" src="/Application/Admin/View/Public/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="/Application/Admin/View/Public/webuploader/0.1.5/upload.js"></script>
+
+<script>
+    $(document).ready(function(){
+        //图片放大镜效果
+        $('span').fancyZoom({scaleImg: true, closeOnClick: true});
+    })
+
+
+    /*删除图片*/
+    function delimage(id){
+        layer.confirm(
+                '确认要删除吗？',
+                {'title':'删除图片', btn: ['确定','取消']},
+                function(index){
+                    var url = "/Admin/Line/delImage";
+                    $.get(url, {id:id}, function(data){
+                        if(data.status ==1) {
+                            layer.msg(data.info, {icon: 6,time:1000});
+                            location.reload();
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    })
+                });
+    }
+
+    /*图片设为封面*/
+    function isCover(lineid,id){
+        layer.confirm(
+                '确认要设为封面图片？',
+                {'title':'设为封面图片', btn: ['确定','取消']},
+                function(index){
+                    var url = "/Admin/Line/isCover";
+                    $.get(url, {lineid:lineid, id:id}, function(data){
+                        if(data.status ==1) {
+                            layer.msg(data.info, {icon: 6,time:1000});
+                            location.reload();
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    })
+                });
+    }
+
+
+</script>
+
+</body>
+</html>

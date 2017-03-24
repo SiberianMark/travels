@@ -1,0 +1,462 @@
+[ 2016-09-01T09:09:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-09-01T09:15:15+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T09:23:04+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T09:59:23+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:01:59+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:04:48+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:05:20+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:05:22+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:05:30+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:12:00+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:16:36+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:21:43+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:22:33+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:42:17+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T10:43:57+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T11:18:05+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T11:21:25+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:03:18+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:04:26+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:04:34+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:04:42+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:04:48+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:05:54+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:12:57+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:15:07+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:16:42+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:18:31+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:18:48+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:30:59+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:33:09+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:33:24+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:35:03+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:37:18+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:40:17+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:41:35+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:41:52+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:42:26+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:43:37+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:43:41+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:43:55+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:43:59+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:45:35+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:45:40+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:52:16+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:52:25+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:53:38+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:53:55+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:56:49+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:06+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:09+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:17+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:21+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:43+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:46+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:57:48+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:58:43+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:58:46+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T17:58:47+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:01:16+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:01:19+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:02:42+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:02:44+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:02:59+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:03:02+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:03+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:05+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:19+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:35+08:00 ] 127.0.0.1 /Public/js/laydate/laydate.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:35+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:35+08:00 ] 127.0.0.1 /Public/js/jquery-1.8.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:35+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:35+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:38+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:47+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:05:50+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:06:00+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-01T18:06:02+08:00 ] 127.0.0.1 /Public/css/admin/travelInfo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+ERR: 无法加载模块:Public
+

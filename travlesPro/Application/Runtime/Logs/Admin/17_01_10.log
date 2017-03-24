@@ -1,0 +1,1639 @@
+[ 2017-01-10T10:36:48+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:0.0617s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0227s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `mmm_employee_depa` [ RunTime:0.0312s ]
+SQL: SELECT `rules` FROM `mmm_employee_depa` WHERE `id` = null LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007326s ]
+
+[ 2017-01-10T10:36:49+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.021217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.021460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016508s ]
+
+[ 2017-01-10T10:37:01+08:00 ] 127.0.0.1 /index.php/Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157493' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.4682s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\test\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: UPDATE `mmm_employee` SET `loginip`='127.0.0.1',`lastlogintime`='2017-01-10 10:37:01' WHERE `id` = '1' [ RunTime:0.0662s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000940s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2017-01-10T10:37:05+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001675s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `mmm_employee_depa` [ RunTime:0.0048s ]
+SQL: SELECT `rules` FROM `mmm_employee_depa` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000749s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2017-01-10T10:37:05+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2017-01-10T10:37:24+08:00 ] 127.0.0.1 /admin/line/linelist?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0145s ]
+SQL: SELECT `des` FROM `mmm_line` WHERE `des_type` = 1 AND `status` <> 4  [ RunTime:0.0061s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0281s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0002s ]
+SQL: SELECT o.sid FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op  WHERE `des_type` = '1' AND `status` <> 4 GROUP BY o.sid  [ RunTime:0.0418s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0279s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op LEFT JOIN mmm_supplier AS s ON s.id = o.sid LEFT JOIN mmm_employee AS e ON e.id = l.counselor  WHERE l.des_type = '1' LIMIT 1   [ RunTime:0.0155s ]
+SQL: SELECT l.id,l.line_type,l.title,l.day_num,l.start_palce,l.des,e.name AS op,o.name AS sop,l.status,l.supplier_title,s.company_name FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op LEFT JOIN mmm_supplier AS s ON s.id = o.sid LEFT JOIN mmm_employee AS e ON e.id = l.counselor  WHERE l.des_type = '1' ORDER BY l.edittime DESC,l.id DESC LIMIT 0,10   [ RunTime:0.0106s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000465s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] Undefined variable: lineid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 45 行.
+NOTIC: [8] Undefined variable: line_type E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 50 行.
+NOTIC: [8] Undefined variable: line_type E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 51 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 61 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 62 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 63 行.
+NOTIC: [8] Undefined variable: day_num E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 68 行.
+NOTIC: [8] Undefined variable: title E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 70 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: supplierid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 81 行.
+NOTIC: [8] Undefined variable: supplierid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2017-01-10T10:37:27+08:00 ] 127.0.0.1 /Admin/Line/base_info/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`line_type`,`des_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`include`,`not_include`,`notice`,`reference`,`counselor`,`status`,`keywords`,`supplier_title`,`supplier_op`,`add_by`,`addtime`,`edittime`,`edit_by` FROM `mmm_line` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierOpModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierOpModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier_op` [ RunTime:0.0036s ]
+SQL: SELECT `sid` FROM `mmm_supplier_op` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `status` = 0  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001904s ]
+
+[ 2017-01-10T10:37:31+08:00 ] 127.0.0.1 /Admin/Line/line_image/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0202s ]
+SQL: SELECT `id`,`lineid`,`url`,`is_cover` FROM `mmm_line_image` WHERE `lineid` = 2  [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000400s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000861s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002124s ]
+
+[ 2017-01-10T10:37:33+08:00 ] 127.0.0.1 /Admin/Line/base_info/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`line_type`,`des_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`include`,`not_include`,`notice`,`reference`,`counselor`,`status`,`keywords`,`supplier_title`,`supplier_op`,`add_by`,`addtime`,`edittime`,`edit_by` FROM `mmm_line` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierOpModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierOpModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier_op` [ RunTime:0.0040s ]
+SQL: SELECT `sid` FROM `mmm_supplier_op` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `status` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2017-01-10T10:37:34+08:00 ] 127.0.0.1 /Admin/Line/line_image/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`lineid`,`url`,`is_cover` FROM `mmm_line_image` WHERE `lineid` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2017-01-10T10:37:42+08:00 ] 127.0.0.1 /Admin/Line/isCover?lineid=2&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0044s ]
+SQL: UPDATE `mmm_line_image` SET `is_cover`='0' WHERE `lineid` = 2 [ RunTime:0.4449s ]
+SQL: UPDATE `mmm_line_image` SET `is_cover`='1' WHERE `id` = 5 [ RunTime:0.0417s ]
+
+[ 2017-01-10T10:37:42+08:00 ] 127.0.0.1 /Admin/Line/line_image/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`lineid`,`url`,`is_cover` FROM `mmm_line_image` WHERE `lineid` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2017-01-10T10:38:10+08:00 ] 127.0.0.1 /Admin/Line/base_info/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0291s ]
+SQL: SELECT `id`,`line_type`,`des_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`include`,`not_include`,`notice`,`reference`,`counselor`,`status`,`keywords`,`supplier_title`,`supplier_op`,`add_by`,`addtime`,`edittime`,`edit_by` FROM `mmm_line` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierOpModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierOpModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier_op` [ RunTime:0.0033s ]
+SQL: SELECT `sid` FROM `mmm_supplier_op` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `status` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000464s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-01-10T10:38:24+08:00 ] 127.0.0.1 /Admin/Line/line_image/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`lineid`,`url`,`is_cover` FROM `mmm_line_image` WHERE `lineid` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2017-01-10T10:38:26+08:00 ] 127.0.0.1 /admin/line/linelist?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0041s ]
+SQL: SELECT `des` FROM `mmm_line` WHERE `des_type` = 1 AND `status` <> 4  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0035s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0002s ]
+SQL: SELECT o.sid FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op  WHERE `des_type` = '1' AND `status` <> 4 GROUP BY o.sid  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op LEFT JOIN mmm_supplier AS s ON s.id = o.sid LEFT JOIN mmm_employee AS e ON e.id = l.counselor  WHERE l.des_type = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT l.id,l.line_type,l.title,l.day_num,l.start_palce,l.des,e.name AS op,o.name AS sop,l.status,l.supplier_title,s.company_name FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op LEFT JOIN mmm_supplier AS s ON s.id = o.sid LEFT JOIN mmm_employee AS e ON e.id = l.counselor  WHERE l.des_type = '1' ORDER BY l.edittime DESC,l.id DESC LIMIT 0,10   [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] Undefined variable: lineid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 45 行.
+NOTIC: [8] Undefined variable: line_type E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 50 行.
+NOTIC: [8] Undefined variable: line_type E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 51 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 61 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 62 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 63 行.
+NOTIC: [8] Undefined variable: day_num E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 68 行.
+NOTIC: [8] Undefined variable: title E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 70 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: supplierid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 81 行.
+NOTIC: [8] Undefined variable: supplierid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2017-01-10T10:38:28+08:00 ] 127.0.0.1 /Admin/Line/base_info/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`line_type`,`des_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`include`,`not_include`,`notice`,`reference`,`counselor`,`status`,`keywords`,`supplier_title`,`supplier_op`,`add_by`,`addtime`,`edittime`,`edit_by` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierOpModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierOpModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier_op` [ RunTime:0.0036s ]
+SQL: SELECT `sid` FROM `mmm_supplier_op` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `status` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-01-10T16:41:53+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0442s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `mmm_employee_depa` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `mmm_employee_depa` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000484s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000964s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003321s ]
+
+[ 2017-01-10T16:41:54+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000491s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2017-01-10T16:41:59+08:00 ] 127.0.0.1 /admin/line/addline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`label_name`,`is_del` FROM `mmm_line_label` WHERE `is_del` = 0  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0147s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `status` = 0  [ RunTime:0.0079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2017-01-10T16:41:59+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2017-01-10T16:42:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157493' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\test\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: UPDATE `mmm_employee` SET `loginip`='127.0.0.1',`lastlogintime`='2017-01-10 16:42:04' WHERE `id` = '1' [ RunTime:0.0991s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-01-10T16:42:07+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `mmm_employee_depa` [ RunTime:0.0031s ]
+SQL: SELECT `rules` FROM `mmm_employee_depa` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2017-01-10T16:42:07+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-01-10T16:42:31+08:00 ] 127.0.0.1 /admin/line/line_journey
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0327s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 104 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-01-10T16:42:31+08:00 ] 127.0.0.1 /admin/line/pic/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-01-10T16:42:32+08:00 ] 127.0.0.1 /admin/line/pic/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-01-10T16:51:47+08:00 ] 127.0.0.1 /admin/line/line_journey
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0059s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-01-10T16:52:23+08:00 ] 127.0.0.1 /admin/line/line_journey
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0046s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-01-10T16:52:24+08:00 ] 127.0.0.1 /admin/line/line_journey
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0071s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-01-10T16:52:24+08:00 ] 127.0.0.1 /admin/line/line_journey
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0047s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-01-10T16:52:52+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0097s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-01-10T16:53:37+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0042s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-01-10T16:53:38+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0044s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-01-10T16:53:39+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0044s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-01-10T16:54:40+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0051s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-01-10T16:54:41+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0042s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-01-10T16:54:42+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0044s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-01-10T16:54:42+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0046s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-01-10T16:55:37+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.1948s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-01-10T17:00:07+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0040s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007870s ]
+
+[ 2017-01-10T17:00:07+08:00 ] 127.0.0.1 /admin/line/pic/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-01-10T17:00:07+08:00 ] 127.0.0.1 /admin/line/pic/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-01-10T17:00:07+08:00 ] 127.0.0.1 /admin/line/pic/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-01-10T17:01:08+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0121s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2017-01-10T17:01:08+08:00 ] 127.0.0.1 /admin/line/pic/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-01-10T17:01:08+08:00 ] 127.0.0.1 /admin/line/pic/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-01-10T17:01:08+08:00 ] 127.0.0.1 /admin/line/pic/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-01-10T17:01:08+08:00 ] 127.0.0.1 /admin/line/pic/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-01-10T17:05:15+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0043s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2017-01-10T17:12:55+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0044s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000558s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2017-01-10T17:13:51+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0045s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-01-10T17:14:41+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0046s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2017-01-10T17:15:25+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0038s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2017-01-10T17:15:40+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0043s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-01-10T17:15:53+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0045s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2017-01-10T17:16:10+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0040s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-01-10T17:16:23+08:00 ] 127.0.0.1 /Admin/Line/editline?ac=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2017-01-10T17:17:25+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0039s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2017-01-10T17:17:35+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0057s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2017-01-10T17:19:03+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0043s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2017-01-10T17:19:44+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0042s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-01-10T17:19:58+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0045s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-01-10T17:21:50+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0039s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2017-01-10T17:26:54+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0041s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001299s ]
+
+[ 2017-01-10T17:30:28+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0059s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 89 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 95 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 101 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 107 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 113 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2017-01-10T17:32:59+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0042s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-01-10T17:35:14+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0042s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2017-01-10T17:59:24+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0136s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 87 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 93 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 99 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 105 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 111 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013910s ]
+
+[ 2017-01-10T18:04:56+08:00 ] 127.0.0.1 /admin/line/line_journey?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0043s ]
+SQL: SELECT `day_num` FROM `mmm_line` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 88 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 94 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 100 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 106 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 112 行.
+NOTIC: [8] Undefined variable: base_info E:\wamp\www\test\Application\Runtime\Cache\Admin\9ad8d85a5e4127839d369b2274d2f7a3.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2017-01-10T18:05:02+08:00 ] 127.0.0.1 /Admin/Line/line_journey?ac=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+

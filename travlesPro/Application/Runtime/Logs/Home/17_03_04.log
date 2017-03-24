@@ -1,0 +1,60 @@
+[ 2017-03-04T11:33:32+08:00 ] 163.125.54.88 /Home/APITravel/%20search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-03-04T11:33:41+08:00 ] 163.125.54.88 /Home/APITravel/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) /data/home/hyu2594430001/htdocs/Application/Admin/Model/LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid`,`keywords` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) /data/home/hyu2594430001/htdocs/Application/Admin/Model/PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) /data/home/hyu2594430001/htdocs/Application/Admin/Model/LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0007s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-03-04 11:33:41' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) /data/home/hyu2594430001/htdocs/Application/Admin/Model/LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0006s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) /data/home/hyu2594430001/htdocs/Application/Admin/Model/LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0007s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-03-04 11:33:41' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-03-04 11:33:41' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-03-04 11:33:41' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-03-04 11:33:41' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%m/%d') AS line_date FROM `mmm_line_date` WHERE `lineid` = 100001 AND `line_date` > '2017-03-04' ORDER BY line_date ASC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%m/%d') AS line_date FROM `mmm_line_date` WHERE `lineid` = 100003 AND `line_date` > '2017-03-04' ORDER BY line_date ASC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%m/%d') AS line_date FROM `mmm_line_date` WHERE `lineid` = 100005 AND `line_date` > '2017-03-04' ORDER BY line_date ASC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%m/%d') AS line_date FROM `mmm_line_date` WHERE `lineid` = 100006 AND `line_date` > '2017-03-04' ORDER BY line_date ASC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%m/%d') AS line_date FROM `mmm_line_date` WHERE `lineid` = 100007 AND `line_date` > '2017-03-04' ORDER BY line_date ASC LIMIT 0,4   [ RunTime:0.0004s ]
+

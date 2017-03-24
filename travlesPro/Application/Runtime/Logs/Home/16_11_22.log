@@ -1,0 +1,164 @@
+[ 2016-11-22T09:31:59+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.023964s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.024451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.238684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.239051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2016-11-22T09:32:16+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-11-22T09:32:33+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-11-22T09:32:34+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2016-11-22T09:32:35+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-11-22T09:32:36+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-11-22T09:32:37+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+

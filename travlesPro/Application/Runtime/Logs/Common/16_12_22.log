@@ -1,0 +1,72 @@
+[ 2016-12-22T00:20:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-12-22T13:32:24+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-12-22T13:37:15+08:00 ] 127.0.0.1 /App/Brandstore/View/Public/carThreeOption.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T13:40:17+08:00 ] 127.0.0.1 /App/Brandstore/View/Public/carThreeOption.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T13:40:17+08:00 ] 127.0.0.1 /App/Brandstore/View/Public/carThreeOption.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /App/Brandstore/View/Statement/js/laypage.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /App/Brandstore/View/Message/js/jquery.qqFace.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /App/Brandstore/View/Message/js/jquery-browser.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /App/Brandstore/View/Message/image/timg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /Public/Image/icon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /App/Brandstore/View/Message/js/jquery.qqFace.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+ERR: 无法加载模块:App
+
+[ 2016-12-22T14:04:38+08:00 ] 127.0.0.1 /App/Brandstore/View/Message/js/jquery-browser.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+ERR: 无法加载模块:App
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加供应商OP</title>
+    <include file="Public/H-ui_js_css"/>
+</head>
+<body>
+
+<form action="/Admin/Supplier/addOp?ac=add" method="post" style="margin-bottom: 2em;" enctype="multipart/form-data">
+    <input type="hidden" name="sid" value="{$sid}"/>
+    <div class="page-container" style="margin-top: 20px;">
+        <table class="table table-border table-bordered table-hover" style="width: 1200px;">
+            <thead>
+            <tr>
+                <th class="text-r">OP名字：</th>
+                <td><input type="text" class="input-text" onkeyup="this.value=this.value.replace(/\s/,'');" name="name" required/></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="text-r">座机：</th>
+                <td><input type="text" class="input-text" onkeyup="this.value=this.value.replace(/\s/,'');" name="tel" placeholder="座机或者分机"/></td>
+            </tr>
+            <tr>
+                <th class="text-r">手机：</th>
+                <td><input type="text" class="input-text" onkeyup="this.value=this.value.replace(/\s/,'');" name="phone"/></td>
+            </tr>
+            <tr>
+                <th class="text-r">微信：</th>
+                <td><input type="text" class="input-text" name="wx"/></td>
+            </tr>
+            <tr>
+                <th class="text-r">QQ：</th>
+                <td><input type="text" class="input-text" name="qq"/></td>
+            </tr>
+            <tr>
+                <th class="text-r">备注信息：</th>
+                <td><input type="text" class="input-text" name="note"/></td>
+            </tr>
+            <tr class="text-c">
+                <td colspan="2">
+                    <button style="width: 5em;height: 2.5em" type="submit" class="btn btn-success radius">确定</button>
+                    <input style="width: 7em;height: 2.5em;margin-left: 2em" type="button" class="btn btn-primary radius" onclick="location.replace(document.referrer); return false;" value="取消并返回">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+
+
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+
+</script>

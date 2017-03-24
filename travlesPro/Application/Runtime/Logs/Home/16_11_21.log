@@ -1,0 +1,44 @@
+[ 2016-11-21T18:14:37+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.396030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.396298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021167s ]
+
+[ 2016-11-21T18:14:41+08:00 ] 127.0.0.1 /Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: userId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 26 行.
+NOTIC: [8] Undefined variable: subs E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 37 行.
+NOTIC: [8] Undefined variable: eventId E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 88 行.
+NOTIC: [8] Undefined variable: url E:\wamp\www\test\Application\Runtime\Cache\Home\4529341d1c5214299e03ea69da3d0187.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.221068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.221275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+

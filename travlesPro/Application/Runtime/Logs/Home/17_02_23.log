@@ -1,0 +1,1755 @@
+[ 2017-02-23T09:56:04+08:00 ] 127.0.0.1 /Home/APILine/line
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2017-02-23T09:56:20+08:00 ] 127.0.0.1 /Home/APILine/line?id=klklk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-02-23T10:00:10+08:00 ] 127.0.0.1 /Home/APILine/line?id=klklk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2017-02-23T10:00:19+08:00 ] 127.0.0.1 /Home/APILine/line?id=l123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001614s ]
+
+[ 2017-02-23T10:00:25+08:00 ] 127.0.0.1 /Home/APILine/line?id=123l
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-02-23T10:00:34+08:00 ] 127.0.0.1 /Home/APILine/line?id=%E2%80%98123%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2017-02-23T11:32:01+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013548s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0603s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0301s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0199s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0139s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0867s ]
+
+[ 2017-02-23T11:35:52+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+
+[ 2017-02-23T11:35:53+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+
+[ 2017-02-23T11:35:54+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+
+[ 2017-02-23T11:35:55+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010067s ]
+
+[ 2017-02-23T11:35:56+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012871s ]
+
+[ 2017-02-23T11:36:53+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+
+[ 2017-02-23T11:36:55+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+
+[ 2017-02-23T11:36:57+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+
+[ 2017-02-23T11:38:08+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0127s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0078s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0077s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-23T14:34:33+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003635s ]
+
+[ 2017-02-23T14:37:38+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-02-23T14:46:49+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0594s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0334s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0140s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0148s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` ORDER BY is_cover DESC  [ RunTime:0.0695s ]
+
+[ 2017-02-23T14:48:35+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0084s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0201s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0500s ]
+
+[ 2017-02-23T15:09:09+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0153s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0220s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0117s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0101s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0139s ]
+
+[ 2017-02-23T15:41:29+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0184s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0251s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0229s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0350s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0184s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0129s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0494s ]
+
+[ 2017-02-23T15:42:24+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0113s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0079s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0070s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0084s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0079s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0004s ]
+
+[ 2017-02-23T15:50:19+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:1.4138s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.1482s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0161s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0218s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0522s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 ORDER BY line_date ASC LIMIT 0,8   [ RunTime:0.0006s ]
+
+[ 2017-02-23T15:51:23+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0113s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0081s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0073s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0112s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0074s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0319s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 ORDER BY line_date ASC LIMIT 0,8   [ RunTime:0.0102s ]
+
+[ 2017-02-23T15:53:08+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0129s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0101s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0091s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0111s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0078s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 ORDER BY line_date ASC LIMIT 0,8   [ RunTime:0.0003s ]
+
+[ 2017-02-23T15:53:32+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-02-23T15:53:34+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-02-23T15:53:35+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-02-23T15:53:37+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-02-23T15:53:38+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-02-23T15:53:40+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-02-23T15:53:41+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0127s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0073s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0077s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0073s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 ORDER BY line_date ASC LIMIT 0,8   [ RunTime:0.0003s ]
+
+[ 2017-02-23T15:53:43+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+
+[ 2017-02-23T15:53:44+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+
+[ 2017-02-23T15:53:46+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-02-23T15:53:47+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-02-23T15:53:49+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-02-23T15:53:50+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-02-23T15:53:52+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-02-23T15:53:53+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-02-23T15:54:02+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-02-23T15:54:03+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-02-23T15:54:05+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-02-23T15:54:06+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-02-23T15:54:07+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+
+[ 2017-02-23T15:54:08+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-02-23T15:54:09+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+
+[ 2017-02-23T15:54:11+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-02-23T15:54:13+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0119s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0074s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0076s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0074s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 ORDER BY line_date ASC LIMIT 0,8   [ RunTime:0.0003s ]
+
+[ 2017-02-23T15:54:24+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+
+[ 2017-02-23T15:54:26+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2017-02-23T15:54:27+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-02-23T15:54:29+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+
+[ 2017-02-23T15:54:30+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-02-23T15:54:31+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-02-23T15:54:32+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-02-23T15:54:33+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+
+[ 2017-02-23T15:54:34+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-02-23T15:54:35+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+
+[ 2017-02-23T15:54:37+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-02-23T15:54:38+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-02-23T15:54:39+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-02-23T15:54:40+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+
+[ 2017-02-23T15:54:42+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+
+[ 2017-02-23T15:54:43+08:00 ] 127.0.0.1 /Home/APILine/line?id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-23T17:39:39+08:00 ] 127.0.0.1 /Home/APILine/line?lineid=100002&month=%272017-03%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031155s ]
+
+[ 2017-02-23T17:40:02+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=%272017-03%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+ERR: 1146:Table 'test.mmm_userintegral' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mmm_userintegral`
+ERR: 1146:Table 'test.mmm_userintegral' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mmm_userintegral`
+
+[ 2017-02-23T17:40:25+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=%272017-03%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0760s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND ( `line_date` >= '1970-01-1' AND `line_date` <= '1970-02-1'  ) ORDER BY line_date ASC  [ RunTime:0.0713s ]
+
+[ 2017-02-23T17:40:35+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0145s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND ( `line_date` >= '2017-03-1' AND `line_date` <= '2017-04-1'  ) ORDER BY line_date ASC  [ RunTime:0.0004s ]
+
+[ 2017-02-23T17:53:45+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0327s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND ( `line_date` >= '2017-03-01' AND `line_date` <= '2017-04-01'  ) ORDER BY line_date ASC  [ RunTime:0.0004s ]
+
+[ 2017-02-23T17:55:47+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [8] Undefined variable: line_date E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 94 行.
+
+[ 2017-02-23T17:56:00+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-02-23T17:56:05+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-01
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-02-23T17:56:09+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+
+[ 2017-02-23T17:56:12+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-02
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-02-23T17:56:18+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-02-23T17:56:22+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-02-23T17:57:09+08:00 ] 127.0.0.1 /Home/APILine/line_date?lineid=100002&month=2017-03-15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0125s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND ( `line_date` >= '2017-03-01' AND `line_date` <= '2017-04-01'  ) ORDER BY line_date ASC  [ RunTime:0.0004s ]
+
+[ 2017-02-23T19:32:49+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid`,`keywords` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0020s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid`,`keywords` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid`,`keywords` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid`,`keywords` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-23 19:32:49' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T19:49:11+08:00 ] 127.0.0.1 /home/APILine/line_date
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T19:57:47+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-2&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-23T19:57:56+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-02&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T19:58:52+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-02&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T19:59:04+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-1&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T19:59:23+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-1&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-23T19:59:28+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-1&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T20:02:48+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-2&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T20:03:12+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 105 行.
+
+[ 2017-02-23T20:08:41+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-23T20:08:49+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-2&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T20:08:54+08:00 ] 127.0.0.1 /home/APILine/line_date?month=17-2&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-23T20:09:01+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-2&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-23T20:15:28+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-2&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-02-23' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-02-24' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-02-26' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-02-27' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-02-28' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T20:16:42+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T20:19:50+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 110 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T20:24:24+08:00 ] 127.0.0.1 /home/APILine/line?month=2017-3&id=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`line_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`keywords`,`include`,`not_include`,`notice`,`reference` FROM `mmm_line` WHERE `id` = 100002 LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0030s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `name`,`phone`,`qq`,`weixin` FROM `mmm_employee` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`url` FROM `mmm_line_image` WHERE `lineid` = 100002 ORDER BY is_cover DESC  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineJourneyModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineJourneyModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_journey` [ RunTime:0.0030s ]
+SQL: SELECT `day`,`spot`,`detail`,`hotel`,`breakfast`,`lunch`,`dinner` FROM `mmm_line_journey` WHERE `lineid` = 100002 ORDER BY day ASC  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `line_date` >= '2017-02-23' AND `status` = 1 ORDER BY line_date ASC LIMIT 0,8   [ RunTime:0.0000s ]
+
+[ 2017-02-23T20:24:47+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T20:54:52+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T20:55:04+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T21:03:56+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T21:03:58+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,`line_date`,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-23T21:04:30+08:00 ] 127.0.0.1 /home/APILine/line_date?month=2017-3&lineid=100004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0090s ]
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-1' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-5' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-6' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-7' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-8' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-9' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-10' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-12' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-13' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-14' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-15' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-16' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-17' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-18' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-19' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-20' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-21' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-22' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-25' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-26' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-27' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-28' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-29' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-30' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nday E:\wamp\www\test\Application\Home\Controller\APILineController.class.php 第 107 行.
+SQL: SELECT `id`,DATE_FORMAT(line_date,'%Y-%m-%d') AS line_date,`adult_price`,`child_price`,`single_room` FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` = '2017-03-31' LIMIT 1   [ RunTime:0.0000s ]
+

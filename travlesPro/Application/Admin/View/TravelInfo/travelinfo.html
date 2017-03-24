@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>出游列表</title>
+    <include file="Public/H-ui_js_css"/>
+    <script src="/Application/Admin/View/Public/laypage/laypage.js"></script>
+
+    <style>
+        .th-bg td{
+            font-weight: bold;
+            background-color: #f5fafe;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav class="breadcrumb div-table">
+    <i class="Hui-iconfont">&#xe625;</i> 出游登记
+    <span class="c-gray en">&gt;</span> 出游列表
+    <a class="btn btn-success radius " style="line-height:1.6em;margin-left: 40px;"
+       href="/Admin/TravelInfo/travelinfo" title="刷新">
+        <i class="Hui-iconfont"></i>
+    </a>
+</nav>
+
+
+<input type="hidden" value="1" name="nowpage"/>
+
+<form action="/Admin/TravelInfo/travelinfo" method="get" id="form">
+<div class="page-container"  style="padding-bottom: 0">
+    <div class="pd-10">
+        出发起始日期:&nbsp;
+        <input type="text" name="startDate1" class="Wdate input-text" value="{$startDate1}" style="width: 190px;" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        出发截止日期：
+       &nbsp;
+        <input type="text" name="startDate2" class="Wdate input-text" value="{$startDate2}" style="width: 190px;" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+        线路名称：&nbsp;
+        <input  type="text" name="lineName" class="input-text" style="width: 350px;" value="{$lineName}" placeholder="可输入线路关键字查询"/>
+    </div>
+    <div class="pd-10">
+        领队名字：&nbsp;
+        <input  type="text" name="trueName" class="input-text" style="width: 130px;" value="{$trueName}" placeholder="可输入关键字查询"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        客人类型：&nbsp;
+        <select name="visitorType" class="input-text"  style="width: 90px">
+            <option value="0">请选择</option>
+            <option value="1">散客</option>
+            <option value="2">包团</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        线路类型：&nbsp;
+            <select name="lineType" class="input-text"  style="width: 90px">
+                <option value="0">请选择</option>
+                <option value="1">周边</option>
+                <option value="2">国内</option>
+                <option value="3">出境</option>
+                <option value="4">港澳台</option>
+            </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <if condition="$Think.session.adminDept eq '2'">
+            OP：&nbsp;
+            <select name="op" class="input-text"  style="width: 90px">
+                <option value="0">请选择</option>
+                <foreach name="admin" item="v">
+                    <option value="{$v.id}">{$v.name}</option>
+                </foreach>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </if>
+        <button name="" style="margin-left: 50px" class="btn btn-success radius" type="submit"><i class="Hui-iconfont">&#xe665;</i>&nbsp;查询</button>
+    </div>
+</div>
+</form>
+
+<div style="width: 2800px; margin-left: 20px;margin-top: 20px;margin-bottom: 50px;" class="div-table">
+    <p style="margin-left: 10px;margin-top: 10px">默认显示本月登记的记录<a class="btn btn-warning radius size-S" id="button1" style="margin-left: 50px">展开隐藏的列</a></p>
+    <table class="table table-border table-bordered table-hover table-bg">
+        <thead>
+        <tr class="text-c th-bg">
+            <td class="aa">客人类型</td>
+            <td class="aa">线路类型</td>
+            <td>线路名称</td>
+            <td>出游日期</td>
+            <td>参团人数</td>
+            <td>领队</td>
+            <td>真实姓名</td>
+            <td>电话</td>
+            <td>证件号码</td>
+            <td>上车地点</td>
+            <td>导游代收</td>
+            <td>出游备注</td>
+            <td class="aa">出生年月日</td>
+            <td class="aa">出生地</td>
+            <td class="aa">签发地</td>
+            <td class="aa">定金</td>
+            <td class="aa">网站来源</td>
+            <td class="aa">订单号/券号/验证码</td>
+            <td>收客价</td>
+            <td>网站结算价</td>
+            <td class="aa">地接/专线名称</td>
+            <td class="aa">地接负责人</td>
+            <td class="aa">地接联系方式</td>
+            <td>地接结算价</td>
+            <td class="aa">结算方式</td>
+            <td class="aa">合同号</td>
+            <td class="aa">系统号</td>
+            <td class="aa">收据号</td>
+            <td class="aa">备注/说明</td>
+            <td>保险金额</td>
+            <td>利润</td>
+            <td class="aa">登记时间</td>
+            <if condition="$Think.session.adminDept eq '2'">
+                <td colspan="2">OP</td>
+            <else/>
+                <td colspan="2">操作</td>
+            </if>
+        </tr>
+        </thead>
+        <tbody>
+        <if condition="!empty($lists)">
+            <foreach name="lists" item="list">
+                <tr>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" class="aa">
+                            <switch name="list.visitorType" >
+                                <case value="1" >散客</case>
+                                <case value="2" >包团</case>
+                            </switch>
+                        </td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" class="aa">
+                            <switch name="list.lineType" >
+                                <case value="1" >周边</case>
+                                <case value="2" >国内</case>
+                                <case value="3" >出境</case>
+                                <case value="4" >港澳台</case>
+                            </switch>
+                        </td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}">{$list.lineName}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" style="width: 70px">{$list.startDate|date="Y-m-d",###}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}">{$list.visitorNum}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}">{$list.trueName}</td>
+                    </if>
+                    <td>{$list.trueName}</td>
+                    <td>{$list.phone}</td>
+                    <td>{$list.idNumber}</td>
+                    <td>{$list.musterAddr}</td>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}">{$list.guideCollection|floatval}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" style="width: 90px">{$list.visitorNote}</td>
+                    </if>
+                    <td class="aa">{$list.birthDate}</td>
+                    <td class="aa">{$list.birthAddr}</td>
+                    <td class="aa">{$list.signAddr}</td>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" class="aa">{$list.deposit|floatval}</td>
+                    </if>
+                    <td class="aa">
+                        <switch name="list.source" >
+                            <case value="1" >携程</case>
+                            <case value="2" >美团</case>
+                            <case value="3" >糯米</case>
+                            <case value="4" >窝窝</case>
+                            <case value="5" >点评</case>
+                            <case value="6" >去哪儿</case>
+                            <case value="7" >途牛</case>
+                            <case value="8" >拉手</case>
+                            <case value="9" >内部网站</case>
+                            <case value="10" >其它</case>
+                        </switch>
+                    </td>
+                    <td class="aa">{$list.orderCode}</td>
+                    <td>{$list.payPrice|floatval}</td>
+                    <td>{$list.settlementPrice|floatval}</td>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" class="aa">{$list.agency}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" class="aa">{$list.agencyLinkman}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}" class="aa">{$list.agencyPhone}</td>
+                    </if>
+                    <td>{$list.agencyPrice|floatval}</td>
+
+                    <if condition="$list.ifLeader eq 1">
+                        <td class="aa" rowspan="{$list.sum}">
+                            <switch name="list.payType" >
+                                <case value="1" >总部系统</case>
+                                <case value="2" >月结</case>
+                                <case value="3" >周结</case>
+                                <case value="4" >现结</case>
+                                <case value="5" >其它</case>
+                            </switch>
+                        </td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td class="aa" rowspan="{$list.sum}">{$list.contractId}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td class="aa" rowspan="{$list.sum}">{$list.systemId}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td class="aa" rowspan="{$list.sum}">{$list.receiptId}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td class="aa" rowspan="{$list.sum}">{$list.remark}</td>
+                    </if>
+                    <if condition="$list.ifLeader eq 1">
+                        <td rowspan="{$list.sum}">{$list.insurance|floatval}</td>
+                    </if>
+                    <td>{$list.profit}</td>
+                    <if condition="$list.ifLeader eq 1">
+                        <td class="aa" rowspan="{$list.sum}">{$list.time|date="Y-m-d H:i:s",###}</td>
+                    </if>
+                    <if condition="$Think.session.adminDept eq '2'">
+                        <td>{$list.adminName}</td>
+                    <else/>
+                        <if condition="$list.ifLeader eq 1">
+                            <td rowspan="{$list.sum}" style="text-align: center">
+                                <a href="__APP__/Admin/TravelInfo/modifyinfo/iid/{$list.iid}"><span class="label label-secondary radius">修改</span></a>&nbsp;
+                                <a href="javascript:void(0)" onclick="del('{$list.iid}')"><span class="label label-warning radius">删除</span></a>
+                            </td>
+                        </if>
+                    </if>
+                </tr>
+            </foreach>
+            <tr>
+                <td colspan="33" style="text-align: right;">
+                    <div class="f-l"><span class="l" style="margin-top: 6px;font-size: 14px">共有数据：<strong>{$count}</strong> 条，当前第&nbsp;{$nowpage}&nbsp;页，共&nbsp;{$pages}&nbsp;页</span></div>
+                    <div class="f-l" id="laypage" style="margin-left: 150px;"></div>
+                </td>
+            </tr>
+        <else/>
+            <tr>
+                <td colspan="33">
+                    <div style="text-align:left"><span style="color: red">抱歉，没有找到相关数据哟~</span></div>
+                </td>
+            </tr>
+        </if>
+        </tbody>
+    </table>
+
+</div>
+
+
+<script>
+        $('.aa').hide();
+        $('.div-table').width(1350);
+        var flag = 0;
+        $("#button1").click(function(){
+            if (flag == 0) {
+                $('.div-table').width(2800);
+                flag = 1;
+                $("#button1").empty();
+                $("#button1").append('隐藏部分列');
+            } else {
+                $('.div-table').width(1350);
+                flag = 0;
+                $("#button1").empty();
+                $("#button1").append('展开隐藏的列');
+            }
+            $('.aa').toggle(0); //设置为0表示不用动画 ，1000就1秒的时间来展示或者隐藏
+        });
+
+    // 删除客人
+    function del(id) {
+        layer.confirm(
+            '确定要删除吗？',
+            {btn: ['确定','取消']},
+            function(){
+                var url = "/Admin/TravelInfo/del";
+                $.get(url, {id:id}, function(data){
+                    if(data) {
+                        layer.msg('删除成功', {time:5000});
+                        location.reload();
+                    } else {
+                        layer.msg('删除失败');
+                    }
+                })
+            }
+        )
+    }
+
+</script>
+
+</body>
+<script>
+    /**
+     * 分页
+     */
+    laypage({
+        cont: $('#laypage'), //容器。值支持id名、原生dom对象，jquery对象,
+        pages: {$pages}, //总页数
+        skip: true, //是否开启跳页
+        groups: 5 ,//连续显示分页数
+        curr: {$nowpage},
+        jump: function(obj, first){
+            //得到了当前页，用于向服务端请求对应数据
+            if(!first){
+                nowpage=GetQueryString('nowpage')?obj.curr:'2';
+                location.href = changeURLArg(location.href,'nowpage',nowpage)
+            }
+        }
+    });
+    /**
+     * url 目标url
+     * arg 需要替换的参数名称
+     * arg_val 替换后的参数的值
+     * return url 参数替换后的url
+     */
+    function changeURLArg(url,arg,arg_val){
+        var pattern=arg+'=([^&]*)';
+        var replaceText=arg+'='+arg_val;
+        if(url.match(pattern)){
+            var tmp='/('+ arg+'=)([^&]*)/gi';
+            tmp=url.replace(eval(tmp),replaceText);
+            return tmp;
+        }else{
+            if(url.match('[\?]')){
+                return url+'&'+replaceText;
+            }else{
+                return url+'?'+replaceText;
+            }
+        }
+        return url+""+arg+""+arg_val;
+    }
+    /**
+     * 得到url参数的值
+     * @param name
+     * @returns {*}
+     * @constructor
+     */
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+</script>
+</html>

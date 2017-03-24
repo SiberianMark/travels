@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+	<include file="Public/H-ui_js_css"/>
+<title>选择目的地</title>
+	<style>
+		.col-sm-3 {
+			width: 18%;
+		}
+	</style>
+</head>
+<body>
+<article class="page-container">
+	<form action="">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">{$parentname}目的地：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<foreach name="lists" item="list">
+					<dl>
+						<dt style="margin: 0.3em">
+							<label>
+								<input type="checkbox" value="{$list.id}" name="rules[]">
+								<span style="background-color: lightgrey">{$list.name}</span>
+							</label>
+						</dt>
+						<if condition="$list.child neq ''">
+							<foreach name="list.child" item="v">
+								<dd style="margin-left: 1.25em">
+									<dl>
+										<dt style="margin: 0.3em">
+											<label><input type="checkbox" value="{$v.id}" name="rules[]"><span style="background-color: lightgreen">{$v.name}</span></label>
+										</dt>
+										<if condition="$v.child neq ''">
+											<foreach name="v.child" item="v1">
+												<span style="margin-left: 1.25em">
+												<label style="padding-right:0.625em;"><input type="checkbox" value="{$v1.id}" name="rules[]">{$v1.name}</label>
+												</span>
+											</foreach>
+										</if>
+									</dl>
+								</dd>
+							</foreach>
+						</if>
+					</dl>
+				</foreach>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<button type="submit" class="btn btn-success radius" id="submit"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+
+
+<script type="text/javascript">
+	$("#submit").click(function(){
+		var value = 123;
+		var key = 'name';
+		sessionStorage.setItem(key,value);
+		history.go(-1);
+	})
+
+
+</script>
+
+</body>
+</html>

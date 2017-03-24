@@ -1,0 +1,110 @@
+[ 2016-12-06T09:27:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001989s ]
+
+[ 2016-12-06T09:27:59+08:00 ] 127.0.0.1 /Home/User/index?phone=13425157493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157493' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0250s ]
+
+[ 2016-12-06T09:28:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-12-06T09:28:06+08:00 ] 127.0.0.1 /Home/User/index?phone=13425157493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157493' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-12-06T09:28:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-12-06T09:28:09+08:00 ] 127.0.0.1 /Home/User/index?phone=13425157493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157493' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-12-06T09:29:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001616s ]
+

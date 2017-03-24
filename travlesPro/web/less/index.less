@@ -1,0 +1,95 @@
+	 @import url('./common.less');
+	 body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;}
+	 .icon{font-size: 2.4rem!important;}
+	.index-header{height:3rem;padding:1.05rem 0.5rem;line-height: 3rem;color:@topic-color;background:#fff; }
+	.index-header .com-logo img{height: 2rem; width: 3.2rem;margin: 0.5rem;width:100%;}
+	.index-header>div.choose-city,.search{float:left;}
+	.search{border: 1px solid #aaa;color: #aaa;border-radius: 4px;}
+	.search i{position: absolute;left:0;top:0.2rem}
+	.index-header>div.choose-city{width:15%;text-align: center;}
+	.index-header>div.search{width:72%;text-align: center;}
+	.index-header>div.search p{width: 80%;height:3rem;border-radius: 4px;line-height: 3rem;font-size: 1.4rem;    margin-left: 3rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size:1.6rem;}
+	.index-header>div.my-center{float:right;width:9%;}
+	.my-center .icon{width:1.5rem;height:1.5rem;/*vertical-align: -0.4em;*/}
+	/* 
+	*/
+
+	.travel-type{padding:0.5rem;height:4.4rem;margin-bottom: 0.5rem;    border-bottom: 1px solid #ddd;}
+	.travel-type ul li{ background: #fff;   float: left;width: 22.4%;height: 100%;text-align: center;line-height: 4rem;font-size: 1.4rem;border: 1px solid #eee;margin-left: 0.5rem;border-radius: 4px;}
+	.travel-type ul li .icon{margin-left:5px;vertical-align: middle;font-size: 1.4rem!important;}
+	.travel-type ul li:nth-child(1) i{color:@topic-color;}
+	.travel-type ul li:nth-child(2) i{color:#ec4c40;}
+	.travel-type ul li:nth-child(3) i{color:#f8791c;}
+	.travel-type ul li:nth-child(4) i{color:#c672e1;}
+	.travel-type ul li:nth-child(1) {border-color:@topic-color;}
+	.travel-type ul li:nth-child(2) {border-color:#ec4c40;}
+	.travel-type ul li:nth-child(3) {border-color:#f8791c;}
+	.travel-type ul li:nth-child(4) {border-color:#c672e1;}
+	.travel-type ul li span{    padding: 0 0.5rem;}
+
+	.travel-place-type{padding:0.5rem;height:4.4rem;background: #fff;z-index:999; }
+
+	.travel-place-type ul li{float:left;width:25%;height:100%;text-align: center;line-height: 4.4rem;font-size:1.4rem;}
+	.travel-place-type-active{border-bottom:2px solid @topic-color;}
+	.travel-place-type-activefont{color:@topic-color!important;}
+	.travel-place{padding-left: 0.5rem;background-color: #fff;}
+	.travel-place ul li{float:left;width:25%;height:3rem;text-align: center;line-height: 3rem;font-size:1rem;border-bottom:1px solid #eee;border-right:1px solid #eee;margin-right:-3px;}
+	.travel-place ul li i{display: inline-block;width:5.5rem;padding:0.2rem 0;}
+	.first-important{border-radius: 25px;background: @topic-color;padding:0.5rem;color:#fff!important;}
+	.border-none{border-right:1px solid #fff!important;}
+	.clear{clear:both;}
+	/*.travel-place ul li span{display: inline-block;width:2.5rem;}*/
+
+	.goodslist{background: #fff;margin-top: 0.5rem;}
+	.goodslist>ul>li{border-bottom:4px solid #eee;margin-top:0.5rem;padding:0 0.5rem;}
+	.goodslist>ul>li .good-imgjpg,.swiper-img{height:90px; position: relative;overflow: hidden;}
+	.goodslist>ul>li .good-imgjpg img,.swiper-img img{position: absolute;top: 50%;left: 0;width: 100%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
+	.scrollFixedTop{position:fixed;top:0;}
+	.scrollFixedTopfix{margin-top: 4.4rem}
+	.search{position:relative;}
+	.search .icon{position: absolute;left:0.5rem;}
+	.travel-menu{padding:0.5rem 0 0.5rem 0.5rem; border-bottom: 1px solid #ddd;}
+
+	.travel-menu ul{display: -webkit-box; -webkit-box-orient:horizontal;display: flex;margin-top: 0.5rem;   }
+	.travel-menu ul li{color:#fff;flex:1;text-align: center;background:@topic-color;font-size:1.4rem;margin-right:0.5rem;height: 5rem;padding:1.2rem 0 0; border-radius: 4px;}
+	.travel-menu ul li:nth-child(2){background:#ec4c40}
+	.travel-menu ul li:nth-child(3){background:#f8791c}
+	.travel-menu ul li:nth-child(4){background:#c672e1}
+	.travel-menu ul li .icon{width:3rem;height:3rem;color:#fff;}
+	.travel-menu ul li p{color:#fff;    padding:0.5rem 0;}
+	.index2,.index3,.index4{display: none;background-color: #fff;}
+	.sticky {  
+	position: -webkit-sticky;  
+	position: -moz-sticky;  
+	position: -ms-sticky;  
+	position: sticky;  
+	top: 0px; 
+
+	}  
+	/*.goodlists-box .goodslist{display: none;}*/
+	.goodslist ul li .good-img{position:relative;}
+	.goodslist ul li .good-img img{width:100%;}
+	.goodslist ul li .good-type{position:absolute;top:0.5rem;left:1rem;line-height: 2rem; font-size:1rem;text-align: center;background: #333;opacity: 0.8;color:#fff;padding:0 0.5rem;}
+	.goodslist ul li .good-price{position:absolute;bottom:1rem;right:0rem;line-height: 2rem;font-size: 1.4rem;text-align: center; background:@sup-topic-color;padding:0 0.5rem;color:#fff;}
+	.goodslist ul li .good-desc{padding:1rem 1rem;}
+	.goodslist ul li .good-desc .good-title{padding:0.2rem 0;font-size:1.4rem;width:100%;font-weight: bold;text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
+	.goodslist ul li .good-desc .sub-title{ padding:0.2rem 0;   font-size: 1.2rem;line-height: 2rem;color: #999;margin-top:0.5rem;text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
+	.goodslist ul li .good-desc div>p.sell-charge{color:@topic-color;border:1px solid @topic-color;display: inline; padding: 0.1rem;}
+	.goodslist ul li .good-desc .good-labels{margin-top:1rem;font-size: 1rem;padding:0.2rem;}
+	.goodslist ul li .good-desc .good-label{display: inline;}
+	.goodslist ul li .good-desc .good-label p{padding: 0.1rem 0!important;}
+	.goodslist ul li .good-desc .good-label li{display: inline-block;border:1px solid #999;font-size:1rem; color:#999;}
+	#load-data{text-align: center;font-size: 1rem;color: #aaa;width: 100%;height: 2rem;line-height: 2rem;}
+	
+	.footer .travel-nav{margin:0.5rem;padding:0.5rem;}
+	.footer .travel-nav ul{display:-webkit-box;-webkit-box-orient: vertical;display: flex;}
+	.footer .travel-nav ul li{flex:1;text-align: center;}
+
+	.footer .copyright-info{text-align: center;}
+
+	.footer .copyright-info p{padding:0.5rem 0;}
+
+	/*无数据*/
+	.no-consultant-prompt {text-align: center;display:none;}
+	.no-consultant-prompt>div {width: 100%; height: 20rem;text-align: center;background: url('./img/jilu@3x(1).png')center 80% no-repeat;background-size: 8.6rem auto;}
+	.no-consultant-prompt>span {font-size: 1.3rem;color: #999;}

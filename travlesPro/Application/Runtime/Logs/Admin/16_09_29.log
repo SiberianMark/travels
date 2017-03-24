@@ -1,0 +1,2372 @@
+[ 2016-09-29T14:11:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.3044s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0383s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000580s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031851s ]
+
+[ 2016-09-29T14:11:02+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.027973s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.028438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002293s ]
+
+[ 2016-09-29T14:11:16+08:00 ] 127.0.0.1 /index.php/Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_user` WHERE `phone` = '13425157494' LIMIT 1   [ RunTime:0.0331s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\test\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000732s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003370s ]
+
+[ 2016-09-29T14:11:19+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2016-09-29T14:11:19+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-09-29T14:11:24+08:00 ] 127.0.0.1 /admin/TravelInfo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 56 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 57 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 70 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 74 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 76 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 80 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 82 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 84 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 88 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 90 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 94 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 96 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 127 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 129 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 133 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 135 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 137 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 142 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 150 行.
+NOTIC: [8] Undefined variable: member E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 152 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 162 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 163 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-09-29T14:11:26+08:00 ] 127.0.0.1 /Admin/TravelInfo/travelinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_user` WHERE `department` = 1  [ RunTime:0.0262s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\test\Application\Admin\Controller\TravelInfoController.class.php 第 164 行.
+NOTIC: [2048] Declaration of Admin\Model\TravelInfoModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelInfoModel.class.php 第 111 行.
+SQL: SELECT COUNT(*) AS tp_count FROM travel_info i WHERE i.startDate >= 1472659200 LIMIT 1   [ RunTime:0.2277s ]
+SQL: SELECT i.id as iid,i.adminId,i.visitorType,i.lineType,i.lineName,i.startDate,i.endDate,i.visitorNum,i.guideCollection,i.visitorNote,i.deposit,i.agency,i.agencyLinkman,i.agencyPhone,i.orderCode,i.source,i.payType,i.contractId,i.systemId,i.receiptId,i.remark,i.time,i.insurance FROM travel_info i WHERE i.startDate >= 1472659200 ORDER BY i.startDate DESC LIMIT 0,10   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0086s ]
+NOTIC: [2048] Declaration of Admin\Model\TravelMemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelMemberModel.class.php 第 47 行.
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '42' ORDER BY ifLeader DESC  [ RunTime:0.0580s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '39' ORDER BY ifLeader DESC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '37' ORDER BY ifLeader DESC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '40' ORDER BY ifLeader DESC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '38' ORDER BY ifLeader DESC  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '41' ORDER BY ifLeader DESC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '4' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '21' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '24' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '23' ORDER BY ifLeader DESC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '22' ORDER BY ifLeader DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Undefined variable: startDate1 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 58 行.
+NOTIC: [8] Undefined variable: startDate2 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 62 行.
+NOTIC: [8] Undefined variable: lineName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 65 行.
+NOTIC: [8] Undefined variable: trueName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 69 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-09-29T14:11:43+08:00 ] 127.0.0.1 /admin/order/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+ERR: 非法操作:add
+
+[ 2016-09-29T14:11:44+08:00 ] 127.0.0.1 /admin/order/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+ERR: 非法操作:edit
+
+[ 2016-09-29T14:11:47+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/css/H-ui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/Hui-iconfont/1.0.7/iconfont.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/H-ui.admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002235s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/icheck.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/skin/default/skin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery/1.9.1/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/jquery.icheck.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/jquery.validate.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/jquery.icheck.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/jquery.validate.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:50+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:53+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/css/H-ui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/Hui-iconfont/1.0.7/iconfont.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/H-ui.admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/icheck.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/skin/default/skin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/jquery/1.9.1/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/jquery.icheck.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/jquery.validate.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:56+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:11:57+08:00 ] 127.0.0.1 /admin/employee/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/css/H-ui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/H-ui.admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/skin/default/skin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/Hui-iconfont/1.0.7/iconfont.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/icheck.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/jquery/1.9.1/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/jquery.icheck.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008733s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/jquery.validate.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:45+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:12:46+08:00 ] 127.0.0.1 /admin/employee/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-09-29T14:16:12+08:00 ] 127.0.0.1 /admin/employee/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/icheck.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/Hui-iconfont/1.0.7/iconfont.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/css/H-ui.admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/skin/default/skin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/css/H-ui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003369s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/jquery/1.9.1/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003636s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/jquery.icheck.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/jquery.validate.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:13+08:00 ] 127.0.0.1 /admin/employee/lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/lib/icheck/jquery.icheck.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/jquery.validate.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/validate-methods.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/lib/jquery.validation/1.14.0/messages_zh.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+ERR: 非法操作:lib
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+ERR: 非法操作:static
+
+[ 2016-09-29T14:16:14+08:00 ] 127.0.0.1 /admin/employee/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-09-29T14:19:36+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001967s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.1264s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0148s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000658s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002233s ]
+
+[ 2016-09-29T14:19:37+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-09-29T14:19:43+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-09-29T14:21:52+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-09-29T14:24:21+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2016-09-29T14:24:22+08:00 ] 127.0.0.1 /admin/employee/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+ERR: 非法操作:Admin
+
+[ 2016-09-29T14:24:59+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-09-29T14:26:25+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-09-29T14:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-09-29T14:37:53+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003068s ]
+SQL: SHOW COLUMNS FROM `myz_menu` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myz_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000716s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.034323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006816s ]
+
+[ 2016-09-29T14:37:54+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-09-29T14:37:56+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-09-29T14:37:58+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002917s ]
+
+[ 2016-09-29T14:50:52+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006611s ]
+
+[ 2016-09-29T14:50:53+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-09-29T14:51:53+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-09-29T14:51:54+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003478s ]
+
+[ 2016-09-29T14:55:12+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2016-09-29T14:55:13+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-09-29T14:55:13+08:00 ] 127.0.0.1 /index.php/Admin/Employee/helloweixin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-09-29T14:57:15+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-09-29T14:57:17+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-09-29T14:58:48+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-09-29T14:58:50+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2016-09-29T15:52:35+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010886s ]
+
+[ 2016-09-29T15:52:39+08:00 ] 127.0.0.1 /index.php/Admin/Employee/makeQRcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-09-29T15:53:33+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-09-29T15:53:45+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2016-09-29T15:54:01+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-09-29T15:54:10+08:00 ] 127.0.0.1 /index.php/Admin/Employee/addWaterMark
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-09-29T16:46:41+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2016-09-29T16:46:43+08:00 ] 127.0.0.1 /index.php/Admin/Employee/addWaterMark
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2016-09-29T16:56:38+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2016-09-29T16:56:39+08:00 ] 127.0.0.1 /index.php/Admin/Employee/addWaterMark
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+ERR: 不存在的字体文件：
+
+[ 2016-09-29T16:59:31+08:00 ] 127.0.0.1 /admin/employee/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-09-29T16:59:32+08:00 ] 127.0.0.1 /index.php/Admin/Employee/addWaterMark
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2016-09-29T17:04:30+08:00 ] 127.0.0.1 /admin/TravelInfo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 56 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 57 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 70 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 74 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 76 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 80 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 82 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 84 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 88 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 90 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 94 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 96 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 127 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 129 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 133 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 135 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 137 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 142 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 150 行.
+NOTIC: [8] Undefined variable: member E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 152 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 162 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 163 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2016-09-29T17:04:31+08:00 ] 127.0.0.1 /Admin/TravelInfo/travelinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_user` WHERE `department` = 1  [ RunTime:0.0331s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\test\Application\Admin\Controller\TravelInfoController.class.php 第 164 行.
+NOTIC: [2048] Declaration of Admin\Model\TravelInfoModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelInfoModel.class.php 第 111 行.
+SQL: SELECT COUNT(*) AS tp_count FROM travel_info i WHERE i.startDate >= 1472659200 LIMIT 1   [ RunTime:0.0225s ]
+SQL: SELECT i.id as iid,i.adminId,i.visitorType,i.lineType,i.lineName,i.startDate,i.endDate,i.visitorNum,i.guideCollection,i.visitorNote,i.deposit,i.agency,i.agencyLinkman,i.agencyPhone,i.orderCode,i.source,i.payType,i.contractId,i.systemId,i.receiptId,i.remark,i.time,i.insurance FROM travel_info i WHERE i.startDate >= 1472659200 ORDER BY i.startDate DESC LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\TravelMemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelMemberModel.class.php 第 47 行.
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '42' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '39' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '37' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '40' ORDER BY ifLeader DESC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '38' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '41' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '21' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '24' ORDER BY ifLeader DESC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '23' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '22' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Undefined variable: startDate1 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 58 行.
+NOTIC: [8] Undefined variable: startDate2 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 62 行.
+NOTIC: [8] Undefined variable: lineName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 65 行.
+NOTIC: [8] Undefined variable: trueName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 69 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-09-29T17:04:33+08:00 ] 127.0.0.1 /admin/TravelInfo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 56 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 57 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 70 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 74 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 76 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 80 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 82 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 84 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 88 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 90 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 94 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 96 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 127 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 129 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 133 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 135 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 137 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 142 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 150 行.
+NOTIC: [8] Undefined variable: member E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 152 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 162 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 163 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-09-29T17:04:52+08:00 ] 127.0.0.1 /Admin/TravelInfo/travelinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_user` WHERE `department` = 1  [ RunTime:0.0134s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\test\Application\Admin\Controller\TravelInfoController.class.php 第 164 行.
+NOTIC: [2048] Declaration of Admin\Model\TravelInfoModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelInfoModel.class.php 第 111 行.
+SQL: SELECT COUNT(*) AS tp_count FROM travel_info i WHERE i.startDate >= 1472659200 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT i.id as iid,i.adminId,i.visitorType,i.lineType,i.lineName,i.startDate,i.endDate,i.visitorNum,i.guideCollection,i.visitorNote,i.deposit,i.agency,i.agencyLinkman,i.agencyPhone,i.orderCode,i.source,i.payType,i.contractId,i.systemId,i.receiptId,i.remark,i.time,i.insurance FROM travel_info i WHERE i.startDate >= 1472659200 ORDER BY i.startDate DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\TravelMemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelMemberModel.class.php 第 47 行.
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '42' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '39' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '37' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '40' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '38' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '41' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '21' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '24' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '23' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '22' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Undefined variable: startDate1 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 58 行.
+NOTIC: [8] Undefined variable: startDate2 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 62 行.
+NOTIC: [8] Undefined variable: lineName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 65 行.
+NOTIC: [8] Undefined variable: trueName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 69 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-09-29T17:05:00+08:00 ] 127.0.0.1 /admin/TravelInfo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 56 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 57 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 70 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 74 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 76 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 80 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 82 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 84 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 88 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 90 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 94 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 96 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 127 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 129 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 133 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 135 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 137 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 142 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 150 行.
+NOTIC: [8] Undefined variable: member E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 152 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 162 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 163 行.
+NOTIC: [8] Undefined variable: travelInfo E:\wamp\www\test\Application\Runtime\Cache\Admin\c8543d57d6eb0a28c5f32ac27e1d387b.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-09-29T17:05:01+08:00 ] 127.0.0.1 /Admin/TravelInfo/travelinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\UserModel.class.php 第 7 行.
+SQL: SELECT * FROM `myz_user` WHERE `department` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\test\Application\Admin\Controller\TravelInfoController.class.php 第 164 行.
+NOTIC: [2048] Declaration of Admin\Model\TravelInfoModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelInfoModel.class.php 第 111 行.
+SQL: SELECT COUNT(*) AS tp_count FROM travel_info i WHERE i.startDate >= 1472659200 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT i.id as iid,i.adminId,i.visitorType,i.lineType,i.lineName,i.startDate,i.endDate,i.visitorNum,i.guideCollection,i.visitorNote,i.deposit,i.agency,i.agencyLinkman,i.agencyPhone,i.orderCode,i.source,i.payType,i.contractId,i.systemId,i.receiptId,i.remark,i.time,i.insurance FROM travel_info i WHERE i.startDate >= 1472659200 ORDER BY i.startDate DESC LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\TravelMemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\TravelMemberModel.class.php 第 47 行.
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '42' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '39' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '37' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '40' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '38' ORDER BY ifLeader DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '41' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '21' ORDER BY ifLeader DESC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '24' ORDER BY ifLeader DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '23' ORDER BY ifLeader DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myz_user` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`travelInfoId`,`ifLeader`,`trueName`,`phone`,`idNumber`,`musterAddr`,`birthDate`,`birthAddr`,`signAddr`,`agencyPrice`,`payPrice`,`settlementPrice` FROM `travel_member` WHERE `travelInfoId` = '22' ORDER BY ifLeader DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined variable: startDate1 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 58 行.
+NOTIC: [8] Undefined variable: startDate2 E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 62 行.
+NOTIC: [8] Undefined variable: lineName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 65 行.
+NOTIC: [8] Undefined variable: trueName E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 69 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 142 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 146 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 152 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 153 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 154 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 155 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 160 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 161 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 165 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 181 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 182 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 183 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 186 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 193 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 194 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 195 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 196 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 197 行.
+NOTIC: [8] Undefined index: sum E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 199 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+NOTIC: [8] Undefined index: profit E:\wamp\www\test\Application\Runtime\Cache\Admin\10b0081fe8d729451cac852141010c5c.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2016-09-29T17:05:03+08:00 ] 127.0.0.1 /admin/order/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+ERR: 非法操作:add
+

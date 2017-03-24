@@ -1,0 +1,51 @@
+[ 2016-12-01T16:20:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014475s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:0.4220s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.1104s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000822s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001009s ]
+NOTIC: [8] Undefined index: user E:\wamp\www\test\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 66 行.
+NOTIC: [8] Undefined index: user E:\wamp\www\test\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.205292s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.205610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.039992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.040222s ]
+
+[ 2016-12-01T16:20:31+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.013800s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013994s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.331025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.331281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+

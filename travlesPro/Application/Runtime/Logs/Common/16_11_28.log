@@ -1,0 +1,42 @@
+[ 2016-11-28T11:27:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-28T11:28:27+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-28T11:36:51+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-28T11:38:31+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-28T13:46:02+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-28T13:55:22+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-28T14:05:01+08:00 ] 127.0.0.1 /brandstore/advertconfig/ChangeStatus2?status=1&id=1&tid=1&switch=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载模块:Brandstore
+

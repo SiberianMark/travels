@@ -1,0 +1,30 @@
+[ 2016-12-19T16:01:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000904s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016469s ]
+
+[ 2016-12-19T16:01:12+08:00 ] 127.0.0.1 /Home/User/index?phone=13425157493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157493' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0007s ]
+

@@ -1,0 +1,342 @@
+[ 2017-02-10T16:12:04+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:1.6764s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.7974s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `mmm_employee_depa` [ RunTime:0.2960s ]
+SQL: SELECT `rules` FROM `mmm_employee_depa` WHERE `id` = null LIMIT 1   [ RunTime:0.0369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.025946s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.026228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.405431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.405809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-02-10T16:12:08+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.017719s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.326429s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.326844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001614s ]
+
+[ 2017-02-10T16:12:30+08:00 ] 127.0.0.1 /index.php/Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 7 行.
+SQL: SELECT `id`,`name`,`phone`,`password`,`department`,`qq`,`weixin`,`email`,`sex`,`nativeplace`,`address`,`entrytime`,`status`,`addtime`,`note`,`is_del`,`loginip`,`lastlogintime` FROM `mmm_employee` WHERE `phone` = '13425157494' AND `is_del` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0811s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\test\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: UPDATE `mmm_employee` SET `loginip`='127.0.0.1',`lastlogintime`='2017-02-10 16:12:30' WHERE `id` = '6' [ RunTime:0.1221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002304s ]
+
+[ 2017-02-10T16:12:34+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `mmm_menu` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 0 AND `type` = 1 AND `isshow` = 1 AND `deep` = 1 ORDER BY orderid asc  [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminDepaModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminDepaModel.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `mmm_employee_depa` [ RunTime:0.0265s ]
+SQL: SELECT `rules` FROM `mmm_employee_depa` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0578s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 15 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0148s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 8 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 13 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 2 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 1 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 14 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 23 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mmm_menu` WHERE `pid` = 17 AND `type` = 1 AND `isshow` = 1 AND `deep` = 2 ORDER BY orderid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.519307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.519624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-02-10T16:12:35+08:00 ] 127.0.0.1 /admin/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000892s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.848016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.848236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-02-10T16:12:48+08:00 ] 127.0.0.1 /Admin/Line/linelist?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0260s ]
+SQL: SELECT `des` FROM `mmm_line` WHERE `des_type` = 1 AND `status` <> 4  [ RunTime:0.0192s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0664s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0003s ]
+SQL: SELECT o.sid FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op  WHERE `des_type` = '1' AND `status` <> 4 GROUP BY o.sid  [ RunTime:0.0853s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0196s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op LEFT JOIN mmm_supplier AS s ON s.id = o.sid LEFT JOIN mmm_employee AS e ON e.id = l.counselor  WHERE l.des_type = '1' LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT l.id,l.line_type,l.title,l.day_num,l.start_palce,l.des,e.name AS op,o.name AS sop,l.status,l.supplier_title,s.company_name FROM mmm_line l LEFT JOIN mmm_supplier_op AS o ON o.id = l.supplier_op LEFT JOIN mmm_supplier AS s ON s.id = o.sid LEFT JOIN mmm_employee AS e ON e.id = l.counselor  WHERE l.des_type = '1' ORDER BY l.edittime DESC,l.id DESC LIMIT 0,10   [ RunTime:0.0377s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0150s ]
+SQL: SELECT MAX(line_date) AS tp_max FROM `mmm_line_date` WHERE `lineid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0344s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT MAX(line_date) AS tp_max FROM `mmm_line_date` WHERE `lineid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Undefined variable: lineid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 45 行.
+NOTIC: [8] Undefined variable: line_type E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 50 行.
+NOTIC: [8] Undefined variable: line_type E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 51 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: desid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 56 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 61 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 62 行.
+NOTIC: [8] Undefined variable: status E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 63 行.
+NOTIC: [8] Undefined variable: day_num E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 68 行.
+NOTIC: [8] Undefined variable: title E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 70 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: counselor E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 75 行.
+NOTIC: [8] Undefined variable: supplierid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 81 行.
+NOTIC: [8] Undefined variable: supplierid E:\wamp\www\test\Application\Runtime\Cache\Admin\002f0672dce916b694cf50bf67bfa04a.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.622089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.622399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001784s ]
+
+[ 2017-02-10T16:12:55+08:00 ] 127.0.0.1 /Admin/Line/base_info/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0115s ]
+SQL: SELECT `id`,`line_type`,`des_type`,`title`,`day_num`,`start_palce`,`des`,`labelid`,`special`,`counselor`,`status`,`keywords`,`supplier_title`,`supplier_op` FROM `mmm_line` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierOpModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierOpModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier_op` [ RunTime:0.0378s ]
+SQL: SELECT `sid` FROM `mmm_supplier_op` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0098s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0149s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdminModel.class.php 第 60 行.
+SQL: SELECT `id`,`name` FROM `mmm_employee` WHERE `department` = 1 AND `status` = 0 AND `is_del` = 0  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\SupplierModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\SupplierModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_supplier` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`company_name` FROM `mmm_supplier` WHERE `status` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `sid` FROM `mmm_supplier_op` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `mmm_supplier_op` WHERE `sid` = 2  [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2017-02-10T16:13:00+08:00 ] 127.0.0.1 /Admin/Line/time_price/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.514126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.514390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+
+[ 2017-02-10T16:13:01+08:00 ] 127.0.0.1 /Admin/Line/get_price?month=2017-02&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.2092s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-01' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-02' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-03' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-04' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-05' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-06' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-07' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-08' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-09' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-10' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-12' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-13' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-14' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-15' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-16' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-17' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-18' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-19' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-20' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-21' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-22' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-23' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-24' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-25' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-26' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-27' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-28' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-02-10T16:13:01+08:00 ] 127.0.0.1 /Admin/Line/time_price/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2017-02-10T16:13:02+08:00 ] 127.0.0.1 /Admin/Line/get_price?month=2017-02&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-01' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-02' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-03' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-04' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-05' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-06' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-07' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-08' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-09' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-10' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-11' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-12' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-13' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-14' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-15' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-16' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-17' LIMIT 1   [ RunTime:0.0902s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-18' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-20' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-21' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-22' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-23' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-24' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-25' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-26' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-27' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`adult_price`,`child_price`,`single_room`,`status` FROM `mmm_line_date` WHERE `lineid` = 3 AND `line_date` = '2017-02-28' LIMIT 1   [ RunTime:0.0003s ]
+

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+	<include file="Public/H-ui_js_css"/>
+	<script src="/Application/Admin/View/Public/laypage/laypage.js"></script>
+	<title>部门管理</title>
+</head>
+<body>
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 员工管理
+	<span class="c-gray en">&gt;</span> 部门管理
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray"> <span class="l"> <a class="btn btn-primary radius" href="javascript:;" onclick="admin_role_add('添加部门','/Admin/Employee/adminDepaAdd','800','700')"><i class="Hui-iconfont">&#xe600;</i> 添加部门</a></span></div>
+	<table class="mt-5 table table-border table-bordered table-hover table-bg">
+		<thead>
+			<tr>
+				<th scope="col" colspan="5">部门管理</th>
+			</tr>
+			<tr class="text-c">
+				<th>ID</th>
+				<th>部门名称</th>
+				<th>员工人数</th>
+				<th>部门描述</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach name="lists" item="list">
+				<tr class="text-c">
+					<td>{$list.id}</td>
+					<td>{$list.name}</td>
+					<td>{$list.num}</td>
+					<td>{$list.detail}</td>
+					<td class="f-14">
+						<a title="编辑权限" href="javascript:;" onclick="admin_role_edit('编辑部门','/Admin/Employee/adminDepaEdit/id/{$list.id}','800','700')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>&nbsp;&nbsp;
+						<a title="删除" href="javascript:;" onclick="del('{$list.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				</tr>
+			</foreach>
+		</tbody>
+	</table>
+</div>
+
+
+<script type="text/javascript">
+	/*管理员-角色-添加*/
+	function admin_role_add(title,url,w,h){
+		layer_show(title,url,w,h);
+	}
+
+	/*管理员-角色-编辑*/
+	function admin_role_edit(title,url,w,h){
+		layer_show(title,url,w,h);
+	}
+
+	/*删除部门*/
+	function del(id) {
+		layer.confirm(
+			'确定要删除吗？',
+			{btn: ['确定','取消']},
+			function(){
+				var url = "/Admin/Employee/depaDel";
+				$.get(url, {id:id}, function(data){
+					if(data) {
+						location.reload();
+						layer.msg('删除成功', {icon: 1});
+					} else {
+						layer.msg('删除失败', {icon: 2});
+					}
+				})
+			}
+		)
+	}
+</script>
+</body>
+</html>

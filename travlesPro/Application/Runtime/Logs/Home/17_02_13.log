@@ -1,0 +1,402 @@
+[ 2017-02-13T10:44:42+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029847s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0592s ]
+SQL: SELECT * FROM `mmm_member` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-02-13T10:45:29+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `mmm_member` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-02-13T10:48:34+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.436915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002448s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `mmm_member` LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `mmm_member` SET `password`='fb461af31f6d5c0bbdea4361dd3bc79f' [ RunTime:0.1611s ]
+
+[ 2017-02-13T10:48:38+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `mmm_member` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `password`='fb461af31f6d5c0bbdea4361dd3bc79f' [ RunTime:0.5697s ]
+
+[ 2017-02-13T10:49:11+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0454s ]
+SQL: SELECT * FROM `mmm_member` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `password`='fb461af31f6d5c0bbdea4361dd3bc79f' [ RunTime:0.3982s ]
+
+[ 2017-02-13T10:49:56+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `mmm_member` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486954196',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.1044s ]
+
+[ 2017-02-13T10:52:02+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486954322',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0895s ]
+
+[ 2017-02-13T10:53:29+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0255s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486954409',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0831s ]
+
+[ 2017-02-13T10:54:26+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0116s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486954466',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0994s ]
+
+[ 2017-02-13T14:11:43+08:00 ] 127.0.0.1 /home/APIMember/account_login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015953s ]
+ERR: 非法操作:account_login
+
+[ 2017-02-13T14:11:56+08:00 ] 127.0.0.1 /home/APIMember/login?phone=&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+
+[ 2017-02-13T14:37:04+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.1065s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0323s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486967824',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.1008s ]
+
+[ 2017-02-13T14:56:12+08:00 ] 127.0.0.1 /home/APIMember/login?phone=&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+
+[ 2017-02-13T14:56:19+08:00 ] 127.0.0.1 /home/APIMember/login?phone=1&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-02-13T14:56:27+08:00 ] 127.0.0.1 /home/APIMember/login?phone=134251574943&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+
+[ 2017-02-13T14:56:31+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157494&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0700s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486968991',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0921s ]
+
+[ 2017-02-13T14:56:35+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0133s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486968995',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0872s ]
+
+[ 2017-02-13T14:56:43+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0122s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969003',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0774s ]
+
+[ 2017-02-13T14:56:44+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0155s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969004',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0808s ]
+
+[ 2017-02-13T14:56:47+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0142s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969007',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0871s ]
+
+[ 2017-02-13T14:56:48+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0219s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969008',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0872s ]
+
+[ 2017-02-13T14:56:52+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.1108s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969012',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0736s ]
+
+[ 2017-02-13T14:56:53+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969013',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.2438s ]
+
+[ 2017-02-13T14:56:54+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.2690s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969014',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0579s ]
+
+[ 2017-02-13T14:57:02+08:00 ] 127.0.0.1 /home/APIMember/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0252s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486969022',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0749s ]
+
+[ 2017-02-13T17:28:34+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.1016s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486978114',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.1406s ]
+
+[ 2017-02-13T17:28:43+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0119s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0095s ]
+
+[ 2017-02-13T17:28:47+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0132s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486978127',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0952s ]
+
+[ 2017-02-13T18:29:02+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013565s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0370s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486981742',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.1093s ]
+
+[ 2017-02-13T18:29:04+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0339s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486981744',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0952s ]
+
+[ 2017-02-13T18:29:05+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0429s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486981745',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0966s ]
+
+[ 2017-02-13T18:29:06+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0125s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486981746',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0807s ]
+
+[ 2017-02-13T18:33:07+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0119s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486981986',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.4169s ]
+NOTIC: [8] Undefined index: id E:\wamp\www\test\Application\Home\Controller\APILoginController.class.php 第 65 行.
+NOTIC: [8] Undefined index: mobile E:\wamp\www\test\Application\Home\Controller\APILoginController.class.php 第 66 行.
+
+[ 2017-02-13T18:33:18+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0124s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486981998',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.2497s ]
+NOTIC: [8] Undefined index: id E:\wamp\www\test\Application\Home\Controller\APILoginController.class.php 第 65 行.
+NOTIC: [8] Undefined index: mobile E:\wamp\www\test\Application\Home\Controller\APILoginController.class.php 第 66 行.
+
+[ 2017-02-13T18:34:25+08:00 ] 127.0.0.1 /home/APILogin/login?phone=13425157493&passwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_member` [ RunTime:0.0193s ]
+SQL: SELECT `id`,`username`,`password`,`mobile`,`mobileverified`,`status`,`is_del`,`lastlogin`,`lastip` FROM `mmm_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `mmm_member` SET `lastlogin`='1486982065',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0795s ]
+

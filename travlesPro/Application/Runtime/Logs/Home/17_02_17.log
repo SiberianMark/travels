@@ -1,0 +1,66 @@
+[ 2017-02-17T21:19:33+08:00 ] 127.0.0.1 //Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-02-17T21:19:38+08:00 ] 127.0.0.1 /Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-02-17T21:19:48+08:00 ] 127.0.0.1 /Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-02-17T21:19:49+08:00 ] 127.0.0.1 /Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-02-17T21:21:52+08:00 ] 127.0.0.1 /Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-02-17T23:10:48+08:00 ] 127.0.0.1 /Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0000s ]
+

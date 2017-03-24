@@ -1,0 +1,11 @@
+[ 2017-02-07T12:05:31+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:1.6051s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.3580s ]
+

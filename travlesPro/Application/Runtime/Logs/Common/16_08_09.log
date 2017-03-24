@@ -1,0 +1,72 @@
+[ 2016-08-09T09:10:20+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000188s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001529s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-08-09T09:10:21+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-09T09:23:31+08:00 ] 127.0.0.1 /__APP__/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001171s ]
+ERR: 无法加载模块:__APP__
+
+[ 2016-08-09T09:23:39+08:00 ] 127.0.0.1 /__APP__/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+ERR: 无法加载模块:__APP__
+
+[ 2016-08-09T09:23:41+08:00 ] 127.0.0.1 /__APP__/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+ERR: 无法加载模块:__APP__
+
+[ 2016-08-09T09:24:03+08:00 ] 127.0.0.1 /__APP__/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+ERR: 无法加载模块:__APP__
+
+[ 2016-08-09T09:24:05+08:00 ] 127.0.0.1 /__APP__/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+ERR: 无法加载模块:__APP__
+
+[ 2016-08-09T09:24:11+08:00 ] 127.0.0.1 /__APP__/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+ERR: 无法加载模块:__APP__
+
+[ 2016-08-09T09:30:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-09T09:37:37+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-08-09T09:38:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-09T09:38:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+ERR: 无法加载模块:Favicon
+

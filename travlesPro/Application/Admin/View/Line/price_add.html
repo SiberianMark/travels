@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加日期价格</title>
+    <include file="Public/H-ui_js_css"/>
+    <style>
+        .d {
+            float: left;
+        }
+        #content p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="page-container" style="height: 265px">
+    <form action="/Admin/Line/many_price" method="get" id="form">
+        <input type="hidden" name="lineid" id="lineid" value="{$lineid}"/>
+        <div class="d" style="margin-right: 1em">
+            <p>点击日历中日期添加开班日期：</p>
+            <div id="div1"></div>
+        </div>
+        <div class="d" style="margin-right: 1.6em">
+            <p>已选日期：</p>
+            <div id="content" style="width: 150px;height: 220px;border: 1px solid #999;overflow-y :auto">
+
+            </div>
+        </div>
+        <div class="d" style="width: 250px;height: 200px;">
+            <p>价格：</p>
+            <table class="table table-border table-bordered table-hover">
+                <tr>
+                    <td class="text-c"><span style="color: red">*</span>成人价格：</td>
+                    <td style="width: 90px"><input class="input-text" type="text" name="adult_price" /></td>
+                </tr>
+                <tr>
+                    <td class="text-c"><span style="color: red">*</span>儿童价格：</td>
+                    <td><input class="input-text" type="text" name="child_price"/></td>
+                </tr>
+                <tr>
+                    <td class="text-c"><span style="color: red">*</span>全程单房差：</td>
+                    <td><input class="input-text" type="text" name="single_room"/></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+<p><button id="conform" class="btn btn-secondary radius" style="width:100px;display:block;margin: auto">保存</button></p>
+
+</body>
+</html>
+<script type="text/javascript">
+    WdatePicker({eCont:'div1',onpicked:function(dp){
+        var select_date = dp.cal.getDateStr();
+        var select_date1 = $('#'+ select_date +'').val();
+        if (select_date1 == undefined) {
+            var lineid = $("#lineid").val();
+            var url = "/Admin/Line/if_price";
+            $.get(url,{lineid: lineid, line_date:select_date},function(data){
+                if (data) {
+                    layer.msg('该日期对应的价格已经存在');
+                } else {
+                    var str = '<p>';
+                    str += '<input name="date_selected[]" style="border:0;width: 100px" readonly="readonly" id="'+ select_date +'" value="'+ select_date +'"/>';
+                    str += '<i class="Hui-iconfont" onclick="del_date(this)" style="cursor:pointer">&#xe6a6;</i>';
+                    str += '</p>';
+                    $("#content").append(str);
+                }
+            });
+        } else {
+            layer.msg('该日期已经被选中');
+        }
+    }})
+
+    // 点击删除日期
+    function del_date(obj) {
+        $(obj).parent().remove();
+    }
+
+    $("#conform").click(function(){
+        $("#form").submit();
+    })
+
+</script>

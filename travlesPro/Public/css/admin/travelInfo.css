@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+.login_title{
+	text-align:center;
+	margin-top:14px;
+	margin-bottom:6px;
+}
+
+.login_table {
+	width:1080px;
+	font-size:14px;
+	border-collapse:collapse;
+	border:none;
+}
+
+.login_table tr{
+	 height:38px;
+}
+
+.login_table td{
+	border: solid #000 1px; 
+}
+
+.box180{
+	width:180px; 
+	height:20px;
+}
+
+.box130{
+	width:130px; 
+	height:20px;
+}
+
+.box80{
+	width:80px; 
+	height:20px; 
+}
+.box40{
+	width:40px; 
+	height:20px; 
+}
+#submit{
+	margin-left:80px;
+	width:120px;
+	height:28px;
+	line-height:28px;
+	font-size:20px;
+	color:blue;
+}
+
+
+
+

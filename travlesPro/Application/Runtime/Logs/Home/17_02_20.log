@@ -1,0 +1,762 @@
+[ 2017-02-20T22:30:15+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`line_type`,`des_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0010s ]
+
+[ 2017-02-20T22:37:32+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+
+[ 2017-02-20T22:38:02+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+
+[ 2017-02-20T22:54:06+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 22:54:06' LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 22:54:06' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 22:54:06' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 22:54:06' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 22:54:06' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T22:59:56+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 22:59:56' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 22:59:56' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 22:59:56' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 22:59:56' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 22:59:56' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:00:49+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:00:49' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:00:49' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:00:49' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:00:49' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:00:49' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:01:46+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:01:46' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0020s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:01:46' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:01:46' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:01:46' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:01:46' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-20T23:02:57+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:02:57' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0020s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:02:57' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:02:57' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:02:57' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:02:57' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:04:37+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:04:37' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:04:37' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:04:37' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:04:37' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:04:37' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:05:03+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:05:03' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0020s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:05:03' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:05:03' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:05:03' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:05:03' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:07:24+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:07:24' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:07:24' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:07:24' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:07:24' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:07:24' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:22:41+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 175 行.
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 175 行.
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 175 行.
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:22:41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 175 行.
+
+[ 2017-02-20T23:23:28+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 176 行.
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 176 行.
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 176 行.
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:23:28' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant lines - assumed 'lines' E:\wamp\www\test\Application\Home\Controller\APITravelController.class.php 第 176 行.
+
+[ 2017-02-20T23:24:07+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0030s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0020s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:24:07' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-20T23:25:22+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0020s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:25:22' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:26:11+08:00 ] 127.0.0.1 /home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:26:11' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:26:59+08:00 ] 127.0.0.1 /Home/APITravel/slide
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\AdModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\AdModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_ad` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`url`,`image` FROM `mmm_ad` WHERE `tid` = 1 AND `is_del` = 0 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-02-20T23:27:23+08:00 ] 127.0.0.1 /Home/APITravel/first_lineselect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_line` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 1 AND `status` = 2  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\PlaceModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\PlaceModel.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `mmm_line_place` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineDateModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineDateModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_date` [ RunTime:0.0010s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100001 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineImageModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineImageModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `mmm_line_image` [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100001 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\LineLabelModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Admin\Model\LineLabelModel.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `mmm_line_label` [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100003 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100003 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100005 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100005 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100006 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100006 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100007 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100007 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 3 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100002 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100002 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`start_palce`,`line_type`,`title`,`labelid` FROM `mmm_line` WHERE `des_type` = 2 AND `status` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `mmm_line_place` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MIN(adult_price) AS tp_min FROM `mmm_line_date` WHERE `lineid` = 100004 AND `status` = 1 AND `line_date` > '2017-02-20 23:27:23' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `url` FROM `mmm_line_image` WHERE `lineid` = 100004 AND `is_cover` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `label_name` FROM `mmm_line_label` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+

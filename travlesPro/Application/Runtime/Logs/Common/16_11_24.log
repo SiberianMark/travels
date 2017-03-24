@@ -1,0 +1,240 @@
+[ 2016-11-24T09:19:04+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-24T09:19:32+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:19:56+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:19:56+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:20:02+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:20:10+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:20:14+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:20:21+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T09:20:54+08:00 ] 127.0.0.1 /Public/BJs/content_zoom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T10:53:18+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T10:56:25+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:05:55+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:09:52+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:09:53+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:28:59+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:29:07+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:29:28+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:29:40+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:30:45+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:31:02+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:38:59+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:45:47+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:46:17+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:48:34+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T11:49:17+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T13:33:57+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T15:08:30+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T15:09:24+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T15:09:44+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T15:11:20+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-11-24T15:11:31+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T15:19:21+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T15:23:21+08:00 ] 127.0.0.1 /Public/BJs/ajaxfileupload.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-24T16:58:16+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-11-24T16:59:39+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-24T16:59:52+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-24T17:01:23+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-11-24T17:11:00+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+ERR: 无法加载模块:Ad
+
+[ 2016-11-24T17:37:15+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-11-24T17:53:23+08:00 ] 127.0.0.1 /index.php/Ad/ad/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+ERR: 无法加载模块:Ad
+

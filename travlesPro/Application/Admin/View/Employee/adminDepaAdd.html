@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+	<include file="Public/H-ui_js_css"/>
+<title>新建部门</title>
+	<style>
+		.col-sm-3 {
+			width: 18%;
+		}
+	</style>
+</head>
+<body>
+<article class="page-container">
+	<form action="__APP__/Admin/Employee/adminDepaAdd" method="post" class="form form-horizontal" id="form-admin-role-add" target="_parent">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>部门名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="roleName" name="name" datatype="*4-16" nullmsg="用户账户不能为空">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">部门描述：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="" name="detail">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">部门权限：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+
+				<foreach name="lists" item="list">
+					<dl class="permission-list">
+						<dt>
+							<label>
+								<input type="checkbox" value="{$list.id}" name="rules[]">
+								{$list.title}</label>
+						</dt>
+						<if condition="$list.child neq ''">
+							<dd>
+								<foreach name="list.child" item="v">
+										<label style="padding-right:0.625em;"><input class="menu-child" type="checkbox" value="{$v.id}" pid="{$v.pid}" name="rules[]">{$v.title}</label>
+								</foreach>
+							</dd>
+						</if>
+
+					</dl>
+				</foreach>
+
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<button type="submit" class="btn btn-success radius" id="submit"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+$(function(){
+	$(".permission-list dt input:checkbox").click(function(){
+		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+	});
+	$(".permission-list2 dd input:checkbox").click(function(){
+		var l =$(this).parent().parent().find("input:checked").length;
+		var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+		if($(this).prop("checked")){
+			$(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+			$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+		}
+		else{
+			if(l==0){
+				$(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+			}
+			if(l2==0){
+				$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+			}
+		}
+	});
+	
+	/*$("#form-admin-role-add").validate({
+		rules:{
+			roleName:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+			$(form).ajaxSubmit();
+			var index = parent.layer.getFrameIndex(window.name);
+			parent.layer.close(index);
+		}
+	});*/
+});
+
+
+	//子菜单选中时，同时选中父菜单
+	$('.menu-child').click(function(){
+		var pid = $(this).attr('pid');
+		if (this.checked) {
+			$(this).prop('checked', true);
+			$('input[value=' + pid + ']').prop('checked', true);
+		} else {
+			$(this).prop('checked', false);
+		}
+	})
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

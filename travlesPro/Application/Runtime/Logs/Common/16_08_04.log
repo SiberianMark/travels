@@ -1,0 +1,102 @@
+[ 2016-08-04T11:30:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-04T11:30:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-04T11:30:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001814s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /static/h-ui.admin/css/H-ui.admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000448s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004464s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /static/h-ui.admin/skin/default/skin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004111s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /lib/Hui-iconfont/1.0.7/iconfont.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000404s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003236s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /static/h-ui.admin/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006738s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /static/h-ui/css/H-ui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015677s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /lib/icheck/icheck.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015858s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028487s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026653s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /lib/jquery/1.9.1/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031898s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-04T12:39:46+08:00 ] 127.0.0.1 /welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000323s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033062s ]
+ERR: 无法加载模块:Welcome
+
+[ 2016-08-04T12:39:47+08:00 ] 127.0.0.1 /static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032721s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:49+08:00 ] 127.0.0.1 /lib/layer/2.1/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000440s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012747s ]
+ERR: 无法加载模块:Lib
+
+[ 2016-08-04T12:39:49+08:00 ] 127.0.0.1 /static/h-ui/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006463s ]
+ERR: 无法加载模块:Static
+
+[ 2016-08-04T12:39:49+08:00 ] 127.0.0.1 /static/h-ui.admin/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000431s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003596s ]
+ERR: 无法加载模块:Static
+

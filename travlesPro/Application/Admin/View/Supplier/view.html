@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>供应商OP管理</title>
+    <include file="Public/H-ui_js_css"/>
+</head>
+<body>
+
+
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 供应商管理<span class="c-gray en">&gt;</span>OP管理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+
+
+<?php $parentid?>
+<div class="page-container">
+    <div class="mt-20" style="margin-top: 3px">
+        <div class="pd-10">
+            <span style="font-size: 1em">供应商名称：</span><span style="color: lightcoral">{$supplier.company_name}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-success radius ml-10" href="/Admin/Supplier/addOp?sid={$supplier.id}">新增供应商OP</a>&nbsp;
+            <a class="btn btn-success radius ml-10" href="/Admin/Supplier/lists/">返回上一页</a>
+        </div>
+<table class="table table-border table-bordered table-hover table-bg" >
+    <thead>
+    <tr>
+        <th style="text-align: center">ID</th>
+        <th style="text-align: center">供应商OP名字</th>
+        <th style="text-align: center">座机</th>
+        <th style="text-align: center">手机</th>
+        <th style="text-align: center">微信</th>
+        <th style="text-align: center">QQ</th>
+        <th style="text-align: center">备注</th>
+        <th style="text-align: center">添加时间</th>
+        <th style="text-align: center">操作</th>
+    </tr>
+    </thead>
+    <if condition="$lists">
+        <volist name="lists" id="vo" key="k">
+            <tr class="list">
+                <td style="text-align: center;">{$vo.id}</td>
+                <td style="text-align: center;">{$vo.name}</td>
+                <td style="text-align: center;">{$vo.tel}</td>
+                <td style="text-align: center;">{$vo.phone}</td>
+                <td style="text-align: center;">{$vo.wx}</td>
+                <td style="text-align: center;">{$vo.qq}</td>
+                <td style="text-align: center;">{$vo.note}</td>
+                <td style="text-align: center;">{$vo.addtime}</td>
+                <td style="text-align: center;">
+                    <a href="/Admin/Supplier/editOp?id={$vo.id}&sid={$supplier.id}">编辑</a> |
+                    <a href="#" onclick="del('{$vo.id}')" style="color:red">删除</a>
+                </td>
+            </tr>
+        </volist>
+        <else />
+        <tr >
+            <td colspan="11">
+                <div style="text-align:center"><span>抱歉，没有找到相关数据。</span></div>
+            </td>
+        </tr>
+    </if>
+
+</table>
+        </div>
+</div>
+</body>
+</html>
+<script>
+
+
+
+    /*删除广告*/
+    function del(id){
+        layer.confirm(
+                '确认要删除吗？',
+                {btn: ['确定','取消']},
+                function(index){
+                    var url = "/Admin/Supplier/delOp";
+                    $.get(url, {id:id}, function(data){
+                        if(data.status ==1) {
+                            layer.msg(data.info, {icon: 6,time:1000});
+                            location.reload();
+                        } else {
+                            layer.msg(data.info, {icon: 5,time:1000});
+                        }
+                    })
+                });
+    }
+
+</script>

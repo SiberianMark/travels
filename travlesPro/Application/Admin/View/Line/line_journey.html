@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>编辑线路-行程</title>
+    <include file="Public/H-ui_js_css"/>
+    <script type="text/javascript" charset="utf-8" src="/Public/lib/ueditor/1.4.3/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Public/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/Public/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+    <style>
+
+        .bar {
+            width: 65em;
+            height: 3em;
+            border-bottom: 1px solid #0053AA;
+        }
+        .bar .bar_list{
+            float: left;
+            border: 1px solid #0053AA;
+            border-top-left-radius: 0.25em;
+            border-top-right-radius: 0.25em;
+            border-bottom: 0 solid #0053AA;
+            margin-right: 0.25em;
+            line-height:3em;
+            cursor: pointer;
+        }
+        .bar .bar_list .bar_link{
+            display: inline-block;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 1em;
+            color: #0053AA;
+            text-decoration:none;
+        }
+        .bar .bar_list .bar_link:hover{
+            font-weight: 700;
+        }
+        .current{
+            font-weight: 700;
+            background-color: #d1d3d5;
+        }
+        .Huifold .item h4 {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 线路管理 <span class="c-gray en">&gt;</span> 编辑线路 </nav>
+<div class="mt-20 ml-40" >
+    <ul class="bar ml-20">
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/base_info/id/{$lineid}">基本信息</a></li>
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/line_image/id/{$lineid}">轮播图</a></li>
+        <li class="bar_list current"><a class="bar_link" href="/Admin/Line/line_journey/id/{$lineid}">行程介绍</a></li>
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/money_include/id/{$lineid}">费用包含</a></li>
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/not_include/id/{$lineid}">费用不含</a></li>
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/notice/id/{$lineid}">预订须知</a></li>
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/reference/id/{$lineid}">推荐活动</a></li>
+        <li class="bar_list"><a class="bar_link" href="/Admin/Line/time_price/id/{$lineid}">团期价格</a></li>
+    </ul>
+    <div class="mt-20 mb-40">
+            <span class="ml-20" style="font-size: 16px">线路编号：{$lineid}</span>
+            <ul id="Huifold1" class="Huifold">
+                <for start="1" end="$day_num+1">
+                    <li class="item  ml-10" style="width: 58em">
+                        <if condition="$i eq 1">
+                            <h4>第&nbsp;{$i}&nbsp;天<b>-</b></h4>
+                        <else/>
+                            <h4>第&nbsp;{$i}&nbsp;天<b>+</b></h4>
+                        </if>
+                        <div class="info"  <if condition="$i eq 1">style="display:block;"</if>>
+                        <form action="/Admin/Line/line_journey?ac=edit" method="post">
+                            <input type="hidden" name="lineid" value="{$lineid}"/>
+                            <input type="hidden" name="dayid" value="{$journey[$i]['id']}"/>
+                            <input type="hidden" name="day" value="{$i}"/>
+                            <table class="table table-border table-bordered table-hover" style="width: 57em">
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>标题：</th>
+                                    <td>
+                                        <input type="text" class="input-text" name="name" value="{$journey[$i]['name']}"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>游览景点：</th>
+                                    <td>
+                                        <input type="text" class="input-text" name="spot" value="{$journey[$i]['spot']}"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>早餐：</th>
+                                    <td>
+                                        <input type="text" class="input-text" name="breakfast" value="{$journey[$i]['breakfast']}" placeholder="填含或者不含"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>午餐：</th>
+                                    <td>
+                                        <input type="text" class="input-text" name="lunch" value="{$journey[$i]['lunch']}" placeholder="填含或者不含"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>晚餐：</th>
+                                    <td>
+                                        <input type="text" class="input-text" name="dinner" value="{$journey[$i]['dinner']}" placeholder="填含或者不含"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>住宿酒店：</th>
+                                    <td>
+                                        <input type="text" class="input-text" name="hotel" value="{$journey[$i]['hotel']}"  placeholder="填参考酒店或者不含"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-r"><span style="color:red;">*&nbsp;</span>行程详情：</th>
+                                    <td>
+                                        <script type="text/plain" id="editor_id{$i}" name="detail" style="width:50em;height:21.875em;">
+                                            {$journey[$i]['detail']}
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-c">
+                                        <input class="btn btn-success radius" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;保存&nbsp;&nbsp;&nbsp;&nbsp;">
+                                    </td>
+                                </tr>
+                            </table>
+                            </form>
+                        </div>
+                    </li>
+                </for>
+            </ul>
+    </div>
+</div>
+
+<script>
+
+
+    //必填项检测
+   /* $(function () {
+        var form = document.forms[0];
+        form.onsubmit = function (e) {
+            var line_type = $.trim($("input[name='line_type']:checked").val());
+            var des_type = $.trim($("input[name='des_type']:checked").val());
+            var start_selected = $("input[name='start_selected[]']").val();
+            var des_selected = $("input[name='des_selected[]']").val();
+            var day_num = $.trim($("input[name='day_num']").val());
+            var main_name = $.trim($("input[name='main_name']").val());
+            var sub_name = $.trim($("input[name='sub_name']").val());
+            var counselor = $.trim($("#counselor").val());
+            if (line_type ==''||des_type==''||start_selected==undefined||des_selected==undefined||day_num==''||main_name==''||sub_name==''||counselor=='') {
+                layer.msg('带*为必填项', {icon: 2});
+                return false;
+            }
+        };
+    })*/
+
+    //图文编辑(实例化编辑器)
+    for (var i=1; i<="{$day_num}"; i++) {
+        var ue = UE.getEditor('editor_id'+i);
+    }
+
+
+    $(function(){
+        $.Huifold("#Huifold1 .item h4","#Huifold1 .item .info","fast",3,"click"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+    });
+    //1	只打开一个，可以全部关闭
+    //2	必须有一个打开
+    //3	可打开多个
+
+</script>
+
+</body>
+</html>

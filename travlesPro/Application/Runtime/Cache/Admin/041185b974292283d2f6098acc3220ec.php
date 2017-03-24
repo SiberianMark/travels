@@ -1,0 +1,168 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+<script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/H-ui.admin_v2.5/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/Public/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/Public/H-ui.admin_v2.5/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/Public/BJs/common.js"></script>
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Public/H-ui.admin_v2.5/lib/html5.js"></script>
+<script type="text/javascript" src="/Public/H-ui.admin_v2.5/lib/respond.min.js"></script>
+<script type="text/javascript" src="/Public/H-ui.admin_v2.5/lib/PIE_IE678.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/Public/H-ui.admin_v2.5/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/Public/H-ui.admin_v2.5/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/Public/H-ui.admin_v2.5/lib/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/Public/H-ui.admin_v2.5/lib/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="/Public/H-ui.admin_v2.5/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/Public/H-ui.admin_v2.5/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<link href="/Public/H-ui.admin_v2.5/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css" />
+<title>后台登录 - H-ui.admin v2.3</title>
+  <style>
+    #validate{
+      cursor: pointer;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+    function validate()
+    {
+      var url = '/validate.php?t=' + Math.random();
+      document.getElementById('validate').src = url;
+      document.getElementById('validateCode').value = '';
+    }
+
+    function valid()
+    {
+      var phone = $("#phone").val();
+      var validateCode = $("#validateCode").val();
+      var pphone = $("#pphone").val();
+
+      var regex = /^(13[0-9]|15[012356789]|17[03678]|18[0-9]|14[57])[0-9]{8}$/;
+      if (!regex.test(phone)) {
+        $("#phoneErr").html("手机号格式错误").show();
+        return false;
+      }
+
+      $.post('/User/Login/valid', {phone:phone, validateCode:validateCode}, function(data) {
+        if (data.status === 0) {
+          validate();
+          check();
+          alert(data.info);
+          return;
+        }
+
+        $("#div1").hide();
+        $("#div2").show();
+      });
+
+      return false;
+    }
+    /*$(document).ready(function(){
+      var backdrop = $(document.body).height();
+      $(".backdrop").css("height",backdrop);
+    })
+*/
+    function check()
+    {
+      var phone = document.getElementById('phone').value;
+      var passwd = document.getElementById('psd').value;
+
+      if (phone.length == 0 || passwd.length == 0) {
+        alert("手机号或者密码为空");
+        return false;
+      }
+
+      var regex = /^(13[0-9]|15[012356789]|17[03678]|18[0-9]|14[57])[0-9]{8}$/;
+      var regex2 = /^[5689][0-9]{7}$/;
+      if (!regex.test(phone) && !regex2.test(phone)) {
+        alert("手机号格式错误");
+        return false;
+      }
+
+      if (passwd.length < 6 || passwd.length > 32) {
+        alert("密码长度为6-32位");
+        return false;
+      }
+      return true;
+    }
+
+  </script>
+</head>
+<body>
+<input type="hidden" id="TenantId" name="TenantId" value="" />
+<div class="header"></div>
+<div class="loginWraper">
+  <div id="loginform" class="loginBox">
+    <form class="form form-horizontal" action="/index.php/Admin/Index/dologin" method="post">
+      <input type="hidden" name="token" value="<?php echo ($token); ?>"/>
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+        <div class="formControls col-xs-8">
+          <input id="phone" name="phone" type="text" placeholder="手机号" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+        <div class="formControls col-xs-8">
+          <input id="psd" name="psd" type="password" placeholder="密码" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <input class="input-text size-L" onblur="check()" onkeyup="check()" name="validateCode" id="validateCode" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
+          <img style="" id="validate" src="/validate.php" width=95 height=40 />
+          <a id="changeValid" href="javascript:void(0);">看不清，换一张</a> </div>
+      </div>
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <label for="online">
+            <input type="checkbox" name="online" id="online" value="1">
+            使我保持登录状态</label>
+        </div>
+      </div>
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="footer">Copyright 你的公司名称 by H-ui.admin.v2.3</div>
+<!--<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script> -->
+<script>
+
+$("#changeValid").click(validate);
+$("#validate").click(validate);
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080836300300be57b7f34f4b3e97d911' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

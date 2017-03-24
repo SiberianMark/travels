@@ -1,0 +1,97 @@
+[ 2017-02-06T17:14:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-06T17:15:03+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-06T17:24:23+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-06T17:25:00+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-06T17:25:02+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-06T17:25:39+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-06T17:25:52+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-06T17:25:53+08:00 ] 127.0.0.1 /home/user/index?phone=13425157494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::getInstance() should be compatible with Think\Single::getInstance($class) E:\wamp\www\test\Application\Common\Model\MemberModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `mmm_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mmm_user` WHERE `mobile` = '13425157494' LIMIT 1   [ RunTime:0.0010s ]
+
