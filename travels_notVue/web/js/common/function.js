@@ -248,7 +248,7 @@ function createLoadingEffect(effect){
 
 function isLogin(goparam){
     var result= false;
-    if($.cookie('travelsUserId')){
+    if($.cookie('user_id')){
         result= true; 
     }else{
         var obj={};

@@ -122,11 +122,16 @@
 	        	tipsLayer(checkresult);
 	        };
 		});
+		//注册
 		$('.regist').on('click',function(){
-			PageGoto('regist');
+			var obj={};
+			obj.frompage=frompage;
+			PageGoto('regist',obj);
 		});
 		$('.foget-psw').on('click',function(){
-			PageGoto('forgetPSW');
+			var obj={};
+			obj.frompage=frompage;
+			PageGoto('forgetPSW',obj);
 		});
 		$('.msg-code').on('click',function(){
 			var _this=$(this);

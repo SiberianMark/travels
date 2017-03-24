@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-body{    font-family: Microsoft yahei,Lucida Grande,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,WenQuanYi Micro Hei,sans-serif;}
+body{    font-family: microsoft yahei,Arial;}
 
 a{
 	text-decoration: none;
@@ -62,7 +62,13 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-siz
 .clear{clear:both;}
 
 /* flex 弹性布局 */
-.flex,.flex-top,.flex-x,.flex-y,.flex-x-about,.flex-x-center,.flex-center{ display: -webkit-box; display: -webkit-flex; display: flex;} /* 设置弹性布局 */
+.flex,.flex-top,.flex-x,.flex-y,.flex-x-about,.flex-x-center,.flex-center{
+	display:box; display: -webkit-box;/*09年规范，兼容旧版本安卓4.4以下*/ 
+	display: -webkit-flex; /*兼容旧版本-webkit-内核浏览器，Chrome10-；Safari4-*/
+	display:-moz-flex;/*兼容火狐旧版本，ff18+*/
+	display: -ms-flex;/*IE10*/
+	display: flex;/*最新现代浏览器Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}
 .flex-c{ -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;} /* 子元素占等比1 */
 .flex-x,.flex-center{ -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center;} /* 子元素X轴居中 */
 .flex-y,.flex-x-center,.flex-center{ -webkit-box-align: center; -webkit-align-items: center; align-items: center;} /* 子元素Y轴居中 */

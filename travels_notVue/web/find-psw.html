@@ -15,7 +15,7 @@
 <body>
 	<header class="header-title">
 		<i class="iconfont icon icon-xiangzuo"></i>
-		<div class="title"><i class="iconfont icon icon-logo"></i><span>找回密码</span>
+		<div class="title"><span>找回密码</span>
 		</div>
 	</header>
 	<section class="message-sec">
@@ -92,6 +92,11 @@
 				tipsLayer(checkresult);
 			};
 		});
+		$('.icon-xiangzuo').on('click',function(){
+			var obj={};
+			obj.frompage=I('frompage');
+			PageGoto('login',obj);
+		})
 	}
 	function checkInput(type,params){
 	    if(typeof params != "object") return;

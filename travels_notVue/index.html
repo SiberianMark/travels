@@ -20,12 +20,21 @@
 	<div class="index-header">
 
 	</div>
-	<div class="swiper-container swiper-container-horizontal">
+	<!-- <div class="swiper-container swiper-container-horizontal">
         <div class="swiper-wrapper" id="swiper-con" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
-        </div>
+        </div> -->
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div>
+    </div> -->
+    <!-- Swiper -->
+    <div class="swiper-box" >
+        <div class="swiper-container" style="width:100%" id="swiper-con">
+       
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+    </div>
+    
     <div class="travel-menu">
      
     </div>
@@ -65,9 +74,14 @@
 </body>
 <!-- 轮播图模板 -->
 <script type="text/template" id="index-swiper">
+    <div class="swiper-wrapper">
     {{~it.data:item:index}}
-            <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="{{=item.url}}"><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></a></div></div>
-    {{~}}
+        
+            <div class="swiper-slide"><div><a href="{{=item.url}}"><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></a></div></div>     
+       
+        
+    {{~}} 
+     </div>
 </script>
 <!-- 头部模板 -->
 <script type="text/template" id="index-head">
@@ -396,8 +410,8 @@
                     noSwiping : true,
                     watchSlidesProgress : true,
                     watchSlidesVisibility : true,
-                    observer:true,//修改swiper自己或子元素时，自动初始化swiper
-                    observeParents:true,//修改swiper的父元素时，自动初始化swiper
+                    //observer:true,//修改swiper自己或子元素时，自动初始化swiper
+                   // observeParents:true,//修改swiper的父元素时，自动初始化swiper
 
                 });  
             }
