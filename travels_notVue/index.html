@@ -54,7 +54,7 @@
     </div>
      <div class="goodlists-box"></div>
    
-
+    <div id="load-data"></div>
     <div class="footer">
     	<div class="travel-nav ">
     		<ul class="flex">
@@ -301,7 +301,9 @@
     var index=1;
     var subIndex=1;
 
-
+    var tag1=1,tag2=1,page=1;
+    var loadingData=false;
+    var noData=false;
     var goparam={};
         goparam.frompage='index';
 
@@ -325,7 +327,7 @@
             var index=$(this).attr('index');
             $(".travel-place").css('display','none');
             $(".index"+index).css('display','block');
-            var tag1id=$(this).attr('tag1id');
+            tag1id=$(this).attr('tag1id');
             getLineSelect2(tag1id);
             getData(tag1id,1,1);
             //同步切换线路列表
@@ -347,8 +349,8 @@
                 $(sib[i]).find('a').removeClass('first-important');
             }
             $(this).find('a').addClass('first-important');
-            var tag1id=$(this).parents('.travel-place').attr('tag1id');
-            var tag2id=$(this).attr('tag2id');
+            tag1id=$(this).parents('.travel-place').attr('tag1id');
+            tag2id=$(this).attr('tag2id');
              getData(tag1id,tag2id,1);
             // var subIndex=$(this).attr('subindex');
             // var goodslist=$('.goodslist');
@@ -395,6 +397,31 @@
              var speed=200;//滑动的速度
              $('body').animate({ scrollTop: 0 }, speed);   
         });
+        //加载线路多页
+        $(window).scroll(function(){
+            console.log(noData);
+            if(noData==false){//如果数据为空，则不再发送请求
+                if(loadingData==false){//如果正在加载则等候加载完成再进行下一次请求
+                    var scollTop=$(this).scrollTop();
+                    var loadingHeight=$('#load-data').offset().top;
+                    var clientHeight=$(document.body)[0].clientHeight;
+                    //var scrollHeight=$(document.body)[0].scrollHeight;
+                    
+                    console.log(loadingData);
+                    console.log(scollTop+loadingHeight+$('#load-data').height());
+                     console.log(clientHeight+$('.footer').height());
+                    if($(document).scrollTop() >= $(document).height() - $(window).height()){
+                    // if(scollTop+loadingHeight+$('#load-data').height()>=clientHeight+$('.footer').height()){
+                        loadingData=true;
+                        page++;
+                        $('#load-data').html('正在加载......');
+                        getData(tag1,tag2,page);
+                    }
+                }
+            }
+            
+            
+        })
     }   
     //轮播图数据
     function getswiperdata(){
@@ -459,7 +486,19 @@
             if(res.status==1){
                 console.log(res);
                 console.log(goodslistRender(res.data));
-                $('.goodlists-box').html(goodslistRender(res.data));      
+                if(res.data.lists!=''){
+                    if($('.goodlists-box').html()==''){
+                    $('.goodlists-box').html(goodslistRender(res.data));      
+                    }else{
+                        $('.goodlists-box').append(goodslistRender(res.data));     
+                         $('#load-data').html(''); 
+                    }
+                }else{
+                    $('#load-data').html('没有更多线路咯~~~~');
+                    noData=true;
+                }
+            setTimeout(function(){loadingData=false;},2000);   
+                
             }
         })
     }

@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="./css/areatravel.css">
     <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/areatravel.less"> -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_m30h28fudqjjor.css">
-     <link rel="stylesheet" type="text/css" href="./css/mui_2_7_0.css">
 	<script src="./js/head.css.js"></script>
-     <script src="./js/mui_2_7_0.js" charset="utf-8"></script>
 	<script src="./js/head.js.js"></script>
    
 </head>
 <body>
 	<div class="index-header">
 	</div>
-	<div class="swiper-container swiper-container-horizontal">
-        <div id="area-head-swiper" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
-           
+    <div class="swiper-box">
+        <div class="swiper-container" style="width:100%">
+            <div id="area-head-swiper" class="swiper-wrapper" >
+               
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
+	
     <section class="hot-place">
       
     </section>
@@ -50,15 +51,11 @@
 
     <div class="goodslist">
             <!--下拉刷新容器-->
-        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
-              <div  class="mui-scroll">
-                <!--数据列表-->
                 <ul id="goodlistcontainer" class="mui-table-view mui-table-view-chevron">
                   
                 </ul>
-       </div>
     </div>
-    </div>
+     <div id="load-data"></div>
     <div class="footer">
     	<div class="travel-nav">
     		<ul class="flex">
@@ -237,10 +234,10 @@
      var hotsellRender=getDotRender('hot-sell-tmp');
      var page=1;
     var type=2;//1-周边游，2-国内游，3-出境游，4-港澳游
-    var tag1=1,
-        tag2=1;
+    var tag1=1,tag2=1,page=1;
+    var loadingData=false;
+    var noData=false;
     function appStart(){
-        mui_init();
         getswiperdata();
         getindexdata();
         gethotplace();
@@ -313,6 +310,31 @@
              var speed=200;//滑动的速度
              $('body').animate({ scrollTop: 0 }, speed);   
         });
+         //加载线路多页
+        $(window).scroll(function(){
+            console.log(noData);
+            if(noData==false){//如果数据为空，则不再发送请求
+                if(loadingData==false){//如果正在加载则等候加载完成再进行下一次请求
+                    var scollTop=$(this).scrollTop();
+                    var loadingHeight=$('#load-data').offset().top;
+                    var clientHeight=$(document.body)[0].clientHeight;
+                    //var scrollHeight=$(document.body)[0].scrollHeight;
+                    
+                    console.log(loadingData);
+                    console.log(scollTop+loadingHeight+$('#load-data').height());
+                     console.log(clientHeight+$('.footer').height());
+                    if($(document).scrollTop() >= $(document).height() - $(window).height()){
+                    // if(scollTop+loadingHeight+$('#load-data').height()>=clientHeight+$('.footer').height()){
+                        loadingData=true;
+                        page++;
+                        $('#load-data').html('正在加载......');
+                        getData(tag1,tag2,page);
+                    }
+                }
+            }
+            
+            
+        })
 
     }
     // 获取轮播图数据
@@ -374,7 +396,7 @@
     function getTravelP(tag1){
         ajaxJson(API.AREA_LINESELECT2,{'type':type,'tag1':tag1},function(res){
             if(res.status==1){
-                  console.log(travelPRender(res.data));
+                console.log(travelPRender(res.data));
                 $('.travel-place').html(travelPRender(res.data));
             }else{
                 tipsLayer(data.info);
@@ -383,31 +405,26 @@
     }
 
      //获取路线选择路线列表
-    function getData(tag1,tag2){
+    function getData(tag1,tag2,page){
         ajaxJson(API.AREA_LINESELECT3,{'type':type,'tag1':tag1,'tag2':tag2,'page':page},function(res){
             if(res.status==1){
-                if(page==1){
-                     $('#goodlistcontainer').html(travelListRender(res.data));
-                 }else{
-                     $('#goodlistcontainer').append(travelListRender(res.data));
-                 }
-                 setTimeout(function(){mui('#refreshContainer').pullRefresh().setStopped(false);},200);
-                page++;
-                if(pull_action ==  'up'){
-                    mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+                if(res.data.lists!=''){
+                    if(page==1){
+                        $('#goodlistcontainer').html(travelListRender(res.data));
+                     }else{
+                        setTimeout(function(){
+                            $('#load-data').html(''); 
+                            $('#goodlistcontainer').append(travelListRender(res.data));
+                        },1000);    
+                     } 
+                }else{
+                     $('#load-data').html('没有更多线路咯~~~~');
+                     noData=true;
                 }
-                else if(pull_action == 'down'){
-                    mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
-                }
-               
+                setTimeout(function(){loadingData=false;},2000);  
             }else{
-                if(pull_action ==  'up'){
-                    mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
-                }
-                else if(pull_action == 'down'){
-                    mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
-                }
-                setTimeout(function(){mui('#refreshContainer').pullRefresh().setStopped(false);},200);
+                $('#load-data').html('没有更多线路咯~~~~');
+                noData=true;
             }
         });
     }

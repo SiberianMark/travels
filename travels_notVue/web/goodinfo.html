@@ -91,7 +91,7 @@
             <div class="depart-time-list">
                 <ul>
                 {{~it.line_date:lditem:ldindex}}
-                    <li date={{=lditem.line_date.substring(0,9)}}><p><span>{{=lditem.line_date.substring(5,9)}}</span><span>周日</span></p><p><span>￥</span><span>{{=lditem.adult_price}}</span></p></li>
+                    <li date={{=lditem.line_date.substring(0,9)}}><p><span>{{=lditem.line_date.substring(5,9)}}</span><span>{{='周'+lditem.week.substring(2)}}</span></p><p><span>￥</span><span>{{=lditem.adult_price}}</span></p></li>
                 {{~}}       
                 </ul>
                 <div class="jiantou"><i class="iconfont icon icon-xiangyou"></i></div>
@@ -167,12 +167,20 @@
                 </div>
                 <div class="feiyong-in-content">
                     {{=it.include}}
+                   <!--  {{~it.include:item:index}}
+                        <p class="include-title">{{=item.title}}</p>
+                        <p class="include-content">{{=item.content}}</p>
+                    {{~}} -->
                 </div>
                 <div class="feiyong-notinclude">
                     自费费用
                 </div>
                 <div class="feiyong-notin-con">
                    {{=it.not_include}}
+                   <!--  {{~it.not_include:item:index}}
+                        <p class="include-title">{{=item.title}}</p>
+                        <p class="include-content">{{=item.content}}</p>
+                    {{~}} -->
                 </div>
             </div>
             <div id='xuzhi' class="yudingxuzhi">
