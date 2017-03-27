@@ -125,6 +125,7 @@
 		</ul>
 	</div>
 	<div class="search-result-modal"></div>
+
 </body>
 <!-- 搜索结果模板 -->
 <script type="text/template" id="result-body-tmp">
@@ -283,24 +284,30 @@
 			$('.search-result-modal').css('display','block');
 			$('.riqifilter').css('display','block');
 			$('.riqifilter').animate({bottom:'0px'});
+			$('.search-result-modal').css('display','block');
+
+
 		});
 		$('.pricefilterdiv').on('click',function(){
 			$('.search-result-modal').css('display','block');
 			$('.jiagequjian').css('display','block');
 			$('.jiagequjian').animate({bottom:'0px'});
+			$('.search-result-modal').css('display','block');
 		});
 		$('.tesefilterdiv').on('click',function(){
 			$('.search-result-modal').css('display','block');
 			$('.biaoqianfilter').css('display','block');
 			$('.biaoqianfilter').animate({bottom:'0px'});
+			$('.search-result-modal').css('display','block');
 		});
 		$('.paixufilterdiv').on('click',function(){
 			$('.search-result-modal').css('display','block');
 			$('.paixufilter').css('display','block');
 			$('.paixufilter').animate({bottom:'0px'});
+			$('.search-result-modal').css('display','block');
 		});
 		$('.search-result-modal').on('click',function(){
-			$(this).css('display','none');
+			$('.search-result-modal').css('display','none');
 			$('.riqifilter').css('display','none');
 			$('.riqifilter').animate({bottom:'-50rem'});
 			$('.jiagequjian').css('display','none');
@@ -387,6 +394,7 @@
 		});
 		//确定
 		$('.riqifheader .doriqifil').on('click',function(){
+			$('.search-result-modal').css('display','none');
 			$('.riqifilter').css('display','none');
 			$('.riqifilter').animate({bottom:'-50rem'});
 			//天数
@@ -419,6 +427,7 @@
 			param.price=price;
 			param.day_num=day_num;
 			getData(param);
+
 
 		});
 		$('.riqirdatetime .yuefen li').on('click',function(){

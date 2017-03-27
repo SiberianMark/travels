@@ -126,16 +126,18 @@
 
         </div>
 </script>
+<!-- hotsell -->
 <script type="text/template" id="hot-sell-tmp">
 {{~it.lists:item:index}}
     <a class="cmAddClick" data-cm="H-1" href="javascript:;" lineid={{=item.id}}>
         <div class="img-wrap">
             <div class="prd-pic" style="background-image: url({{=config.SERVER_URL+item.img}})">
             </div>
-            <div class="name">{{=item.start_palce}}|{{=item.line_type}}</div>
+            <div class="name">{{=item.line_type}}</div>
         </div>
         <div class="prd-info">
-            <p>【{{=item.main_name}}】{{=item.sub_name}}|{{=item.keywords}}</p>
+            <p>【{{=item.main_name}}】</p>
+            <p>{{=item.sub_name}}</p>
             <div class="prd-pri"><span><i>¥</i>{{=item.price}}<i>起</i></span>
             </div>
         </div>
@@ -250,7 +252,7 @@
         Endload();
         var fixed=0;
         //顶部搜索
-        $('.index-header').on('click','.search',function(){
+        $('.index-header').on('click','.icon-search',function(){
             PageGoto('search');
         });
         //跳转个人中心
@@ -332,8 +334,17 @@
                     }
                 }
             }
+             //显示返回顶部按钮
+            if($(document).scrollTop() >= $('.goodslist').offset().top){
+                $('.gototop').css('display','block');
+            }else{
+                $('.gototop').css('display','none');
+            }
             
             
+        });
+        $('.index-header').on('click','.com-logo',function(){
+            PageGoto('index');
         })
 
     }
@@ -347,8 +358,8 @@
                  {
                         pagination: '.swiper-pagination',
                      loop : true,
-                     autoplay : 5000,
-                     noSwiping : true,
+                     //autoplay : 5000,
+                     noSwiping : false,
                      watchSlidesProgress : true,
                         watchSlidesVisibility : true,
 

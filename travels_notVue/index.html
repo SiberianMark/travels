@@ -76,17 +76,14 @@
 <script type="text/template" id="index-swiper">
     <div class="swiper-wrapper">
     {{~it.data:item:index}}
-        
-            <div class="swiper-slide"><div><a href="{{=item.url}}"><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></a></div></div>     
-       
-        
+            <div class="swiper-slide"><div><a href="{{=item.url}}"><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></a></div></div>           
     {{~}} 
      </div>
 </script>
 <!-- 头部模板 -->
 <script type="text/template" id="index-head">
-    <div class="choose-city">
-            <span class="com-logo"><img src="{{=config.SERVER_URL+'/'+it.mobile_logo}}" alt=""></span>
+    <div class="logo">
+            <img src="{{=config.SERVER_URL+'/'+it.mobile_logo}}" alt="">
         </div>
         <div class="search"><i class="iconfont icon icon-search"></i>
             <p>{{=it.web_keywords}}</p>
@@ -95,14 +92,15 @@
             <a href="#"></a><i class="iconfont icon icon-my"></i> 
         </div>
 </script>
+<!-- 国内游列表 -->
 <script type="text/template" id="index-plate">
-
        <ul class="flex">
             {{~it.part1:item:index}}
             <li class="flex-c"><a href="/web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
             {{~}}  
         </ul>
 </script>
+<!-- 特色游列表 -->
 <script type="text/template" id="index-travel-type">
       <ul>
             {{~it.part2:item:index}}
@@ -110,6 +108,7 @@
             {{~}}  
     </ul>
 </script>
+<!-- 底部 -->
 <script type="text/template" id="index-copyright">
     <p>{{=it.company_name}}</p>
     <p>{{=it.company_addr}}</p>
@@ -117,6 +116,7 @@
     <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
     <p>{{=it.web_tel}}</p>
 </script>
+<!-- 一级菜单 -->
 <script type="text/template" id="travel-place-type">
     <ul>
         {{~it:item:index}}
@@ -158,6 +158,7 @@
         </div>
     {{~}}
 </script> -->
+<!-- 二级菜单 -->
 <script type="text/template" id="travel-place-box">
 <div class='travel-place' tag1id={{=it.tag1}}>
     <ul>
@@ -253,6 +254,7 @@
         {{~}}
     {{~}}
 </script> -->
+<!-- 商品列表-->
 <script type="text/template" id="goods-list">
     <div class="goodslist" tagid="{{=it.tag1}}" tag2id="{{=it.tag2}}">
         <ul>
@@ -419,8 +421,17 @@
                     }
                 }
             }
+            //显示返回顶部按钮
+            if($(document).scrollTop() >= $('.goodslist').offset().top){
+                $('.gototop').css('display','block');
+            }else{
+                $('.gototop').css('display','none');
+            }
             
             
+        });
+         $('.index-header').on('click','.com-logo',function(){
+            PageGoto('index');
         })
     }   
     //轮播图数据

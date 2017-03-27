@@ -105,10 +105,10 @@
 <script type="text/template" id="line-desc-tmp">
     <div class="good-desc-title">
             <ul class="desc-menu sticky JMsticky  flex">
-                <li class="active flex-c"><a href="#xingcheng"><span>6</span>日行程</a></li>
-                <li class="flex-c"><a href="#tese">产品特色</a></li>
-                <li class="flex-c"><a href="#feiyong">费用说明</a></li>
-                <li class="flex-c"><a href="#xuzhi">预定须知</a></li>
+                <li class="active flex-c" target="#xingcheng"><a><span>6</span>日行程</a></li>
+                <li class="flex-c" target="#tese"><a>产品特色</a></li>
+                <li class="flex-c" target="#feiyong"><a>费用说明</a></li>
+                <li class="flex-c" target="#xuzhi"><a>预定须知</a></li>
             </ul>
         </div>
         <div id='xingcheng' class="good-desc-detail">
@@ -165,22 +165,20 @@
                 <div class="feiyong-include">
                     费用包含
                 </div>
-                <div class="feiyong-in-content">
-                    {{=it.include}}
-                   <!--  {{~it.include:item:index}}
-                        <p class="include-title">{{=item.title}}</p>
+                <div class="feiyong-in-content">  
+                    {{~it.include:item:index}}
+                        <p class="include-title">●{{=item.title}}</p>
                         <p class="include-content">{{=item.content}}</p>
-                    {{~}} -->
+                    {{~}}
                 </div>
                 <div class="feiyong-notinclude">
                     自费费用
                 </div>
-                <div class="feiyong-notin-con">
-                   {{=it.not_include}}
-                   <!--  {{~it.not_include:item:index}}
-                        <p class="include-title">{{=item.title}}</p>
+                <div class="feiyong-notin-con">                  
+                    {{~it.not_include:item:index}}
+                        <p class="include-title">●{{=item.title}}</p>
                         <p class="include-content">{{=item.content}}</p>
-                    {{~}} -->
+                    {{~}}
                 </div>
             </div>
             <div id='xuzhi' class="yudingxuzhi">
@@ -231,7 +229,11 @@
             if($(this).hasClass('active')){
                 return;
             }else{
+                var speed=200;
+                var pos=parseInt($($(this).attr('target')).offset().top)-50;
+                console.log(pos);
                 $(this).addClass('active').siblings().removeClass('active');
+                $('body').animate({scrollTop:pos},200);
             }
         });
         //行程详情展开
