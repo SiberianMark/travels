@@ -13,7 +13,10 @@
 	.good-title .price>span{font-size:2rem;color:@topic-color;}
 	.good-calerder{margin-top:1rem;background-color: #fff;}
 	.calendar-box{padding:0.5rem 0;}
-	.calendar-head{border-bottom:1px solid #eee;width:100%; line-height: 4rem;font-size: 2rem;justify-content: space-around;}
+	.calendar-head{border-bottom:1px solid #eee;width:100%; line-height: 4rem;font-size: 2rem;justify-content: space-around;text-align: center;}
+	.calendar-head li{display: inline-block;}
+	.calendar-head li:first-child{float:left;margin-left:2rem;}
+	.calendar-head li:nth-child(3){float:right;margin-right:2rem;}
 	.calendar-head li.active{color:@topic-color;}
 	.calendar-section .calendar .flex{width: 100%;justify-content: space-around;line-height: 4rem;}
 	.calendar-section #calendar li{ color:#b2b2b2;line-height:1.6rem; float:left;width: 14.2%;text-align: center;padding:1rem 0 0 0rem;height: 5rem;}
@@ -27,14 +30,15 @@
 	.order-form ul li{border-bottom: 1px solid #eee;padding:1rem 0;}
 	.order-form ul li div:first-child{float:left;width:30%;padding-left:2rem;}
 	.order-form ul li div.price{width:30%;float:left;color:@topic-color;}
-	.order-form ul li div.count{width:30%;float:left;}
-	.order-form ul li div.count span.input{display: inline-block;height: 1rem;width: 3rem;text-align: center;border: 1px solid #666;padding: 0.5rem 0;}
+	.order-form ul li div.count{width:30%;float:left;position: relative;}
+	.order-form ul li div.count span.input{display: inline-block;height: 1rem;width: 3rem;text-align: center;border: 1px solid #666;padding: 0.5rem 0;position:absolute;bottom:0.1rem;bottom:0.05rem;}
 	.order-form ul li div.count div{display: inline-block;}
+	.order-form ul li .icon-jiahao{    margin-left: 3.5rem;}
 	.order-form ul li.remark-info label{padding-left:2rem;}
 	.order-form ul li.remark-info input{line-height: 3rem;border: none;width: 70%;}
 	.order-form ul li{clear:both;}
-
-	.confirm-info i.icon{margin-left:2rem; color:@sup-topic-color; vertical-align: baseline;font-size: 2rem; }
+	.confirm-info{margin:1rem 0;}
+	.confirm-info i.icon{margin:1rem 0;margin-left:2rem; color:@sup-topic-color; vertical-align: baseline;font-size: 2rem; }
 	.confirm-info .price-gind{color:@sup-topic-color;font-size:2rem;}
 	.confirm-info p{display: inline-block;margin-left:1rem;line-height: 3rem;}
 	.footer{line-height: 5rem;width:100%;}
@@ -43,6 +47,6 @@
 	.footer .total-price .price-num{color:@topic-color;font-size: 2rem;}
 	.footer .do-order{background-color: @sup-topic-color;text-align: center;color:#fff;font-size: 2rem;}
 
-	.price-details-modal{display:none;word-break: break-all;position: fixed;top:0;left:0;right:0;bottom:0;background-color: #000;opacity: 0.5;color:#fff;padding:1rem 1rem;overflow: scroll;width:100%;}
+	.price-details-modal{    height: 100%;display:none;word-break: break-all;position: fixed;top:0;left:0;right:0;bottom:0;background-color: #000;opacity: 0.5;color:#fff;padding:1rem 1rem;overflow: scroll;width:100%;z-index:9999;}
 	.price-details-modal>h3{height:4rem;line-height: 4rem;font-size: 2rem;padding-left:1rem;border-bottom: 1px solid #fff;}
 	.price-details-modal>div .details{font-size: 1.4rem;padding-left:1rem;padding: 0 2rem;word-break: break-all;}

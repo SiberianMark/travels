@@ -10,6 +10,7 @@
     <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/index.less"> -->
     <!-- <link rel="stylesheet" href="/web/css/iconfont.css"> -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_7hcxkwrjqkuo9a4i.css">
+
 	<script src="/web/js/head.css.js"></script>
 	<script src="/web/js/head.js.js"></script>
     <style>
@@ -17,6 +18,7 @@
     </style>
 </head>
 <body>
+    <div id="loader_model"></div>
 	<div class="index-header">
 
 	</div>
@@ -55,16 +57,17 @@
      <div class="goodlists-box"></div>
    
     <div id="load-data"></div>
+    <div class="travel-nav ">
+        <ul class="flex">
+            <li class="flex-c"><a href="javascript:;"><i class=''></i><p>客服</p></a></li>
+            <li class="flex-c"><a href="javascript:;"><i class=''></i><p>登录</p></a></li>
+            <li class="flex-c"><a href="javascript:;"><i class=''></i><p>注册</p></a></li>
+            <li class="flex-c"><a href="javascript:;"><i class=''></i><p>电脑版</p></a></li>
+            <li class="flex-c"><a href="javascript:;"><i class=''></i><p>回到首页</p></a></li>
+        </ul>
+    </div>
     <div class="footer">
-    	<div class="travel-nav ">
-    		<ul class="flex">
-    			<li class="flex-c">客服</li>
-    			<li class="flex-c">登录</li>
-    			<li class="flex-c">注册</li>
-    			<li class="flex-c">电脑版</li>
-    			<li class="flex-c">回到首页</li>
-    		</ul>
-    	</div>
+    	
     	<div class="copyright-info">
     		
     	</div>
@@ -102,9 +105,9 @@
 </script>
 <!-- 特色游列表 -->
 <script type="text/template" id="index-travel-type">
-      <ul>
+      <ul class="flex">
             {{~it.part2:item:index}}
-            <li><a href="javascript:"><i class='{{="iconfont"+" icon icon-" +item.img }}'></i><span>{{=item.name}}</span></a></li>
+            <li class="flex-c"><i class='{{="iconfont"+" icon icon-" +item.img }}'></i><p>{{=item.name}}</p></li>
             {{~}}  
     </ul>
 </script>
@@ -168,6 +171,13 @@
         <li tag2id={{=item.id}}>
             <div>
             <a href="javascript:"  class="first-important">
+                <i>{{=item.name}}</i>
+            </a></div>
+        </li>
+        {{??index==3 || index==7}}
+        <li tag2id={{=item.id}} class="border-right-clear">
+            <div>
+            <a href="javascript:"  class="">
                 <i>{{=item.name}}</i>
             </a></div>
         </li>
@@ -321,7 +331,7 @@
         // $('.pinned').pin();
         //如sticky无法兼容，则采用js方法进行处理固定
         JMsticky();
-        Endload(); 
+        
         $('.travel-place-type').on('click','>ul li',function(){
             console.log("click");
             $(this).addClass('travel-place-type-active').siblings().removeClass('travel-place-type-active');
@@ -384,7 +394,7 @@
         //搜索分块点击事件
         $('.travel-type').on('click','ul li',function(){
             var obj=new Object();
-            obj.word=$(this).find('span').html();
+            obj.searchword=$(this).find('p').html();
             PageGoto('searchresult',obj);
         });
         //跳转到商品详情  
@@ -508,13 +518,16 @@
                     $('#load-data').html('没有更多线路咯~~~~');
                     noData=true;
                 }
-            setTimeout(function(){loadingData=false;},2000);   
+                setTimeout(function(){loadingData=false;},2000);
+                Endload();   
+
                 
             }
         })
     }
     function getData(tag1,tag2,page){
         getLineSelect3(tag1,tag2,page);
+
     }
 
 </script>

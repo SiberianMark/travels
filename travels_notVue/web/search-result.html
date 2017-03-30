@@ -17,7 +17,8 @@
 	
 </style>
 <body>
-	<header class="header">
+	<div id="loader_model"></div>
+	<header class="header index-header">
 		<div class="home"><i class="iconfont icon icon-home"></i></div>
         <div class="search-input">
         	<i class="iconfont icon icon-search"></i>
@@ -38,11 +39,11 @@
 			
 		</div>
 	</section>
-	<section class="footer-filter">
-		<div class="riqifilterdiv"><i class="iconfont icon icon-riqi"></i><span>日期</span></div>
-		<div class="pricefilterdiv"><i class="iconfont icon icon-jiage1"></i><span>价格</span></div>
-		<div class="tesefilterdiv"><i class="iconfont icon icon-trippaixu"></i><span>特色筛选</span></div>
-		<div class="paixufilterdiv"><i class="iconfont icon icon-star"></i><span>推荐排序</span></div>
+	<section class="footer-filter flex">
+		<div class="riqifilterdiv flex-c"><i class="iconfont icon icon-riqi"></i><span>日期</span></div>
+		<div class="pricefilterdiv flex-c"><i class="iconfont icon icon-jiage1"></i><span>价格</span></div>
+		<div class="tesefilterdiv flex-c"><i class="iconfont icon icon-trippaixu"></i><span>特色筛选</span></div>
+		<div class="paixufilterdiv flex-c"><i class="iconfont icon icon-star"></i><span>推荐排序</span></div>
 	</section>
 	<div class="riqifilter">
 		<div class="riqifheader">
@@ -103,14 +104,14 @@
 	<div class="jiagequjian">
 		<ul>
 			<li id="jiage-nolimit" class="active">不限</li>
-			<li>100以下</li>
-			<li>101-500</li>
-			<li>501-1000</li>
-			<li>1001-2000</li>
-			<li>2001-4000</li>
-			<li>4001-10000</li>
-			<li>10001-20000</li>
-			<li>20000以上</li>
+			<li pid=1>100以下</li>
+			<li pid=2>101-500</li>
+			<li pid=3>501-1000</li>
+			<li pid=4>1001-2000</li>
+			<li pid=5>2001-4000</li>
+			<li pid=6>4001-10000</li>
+			<li pid=7>10001-20000</li>
+			<li pid=8>20000以上</li>
 		</ul>
 	</div>
 	<div class="biaoqianfilter">
@@ -125,7 +126,7 @@
 		</ul>
 	</div>
 	<div class="search-result-modal"></div>
-
+	
 </body>
 <!-- 搜索结果模板 -->
 <script type="text/template" id="result-body-tmp">
@@ -136,7 +137,7 @@
 					<div class="img"><img src="{{=config.SERVER_URL+item.img}}"><span class="from from-type-1">{{=item.start_palce}}</span><span class="category">{{=item.line_type}}</span>
 					</div>
 					<div class="right-good-info">
-						<p class="title"><{{=item.main_name}}</p>
+						<p class="title"><{{=item.main_name}}></p>
 						<p>{{=item.sub_name}}</p>
 						<div class="good-label">
 							<ul>
@@ -162,9 +163,9 @@
 								<small>起</small>
 							</p>
 							<p>
-								<span>{{=item.travel_sum}}</span>
+								<span class="topicColor">{{=item.travel_sum}}</span>
 								<span>人出游</span>
-								<span>{{=item.hot_level}}<span>%</span></span>
+								<span class="topicColor">{{=item.hot_level}}<span>%</span></span>
 								<span>满意</span>
 							</p>
 						</div>
@@ -188,7 +189,7 @@
 	<ul>
 	{{~it:item:index}}
 		{{?index==0}}
-		<li class="active" Lid={{=item.id}}>{{=item.label_name}}</li>
+		<li class="active" Lid={{=item.id}}>不限</li>
 		{{??}}
 		<li Lid={{=item.id}}>{{=item.label_name}}</li>
 		{{?}}
@@ -227,10 +228,10 @@
 
 		getData(param);
 		getLabel();//获取标签
-		Endload();
+		
 		//搜索处理
 		$('.do-search').on('click',function(){
-			var searchword=$(this).siblings().find('input').val();
+			searchword=$(this).siblings().find('input').val();
 			if(searchword==''){tipsLayer("搜索关键字不能为空");return false;}
 			if(localStore('searchHistory') == undefined ||localStore('searchHistory') == '' ||localStore('searchHistory')==null){
 				localStore('searchHistory',searchword);
@@ -271,6 +272,7 @@
 			param.price=price;
 			param.day_num=day_num;
 			getData(param);
+			tipsLayer('正在重新加载...',1000);
 		});
 		//跳转到路线详情
 		$('.search-result-body').on('click','li',function(){
@@ -281,7 +283,6 @@
 		})
 		/*****************底板导航效果start*****************/
 		$('.riqifilterdiv').on('click',function(){
-			$('.search-result-modal').css('display','block');
 			$('.riqifilter').css('display','block');
 			$('.riqifilter').animate({bottom:'0px'});
 			$('.search-result-modal').css('display','block');
@@ -289,19 +290,16 @@
 
 		});
 		$('.pricefilterdiv').on('click',function(){
-			$('.search-result-modal').css('display','block');
 			$('.jiagequjian').css('display','block');
 			$('.jiagequjian').animate({bottom:'0px'});
 			$('.search-result-modal').css('display','block');
 		});
 		$('.tesefilterdiv').on('click',function(){
-			$('.search-result-modal').css('display','block');
 			$('.biaoqianfilter').css('display','block');
 			$('.biaoqianfilter').animate({bottom:'0px'});
 			$('.search-result-modal').css('display','block');
 		});
 		$('.paixufilterdiv').on('click',function(){
-			$('.search-result-modal').css('display','block');
 			$('.paixufilter').css('display','block');
 			$('.paixufilter').animate({bottom:'0px'});
 			$('.search-result-modal').css('display','block');
@@ -403,7 +401,12 @@
 			}else{
 				$('.riqirdatenum li').each(function(index,val){
 					if($(val).hasClass('active')){
-						day_num=day_num+','+index;
+						if(day_num==''){
+							day_num=index;
+						}else{
+							day_num=day_num+','+index;
+						}
+						
 					}
 				});
 			}
@@ -427,6 +430,7 @@
 			param.price=price;
 			param.day_num=day_num;
 			getData(param);
+			tipsLayer('正在重新加载...',1000);
 
 
 		});
@@ -467,11 +471,12 @@
 		$('.jiagequjian li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
 			$('.jiagequjian').css('display','none');
+			$('.search-result-modal').css('display','none');
 			$('.jiagequjian').animate({bottom:'-50rem'});
 			if($(this).attr('id')=="jiage-nolimit"){
 				price='';
 			}else{
-				price=$(this).html();
+				price=$(this).attr('pid');
 			}
 			
 			//天数
@@ -490,13 +495,20 @@
 			param.price=price;
 			param.day_num=day_num;
 			getData(param);
+			tipsLayer('正在重新加载...',1000);
 		});
 		$('.biaoqianfilter').on('click','li',function(){
 			$(this).addClass('active').siblings().removeClass('active');
 			$(this).addClass('active').siblings().removeClass('active');
 			$('.biaoqianfilter').css('display','none');
 			$('.biaoqianfilter').animate({bottom:'-50rem'});
-			label=$(this).html();
+			$('.search-result-modal').css('display','none');
+			if($(this).html()=="不限"){
+				label="";
+			}else{
+				label=$(this).attr('Lid');
+			}
+			
 			var param={};
 			param.keyword=searchword;
 			param.type=type;
@@ -508,6 +520,7 @@
 			param.price=price;
 			param.day_num=day_num;
 			getData(param);
+			tipsLayer('正在重新加载...',1000);
 		});
 		$('.paixufilter li').on('click',function(){
 			$(this).addClass('active').siblings().removeClass('active');
@@ -515,6 +528,7 @@
 			$(this).addClass('active').siblings().removeClass('active');
 			$('.paixufilter').css('display','none');
 			$('.paixufilter').animate({bottom:'-50rem'});
+			$('.search-result-modal').css('display','none');
 			order=$(this).attr('type');
 			var param={};
 			param.keyword=searchword;
@@ -527,6 +541,7 @@
 			param.price=price;
 			param.day_num=day_num;
 			getData(param);
+			tipsLayer('正在重新加载...',1000);
 		});
 		/****************************价格筛选弹窗end***************************************/
 
@@ -535,11 +550,12 @@
 	//获取搜索结果
 	function getData(obj){
 		ajaxJson(API.SEARCH_RESULT,obj,function(res){
-			if(res.status==1){
+			if(res.status==1 && res.data.length>0){
 				console.log(res);
 				$('.search-result-body').html(resultBodyRen(res.data));
 			}else{
-				tipsLayer(data.info);
+				$('.search-result-body').html('<div id="noline"><i class="iconfont icon icon-jieguo"></i><p>没有线路结果哟试试其他关键字~~</p></div>');
+				tipsLayer(res.info);
 			}
 		})
 	}
@@ -557,6 +573,7 @@
 			if(res.status==1){
 				console.log(res);
 				$('.biaoqianfilter').html(labelRen(res.data));
+				Endload();
 			}else{
 				tipsLayer(data.info);
 			}

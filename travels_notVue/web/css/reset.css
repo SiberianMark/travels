@@ -51,7 +51,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-size: 1.4rem;}
+body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f1f1f1;    font-size: 1.4rem;}
 
 /*设置主题颜色*/
 :root {
@@ -63,13 +63,21 @@ body{-webkit-tap-highlight-color: rgba(0,0,0,0);background: #f0f0f0;    font-siz
 
 /* flex 弹性布局 */
 .flex,.flex-top,.flex-x,.flex-y,.flex-x-about,.flex-x-center,.flex-center{
-	display:box; display: -webkit-box;/*09年规范，兼容旧版本安卓4.4以下*/ 
+	display:box; 
+	display: -webkit-box;/*09年规范，兼容旧版本安卓4.4以下*/ 
 	display: -webkit-flex; /*兼容旧版本-webkit-内核浏览器，Chrome10-；Safari4-*/
 	display:-moz-flex;/*兼容火狐旧版本，ff18+*/
-	display: -ms-flex;/*IE10*/
+	display: -ms-flexbox;/*IE10*/
 	display: flex;/*最新现代浏览器Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
 }
-.flex-c{ -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;} /* 子元素占等比1 */
+.flex-c{ 
+	-webkit-box-flex: 1;/*旧IOS6-，Safari 3.1-6*/
+	-moz--box-flex:1;/*旧版本火狐19-*/
+	width:20%;/*其他完全无法兼容flex*/
+ 	-webkit-flex: 1; 
+ 	-ms-flex:1;/*IE10*/
+ 	flex: 1;
+ 	    text-align: center;} /* 子元素占等比1 */
 .flex-x,.flex-center{ -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center;} /* 子元素X轴居中 */
 .flex-y,.flex-x-center,.flex-center{ -webkit-box-align: center; -webkit-align-items: center; align-items: center;} /* 子元素Y轴居中 */
 .flex-top{ -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; flex-direction: column;} /* 子元素垂直排列 */

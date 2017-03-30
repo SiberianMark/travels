@@ -13,7 +13,8 @@
 	<script src="./js/swiper-3.4.1.jquery.min.js"></script>
 </head>
 <body>
-	<header class="header-title">
+    <div id="loader_model"></div>
+	<header class="header-title index-header">
 		<i class="iconfont icon icon-home"></i>
 		<div class="title">产品详情</div>
 		<i class="iconfont icon icon-wode"></i>
@@ -223,7 +224,7 @@
 	function appStart(){
         getData(); 
         getlikeData(); 
-		Endload();
+		
         //商品描述菜单切换
         $('#line-desc-info').on('click','.good-desc-title li',function(){
             if($(this).hasClass('active')){
@@ -344,6 +345,7 @@
                         swiper.update(); //swiper更新
                     } 
                 });
+                Endload();
     
             }else{
                 tipsLayer(res.info);

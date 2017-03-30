@@ -10,7 +10,8 @@
 	<script src="./js/head.js.js"></script>
 </head>
 <body>
-	<header class="header">
+	<div id="loader_model"></div>
+	<header class="header index-header">
 		<div class="back"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-fanhui"></use>
                 </svg></div>
@@ -64,7 +65,7 @@
 			var historys=localStore('searchHistory').split(',');
 			$('.history-list').html(hisRender(historys));
 		}	
-		Endload();
+		
 		//搜索处理
 		$('.do-search').on('click',function(){
 			var searchword=$(this).siblings().find('input').val();
@@ -106,7 +107,7 @@
 		ajaxJson(API.SEARCH_HOT_PLACE,{},function(data){
 			if(data.status==1){
 				$('.hot-search-list').html(hotPlaceRender(data.data));
-
+				Endload();
 			}else{
 				tipsLayer(data.info);
 			}

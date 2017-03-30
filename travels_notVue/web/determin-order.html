@@ -12,7 +12,8 @@
 	<script src="./js/JMCalender.js"></script>
 </head>
 <body>
-	<div class="head">
+	<div id="loader_model"></div>
+	<div class="head index-header">
 		<i class="iconfont icon icon-back"></i>
 		<span>订单填写</span>
 	</div>
@@ -23,16 +24,19 @@
 	</div>
 	<div class="good-calerder">
 		<div class="calendar-box">
-            <ul class="calendar-head flex-y ">
+            <ul class="calendar-head">
                 <li class="premon"><i class="iconfont icon icon-iconfont35"></i></li>
                 <li class="curMon">2017年3月</li>
                 <li class="active nextmon"><i class="iconfont icon icon-xiangyou1"></i></li>
+                <div class="clear"></div>
             </ul>
             <div class="calendar-section">
                 <div class="animation-box" style="height: 231px;">
                     <div class="calendar ani-transition sign-transition">
-                        <div class="flex">
-                            <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+                        <div>
+                        <ul class="flex">
+                            <li class="flex-c">日</li><li class="flex-c">一</li><li class="flex-c">二</li><li class="flex-c">三</li><li class="flex-c">四</li><li class="flex-c">五</li><li class="flex-c">六</li>
+                           </ul>
                         </div>
                         <ul id="calendar" class="calendar-all clear">
 
@@ -151,7 +155,7 @@
 			getPriceDtails();
 
 		}
-		Endload();
+		
 		//团期选择
 		$('#calendar').on('click','li',function(){
 			if($(this).hasClass('hasPrice')){
@@ -340,6 +344,7 @@
 			if(res.status==1){
 				console.log(res);
 				$('.price-details-modal').html(priceDetailsRender(res.data));
+				Endload();
 			}else{
 				tipsLayer(res.info);
 			}

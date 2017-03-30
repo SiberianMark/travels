@@ -14,7 +14,8 @@
 </head>
 
 <body>
-	<header class="header-title">
+	<div id="loader_model"></div>
+	<header class="header-title index-header">
 		<i class="iconfont icon icon-xiangzuo"></i>
 		<div class="title"><i class="iconfont icon icon-logo"></i><span>我的个人信息</span>
 		</div>
@@ -45,16 +46,17 @@
 			<li sex="0">保密</li>
 		</ul>
 	</div>
-	 <div class="footer">
-    	<div class="travel-nav">
-    		<ul>
-    			<li>客服</li>
-    			<li>登录</li>
-    			<li>注册</li>
-    			<li>电脑版</li>
-    			<li>回到首页</li>
+	<div class="travel-nav">
+    		<ul class="flex">
+    			<li class="flex-c">客服</li>
+    			<li class="flex-c">登录</li>
+    			<li class="flex-c">注册</li>
+    			<li class="flex-c">电脑版</li>
+    			<li class="flex-c">回到首页</li>
     		</ul>
     	</div>
+	 <div class="footer">
+    	
     	<div class="copyright-info">
     		
     	</div>
@@ -104,7 +106,7 @@
 	function appStart(){
 		getData();
 		getindexdata();
-		Endload();
+		
 
 		$('.user-info-form').on('click','.zhengjian',function(){
 			$('.search-result-modal').css('display','block');
@@ -195,6 +197,7 @@
 	        if(res.status==1){
 	            console.log(res);
 	            $('.copyright-info').append(copyrightRender(res.data));
+	            Endload();
 	        }
 	    });
     } 

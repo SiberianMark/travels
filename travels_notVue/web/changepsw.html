@@ -12,7 +12,8 @@
 </head>
 
 <body>
-	<header class="header-title">
+	<div id="loader_model"></div>
+	<header class="header-title index-header">
 		<i class="iconfont icon icon-xiangzuo"></i>
 		<div class="title"><i class="iconfont icon icon-logo"></i><span>修改密码</span>
 		</div>
@@ -24,17 +25,17 @@
 		
 	</div>
 	<div class="do-save">保存修改</div>
-
+	<div class="travel-nav">
+		<ul class="flex">
+			<li class="flex-c">客服</li>
+			<li class="flex-c">登录</li>
+			<li class="flex-c">注册</li>
+			<li class="flex-c">电脑版</li>
+			<li class="flex-c">回到首页</li>
+		</ul>
+	</div>
 	<div class="footer">
-    	<div class="travel-nav">
-    		<ul class="flex">
-    			<li class="flex-c">客服</li>
-    			<li class="flex-c">登录</li>
-    			<li class="flex-c">注册</li>
-    			<li class="flex-c">电脑版</li>
-    			<li class="flex-c">回到首页</li>
-    		</ul>
-    	</div>
+    	
     	<div class="copyright-info">
     		
     	</div>
@@ -53,7 +54,7 @@
 	var copyrightRender=getDotRender('index-copyright');
 	function appStart(){
 		getindexdata();	
-		Endload();
+		
 		$('.do-save').on('click',function(){
 			var obj={};
 			obj.userid=getUserid();
@@ -97,6 +98,7 @@
 	        if(res.status==1){
 	            console.log(res);
 	            $('.copyright-info').append(copyrightRender(res.data));
+	            Endload();
 	        }
 	    });
     } 
