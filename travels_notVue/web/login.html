@@ -153,6 +153,9 @@
 		$('.icon-xiangzuo').on('click',function(){
 			PageGoto(frompage);
 		});
+		$('.code-image').on('click',function(){
+			$(this).attr('src',config.SERVER_URL+'/validate.php');
+		})
 	}
 	function checkInput( type,params){
 	    if(typeof params != "object") return;
