@@ -33,6 +33,9 @@
 				if(i>=day){//大于当天星期则渲染
 					num++;
 					li=document.createElement('li');
+					if(num>DAYS){
+						num=1;
+					}
 					text=document.createTextNode(num+'');
 					li.appendChild(text);	
 				}else{//否则盒子留空
@@ -73,9 +76,7 @@
 						fragmentp.appendChild(price);
 						fragmentp.appendChild(yuliang);
 						lis[i].className="hasPrice";
-						if(fromDate){
-							lis[i].className="hasPrice active";
-						}
+						
 						lis[i].appendChild(fragmentp);
 					}
 				}
@@ -98,7 +99,7 @@
 			    smallMon=[4,6,9,11];//30天
 			    if(bigMon.indexOf(M)!==-1){
 			    	day=31;
-			    }else if(smallMon.indexOf(M)){
+			    }else if(smallMon.indexOf(M)>-1){
 			    	day=30;
 			    }else{//二月份
 			    	if(Y%4===0&&Y%100!==0 || Y%400===0){//闰年

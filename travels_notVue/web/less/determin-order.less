@@ -19,8 +19,9 @@
 	.calendar-head li:nth-child(3){float:right;margin-right:2rem;}
 	.calendar-head li.active{color:@topic-color;}
 	.calendar-section .calendar .flex{width: 100%;justify-content: space-around;line-height: 4rem;}
-	.calendar-section #calendar li{ color:#b2b2b2;line-height:1.6rem; float:left;width: 14.2%;text-align: center;padding:1rem 0 0 0rem;height: 5rem;}
-	.calendar-section #calendar li.active{background-color:@sup-topic-color!important;opacity: 0.4;color:#fff!important;}
+	.calendar-section #calendar li{ color:#b2b2b2;line-height:1.6rem; float:left;width: 14.2%;text-align: center;padding:1rem 0 0 0rem;height: 5rem;position:relative;}
+	.calendar-section #calendar li.active{color:@sup-topic-color!important;}
+	.calendar-section #calendar li.active:before{content:'';height:5rem;width:100%;border:1px solid @sup-topic-color!important;position: absolute;top:1rem;left:0; }
 	.calendar-section #calendar .hasPrice{color:#000;}
 	.calendar-section #calendar li.notactive{color:#b2b2b2;}
 	.calendar-section #calendar li .price{color:@topic-color;}

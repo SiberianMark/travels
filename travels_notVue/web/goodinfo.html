@@ -25,7 +25,8 @@
     <div id="line-head-info"></div>
     <section id="line-desc-info" class="good-desc">
     	
-    			
+    	
+
     </section>
     <section class="guess-you-like">
     	<div class="you-like-title"><i class="iconfont icon icon-aixin"></i><span>猜你喜欢</span></div>
@@ -92,7 +93,7 @@
             <div class="depart-time-list">
                 <ul>
                 {{~it.line_date:lditem:ldindex}}
-                    <li date={{=lditem.line_date.substring(0,9)}}><p><span>{{=lditem.line_date.substring(5,9)}}</span><span>{{='周'+lditem.week.substring(2)}}</span></p><p><span>￥</span><span>{{=lditem.adult_price}}</span></p></li>
+                    <li date={{=lditem.line_date.substring(0,9)}}><p><span>{{=lditem.line_date.substring(5)}}</span><span>{{='周'+lditem.week.substring(2)}}</span></p><p><span>￥</span><span>{{=lditem.adult_price}}</span></p></li>
                 {{~}}       
                 </ul>
                 <div class="jiantou"><i class="iconfont icon icon-xiangyou"></i></div>
@@ -167,7 +168,7 @@
                     费用包含
                 </div>
                 <div class="feiyong-in-content">  
-                    {{~it.include:item:index}}
+                    {{~it.include:fitem:index}}
                         <p class="include-title">●{{=item.title}}</p>
                         <p class="include-content">{{=item.content}}</p>
                     {{~}}
@@ -232,7 +233,7 @@
             }else{
                 var speed=200;
                 var pos=parseInt($($(this).attr('target')).offset().top)-50;
-                console.log(pos);
+                // console.log(pos);
                 $(this).addClass('active').siblings().removeClass('active');
                 $('body').animate({scrollTop:pos},200);
             }
@@ -295,6 +296,44 @@
         //返回上一页
         $('.icon-fanhui').on('click',function(){
             PageGoto(frompage);
+        });
+        //滚动切换菜单
+        $(window).scroll(function(){
+            var wucha=50;
+            var scrollHeight=$(window).scrollTop();
+
+            var xcHeight=$('.xingcheng').offset().top-wucha;
+            var tsHeight=$('#tese').offset().top-wucha;
+            var fyHeight=$('.feiyong').offset().top-wucha;
+            var ydxzHeight=$('.yudingxuzhi').offset().top-wucha;
+            // console.log(scrollHeight);
+            // console.log(xcHeight);
+            // console.log(tsHeight);
+            // console.log(fyHeight);
+            // console.log(ydxzHeight);
+             if(scrollHeight>=xcHeight && scrollHeight<tsHeight){
+                $('.desc-menu li').each(function(i,v){
+                    $(v).removeClass('active');
+                })
+                $('.desc-menu li').eq(0).addClass('active');
+
+             }else if(scrollHeight>=tsHeight && scrollHeight<fyHeight){
+                 $('.desc-menu li').each(function(i,v){
+                    $(v).removeClass('active');
+                })
+                $('.desc-menu li').eq(1).addClass('active'); 
+             }else if(scrollHeight>=fyHeight && scrollHeight<ydxzHeight){
+                 $('.desc-menu li').each(function(i,v){
+                    $(v).removeClass('active');
+                })
+                $('.desc-menu li').eq(2).addClass('active'); 
+             }else if(scrollHeight>=ydxzHeight){
+                $('.desc-menu li').each(function(i,v){
+                    $(v).removeClass('active');
+                })
+                $('.desc-menu li').eq(3).addClass('active'); 
+             }
+
         });
 	}
    

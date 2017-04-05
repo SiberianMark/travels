@@ -145,10 +145,11 @@
 		if(isLogin(goparam)){
 			if(fromDate){//如果是选择了日期跳转
 				var list=fromDate.split('-');
-				var mon=list[1];
-				month=mon;
+				var mon=Number(list[1]);
+				month=Y+'-'+mon;
 				var date=list[2];
 			}
+			$('.curMon').html(month.replace('-','年')+'月');
 			getData(month);
 			var priceobj=$('#calendar li[class*="active"]');
 			syncOrderInfo(priceobj,0);
@@ -194,7 +195,7 @@
 			}else if($(this).hasClass('child-plus')){
 				curprice=child_price*curnum;
 			}else{
-				curprice=room*curnum;
+				curprice=single_room*curnum;
 			}	
 			$(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
 			//计算总价
@@ -224,6 +225,7 @@
 		});
 		//前一个月
 		$('.premon').on('click',function(){
+			var mon=TDate.getMonth()+1;
 			if(currentMon==mon){
 				return;
 			}else{
@@ -247,6 +249,7 @@
 		});
 		//后一个月
 		$('.nextmon').on('click',function(){
+			var mon=TDate.getMonth()+1;
 			if(currentMon==mon+monlimit){	
 				return false;
 			}else{

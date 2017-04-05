@@ -280,7 +280,7 @@
 			obj.lineid=$(this).attr('goodid');
 			obj.frompage='searchresult';
 			PageGoto('goodDetail',obj);
-		})
+		});
 		/*****************底板导航效果start*****************/
 		$('.riqifilterdiv').on('click',function(){
 			$('.riqifilter').css('display','block');
@@ -389,6 +389,7 @@
 		$('.riqifheader .cancel').on('click',function(){
 			$('.riqifilter').css('display','none');
 			$('.riqifilter').animate({bottom:'-50rem'});
+			$('.search-result-modal').css('display','none');
 		});
 		//确定
 		$('.riqifheader .doriqifil').on('click',function(){
@@ -561,9 +562,14 @@
 	}
 	//渲染当前选择月份菜单
 	function getSelectMonth(){
+		var MonObj;
+		var year,month;
 		var monList=[];
 		for(var i=0;i<6;i++){
-			monList.push(travelDate.DateAdd('m',i).toString().replace(/\//,'-').replace(/\//,'-'));
+			MonObj=travelDate.DateAdd('m',i);
+			year=MonObj.getFullYear();
+			month=MonObj.getMonth()+1;
+			monList.push(year+'年'+month+'月');
 		}
 		$('#month-select').html(MonRen(monList));
 	}
@@ -576,6 +582,7 @@
 				Endload();
 			}else{
 				tipsLayer(data.info);
+				Endload();
 			}
 		})
 	}

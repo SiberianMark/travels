@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="/web/js/head.meta.js"></script>
+	<script src="./web/js/head.meta.js"></script>
 	<title></title>
-	<!-- <link rel="stylesheet" href="/web/css/aliicon.css"> -->
-	<link rel="stylesheet" href="/web/css/swiper-3.4.1.min.css">
-    <link rel="stylesheet" href="/web/css/index.css">
-    <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/index.less"> -->
-    <!-- <link rel="stylesheet" href="/web/css/iconfont.css"> -->
+	<!-- <link rel="stylesheet" href="./web/css/aliicon.css"> -->
+	<link rel="stylesheet" href="./web/css/swiper-3.4.1.min.css">
+    <link rel="stylesheet" href="./web/css/index.css">
+    <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="./web/less/index.less"> -->
+    <!-- <link rel="stylesheet" href="./web/css/iconfont.css"> -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_7hcxkwrjqkuo9a4i.css">
 
-	<script src="/web/js/head.css.js"></script>
-	<script src="/web/js/head.js.js"></script>
+	<script src="./web/js/head.css.js"></script>
+	<script src="./web/js/head.js.js"></script>
     <style>
         /*.travel-place-type{position: fixed;}*/
     </style>
@@ -89,17 +89,17 @@
             <img src="{{=config.SERVER_URL+'/'+it.mobile_logo}}" alt="">
         </div>
         <div class="search"><i class="iconfont icon icon-search"></i>
-            <p>{{=it.web_keywords}}</p>
+            <p>目的地/景点/关键字</p>
         </div>
         <div class="my-center">
-            <a href="#"></a><i class="iconfont icon icon-my"></i> 
+            <a href="#"></a><i class="iconfont icon icon-wode"></i> 
         </div>
 </script>
 <!-- 国内游列表 -->
 <script type="text/template" id="index-plate">
        <ul class="flex">
             {{~it.part1:item:index}}
-            <li class="flex-c"><a href="/web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
+            <li class="flex-c"><a href="./web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
             {{~}}  
         </ul>
 </script>
@@ -217,7 +217,7 @@
                                    <p class="good-title">{{=listitem.main_name}},{{=listitem.sub_name}}</p>
                                 </div>
                                 <div class="good-labels">
-                                    <p class="sell-charge">立减</p>
+                                    
                                     <ul class="good-label">
                                     {{~listitem.label:labellistitem:labelindex}}
                                         <li>{{=labellistitem}}</li>
@@ -247,7 +247,7 @@
                                    <p class="good-title">{{=listitem.main_name}},{{=listitem.sub_name}}</p>
                                 </div>
                                 <div class="good-labels">
-                                    <p class="sell-charge">立减</p>
+                                    
                                     <ul class="good-label">
                                     {{~listitem.label:labellistitem:labelindex}}
                                         <li>{{=labellistitem}}</li>
@@ -284,7 +284,7 @@
                        <p  class="sub-title">{{=listitem.sub_name}}</p>
                     </div>
                     <div class="good-labels">
-                        <p class="sell-charge">立减</p>
+                        
                         <ul class="good-label">
                         {{~listitem.label:labellistitem:labelindex}}
                             <li>{{=labellistitem}}</li>
@@ -298,8 +298,8 @@
     </div>
 </script>
 <!-- <script src="//at.alicdn.com/t/font_8s76tclc1uoko6r.js"></script> -->
-<script src="/web/js/swiper-3.4.1.jquery.min.js"></script>
-<!-- <script src="/web/js/pin.jquery.js"></script> -->
+<script src="./web/js/swiper-3.4.1.jquery.min.js"></script>
+<!-- <script src="./web/js/pin.jquery.js"></script> -->
 <script> 
 
     var swiperRender=getDotRender('index-swiper');  

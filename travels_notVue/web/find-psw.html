@@ -66,9 +66,9 @@
 				ajaxJson(API.LOGIN_PHONEVAL,obj,function(data){
 					if(data.status==1){
 						tipsLayer(data.info);
-						// $.cookie("secondsremained",60);//设置倒计时cookie值
-						// $(obj).addClass('sent');//已发送
-					 //    settime($(".msg-code"));//开始倒计时
+						$.cookie("secondsremained",60);//设置倒计时cookie值
+						$(obj).addClass('sent');//已发送
+					    settime($(".msg-code"));//开始倒计时
 					}else{
 						tipsLayer(data.info);
 					}

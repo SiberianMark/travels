@@ -318,13 +318,13 @@ function urlparamToobj(){
 
             // Mobiscroll Date & Time initialization
             $('#datetimeInvalid-riqizao').mobiscroll().date({
-                theme: 'Mobiscroll',      // Specify theme like: theme: 'ios' or omit setting to use default
+                theme: 'material',      // Specify theme like: theme: 'ios' or omit setting to use default
                 lang: 'zh',    // Specify language like: lang: 'pl' or omit setting to use default
                 display:'bottom',  // Specify display mode like: display: 'bottom' or omit setting to use default
                 mode: 'scroller'         // More info about mode: https://docs.mobiscroll.com/3-0-0_beta3/datetime#!opt-mode
             });
                $('#datetimeInvalid-riqiwan').mobiscroll().date({
-                theme: 'Mobiscroll',      // Specify theme like: theme: 'ios' or omit setting to use default
+                theme: 'material',      // Specify theme like: theme: 'ios' or omit setting to use default
                 lang: 'zh',    // Specify language like: lang: 'pl' or omit setting to use default
                 display:'bottom',  // Specify display mode like: display: 'bottom' or omit setting to use default
                 mode: 'scroller'         // More info about mode: https://docs.mobiscroll.com/3-0-0_beta3/datetime#!opt-mode
@@ -333,10 +333,12 @@ function urlparamToobj(){
             $('.datetimeInvalid-zuizao').click(function () {
                 
                 $('#datetimeInvalid-riqizao').mobiscroll('show');
+                $('.riqifilter').css('display','none');
                 return false;
             });
             $('.datetimeInvalid-zuiwan').click(function () {
                 $('#datetimeInvalid-riqiwan').mobiscroll('show');
+                 $('.riqifilter').css('display','none');
                 return false;
             });
 
@@ -419,6 +421,24 @@ function localStore(_key){
         window.localStorage.setItem(_key,arguments[1]);
     }
 
+}
+//验证码倒计时
+var remainTime=60;
+var remainTimeobj;
+function settime(obj){//开始倒计时
+    if (typeof obj != "object") return
+    remainTimeobj=obj;  
+    setInterval(function(){
+        remainTime--;
+        if(remainTime==0){
+            $.cookie("secondsremained",null);
+            $(remainTimeobj).html('重新发送');
+            $(remainTimeobj).removeClass('sent');
+        }else{
+            $(remainTimeobj).html('<div class="set-time">'+remainTime+'</div>');
+        }
+        
+    },1000);
 }
 
 
