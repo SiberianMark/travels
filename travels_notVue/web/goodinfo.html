@@ -29,7 +29,7 @@
 
     </section>
     <section class="guess-you-like">
-    	<div class="you-like-title"><i class="iconfont icon icon-aixin"></i><span>猜你喜欢</span></div>
+    	<div class="you-like-title"><span>猜你喜欢</span></div>
     	<div class="you-like-swiper">
     		
     	</div>
@@ -96,7 +96,7 @@
                     <li date={{=lditem.line_date.substring(0,9)}}><p><span>{{=lditem.line_date.substring(5)}}</span><span>{{='周'+lditem.week.substring(2)}}</span></p><p><span>￥</span><span>{{=lditem.adult_price}}</span></p></li>
                 {{~}}       
                 </ul>
-                <div class="jiantou"><i class="iconfont icon icon-xiangyou"></i></div>
+                <span class="jiantou"><i class="iconfont icon icon-xiangyou"></i></span>
             </div>
             
             
@@ -242,8 +242,10 @@
         $('.xingcheng-detail').on('click',function(){
             if($('.xingcheng-more-detail').css('display')=='block'){
                  $('.xingcheng-more-detail').css('display','none');
+                 $(this).html('<span>行程详情</span>');
             }else{
                  $('.xingcheng-more-detail').css('display','block');
+                 $(this).html('<span>隐藏详情</span>');
             }
            
 
@@ -267,10 +269,16 @@
          //客服
         $('.kefu').on('click',function(){
             $('.tel-content').animate({bottom:'0'});
+            $('.search-result-modal').css('display','block');
+            // 禁止主页面滚动
+            stopscroll(true);
+            modalFlag=true;
         });
-        $('#line-desc-info').on('click','.tel-cancel',function(){
-             
+        $('#line-desc-info').on('click','.tel-cancel',function(){             
              $('.tel-content').animate({bottom:'-45rem'});
+             $('.search-result-modal').css('display','none');
+             stopscroll(false);
+             modalFlag=false;
         });
         //立即预定
         $('.order-good').on('click',function(){
@@ -311,11 +319,14 @@
             // console.log(tsHeight);
             // console.log(fyHeight);
             // console.log(ydxzHeight);
+            //滚动切换菜单
              if(scrollHeight>=xcHeight && scrollHeight<tsHeight){
                 $('.desc-menu li').each(function(i,v){
                     $(v).removeClass('active');
                 })
                 $('.desc-menu li').eq(0).addClass('active');
+                //显示行程菜单
+                $('.xingcheng-detail').css('display','block');
 
              }else if(scrollHeight>=tsHeight && scrollHeight<fyHeight){
                  $('.desc-menu li').each(function(i,v){
@@ -332,6 +343,18 @@
                     $(v).removeClass('active');
                 })
                 $('.desc-menu li').eq(3).addClass('active'); 
+             }
+             if(scrollHeight>=xcHeight && scrollHeight<tsHeight){
+                //显示行程菜单
+                $('.xingcheng-detail').css('display','block');
+             }else{
+                $('.xingcheng-detail').css('display','none');
+             }
+             //显示返回顶部
+             if(scrollHeight>=xcHeight){
+                $('.gototopm').css('display','block');
+             }else{
+                $('.gototopm').css('display','none');
              }
 
         });

@@ -14,8 +14,9 @@
 <body>
 	<div id="loader_model"></div>
 	<div class="head index-header">
-		<i class="iconfont icon icon-back"></i>
+		<i class="iconfont icon icon-fanhui"></i>
 		<span>订单填写</span>
+		<i class="iconfont icon icon-home"></i>
 	</div>
 	<div class="good-title">
 		<p><雪山之旅>哈尔滨出发东升+雪乡+亚布力5天跟团游，通话雪乡，雪谷羊草山原始林海穿越、雾凇奇观冰雪游，含圣诞、元旦</p>
@@ -53,9 +54,9 @@
 				<div>成人</div>
 				<div class="price"><span>￥</span><span class="price_num">0</span><span>元/人</span></div>
 				<div class="count">
-					<i class="iconfont icon icon-jianhao sub adt-sub"></i>
+					<i class="sub adt-sub">-</i>
 					<span id="adt_num" class="input">0</span>
-					<i class="iconfont icon icon-jiahao plus adt-plus"></i>
+					<i class="plus adt-plus">+</i>
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
@@ -64,9 +65,9 @@
 				<div>儿童</div>
 				<div class="price"><span>￥</span><span class="price_num">0</span><span>元/人</span></div>
 				<div class="count">
-					<i class="iconfont icon icon-jianhao sub child-sub"></i>
+					<i class="sub child-sub">-</i>
 					<span id="child_num" class="input">0</span>
-					<i class="iconfont icon icon-jiahao plus child-plus"></i>
+					<i class="plus child-plus">+</i>
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
@@ -75,9 +76,9 @@
 				<div>单房差</div>
 				<div class="price"><span>￥</span><span class="price_num">0</span><span>元/人</span></div>
 				<div class="count">
-					<i class="iconfont icon icon-jianhao sub room-sub"></i>
+					<i class="sub room-sub">-</i>
 					<span id="room_num" class="input">0</span>
-					<i class="iconfont icon icon-jiahao plus room-plus"></i>
+					<i class="plus room-plus">+</i>
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
@@ -104,25 +105,35 @@
 	<h3>费用说明</h3>
 		<div class="price-include">
 			<p class="title">费用包含：</p>
-			<p class="details">{{=it.include}}</p>
+			<p class="details">
+				{{~it.include:item:index}}
+                    <p class="include-title">●{{=item.title}}</p>
+                    <p class="include-content">{{=item.content}}</p>
+                {{~}}
+			</p>
 		</div>
 		<div class="price-not-include">
 			<p class="title">费用不包含：</p>
-			<p class="details">{{=it.not_include}}</p>
+			<p class="details">
+				{{~it.not_include:item:index}}
+                    <p class="include-title">●{{=item.title}}</p>
+                    <p class="include-content">{{=item.content}}</p>
+                {{~}}
+			</p>
 		</div>
 </script>
 <script>
 	var TDate=new Date();
 	var Y=TDate.getFullYear();//年
 	var mon=TDate.getMonth()+1;//月
-	var lineid=I('lineid',100002);
+	var lineid=I('lineid',100012);
 	var month=Y+'-'+mon;
 	var currentMon=mon;
 	var currentMonth=Y+'-'+mon;
 	var monlimit=5;//只能查当前月向后推5个月的旅游数据
 
 	var fromDate=I('date');
-	var lineid=I('lineid',100002),//线路id
+	var lineid=I('lineid',100012),//线路id
 	    date_id=0,//价格日期id
 	    adult_num=1,//成人数量
 	    child_num=1,//儿童数量
@@ -156,7 +167,16 @@
 			getPriceDtails();
 
 		}
-		
+		//跳转到首页
+        $('.icon-home').on('click',function(){
+            PageGoto('index',{});
+        });
+        //返回上一页
+        $('.icon-fanhui').on('click',function(){
+        	var obj={};
+        	obj.lineid=lineid;
+            PageGoto('goodDetail',obj);
+        });
 		//团期选择
 		$('#calendar').on('click','li',function(){
 			if($(this).hasClass('hasPrice')){
@@ -197,7 +217,7 @@
 			}else{
 				curprice=single_room*curnum;
 			}	
-			$(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
+			// $(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
 			//计算总价
 			countTotal();
 			
@@ -218,7 +238,7 @@
 			}else{
 				curprice=single_room*curnum;
 			}	
-			$(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
+			// $(this).parent('.count').siblings('.price').find('.price_num').text(curprice);
 			//计算总价
 			countTotal();
 			
@@ -297,9 +317,15 @@
 		//点击费用说明
 		$('.price-gind').on('click',function(){
 			$('.price-details-modal').css('display','block');
+			// 禁止主页面滚动
+			stopscroll(true);
+			//如果浏览器不支持前一个方法使用标记绑定事件
+			modalFlag=true;
 		});
 		$('.price-details-modal').on('click',function(){
 			$(this).css('display','none');
+			stopscroll(0);
+			modalFlag=false;
 		});
 		//勾选费用说明
 		$('.confirm-info i').on('click',function(){
@@ -382,7 +408,7 @@
 	function countTotal(){
 		var totalP=0;
 		$('.order-form .price_num').each(function(index,ele){
-			totalP=totalP+parseFloat($(ele).text());
+			totalP=totalP+(parseFloat($(ele).text())*parseInt($(ele).parent('.price').siblings('.count').find('.input').text()));
 		});
 		$('.total-price').find('.price-num').html('<span>￥</span><span>'+totalP+'</span>');
 	}

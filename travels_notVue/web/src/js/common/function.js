@@ -1,5 +1,6 @@
 var jObj = new Object();
 var pull_action='down';
+var modalFlag=false;//是否是弹出层，用于禁止弹出层底层滚动
 var tag1=1,//一级菜单id
     tag2=1;//二级菜单id
 function ajaxJson(_url,param){
@@ -75,6 +76,11 @@ $(document).ready(function(){
     // }
    // $('body').append(loadgif());
     appStart();
+    document.addEventListener('touchmove', function (event) { 　　 //监听滚动事件
+    if(modalFlag==1){　　　　　　　　　　　　　　　　　　　　　　　　　　　　//判断是遮罩显示时执行，禁止滚屏
+        event.preventDefault();　　　　　　　　　　　　　　　　　　　//最关键的一句，禁止浏览器默认行为
+    }
+})
 });
 
 
@@ -439,6 +445,19 @@ function settime(obj){//开始倒计时
         }
         
     },1000);
+}
+
+//禁止弹出层滚动
+function stopscroll(flag){
+    if(flag){
+        $("body").height($(window).height()).css({
+          "overflow-y": "hidden"
+        });
+    }else{
+        $("body").height('100%').css({
+          "overflow-y": "scroll"
+        });
+    }
 }
 
 

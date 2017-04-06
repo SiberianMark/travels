@@ -92,7 +92,10 @@
 				};
 			}	
 		});
-
+		//重新获取验证码
+		$('.code-image').on('click',function(){
+			$(this).attr('src',config.SERVER_URL+'/validate.php');
+		})
 		$('.msg-code').on('click',function(){
 			var $this=$(this);
 			var obj={};

@@ -30,12 +30,9 @@
 				len=35;
 			}
 			for(var i=0;i<len-1;i++){
-				if(i>=day){//大于当天星期则渲染
+				if(i>=day && num<DAYS){//大于当天星期则渲染
 					num++;
 					li=document.createElement('li');
-					if(num>DAYS){
-						num=1;
-					}
 					text=document.createTextNode(num+'');
 					li.appendChild(text);	
 				}else{//否则盒子留空
