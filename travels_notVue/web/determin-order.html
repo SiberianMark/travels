@@ -20,8 +20,8 @@
 	</div>
 	<div class="good-title">
 		<p><雪山之旅>哈尔滨出发东升+雪乡+亚布力5天跟团游，通话雪乡，雪谷羊草山原始林海穿越、雾凇奇观冰雪游，含圣诞、元旦</p>
-		<div class="price"><small>单价</small><span>￥<span>1380</span>起</span></div>
-		<div class="clear"></div>
+	<div class="price"><small>单价</small><span>￥<span>1389</span>起</span></div>
+	<div class="clear"></div>
 	</div>
 	<div class="good-calerder">
 		<div class="calendar-box">
@@ -101,7 +101,13 @@
 		
 	</div>
 </body>
-<script type='text/template' id="price-details-tmp">
+<!-- title -->
+<!-- <script type='text/template' id="line-title-tmp">
+	<p>{{=it.title}}</p>
+	<div class="price"><small>单价</small><span>￥<span>{{it.price}}</span>起</span></div>
+	<div class="clear"></div>
+</script>
+ --><script type='text/template' id="price-details-tmp">
 	<h3>费用说明</h3>
 		<div class="price-include">
 			<p class="title">费用包含：</p>
@@ -128,7 +134,8 @@
 	var mon=TDate.getMonth()+1;//月
 	var lineid=I('lineid',100012);
 	var month=Y+'-'+mon;
-	var currentMon=mon;
+	var nowMon=mon;//当前月
+	var currentMon=mon;//用户选择月
 	var currentMonth=Y+'-'+mon;
 	var monlimit=5;//只能查当前月向后推5个月的旅游数据
 
@@ -148,6 +155,7 @@
 		goparam.frompage='determinorder',
 		goparam.lineid=lineid;
 
+	// var lineTitleRender=getDotRender('line-title-tmp');
 	var priceDetailsRender=getDotRender('price-details-tmp');
 	function appStart(){
 		// var calenderContainer=document.getElementById('calendar');
@@ -156,11 +164,15 @@
 		if(isLogin(goparam)){
 			if(fromDate){//如果是选择了日期跳转
 				var list=fromDate.split('-');
-				var mon=Number(list[1]);
+				currentMon=mon=Number(list[1]);
 				month=Y+'-'+mon;
 				var date=list[2];
 			}
 			$('.curMon').html(month.replace('-','年')+'月');
+			if(mon>nowMon){
+				$('.premon').addClass('active');
+			}
+			
 			getData(month);
 			var priceobj=$('#calendar li[class*="active"]');
 			syncOrderInfo(priceobj,0);
@@ -245,40 +257,42 @@
 		});
 		//前一个月
 		$('.premon').on('click',function(){
-			var mon=TDate.getMonth()+1;
-			if(currentMon==mon){
+			// var mon=TDate.getMonth()+1;
+			if(nowMon==currentMon){
 				return;
 			}else{
-				
-				if(currentMon==mon+1){
+				//置上个月不可点击
+				if(nowMon==currentMon-1){
 					$(this).removeClass('active');
 					
 				}
 				currentMon-=1;
-				if(currentMon!=mon+monlimit){//如果不是当月份pre按钮可点击
+				//置下个月可点击
+				if(nowMon!=currentMon-monlimit+1){//如果不是当月份pre按钮可点击
 					if(!$('.nextmon').hasClass('active')){
 						$('.nextmon').addClass('active');
 					}
 					
 				}
 				formatMonth();
-				currentMonth=Y+'-'+mon;
+				currentMonth=Y+'-'+currentMon;
 				$('.curMon').html(Y+'年'+currentMon+'月');
 				getData(currentMonth);
 			}
 		});
 		//后一个月
 		$('.nextmon').on('click',function(){
-			var mon=TDate.getMonth()+1;
-			if(currentMon==mon+monlimit){	
+			// var mon=TDate.getMonth()+1;
+			if(nowMon==currentMon+monlimit){	
 				return false;
 			}else{
-				
-				if(currentMon==mon+monlimit-1){
+				//置下个月不可点击
+				if(nowMon==currentMon-monlimit){
 					$(this).removeClass('active');
 				}
 				currentMon+=1;
-				if(currentMon!=mon){//如果不是当月份pre按钮可点击
+				//置上个月可点击
+				if(nowMon!=currentMon){//如果不是当月份pre按钮可点击
 					if(!$('.premon').hasClass('active')){
 						$('.premon').addClass('active');
 					}
@@ -297,8 +311,8 @@
 			obj.lineid=lineid;
 			obj.dateid=date_id;
 			obj.adult_num=$('#adt_num').text();
-			obj.child_num=$('#child_num').text();;
-			obj.single_room=$('#room_num').text();;
+			obj.child_num=$('#child_num').text();
+			obj.single_room=$('#room_num').text();
 			obj.note=$('#note-info').val();
 			if(checkorderpram(obj)){
 				ajaxJson(API.CREATE_ORDER,obj,function(res){
@@ -340,7 +354,7 @@
 	function checkorderpram(obj){
 		if(typeof obj != "object")return false;
 		if(obj.dateid==0){tipsLayer('请选择团期！');return false;}
-		if(obj.adult_num==0 && obj.child_num==0 && obj.single_num==0){tipsLayer('请选择数量!');return false;}
+		if(obj.adult_num==0 && obj.child_num==0 && obj.single_room==0){tipsLayer('请选择数量!');return false;}
 		if(!$('.confirm-info i').hasClass('icon-xuanzhong')){tipsLayer('请确保已经阅读费用说明并勾选！');return false;}
 		return true;
 	}
@@ -359,6 +373,7 @@
 		ajaxJson(API.GOOD_DATE_PRICE,{'lineid':lineid,'month':curmonth},function(res){
 			if(res.status==1){
 				console.log(res);
+				// $('.good-title').html(lineTitleRender(res.data));
 				var calenderContainer=document.getElementById('calendar');
 				var calendar=new JMCalender(calenderContainer,curmonth,res.data);
 				calendar.init();
@@ -386,11 +401,11 @@
 			child_price=obj.attr('child_price');
 			single_room=obj.attr('single_room');
 			$('.order-form').find('.adult').find('.price_num').text(adult_price);
-			$('.order-form').find('#adt_num').text(num);
+			$('.order-form').find('#adt_num').text(num+1);
 			$('.order-form').find('.child').find('.price_num').text(child_price);
-			$('.order-form').find('#child_num').text(num);
+			$('.order-form').find('#child_num').text('0');
 			$('.order-form').find('.room-cha').find('.price_num').text(single_room);
-			$('.order-form').find('#room_num').text(num);
+			$('.order-form').find('#room_num').text('0');
 			// 总价格
 			countTotal();
 		}else if(num==0){
