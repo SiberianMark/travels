@@ -39,7 +39,7 @@
                    <use xlink:href="#icon-iconfontcolor11"></use>
                 </svg>
 			<div class="code-input"><input type="text" placeholder="动态密码"></div>
-			<div class="msg-code">获取动态密码</div>			
+			<div class="msg-code">获取动态码</div>			
 		</div>
 		<div class="password">
 				<svg class="icon" aria-hidden="true">
@@ -48,7 +48,7 @@
 				<div><input type="password" placeholder="请输入密码"></div>
 			</div>
 		<div class="user-liscence">
-			<input type="checkbox"/>
+			<input type="checkbox" checked />
 			<p>我已阅读并同意<span class="licence-rk">《XX旅游协议》</span></p>
 		</div>
 		<div class="do-login">注册</div>
@@ -79,12 +79,12 @@
 				obj.verify=$('.message-code input').val();
 				var checkresult=checkInput(0,obj);
 				if(checkresult==true){
-						ajaxJson(API.LOGIN_REG,obj,function(){
+						ajaxJson(API.LOGIN_REG,obj,function(data){
 						if(data.status==1){
-							console.log(data.info);
-							PageGoto('index');
+							tipsLayer(data.info);
+							PageGoto('login');
 						}else{
-							console.log(data.info);
+							tipsLayer(data.info);
 						}
 					});
 				}else{
@@ -103,24 +103,29 @@
 			obj.valid=$('.code-input input').val();
 			var checkresult=checkInput(1,obj);
 			if(checkresult==true){
-				ajaxJson(API.LOGIN_PHONEVAL,obj,function(data){
-					if(data.status==1){
-						tipsLayer(data.info);
-						$this.html('已发送');
-					}else{
-						tipsLayer(data.info);
-					}
-					
-				});
+				if(sent==false){
+					ajaxJson(API.LOGIN_PHONEVAL,obj,function(data){
+						if(data.status==1){
+							tipsLayer(data.info);
+							$this.html('已发送');
+							tipsLayer(data.info);
+							sent=true;
+			                settime($this);
+						}
+						else{
+							tipsLayer(data.info);
+						};	
+					});
+				}	
 			}else{
 				tipsLayer(checkresult);
-			};			
+			}		
 		});
 		$('.user-liscence input').on('click',function(){
-			if($(this).is(':checked')==true){
-				$('.do-login').css({'background-color':'#099fde','color':'#fff'});			
+			if($(this).is(':checked')==false){
+				$('.do-login').addClass('unactive');			
 			}else{
-				$('.do-login').css({'background-color':'#999','color':'#eee'});
+				$('.do-login').removeClass('unactive');
 			}
 		});
 		$('.icon-xiangzuo').on('click',function(){

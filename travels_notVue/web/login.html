@@ -58,7 +58,7 @@
 		<div class="message-code">
 			<i class="iconfont icon icon-iconfontcolor11"></i>
 			<div class="code-input"><input type="text" placeholder="动态密码"></div>
-			<div class="msg-code">获取动态密码</div>			
+			<div class="msg-code">获取动态码</div>			
 		</div>
 		<div class="do-login">登录</div>
 	</section>
@@ -69,6 +69,7 @@
  	var frompage=goparam.frompage;
  	delete goparam.frompage;
 	function appStart(){
+		//获取图片验证码
 		$('.code-image').attr('src',config.SERVER_URL+'/validate.php');
 		Endload();
 		$('.login-nav li').on('click',function(){
@@ -82,6 +83,7 @@
 				$('.message-sec').css('display','block');
 			}
 		});
+		//登录
 		$('.login-sec .do-login').on('click',function(){
 			var param={};	
 			param.phone=$('.login-sec .userid input').val();
@@ -102,6 +104,7 @@
 	        	tipsLayer(checkresult);
 	        };
 		});
+		//登录
 		$('.message-sec .do-login').on('click',function(){
 			var param={};	
 			param.phone=$('.message-sec .userid input').val();
@@ -129,11 +132,14 @@
 			obj.frompage=frompage;
 			PageGoto('regist',obj);
 		});
+		//忘记密码
 		$('.foget-psw').on('click',function(){
 			var obj={};
 			obj.frompage=frompage;
 			PageGoto('forgetPSW',obj);
 		});
+
+		//手机验证码
 		$('.msg-code').on('click',function(){
 			var _this=$(this);
 			var param={};
@@ -141,17 +147,29 @@
 			param.valid=$('.message-sec .img-code input').val();
 			var checkresult=checkInput(2,param);
 			if(checkresult ==true){
-				ajaxJson(API.LOGIN_PHONEVAL,param,function(data){
-		            if(data.status==1){
-		               _this.html('已发送');        
-		            }else{	
-		            	tipsLayer(data.info);
-		            }
-		        });
+				if(sent==false){
+					ajaxJson(API.LOGIN_PHONEVAL,param,function(data){
+			            if(data.status==1){
+			               _this.html('已发送');
+			               tipsLayer(data.info); 
+			               sent=true;
+			               settime(_this);       
+			            }else{	
+			            	tipsLayer(data.info);
+			            }
+			        });
+				}	
+			}else{
+				tipsLayer(checkresult);
 			}
 		});
 		$('.icon-xiangzuo').on('click',function(){
-			PageGoto(frompage);
+			if(typeof frompage !='string'){
+				PageGoto('index');
+			}else{
+				PageGoto(frompage);
+			}
+			
 		});
 		$('.code-image').on('click',function(){
 			$(this).attr('src',config.SERVER_URL+'/validate.php');

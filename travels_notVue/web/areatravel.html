@@ -110,7 +110,13 @@
             <ul>
                 {{~it.lists:itemlist:listindex}}
                 {{?listindex<=2}}
-                    <li class="bordertop">{{=itemlist}}</li>
+                    {{?listindex==0}}
+                        <li class="bordertop"><span class="champion"></span>{{=itemlist}}</li>
+                    {{??listindex==1}}
+                        <li class="bordertop"><span class="second-hot">2</span><span>{{=itemlist}}</span></li>
+                    {{??listindex==2}}
+                        <li class="bordertop"><span class="third-hot">3</span><span>{{=itemlist}}</span></li>    
+                    {{?}}     
                 {{??listindex==3}}
                     <li class="fixed-border bordertop">{{=itemlist}}</li>
                 {{??listindex==7}}  
@@ -255,7 +261,7 @@
         gethotplace();
         getTravelTP();
         getTravelP(1);
-        getData(1,1);
+        getData(1,1,page);
         //如sticky无法兼容，则采用js方法进行处理固定
         JMsticky();
         // gotoScroll();
@@ -292,9 +298,13 @@
         $('.travel-place-type').on('click',' ul li',function(){
             console.log("click");
             $(this).addClass('active').siblings().removeClass('active');
-            var tag1=$(this).attr('tag1id');
+            tag1=$(this).attr('tag1id');
+            page=1;
+            noData=false;
             getTravelP(tag1);
-            getData(tag1,1);
+            // $('#goodlistcontainer').html('<img style="margin:50px auto;width:100%;" src="/web/img/loadingData.gif">');
+            // tipsLayer('正在加载...',1000);
+            getData(tag1,1,page);
         });
         //点击二级菜单切换
         $('.travel-place').on('click','ul li',function(){
@@ -305,9 +315,13 @@
                 $(sib[i]).find('a').removeClass('first-important');
             }
             $(this).find('a').addClass('first-important');
-            tag1=$(this).attr('tag1id');
+            tag1=$(this).parent().attr('tag1id');
             tag2=$(this).attr('tag2id');
-             getData(tag1,tag2,1);
+            page=1;
+            noData=false;
+            // $('#goodlistcontainer').html('<img style="margin:50px auto; width:100%;" src="/web/img/loadingData.gif">');
+            // tipsLayer('正在加载...',1000);
+            getData(tag1,tag2,page);
             
         });
         //列表跳转
@@ -439,6 +453,9 @@
                         },1000);    
                      } 
                 }else{
+                    if(page==1){
+                         $('.goodlists-box').html('');
+                    }
                      $('#load-data').html('没有更多线路咯~~~~');
                      noData=true;
                 }

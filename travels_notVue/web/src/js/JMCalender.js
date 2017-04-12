@@ -29,9 +29,10 @@
 			}else{
 				len=35;
 			}
-			for(var i=0;i<len-1;i++){
+			for(var i=0;i<=len;i++){
 				if(i>=day && num<DAYS){//大于当天星期则渲染
 					num++;
+					console.log(i,num);
 					li=document.createElement('li');
 					text=document.createTextNode(num+'');
 					li.appendChild(text);	
@@ -40,6 +41,7 @@
 				}
 				fragment.appendChild(li);
 				 arr.push(li);
+
 			}
 			this.obj.innerHTML='';
      		this.obj.appendChild(fragment);

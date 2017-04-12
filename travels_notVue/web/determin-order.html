@@ -102,12 +102,12 @@
 	</div>
 </body>
 <!-- title -->
-<!-- <script type='text/template' id="line-title-tmp">
+<script type='text/template' id="line-title-tmp">
 	<p>{{=it.title}}</p>
-	<div class="price"><small>单价</small><span>￥<span>{{it.price}}</span>起</span></div>
+	<div class="price"><small>单价</small><span>￥<span>{{=it.price}}</span>起</span></div>
 	<div class="clear"></div>
 </script>
- --><script type='text/template' id="price-details-tmp">
+<script type='text/template' id="price-details-tmp">
 	<h3>费用说明</h3>
 		<div class="price-include">
 			<p class="title">费用包含：</p>
@@ -155,7 +155,7 @@
 		goparam.frompage='determinorder',
 		goparam.lineid=lineid;
 
-	// var lineTitleRender=getDotRender('line-title-tmp');
+	var lineTitleRender=getDotRender('line-title-tmp');
 	var priceDetailsRender=getDotRender('price-details-tmp');
 	function appStart(){
 		// var calenderContainer=document.getElementById('calendar');
@@ -283,7 +283,7 @@
 		//后一个月
 		$('.nextmon').on('click',function(){
 			// var mon=TDate.getMonth()+1;
-			if(nowMon==currentMon+monlimit){	
+			if(nowMon==currentMon-monlimit-1){	
 				return false;
 			}else{
 				//置下个月不可点击
@@ -373,7 +373,7 @@
 		ajaxJson(API.GOOD_DATE_PRICE,{'lineid':lineid,'month':curmonth},function(res){
 			if(res.status==1){
 				console.log(res);
-				// $('.good-title').html(lineTitleRender(res.data));
+				
 				var calenderContainer=document.getElementById('calendar');
 				var calendar=new JMCalender(calenderContainer,curmonth,res.data);
 				calendar.init();
@@ -387,6 +387,7 @@
 		ajaxJson(API.PRICE_DETAILS,{lineid:lineid},function(res){
 			if(res.status==1){
 				console.log(res);
+				$('.good-title').html(lineTitleRender(res.data));
 				$('.price-details-modal').html(priceDetailsRender(res.data));
 				Endload();
 			}else{

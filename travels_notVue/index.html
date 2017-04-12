@@ -331,7 +331,7 @@
         // $('.pinned').pin();
         //如sticky无法兼容，则采用js方法进行处理固定
         JMsticky();
-        
+        //一级菜单切换
         $('.travel-place-type').on('click','>ul li',function(){
             console.log("click");
             $(this).addClass('travel-place-type-active').siblings().removeClass('travel-place-type-active');
@@ -341,7 +341,11 @@
             $(".index"+index).css('display','block');
             tag1id=$(this).attr('tag1id');
             getLineSelect2(tag1id);
-            getData(tag1id,1,1);
+            // $('#goodlistcontainer').html('<img style="margin:50px auto;width:100%;" src="/web/img/loadingData.gif">');
+            // tipsLayer('正在加载...',1000);
+            page=1;
+            noData=false;
+            getData(tag1id,1,page);
             //同步切换线路列表
             // var goodslist=$('.goodslist');
             // for(var j=0;j<goodslist.length;j++){
@@ -363,6 +367,10 @@
             $(this).find('a').addClass('first-important');
             tag1id=$(this).parents('.travel-place').attr('tag1id');
             tag2id=$(this).attr('tag2id');
+            page=1;
+            noData=false;
+            // $('#goodlistcontainer').html('<img style="margin:50px auto;width:100%;" src="/web/img/loadingData.gif">');
+            // tipsLayer('正在加载...',1000);
              getData(tag1id,tag2id,1);
             // var subIndex=$(this).attr('subindex');
             // var goodslist=$('.goodslist');
@@ -508,22 +516,29 @@
                 console.log(res);
                 console.log(goodslistRender(res.data));
                 if(res.data.lists!=''){
-                    if($('.goodlists-box').html()==''){
+                    if(page==1){
                     $('.goodlists-box').html(goodslistRender(res.data));      
                     }else{
                         $('.goodlists-box').append(goodslistRender(res.data));     
                          $('#load-data').html(''); 
                     }
                 }else{
-                    $('#load-data').html('没有更多线路咯~~~~');
+                    if(page==1){
+                         $('.goodlists-box').html('');
+                    }
+                    $('#load-data').html('没有更多线路咯~~~~');   
                     noData=true;
                 }
                 setTimeout(function(){loadingData=false;},2000);
                 Endload();   
 
                 
+            }else{
+                $('#load-data').html('没有更多线路咯~~~~');
+                noData=true;
+                Endload();
             }
-        })
+        });
     }
     function getData(tag1,tag2,page){
         getLineSelect3(tag1,tag2,page);

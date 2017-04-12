@@ -431,17 +431,25 @@ function localStore(_key){
 //验证码倒计时
 var remainTime=60;
 var remainTimeobj;
+var t;
+var sent=false;
 function settime(obj){//开始倒计时
     if (typeof obj != "object") return
     remainTimeobj=obj;  
-    setInterval(function(){
+    t=setInterval(function(){
         remainTime--;
         if(remainTime==0){
             $.cookie("secondsremained",null);
             $(remainTimeobj).html('重新发送');
             $(remainTimeobj).removeClass('sent');
+            remainTime=60;
+            sent=false;
+            $('.code-image').attr('src',config.SERVER_URL+'/validate.php');
+            $('.code-input input').val('');
+            clearInterval(t);
         }else{
-            $(remainTimeobj).html('<div class="set-time">'+remainTime+'</div>');
+             $(remainTimeobj).addClass('sent');
+            $(remainTimeobj).html('<div>'+remainTime+'</div>');
         }
         
     },1000);
@@ -459,6 +467,22 @@ function stopscroll(flag){
         });
     }
 }
-
+// //60s倒计时
+// var countdown=60; 
+// function settime(obj) { 
+//     if (countdown == 0) { 
+//         obj.attr("disabled",false);    
+//         obj.value="获取验证码"; 
+//         countdown = 60; 
+//         return;
+//     } else { 
+//         obj.attr("disabled", true); 
+//         obj.value="重新发送(" + countdown + ")";
+//         countdown--; 
+//     } 
+//     setTimeout(function() { 
+//         settime(obj) }
+//         ,1000) 
+// }
 
 

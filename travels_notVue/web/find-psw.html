@@ -38,7 +38,7 @@
                    <use xlink:href="#icon-iconfontcolor11"></use>
                 </svg>
 			<div class="code-input"><input type="text" placeholder="动态密码"></div>
-			<div class="msg-code" >获取验证码</div>			
+			<div class="msg-code" >获取动态码</div>			
 		</div>
 		<div class="password">
 				<svg class="icon" aria-hidden="true">
@@ -55,6 +55,7 @@
 		$('.code-image').attr('src',config.SERVER_URL+'/validate.php');
 		Endload();
 		$('.msg-code').on('click',function(){
+			var $this=$(this);
 			if($(obj).hasClass('sent')==true){
 				return;
 			}
@@ -62,13 +63,13 @@
 			obj.phone=$('.message-sec .userid input').val();
 			obj.valid=$('.code-input input').val();
 			var checkresult=checkInput(1,obj);
-			if(checkresult==true){
+			if(checkresult==true && sent==false){
 				ajaxJson(API.LOGIN_PHONEVAL,obj,function(data){
 					if(data.status==1){
 						tipsLayer(data.info);
-						$.cookie("secondsremained",60);//设置倒计时cookie值
-						$(obj).addClass('sent');//已发送
-					    settime($(".msg-code"));//开始倒计时
+						$this.html('已发送');
+						sent=true;
+		                settime($this);
 					}else{
 						tipsLayer(data.info);
 					}

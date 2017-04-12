@@ -435,26 +435,24 @@
 
 
 		});
+		//选择月份
 		$('.riqirdatetime .yuefen li').on('click',function(){
 			if($(this).attr('id')!='yuefen-nolimit'){
+				//如果选择了月份则清空日期
 				monthSelected=true;
-				$('.zuizao').css('display','none');
-				$('.zuiwan').css('display','none');
+				$('#datetimeInvalid-riqizao').val('');
+				$('#datetimeInvalid-riqiwan').val('');
 
-			}else{
-				$('.zuizao').css('display','block');
-				$('.zuiwan').css('display','block');
 			}
 			$(this).addClass('active').siblings().removeClass('active');
 			
 			
 		});
-		//
+		//选择日期
 		$('.riqirdatetime').on('change','input',function(){
 			if($('.datetimeInvalid-zuizao').val()!='' || $('.datetimeInvalid-zuiwan').val()!=''){
-				$('.riqirdatetime .yuefen').css('display','none');
-			}else{
-				$('.riqirdatetime .yuefen').css('display','block');
+				// 重置月份为不限
+				$('#yuefen-nolimit').addClass('active').siblings().removeClass('active');
 			}
 		});
 		$('.icon-chacha').on('click',function(){
