@@ -1,0 +1,93 @@
+Xshell 5 (Build 0964)
+Copyright (c) 2002-2016 NetSarang Computer, Inc. All rights reserved.
+
+Type `help' to learn how to use Xshell prompt.
+[d:\~]$ 
+
+Connecting to 112.74.33.178:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+Last failed login: Sat Apr 15 18:16:20 CST 2017 from 101.200.129.112 on ssh:notty
+There were 522 failed login attempts since the last successful login.
+Last login: Fri Feb 10 14:33:35 2017 from 183.12.103.233
+
+Welcome to aliyun Elastic Compute Service!
+
+[root@iZwz9foyz3yh75ob9q35znZ ~]# locate httpd.conf
+/usr/local/apache/conf/httpd.conf
+/usr/local/apache/conf/httpd.conf.bak
+/usr/local/apache/conf/original/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ ~]# vim /usr/local/apache/conf/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ ~]# locate httpd.conf
+/usr/local/apache/conf/httpd.conf
+/usr/local/apache/conf/httpd.conf.bak
+/usr/local/apache/conf/original/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ ~]# vim /usr/local/apache/conf/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ ~]# service httpd restart
+AH00526: Syntax error on line 231 of /usr/local/apache/conf/httpd.conf:
+DocumentRoot '/data/www/defualt/travels' is not a directory, or is not readable
+[root@iZwz9foyz3yh75ob9q35znZ ~]# vim /usr/local/apache/conf/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ ~]# service httpd restart
+[root@iZwz9foyz3yh75ob9q35znZ ~]# service httpd stop
+[root@iZwz9foyz3yh75ob9q35znZ ~]# service httpd start
+[root@iZwz9foyz3yh75ob9q35znZ ~]# cd /data/wwww
+-bash: cd: /data/wwww: No such file or directory
+[root@iZwz9foyz3yh75ob9q35znZ ~]# cd /
+[root@iZwz9foyz3yh75ob9q35znZ /]# ls
+bin   data  etc   lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  dev   home  lib64  media       opt  root  sbin  sys  usr
+[root@iZwz9foyz3yh75ob9q35znZ /]# cd data
+[root@iZwz9foyz3yh75ob9q35znZ data]# ls
+www
+[root@iZwz9foyz3yh75ob9q35znZ data]# cd www
+[root@iZwz9foyz3yh75ob9q35znZ www]# cd wwww
+-bash: cd: wwww: No such file or directory
+[root@iZwz9foyz3yh75ob9q35znZ www]# cd www
+-bash: cd: www: No such file or directory
+[root@iZwz9foyz3yh75ob9q35znZ www]# ls
+default
+[root@iZwz9foyz3yh75ob9q35znZ www]# cd default/
+[root@iZwz9foyz3yh75ob9q35znZ default]# ls
+favicon.ico  lamp.gif  myblog3  phpinfo.php  p.php    wx_sample.php
+jquery.js    myblog    ocp.php  phpmyadmin   travels
+[root@iZwz9foyz3yh75ob9q35znZ default]# locate httpd.conf
+/usr/local/apache/conf/httpd.conf
+/usr/local/apache/conf/httpd.conf.bak
+/usr/local/apache/conf/original/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ default]# vim /usr/local/apache/conf/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ default]# vim /usr/local/apache/conf/original/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ default]# vim /usr/local/apache/conf/httpd.conf
+[root@iZwz9foyz3yh75ob9q35znZ default]# cd /user/local/apache/conf/
+-bash: cd: /user/local/apache/conf/: No such file or directory
+[root@iZwz9foyz3yh75ob9q35znZ default]# ls
+favicon.ico  lamp.gif  myblog3  phpinfo.php  p.php    wx_sample.php
+jquery.js    myblog    ocp.php  phpmyadmin   travels
+[root@iZwz9foyz3yh75ob9q35znZ default]# cd  /usr/local/apache/conf/
+[root@iZwz9foyz3yh75ob9q35znZ conf]# ls
+extra  httpd.conf  httpd.conf.bak  magic  mime.types  original  vhost
+[root@iZwz9foyz3yh75ob9q35znZ conf]# cd extra/
+[root@iZwz9foyz3yh75ob9q35znZ extra]# ls
+httpd-autoindex.conf  httpd-manual.conf              httpd-vhosts.conf
+httpd-dav.conf        httpd-mpm.conf                 httpd-vhosts.conf.bak
+httpd-default.conf    httpd-multilang-errordoc.conf  proxy-html.conf
+httpd-info.conf       httpd-ssl.conf
+httpd-languages.conf  httpd-userdir.conf
+[root@iZwz9foyz3yh75ob9q35znZ extra]# vim httpd-vhosts.conf
+[root@iZwz9foyz3yh75ob9q35znZ extra]# service httpd restart
+[root@iZwz9foyz3yh75ob9q35znZ extra]# chmod -R 777 /data/www/default/travels/Application[root@iZwz9foyz3yh75ob9q35znZ extra]# vim httpd-vhosts.conf
+[root@iZwz9foyz3yh75ob9q35znZ extra]# cd  /usr/local/apache/conf/vhost/
+[root@iZwz9foyz3yh75ob9q35znZ vhost]# ls
+none.conf
+[root@iZwz9foyz3yh75ob9q35znZ vhost]# vim none.conf 
+
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[root@iZwz9foyz3yh75ob9q35znZ vhost]# service httpd restart
+httpd: Syntax error on line 483 of /usr/local/apache/conf/httpd.conf: Syntax error on line 13 of /usr/local/apache/conf/extra/httpd-vhosts.conf: Syntax error on line 8 of /usr/local/apache/conf/vhost/none.conf: </VirtualHost>i> directive missing closing '>'
+[root@iZwz9foyz3yh75ob9q35znZ vhost]# vim none.conf 
+[root@iZwz9foyz3yh75ob9q35znZ vhost]# service httpd restart
