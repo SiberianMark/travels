@@ -1,0 +1,54 @@
+[ 2017-04-12T15:35:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002613s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-12T15:35:24+08:00 ] 127.0.0.1 /web/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001507s ]
+ERR: 无法加载模块:Web
+
+[ 2017-04-12T15:35:33+08:00 ] 127.0.0.1 /web/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016765s ]
+ERR: 无法加载模块:Web
+
+[ 2017-04-12T15:38:53+08:00 ] 127.0.0.1 /web/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003795s ]
+ERR: 无法加载模块:Web
+
+[ 2017-04-12T15:39:11+08:00 ] 127.0.0.1 /web/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+ERR: 无法加载模块:Web
+
+[ 2017-04-12T15:47:43+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.072696s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-12T18:32:35+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.089363s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-12T18:33:05+08:00 ] 127.0.0.1 /web/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+ERR: 无法加载模块:Web
+
+[ 2017-04-12T18:35:17+08:00 ] 127.0.0.1 /web/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028886s ]
+ERR: 无法加载模块:Web
+
