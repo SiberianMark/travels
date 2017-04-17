@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="./js/head.meta.js"></script>
-	<title>产品详情</title>
+	<title>线路详情</title>
 	<link rel="stylesheet" href="./css/goodinfo.css">
     <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/goodinfo.less"> -->
 		<link rel="stylesheet" href="//at.alicdn.com/t/font_x6oj15kl2efry66r.css">
@@ -16,7 +16,7 @@
     <div id="loader_model"></div>
 	<header class="header-title index-header">
 		<i class="iconfont icon icon-home"></i>
-		<div class="title">产品详情</div>
+		<div class="title">线路详情</div>
 		<i class="iconfont icon icon-wode"></i>
 	</header>
 	<div id="swiper-good-headimg" class="swiper-container swiper-container-horizontal">
@@ -51,7 +51,7 @@
 <!-- 商品图片模板 -->
 <script type="text/template" id="line-img-tmp">
 
-    <div class="line-remark"><span>{{=it.line_type}}</span>&nbsp;|&nbsp;<span>产品编号:</span> <span>{{=it.id}}</span></div>
+    <div class="line-remark"><span>{{=it.line_type}}</span>&nbsp;|&nbsp;<span>线路编号:</span> <span>{{=it.id}}</span></div>
 
     <div id="line-img-container" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
         {{~it.image:item:index}}
@@ -196,7 +196,7 @@
             {{?}}
             <div class="tel-content">          
                 <p>为了节省您的时间，请告知客服此产品的产品编号</p>           
-                <p class="tel-proid">产品编号：210432601</p>
+                <p class="tel-proid">线路编号：{{it.id}}</p>
                 <p class="tel-proid">客服人员：{{=it.counselor_name}}</p>
                 <p class="tel-proid">
                 客服人员电话：{{=it.counselor_phone}}</p> 

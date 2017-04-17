@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/head.meta.js"></script>
+	<title>周边游</title>
+	<!-- <link rel="stylesheet" href="./css/aliicon.css"> -->
+	<link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
+    <link rel="stylesheet" href="./css/areatravel.css">
+    <!-- <link type="text/less" rel="stylesheet/less" rev="stylesheet/less" href="/web/less/areatravel.less"> -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_m30h28fudqjjor.css">
+	<script src="./js/head.css.js"></script>
+	<script src="./js/head.js.js"></script>
+   
+</head>
+<body>
+    <div id="loader_model"></div>
+	<div class="index-header">
+	</div>
+    <div class="swiper-box">
+        <div class="swiper-container" style="width:100%">
+            <div id="area-head-swiper" class="swiper-wrapper" >
+               
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+	
+    <section class="hot-place">
+      
+    </section>
+    <section class="hot-selled">
+    <div class="qianggou bd">
+        <p>人气热销</p>
+       <div class="custom">
+            <div class="prd-list">
+               <div class="huadong" id="">
+               <div class="limitGetMore">查看更多</div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <div class="travel-info-container  sticky JMsticky" style="background: #fff;z-index: 10000;">
+        <div class="travel-place-type">
+        </div>
+         <div class="travel-place index1">
+            
+        </div>
+    </div>
+    
+
+    <div class="goodslist">
+            <!--下拉刷新容器-->
+                <ul id="goodlistcontainer" class="mui-table-view mui-table-view-chevron">
+                  
+                </ul>
+    </div>
+     <div id="load-data"></div>
+     <div class="travel-nav">
+        <ul class="flex">
+            <li class="flex-c">客服</li>
+            <li class="flex-c">登录</li>
+            <li class="flex-c">注册</li>
+            <li class="flex-c">电脑版</li>
+            <li class="flex-c">回到首页</li>
+        </ul>
+    </div>
+    <div class="footer">
+    	
+    	<div class="copyright-info">
+    	</div>
+    </div>
+    <div class="gototop"><i class="iconfont icon icon-gototop"></i></div>
+</body>
+<!-- 轮播图模板 -->
+<script type="text/template" id="area-swiper-tmp">
+    {{~it.data:item:index}}
+            <div class="swiper-slide swiper-no-swiping swiper-slide-visible" style="width: 100%;"><div><a href="{{=item.url}}"><div class="swiper-img"><img src="{{=(config.SERVER_URL +'/' + item.image)}}" alt=""></div></a></div></div>
+    {{~}}
+</script>
+<!-- 头部模板 -->
+<script type="text/template" id="index-head">
+   <div class="logo">
+           <img src="{{=config.SERVER_URL+'/'+it.mobile_logo}}" alt="">
+        </div>
+        <div class="search">
+            <i class="iconfont icon icon-search"></i>
+            <p>周边游</p>
+        </div>
+        <div class="my-center">
+            <a href="#"></a>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-wode"></use>
+            </svg>
+        </div>
+</script>
+<!-- 脚部信息模板 -->
+<script type="text/template" id="index-copyright">
+    <p>{{=it.company_name}}</p>
+    <p>{{=it.company_addr}}</p>
+    <p>Copyright  @2015 恒博旅行网</p>
+    <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
+    <p>{{=it.web_tel}}</p>
+</script>
+<!-- 热门目的地模板 -->
+<script type="text/template" id="hot-place-list">
+    <div class="hot-title"><p>{{=it.name}}</p></div>
+        <div class="hot-place-list">
+            <ul>
+                {{~it.lists:itemlist:listindex}}
+                {{?listindex<=2}}
+                    {{?listindex==0}}
+                        <li class="bordertop"><div class="hot-li-content"><span class="champion"></span>{=itemlist}</div></li>
+                    {{??listindex==1}}
+                        <li class="bordertop"><div class="hot-li-content"><span class="second-hot">2</span><span>{{=itemlist}}</span></div></li>
+                    {{??listindex==2}}
+                        <li class="bordertop"><div class="hot-li-content"><span class="third-hot">3</span><span>{{=itemlist}}</span></div></li>    
+                    {{?}}     
+                {{??listindex==3}}
+                    <li class="fixed-border bordertop">{{=itemlist}}</li>
+                {{??listindex==7}}  
+                    <li class="fixed-border">{{=itemlist}}</li>
+                {{??listindex+1==it.lists.length}}
+                    <li class="">{{=itemlist}}</li>
+                    <li class="fixed-border">更多</li>
+                {{??}}
+                    <li>{{=itemlist}}</li>
+                {{?}}
+                    
+                {{~}}
+                <div class="clear"></div>
+            </ul>
+
+        </div>
+</script>
+<!-- hotsell -->
+<script type="text/template" id="hot-sell-tmp">
+{{~it.lists:item:index}}
+    <a class="cmAddClick" data-cm="H-1" href="javascript:;" lineid={{=item.id}}>
+        <div class="img-wrap">
+            <div class="prd-pic" style="background-image: url({{=config.SERVER_URL+item.img}})">
+            </div>
+            <div class="name">{{=item.line_type}}</div>
+        </div>
+        <div class="prd-info">
+            <p>【{{=item.main_name}}】</p>
+            <p>{{=item.sub_name}}</p>
+            <div class="prd-pri"><span><i>¥</i>{{=item.price}}<i>起</i></span>
+            </div>
+        </div>
+    </a>
+{{~}}             
+</script>
+<!-- 牛人专线一级菜单模板 -->
+<script type="text/template" id="travel-place-type">
+
+    <ul class="tabs">
+    {{~it:item:index}}
+        {{?index==0}}
+            <li class="active" tag1id="{{=item.id}}">
+           <span>{{=item.name}}</span>
+            </li>
+        {{??}}
+            <li class=""  tag1id="{{=item.id}}">
+           <span  class="">{{=item.name}}</span>
+            </li>
+        {{?}}
+    {{~}}
+    </ul>
+}
+</script>
+<!-- 牛人专线等二级菜单模板 -->
+<script type="text/template" id="travel-place">
+    <ul tag1id={{=it.tag1}}>
+    {{~it.lists:item:index}}
+        {{?index==0}}
+            <li tag2id="{{=item.id}}">
+                <div>
+
+                <a href="javascript:;"  class="first-important">
+                    <i>{{=item.name}}</i>
+                </a></div>
+            </li>
+        {{??index==3 || index==7}}
+            <li tag2id="{{=item.id}}" class="border-right-clear">
+                <div>
+                <a href="javascript:;">
+                    <i>{{=item.name}}</i>
+                </a></div>
+            
+            </li>    
+        {{??}}
+            <li tag2id="{{=item.id}}">
+                <div>
+                <a href="javascript:;">
+                    <i>{{=item.name}}</i>
+                </a></div>
+            
+            </li>
+        {{?}}
+    {{~}}
+        </ul>
+        <div class="clear"></div>
+</script>
+
+<!-- 路线列表模板 -->
+<script type="text/template" id="good-list">
+
+        {{~it.lists:item:index}}
+            <li lineid={{=item.id}} tag1id={{=it.tag1}} tag2id={{=it.tag2}}>
+                <div>
+                    <div>
+                        <div class="good-img">
+                            <div class="good-imgjpg"><img src="{{=config.SERVER_URL+item.img}}" alt=""></div>
+                            <div class="good-type"><span>{{=item.line_type}} | {{=item.start_palce}}</span></div>
+                            <div class="good-price"><small>￥</small><span>{{=item.price}}</span>起</div>
+                        </div>
+                        
+                    </div>
+                    <div class="good-desc">
+                        <div>
+                           <p class="good-title">{{=item.main_name}}</p>
+                           <p class="sub-title">{{=item.sub_name}}</p>
+                        </div>
+                        <div class="good-labels">
+                           
+                            <ul class="good-label">
+                            {{~item.label:labelitem:labelindex}}
+                                <li>{{=labelitem}}</li>        
+                            {{~}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </li>
+        {{~}}
+</script>
+
+
+<script src="//at.alicdn.com/t/font_8s76tclc1uoko6r.js"></script>
+	<script src="./js/swiper-3.4.1.jquery.min.js"></script>
+	<script>
+    var areaSwiperRender=getDotRender('area-swiper-tmp')
+    var headRender=getDotRender('index-head');//头部
+    var copyrightRender=getDotRender('index-copyright');//脚部
+    var hotplacelistRender=getDotRender('hot-place-list');//热门目的地
+    var travelPTRender=getDotRender('travel-place-type');//路线选择一级菜单
+     var travelPRender=getDotRender('travel-place');//路线选择二级菜单
+     var travelListRender=getDotRender('good-list');//路线列表
+     var hotsellRender=getDotRender('hot-sell-tmp');
+     var page=1;
+    var type=1;//1-周边游，2-国内游，3-出境游，4-港澳游
+    var tag1=1,tag2=1,page=1;
+    var loadingData=false;
+    var noData=false;
+    function appStart(){
+        getswiperdata();
+        getindexdata();
+        gethotplace();
+        getTravelTP();
+        getTravelP(1);
+        getData(1,1,page);
+        //如sticky无法兼容，则采用js方法进行处理固定
+        JMsticky();
+        // gotoScroll();
+        
+        var fixed=0;
+        //顶部搜索
+        $('.index-header').on('click','.icon-search',function(){
+            PageGoto('search');
+        });
+        //跳转个人中心
+        $('.index-header').on('click','.my-center',function(){
+            var param={};
+            param.frompage='areatravel';
+            if(isLogin()){
+                PageGoto('mycenter',param);
+            }else{
+                PageGoto('login',param);
+            }
+        });
+        //热门目的地点击
+        $('.hot-place').on('click','ul li',function(){
+            var obj={};
+            obj.searchword=$(this).html();
+            PageGoto('searchresult',obj);
+        });
+        //跳转路线详情
+        $('.prd-list').on('click','a.cmAddClick',function(){
+            var obj={};
+            obj.lineid=$(this).attr('lineid');
+            obj.frompage='areatravel';
+            PageGoto('goodDetail',obj);
+        });
+        //点击一级菜单切换
+        $('.travel-place-type').on('click',' ul li',function(){
+            console.log("click");
+            $(this).addClass('active').siblings().removeClass('active');
+            tag1=$(this).attr('tag1id');
+            page=1;
+            noData=false;
+            getTravelP(tag1);
+            // $('#goodlistcontainer').html('<img style="margin:50px auto;width:100%;" src="/web/img/loadingData.gif">');
+            // tipsLayer('正在加载...',1000);
+            getData(tag1,1,page);
+        });
+        //点击二级菜单切换
+        $('.travel-place').on('click','ul li',function(){
+            console.log("click");
+            var sib=$(this).siblings();
+            console.log(sib);
+            for(var i=0;i<sib.length;i++){
+                $(sib[i]).find('a').removeClass('first-important');
+            }
+            $(this).find('a').addClass('first-important');
+            tag1=$(this).parent().attr('tag1id');
+            tag2=$(this).attr('tag2id');
+            page=1;
+            noData=false;
+            // $('#goodlistcontainer').html('<img style="margin:50px auto; width:100%;" src="/web/img/loadingData.gif">');
+            // tipsLayer('正在加载...',1000);
+            getData(tag1,tag2,page);
+            
+        });
+        //列表跳转
+        $('.goodslist').on('click','li',function(){
+            var obj={};
+            obj.lineid=$(this).attr('lineid');
+            obj.frompage='areatravel';
+            PageGoto('goodDetail',obj)
+        });
+        //滚动到顶部
+        $('.gototop').on('click',function(){
+             var speed=200;//滑动的速度
+             $('body').animate({ scrollTop: 0 }, speed);   
+        });
+         //加载线路多页
+        $(window).scroll(function(){
+            console.log(noData);
+            if(noData==false){//如果数据为空，则不再发送请求
+                if(loadingData==false){//如果正在加载则等候加载完成再进行下一次请求
+                    var scollTop=$(this).scrollTop();
+                    var loadingHeight=$('#load-data').offset().top;
+                    var clientHeight=$(document.body)[0].clientHeight;
+                    //var scrollHeight=$(document.body)[0].scrollHeight;
+                    
+                    console.log(loadingData);
+                    console.log(scollTop+loadingHeight+$('#load-data').height());
+                     console.log(clientHeight+$('.footer').height());
+                    if($(document).scrollTop() >= $(document).height() - $(window).height()){
+                    // if(scollTop+loadingHeight+$('#load-data').height()>=clientHeight+$('.footer').height()){
+                        loadingData=true;
+                        page++;
+                        $('#load-data').html('正在加载......');
+                        getData(tag1,tag2,page);
+                    }
+                }
+            }
+             //显示返回顶部按钮
+            if($(document).scrollTop() >= $('.goodslist').offset().top){
+                $('.gototop').css('display','block');
+            }else{
+                $('.gototop').css('display','none');
+            }
+            
+            
+        });
+        $('.index-header').on('click','.logo',function(){
+            PageGoto('index');
+        })
+
+    }
+    // 获取轮播图数据
+    function getswiperdata(){
+        ajaxJson(API.PLATE_SLIDE,{'type':type},function(data){
+            if(data.status==1){
+                console.log(data);
+                $('#area-head-swiper').html(areaSwiperRender(data));
+                 var swiper = new Swiper('.swiper-container',
+                 {
+                        pagination: '.swiper-pagination',
+                     loop : true,
+                     //autoplay : 5000,
+                     noSwiping : false,
+                     watchSlidesProgress : true,
+                        watchSlidesVisibility : true,
+
+                 });
+            }
+        });
+        
+    } 
+    //获取脚部信息
+    function getindexdata(){
+        ajaxJson(API.INDEX_INFO,{},function(res){
+            if(res.status==1){
+                console.log(res);
+                $('title').html(res.data.web_title);
+                $('.index-header').append(headRender(res.data));
+                $('.copyright-info').append(copyrightRender(res.data));
+            }
+        });
+    } 
+    // 获取热门模块信息
+    function gethotplace(){
+        ajaxJson(API.AREA_HOT_PLACE,{'type':type},function(res){
+            if(res.status==1){
+                console.log('hotplace:/n');
+                 console.log(res);
+                 $('.hot-place').html(hotplacelistRender(res.data[0]));
+                 $('.huadong').html(hotsellRender(res.data[1]));
+            }else{
+                console.log(res.info);
+            }
+        })
+    }
+    //获取路线选择第一级菜单
+    function getTravelTP(){
+        ajaxJson(API.AREA_LINESELECT1,{'type':type},function(res){
+            if(res.status==1){
+                $('.travel-place-type').html(travelPTRender(res.data));
+            }else{
+                tipsLayer(data.info);
+            }
+        });
+    }
+
+    //获取路线选择第二级菜单
+    function getTravelP(tag1){
+        ajaxJson(API.AREA_LINESELECT2,{'type':type,'tag1':tag1},function(res){
+            if(res.status==1){
+                console.log(travelPRender(res.data));
+                $('.travel-place').html(travelPRender(res.data));
+            }else{
+                tipsLayer(data.info);
+            }
+        });
+    }
+
+     //获取路线选择路线列表
+    function getData(tag1,tag2,page){
+        ajaxJson(API.AREA_LINESELECT3,{'type':type,'tag1':tag1,'tag2':tag2,'page':page},function(res){
+            if(res.status==1){
+                if(res.data.lists!=''){
+                    if(page==1){
+                        $('#goodlistcontainer').html(travelListRender(res.data));
+                     }else{
+                        setTimeout(function(){
+                            $('#load-data').html(''); 
+                            $('#goodlistcontainer').append(travelListRender(res.data));
+                        },1000);    
+                     } 
+                }else{
+                    if(page==1){
+                         $('.goodlists-box').html('');
+                    }
+                     $('#load-data').html('没有更多线路咯~~~~');
+                     noData=true;
+                }
+                setTimeout(function(){loadingData=false;},2000); 
+                Endload(); 
+            }else{
+                $('#load-data').html('没有更多线路咯~~~~');
+                noData=true;
+                Endload();
+            }
+        });
+    }
+		
+	</script>
+</html>

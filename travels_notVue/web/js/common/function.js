@@ -50,20 +50,22 @@ function ajaxJson(_url,param){
     	dataType:dataType,
     	async:async,
     	success:function(data){
-    			eval(callback(data));  		
+    			eval(callback(data));
+                 		
     	},
     	error:function(){
     		return false;
     	}
     });
 
+
 }
 
 
 
 //页面加载完的回调函数，做所有页面公共处理的地方
-window.onload=function(){
-	//设置userid
+$(document).ready(function(){
+    //设置userid
     // setUserid();
     // setMid();
     // //处理微信环境
@@ -71,9 +73,9 @@ window.onload=function(){
     //     //设置openid
     //     setOpenid();
     // }
-    $('body').append(loadgif());
-	appStart();
-}
+   // $('body').append(loadgif());
+    appStart();
+});
 
 
 //页面加载中gif
@@ -82,9 +84,13 @@ function Endload(){
 }
 //在页面加载完之后插入loading动画
 function loadgif(){
-	var loadgif='<div id="loader_model" style="position: fixed;bottom:0; top:0;left:0;right:0;background: url(./img/loading.gif);z-index: 999;background-position: -130px 50px"></div>'
+	var loadgif='<div id="loader_model" style="position: fixed;bottom:0; top:0;left:0;right:0;background: url(/web/img/loading.gif);z-index: 999;background-position: -130px 50px"></div>'
 	return loadgif;
 }
+
+
+/*****************************************************************************************/
+/*****************************************************************************************/
 
 
 /**
@@ -247,13 +253,13 @@ function createLoadingEffect(effect){
 }
 
 function isLogin(goparam){
-    var result= false;
-    if($.cookie('user_id')){
-        result= true; 
-    }else{
+    var result= false;console.log($.cookie('user_id'));
+    if($.cookie('user_id')=="null" || $.cookie('user_id')=='' || $.cookie('user_id')==null){
         var obj={};
         obj=goparam;
         PageGoto('login',obj);
+    }else{
+        result= true;   
     };
     return result;
 }
@@ -262,9 +268,9 @@ function isLogin(goparam){
  * 获取userid
  */
 function getUserid() {
-    var userid = I('travelsUserId', '');
+    var userid = I('user_id', '');
     if (userid == '') {
-        userid = $.cookie('travelsUserId');
+        userid = $.cookie('user_id');
     }
     if (typeof(userid) == "undefined" || userid == 0) {
         userid = 0;
@@ -404,3 +410,34 @@ function pullUp(){
     //重置上拉刷新
     mui('#refreshContainer').pullRefresh().refresh(true);
 }
+
+function localStore(_key){
+    if(typeof _key != 'string')return;
+    if(arguments[1]==undefined){
+        return window.localStorage._key;
+    }else{
+        window.localStorage.setItem(_key,arguments[1]);
+    }
+
+}
+//验证码倒计时
+var remainTime=60;
+var remainTimeobj;
+function settime(obj){//开始倒计时
+    if (typeof obj != "object") return
+    remainTimeobj=obj;  
+    setInterval(function(){
+        remainTime--;
+        if(remainTime==0){
+            $.cookie("secondsremained",null);
+            $(remainTimeobj).html('重新发送');
+            $(remainTimeobj).removeClass('sent');
+        }else{
+            $(remainTimeobj).html('<div class="set-time">'+remainTime+'</div>');
+        }
+        
+    },1000);
+}
+
+
+

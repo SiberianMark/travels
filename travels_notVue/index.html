@@ -37,8 +37,13 @@
     </div>
     </div>
     
-    <div class="travel-menu">
-     
+    <div class="travel-menu">         
+            <ul class="flex">  
+                <li class="flex-c"><a href="./web/abroad.html"><i class="iconfont icon icon-lvyouxianlu"></i><p>出境游</p></a></li>  
+                <li class="flex-c"><a href="./web/domestic.html"><i class="iconfont icon icon-lvxing"></i><p>国内游</p></a></li>  
+                <li class="flex-c"><a href="./web/around.html"><i class="iconfont icon icon-jiaoyou"></i><p>周边游</p></a></li>  
+                <li class="flex-c"><a href="./web/gat.html"><i class="iconfont icon icon-xianggang"></i><p>港澳游</p></a></li>          
+            </ul>
     </div>
     <div class="travel-type">
     	
@@ -96,13 +101,13 @@
         </div>
 </script>
 <!-- 国内游列表 -->
-<script type="text/template" id="index-plate">
+<!-- <script type="text/template" id="index-plate">
        <ul class="flex">
             {{~it.part1:item:index}}
             <li class="flex-c"><a href="./web/areatravel.html"><i class='{{="iconfont"+ " icon icon-" + item.img}}'></i><p>{{=item.name}}</p></a></li>
             {{~}}  
         </ul>
-</script>
+</script> -->
 <!-- 特色游列表 -->
 <script type="text/template" id="index-travel-type">
       <ul class="flex">
@@ -305,7 +310,7 @@
     var swiperRender=getDotRender('index-swiper');  
     var headRender=getDotRender('index-head');
     var copyrightRender=getDotRender('index-copyright');
-    var plateRender=getDotRender('index-plate');
+    //var plateRender=getDotRender('index-plate');
     var placetypeRender=getDotRender('travel-place-type');
     var placeboxRender=getDotRender('travel-place-box');
     var goodslistRender=getDotRender('goods-list');
@@ -488,7 +493,7 @@
         ajaxJson(API.INDEX_PLATE,{},function(res){
             if(res.status==1){
                 console.log(res);   
-                $('.travel-menu').append(plateRender(res.data));
+                //$('.travel-menu').append(plateRender(res.data));
                  $('.travel-type').html(travelType(res.data));
             }
         });
