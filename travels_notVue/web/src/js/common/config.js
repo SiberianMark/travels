@@ -47,7 +47,7 @@ var API={//后台数据API
 
 }
 var PAGE={//页面路由
-	index:'/index.html',//首页
+	index:config.SERVER_URL,//首页
 	login:'/web/login.html',//登录页面
 	regist:'/web/register.html',//注册页面
 	forgetPSW:'/web/find-psw.html',//忘记密码
@@ -56,7 +56,8 @@ var PAGE={//页面路由
 	search:'/web/search.html',//搜索页面
 	myinfo:'/web/myinfo.html',//我的信息
 	changepsw:'/web/changepsw.html',//修改密码
-	goodDetail:'/web/goodinfo.html',//路线详情
+	//goodDetail:'/web/goodinfo.html',//路线详情
+	goodDetail:'/web/line.html',//路线详情
 	determinorder:'/web/determin-order.html',//订单确认页面
 	orderresult:'/web/order-result.html',//下订单结果
 	areatravel:'/web/areatravel.html',//区域游

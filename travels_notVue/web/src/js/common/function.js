@@ -139,10 +139,15 @@ function PageGoto(_page,params){
         if (PAGE[_page].indexOf('?') > -1) {
             url = PAGE[_page] + '&' + objToUrl(params).substr(1);
         } else {
-            url = PAGE[_page] + '?' + objToUrl(params).substr(1);
+            if((params== undefined || JSON.stringify(params)=='{}') && ['index','search'].indexOf(_page)>-1){
+                url = PAGE[_page] + objToUrl(params).substr(1);
+            }else{
+                url = PAGE[_page] + '?' + objToUrl(params).substr(1);
+            }
+            
         }
     }
-	location.href=url;
+    location.href=url;
 }
 
 //JS对象转URL参数
