@@ -1,11 +1,12 @@
 var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
+var webpack = require('webpack')
 var vueLoaderConfig = require('./vue-loader.conf')
 
 //设置后台开发服务器地址
-var DEV_HOST = JSON.stringify('http://www.vuethink.jm:80/')
-var PUB_HOST = JSON.stringify('http://www.vuethink.jm:80/')
+var DEV_HOST = JSON.stringify('http://www.travelsback.jm:80/')
+var PUB_HOST = JSON.stringify('http://www.travelsback.jm:80/')
 
 
 function resolve (dir) {
@@ -23,6 +24,11 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      HOST: process.env.NODE_ENV === 'production' ? PUB_HOST : DEV_HOST
+    })
+  ],
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {

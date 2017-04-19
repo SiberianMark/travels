@@ -16,18 +16,42 @@
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+      <h1>以下为请求的后台数据</h1>
+      <p>************{{axiosData}}*************</p>
+      <input id="get-data" type="button" value="获取后台数据" @click="getData()">
     </ul>
   </div>
 </template>
 
 <script>
+
+import http from '../assets/js/axiosHttp'
+
+
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      axiosData: 'not connect now'
     }
-  }
+  },
+  methods:{
+    getData(){
+      this.httpPost("/Home/APITravel/slide",{}).then((res)=>{
+          if(res.status!=200){
+            console.log('获取失败')
+          }else{
+            this.axiosData=res.data.data
+            console.log(res)
+          }
+      }).catch((error)=>{
+          console.log(error);
+      })
+    }
+    
+  },
+  mixins:[http]
 }
 </script>
 
@@ -50,4 +74,5 @@ li {
 a {
   color: #42b983;
 }
+#get-data{width:200px;height:200px;text-align: center;}
 </style>

@@ -12,26 +12,38 @@
 	</div>
 </template>
 <script>
-import logo from '../../assets/logo.png'
+//import logo from '../../assets/logo.png'
+import http from '../../assets/js/axiosHttp'
 export default{
 	data(){
 		return {
 			/*在webpack内所有自由都是模块，直接用链接找不到文件
 			/mobilelogo:'../../assets/logo.png'*/
-			mobilelogo:logo
+			mobilelogo:''
 		}
 	},
 	methods:{
-		getData:function(){
-
+		getHeaderData:function(){
+			this.httpGet('/Home/APITravel/web_info/').then((res)=>{
+				if(res.status=200){
+					this.mobilelogo=HOST+res.data.data.mobile_logo
+					console.log(res)
+				}else{
+					console.log('请求失败')
+				}
+			}).catch((error)=>{
+				console.log(error)
+			})
+				
 		}
 	},
 	created(){
-
+		this.getHeaderData();
 	},
 	mouted(){
 
-	}
+	},
+	mixins:[http]
 }
 </script>
 <style>

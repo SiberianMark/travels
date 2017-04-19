@@ -9,10 +9,13 @@ var opn = require('opn')
 var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
+
+
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = process.env.NODE_ENV === 'testing'
   ? require('./webpack.prod.conf')
   : require('./webpack.dev.conf')
+
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
@@ -21,9 +24,16 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 // Define HTTP proxies to your custom API backend
 // https://github.com/chimurai/http-proxy-middleware
 var proxyTable = config.dev.proxyTable
-
+var cors = require('cors')
 var app = express()
 var compiler = webpack(webpackConfig)
+
+
+
+// app.use(function(req, res, next) {
+//     res.header('Access-Control-Allow-Origin', '*')
+//     next()
+// })
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
@@ -64,7 +74,7 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
-var uri = 'http://localhost:' + port
+var uri = 'http://www.travelsback.jm:' + port
 
 var _resolve
 var readyPromise = new Promise(resolve => {
@@ -80,7 +90,20 @@ devMiddleware.waitUntilValid(() => {
   }
   _resolve()
 })
+// app.use(cors());
+// app.get(function(req,res){ 
+//   res.send('hello');
+// });
 
+app.all('*', function(req, res, next) {
+
+res.header("Access-Control-Allow-Origin", "*");
+res.header("Access-Control-Allow-Headers", "X-Requested-With");
+res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+res.header("X-Powered-By",' 3.2.1')
+res.header("Content-Type", "application/json;charset=utf-8");
+next();
+});
 var server = app.listen(port)
 
 module.exports = {
