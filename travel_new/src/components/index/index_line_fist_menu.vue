@@ -1,11 +1,42 @@
 <template>
 <div class="index-first-menu-container">
-	<div class="travel-place-type"> <ul>   <li class="travel-place-type-active travel-place-type-activefont" index="1" tag1id="1"> <span class="">周边游</span> </li>    <li index="2" tag1id="2"> <span class="">国内游</span> </li>    <li index="3" tag1id="3"> <span class="">出境游</span> </li>    <li index="4" tag1id="4"> <span class="">港澳游</span> </li>   </ul></div>
+	<div class="travel-place-type">
+	   <ul>
+		<div>
+			 <li  v-for="(item,index) in firstMenu"> <span  v-if="index==0" class="travel-place-type-active travel-place-type-activefont place-con" :index="index" :tag1id="item.id">{{item.name}}</span>
+				<span class=""  v-if="index!=0" class="place-con" :index="index" :tag1id="item.id">{{item.name}}</span>
+			 </li>
+			
+		</div>           
+	    </ul>
+	</div>
 </div>
 </template>
 <script>
-	
-
+	import http from '../../assets/js/axiosHttp'
+	export default {
+		data(){
+			return {
+				firstMenu:[]
+			}
+		},
+		created(){
+			this.getfirstMenu();
+		},
+		methods:{
+			getfirstMenu(){
+				this.httpGet(dataApi.indexFirstMenu)
+					.then((res)=>{
+						console.log(res)
+						this.firstMenu=res.data;
+					})
+					.catch((error)=>{
+						console.log(error)
+					})
+			}
+		},
+		mixins:[http]
+	}
 </script>
 <style>
 	.travel-place-type{padding:0.5rem;height:4.4rem;background: #fff;z-index:999;font-size: 1.8rem;color:#333; }
@@ -20,4 +51,5 @@
 	.travel-place ul li.border-right-clear{border-right:none;}
 	.border-none{border-right:1px solid #fff!important;}
 	.clear{clear:both;}
+	.place-con{    height: 100%;display: inline-block;width: 100%;}
 </style>

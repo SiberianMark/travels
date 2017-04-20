@@ -7,6 +7,7 @@ import axios from 'axios'
 import _headJS from './assets/js/head.js'
 import _RESETCSS from './assets/css/reset.css'
 import _COMMONCSS from './assets/css/common.css'
+import dataApi from './assets/js/dataApi.js'
 
 Vue.config.productionTip = false
 
@@ -20,6 +21,8 @@ const VueObj=new Vue()
 window.VueObj=VueObj
 window.axios=axios
 window.HOST=HOST
+window.router = router
+window.dataApi=dataApi
 
 /* eslint-disable no-new */
 new Vue({

@@ -6,7 +6,7 @@
         <div class="search"><i class="iconfont icon icon-search"></i>
             <p>目的地/景点/关键字</p>
         </div>
-        <div class="my-center">
+        <div class="my-center" @click="PageGotoLogin()">
             <a href="#"></a><i class="iconfont icon icon-my"></i> 
         </div>
 	</div>
@@ -23,10 +23,10 @@ export default{
 		}
 	},
 	methods:{
-		getHeaderData:function(){
-			this.httpGet('/Home/APITravel/web_info/').then((res)=>{
-				if(res.status=200){
-					this.mobilelogo=HOST+res.data.data.mobile_logo
+		getHeaderData(){
+			this.httpGet(dataApi.indexHead).then((res)=>{
+				if(res.status=1){
+					this.mobilelogo=HOST+res.data.mobile_logo
 					console.log(res)
 				}else{
 					console.log('请求失败')
@@ -35,6 +35,10 @@ export default{
 				console.log(error)
 			})
 				
+		},
+		PageGotoLogin(){
+			var routerUrl='/login'
+			router.replace(routerUrl);
 		}
 	},
 	created(){

@@ -1,10 +1,49 @@
 <template>
 	<div class="index-ls-menu-container">
-		<div class="travel-place-box"><div class="travel-place" tag1id="1"> <ul>    <li tag2id="1"> <div> <a href="javascript:" class="first-important"> <i>漂流</i> </a></div> </li>      <li tag2id="2"> <div> <a href="javascript:" class=""> <i>温泉</i> </a></div> </li>      <li tag2id="3"> <div> <a href="javascript:" class=""> <i>赏花</i> </a></div> </li>      <li tag2id="4" class="border-right-clear"> <div> <a href="javascript:" class=""> <i>亲子出游</i> </a></div> </li>      <li tag2id="5"> <div> <a href="javascript:" class=""> <i>漂流</i> </a></div> </li>      <li tag2id="6"> <div> <a href="javascript:" class=""> <i>自驾游</i> </a></div> </li>      <li tag2id="7"> <div> <a href="javascript:" class=""> <i>周末游</i> </a></div> </li>      <li tag2id="8" class="border-right-clear"> <div> <a href="javascript:" class=""> <i>景点门票</i> </a></div> </li>    </ul> <div class="clear"></div> </div></div>
+		<div class="travel-place-box">
+			<div class="travel-place" tag1id="1">
+				<ul>
+				    <li v-for="(value,index) in lsMenu">
+					     <div v-if="index==0" :tag2id="value.id"> <a href="javascript:" class="first-important"> <i>{{value.name}}</i> </a></div>
+					     <div v-else :tag2id="value.id"> <a href="javascript:" class=""> <i>{{value.name}}</i> </a></div>
+				    </li>          
+				</ul> 
+				<div class="clear"></div> 
+			</div>
+		</div>
 	</div>
 </template>
 <script>
-	
+	import http from '../../assets/js/axiosHttp'
+	export default{
+		data(){
+			return {
+				lsMenu:[]
+			}			
+		},
+		created(){
+			this.getlsMenu()
+		},
+		methods:{
+			
+			getlsMenu(){
+				var secondMenuUrl=dataApi.indexSecondMenu+'?tag1='+'1'
+				this.httpGet(secondMenuUrl)
+					.then((res)=>{
+						if(res.status==1){
+							console.log(res)
+							this.lsMenu=res.data.lists
+						}else{
+							console.log('请求失败')
+						}
+					})
+					.catch((error)=>{
+						console.log(error)
+					})	
+			}
+		},
+		mixins:[http]
+	}
 </script>
 <style>
 	

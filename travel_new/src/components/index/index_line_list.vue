@@ -1,17 +1,57 @@
 <template>
 	<div class="index-ll-container">
-		<div class="goodlists-box"> <div class="goodslist" tagid="1" tag2id="1"> <ul>  <li goodid="100001">                 <div> <div class="good-img"> <div class="good-imgjpg"><img src="http://hyu2594430001.my3w.com//Public/Upload/line/58a70b6a3cda9.jpg" alt=""></div> <div class="good-type"><span>跟团游 | 深圳出发</span></div> <div class="good-price"><small>￥</small><span>368</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">河源两日游</p> <p class="sub-title">万绿湖游船</p> </div> <div class="good-labels">  <ul class="good-label">  <li>毕业旅行</li>  </ul> </div> </div> </li>  <li goodid="100003">                 <div> <div class="good-img"> <div class="good-imgjpg"><img src="http://hyu2594430001.my3w.com//Public/Upload/lunbo/5872fd60d5d5b.jpg" alt=""></div> <div class="good-type"><span>跟团游 | 深圳出发</span></div> <div class="good-price"><small>￥</small><span>428</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">惠州特惠三日游</p> <p class="sub-title">三角洲-出海捕鱼，放飞自我</p> </div> <div class="good-labels">  <ul class="good-label">  <li>漂流季</li>  <li>亲子游</li>  </ul> </div> </div> </li>  <li goodid="100005">                 <div> <div class="good-img"> <div class="good-imgjpg"><img src="http://hyu2594430001.my3w.com//Public/Upload/line/58a70ebe45557.jpg" alt=""></div> <div class="good-type"><span>自由行 | 深圳出发</span></div> <div class="good-price"><small>￥</small><span>138</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">英德赏花一日游</p> <p class="sub-title">踏青节赏花</p> </div> <div class="good-labels">  <ul class="good-label">  <li>亲子游</li>  <li>赏花季</li>  <li>踏青</li>  <li>周末游</li>  </ul> </div> </div> </li>  </ul> </div> <div class="goodslist" tagid="1" tag2id="1"> <ul>  <li goodid="100006">                 <div> <div class="good-img"> <div class="good-imgjpg"><img src="http://hyu2594430001.my3w.com//Public/Upload/line/58a70e3942417.jpg" alt=""></div> <div class="good-type"><span>跟团游 | 深圳出发</span></div> <div class="good-price"><small>￥</small><span>368</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">清远漂流2日游</p> <p class="sub-title">新银盏温泉-古龙峡漂流</p> </div> <div class="good-labels">  <ul class="good-label">  <li>漂流季</li>  <li>周末游</li>  <li>纯玩</li>  </ul> </div> </div> </li>  <li goodid="100007">                 <div> <div class="good-img"> <div class="good-imgjpg"><img src="http://hyu2594430001.my3w.com//Public/Upload/line/58a70fb70f6f4.jpg" alt=""></div> <div class="good-type"><span>自由行 | 深圳出发</span></div> <div class="good-price"><small>￥</small><span>428</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">珠海两日游</p> <p class="sub-title">畅游长隆海洋世界</p> </div> <div class="good-labels">  <ul class="good-label">  <li>无自费</li>  <li>周末游</li>  <li>纯玩</li>  </ul> </div> </div> </li>  <li goodid="100012">                 <div> <div class="good-img"> <div class="good-imgjpg"><img src="http://hyu2594430001.my3w.com//Public/Upload/line/58c5554e6b67a.jpg" alt=""></div> <div class="good-type"><span>跟团游 | 深圳出发</span></div> <div class="good-price"><small>￥</small><span>458</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">惠州2日1晚跟团游</p> <p class="sub-title">海洋水母馆+罗浮山+环海单车+出海捕鱼</p> </div> <div class="good-labels">  <ul class="good-label">  <li>踏青</li>  <li>周末游</li>  </ul> </div> </div> </li>  </ul> </div></div>
+		<div class="goodlists-box">
+		    <div class="goodslist" tagid="1" tag2id="1"> 
+		    	<ul>  
+		    		<li v-for="(value,index) in linelist" :goodid="value.id">                 
+			    		<div> <div class="good-img"> <div class="good-imgjpg"><img :src="contactImgUrl(value.img)" alt=""></div> <div class="good-type"><span>{{value.line_type}} | {{value.start_palce}}出发</span></div> <div class="good-price"><small>￥</small><span>{{value.price}}</span>起</div> </div>  </div> <div class="good-desc"> <div> <p class="good-title">{{value.main_name}}</p> <p class="sub-title">{{value.sub_name}}</p> </div> <div class="good-labels">  <ul class="good-label">  <li
+			    		v-for="labelV in value.label">{{labelV}}</li>  </ul> </div> </div> 
+		    		</li>   
+		    	</ul> 
+		    </div></div>
 	</div>
 </template>
 <script>
-	
+	import http from '../../assets/js/axiosHttp'
+	export default {
+		data(){
+			return {
+				linelist:[]
+			}
+			
+		},
+		created(){
+			this.getLineList()
+		},
+		methods:{
+			getLineList(){
+				var LinelistUrl=dataApi.indexLineList+'?tag1='+'1'+"&tag2="+'1'+'&page='+'1'
+				this.httpGet(LinelistUrl)
+					.then((res)=>{
+						if(res.status==1){
+							console.log(res)
+							this.linelist=res.data.lists
+						}else{
+							console.log('请求失败')
+						}
+					})
+					.catch((error)=>{
+						console.log(error)
+					})	
+			},
+			contactImgUrl(url){
+				return HOST+url
+			}
+		},
+		mixins:[http]
+	}
 </script>
 <style>
 	.goodslist{background: #fff;}
 	.goodslist>ul>li{border-bottom:4px solid #eee;}
-	.swiper-img{height:410px; position: relative;overflow: hidden;}
+	.swiper-img{height:210px; position: relative;overflow: hidden;}
 	.goodslist>ul>li .good-imgjpg{height:400px; position: relative;overflow: hidden;}
-	.goodslist>ul>li .good-imgjpg img,.swiper-img img{position: absolute;top: 50%;left: 0;width: 100%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
+	.goodslist>ul>li .good-imgjpg img{position: absolute;top: 50%;left: 0;width: 100%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
 	.scrollFixedTop{position:fixed;top:0;}
 	.scrollFixedTopfix{margin-top: 4.4rem}
 	/*.goodlists-box .goodslist{display: none;}*/
