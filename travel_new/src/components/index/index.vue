@@ -5,7 +5,9 @@
 		<indexMenu></indexMenu>
 		<indexttype></indexttype>
 		<indexLine></indexLine>
+		
 	</div>
+
 </template>
 <script>
 	import indexSwiper from './index_swiper.vue'

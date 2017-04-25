@@ -24,6 +24,7 @@ window.HOST=HOST
 window.router = router
 window.dataApi=dataApi
 
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

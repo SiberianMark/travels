@@ -25,8 +25,15 @@
 		},
 		methods:{
 			getLineList(){
-				var LinelistUrl=dataApi.indexLineList+'?tag1='+'1'+"&tag2="+'1'+'&page='+'1'
-				this.httpGet(LinelistUrl)
+				//var LinelistUrl=dataApi.indexLineList+'?tag1='+'1'+"&tag2="+'1'+'&page='+'1'
+				const data = {
+		          params: {
+		            tag1: 1,
+		            tag2:1,
+		            page: 1
+		          }
+		        }
+				this.httpGet(dataApi.indexLineList,data)
 					.then((res)=>{
 						if(res.status==1){
 							console.log(res)
