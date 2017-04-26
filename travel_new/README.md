@@ -250,7 +250,7 @@ location / {
  	  	  		4.7.1.1 eslint,css,json babel等
  	  4.8 vue
 
-###各个环境基本配置项目
+### 各个环境基本配置项目
 	1. 入口文件entry:[string | array | object]
 	2. 输出文件output:
 		output.path:[string]  //路径
@@ -264,7 +264,7 @@ location / {
 	4. 重定向：resolve
 	5. 插件：plugins:
 
-###vue运行逻辑
+### vue运行逻辑
 	1. 源代码入口文件为main.js
 	   1.1 引入vue web依赖的模块
 	   		1.1.1   import 'babel-polyfill' //配合Babel(只转化ES句法)使用，用于将ES6的新特性方法转化为浏览器可用的ES5JavaScript
@@ -314,7 +314,7 @@ location / {
 	挂载节点文件：App.vue
 	入口插件：login.vue
 
-###vue-router创建步骤
+### vue-router创建步骤
 	1. 定义路由组件（可import进来）
 		const Foo = { template: '<div>foo</div>' }
 		const Bar = { template: '<div>bar</div>' }
@@ -371,7 +371,7 @@ location / {
 }
 
 
-###router实例
+### router实例
 	属性：
 		router.app
 			类型: Vue instance
@@ -420,8 +420,8 @@ location / {
 			2.2.0+
 
 			添加一个会在第一次路由跳转完成时被调用的回调函数。此方法通常用于等待异步的导航钩子完成，比如在进行服务端渲染的时候。
-###vue-router使用
-	###router-link ：	
+### vue-router使用
+	### router-link ：	
 		1.作用：用户可以用此组件实现应用内的点击跳转功能，无论是页面某个位置的切换还是整个页面的切换
 		2.属性：
 			props:{
@@ -464,7 +464,7 @@ location / {
 				**event:
 					声明用来触发导航的事件，默认是点击事件，可以是字符串或者字符串数组
 			}
-	###<router-view>
+	### <router-view>
 		1.<router-view>组件是一个 functional 组件，渲染路径匹配到的视图组件
 		
 		1.2 用嵌套路由（嵌套）展示多个视图
@@ -493,7 +493,7 @@ location / {
 			其他属性（非 router-view 使用的属性）都直接传给渲染的组件（利用此特性将数据传入被渲染的组件）
 			被渲染组件用props:[]获取数据
 		4.配合transition和keep alive使用
-	###路由信息对象this.$route
+	### 路由信息对象this.$route
 		路由除了跳转的作用之外，我们有时还要对路由的状态进行监控并作出相应等需求，
 		在Vue中，vue-router注入vue实例之后就会产生一个router object对象$router
 		每一次成功导航都会产生一个新的对象
@@ -507,8 +507,8 @@ location / {
 				**$route.name//返回路由名字
 				**$route.matched//包含所有签到路径片段的路由路径
 			}
-###路由实现业务需求
-	###动态效果切换
+### 路由实现业务需求
+	### 动态效果切换
 		<transition>
 			<router-view></router-view>
 		</transiton>
@@ -527,7 +527,7 @@ location / {
 		    this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
 		  }
 		}
-	###获取数据
+	### 获取数据
 		导航完成之后获取：先完成导航，然后在接下来的组件生命周期钩子中获取数据。在数据获取期间显示『加载中』之类的指示。
 
 			导航完成之前获取：导航完成前，在路由的 enter 钩子中获取数据，在数据获取成功后执行导航。
@@ -663,7 +663,7 @@ location / {
 				const Baz = r => require.ensure([], () => r(require('./Baz.vue')), 'group-foo')
 				Webpack 将相同 chunk 下的所有异步模块打包到一个异步块里面 —— 这也意味着我们无须明确列出 require.ensure 的依赖（传空数组就行）。
 
-###路由总结
+### 路由总结
 
 	1. 用动态路由实现把某种模式匹配到的所有路由，全都映射到同个组件，即模板相同，只是传入的参数不同
 		//传入

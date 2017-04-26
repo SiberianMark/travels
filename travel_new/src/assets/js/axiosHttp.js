@@ -17,10 +17,10 @@ const axiosHttp={
         }, (response) => {
           reject(response)
           // _g.closeGlobalLoading()
-          bus.$message({
-            message: '请求超时，请检查网络',
-            type: 'warning'
-          })
+          // bus.$message({
+          //   message: '请求超时，请检查网络',
+          //   type: 'warning'
+          // })
         })
         
       })
