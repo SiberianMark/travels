@@ -690,3 +690,9 @@ location / {
 	2. 利用嵌套式路由实现多级组件切换（router-link,router-view）
 	3. 利用编程式路由在代码中切换路由(router.replace,go,matched,push)
 	4.用命名视图（name属性）实现（在同级下（同一个路径下））展示多个视图：例如创建一个布局，有 sidebar（侧导航） 和 main（主内容） 两个视图
+
+
+
+
+Todo:
+	去掉路由参数实现页面内切换
