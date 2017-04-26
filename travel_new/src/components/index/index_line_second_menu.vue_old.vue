@@ -3,9 +3,9 @@
 		<div class="travel-place-box">
 			<div class="travel-place" tag1id="Totag1id">
 				<ul>
-				    <li v-for="(value,index) in lsMenu" @click="changeActive(index)">
-				    <router-link v-bind:to="'/index/'+Totag1id+'/'+value.id">
-					     <div v-if="index==curTag-1" :tag2id="value.id"> <a href="javascript:" class="first-important"> <i>{{value.name}}</i> </a></div>
+				    <li v-for="(value,index) in lsMenu" >
+				    <router-link to="{path:'/index/iSecondMenu/iLineList',query: {Totag1id:item.tag1id,Totag2id:item.id}}">
+					     <div v-if="index==0" :tag2id="value.id"> <a href="javascript:" class="first-important"> <i>{{value.name}}</i> </a></div>
 					     <div v-else :tag2id="value.id"> <a href="javascript:" class=""> <i>{{value.name}}</i> </a></div>
 				    </router-link>
 				    </li>          
@@ -22,16 +22,13 @@
 	export default{
 		data(){
 			return {
-				lsMenu:[],
-				Totag1id:1,
-				curTag:1 //切换当前tag
+				lsMenu:[]
 			}			
 		},
-		// props: ['Totag1id'],
+		props: ['Totag1id'],
 		created(){
 			//var id = this.$route.query.Totag1id?this.$route.query.Totag1id:this.Totag1id;
 			var id=this.$route.params.tag1id
-			this.Totag1id=this.$route.params.tag1id
 			this.getlsMenu(id)
 		},
 		watch:{
@@ -41,7 +38,6 @@
 				// console.log('toid:'+this.Totag1id);
 				// console.log('id:'+id);
 				var id=this.$route.params.tag1id
-				this.Totag1id=this.$route.params.tag1id
 				this.getlsMenu(id)
 		}},
 		methods:{
@@ -65,9 +61,6 @@
 					.catch((error)=>{
 						console.log(error)
 					})	
-			},
-			changeActive(index){
-				this.curTag=index+1
 			}
 		},
 		mixins:[http]

@@ -1,13 +1,11 @@
 <template>
-
 <div class="index-first-menu-container">
-<!-- 修改tag1,tag2交互方式，原利用路由查询参数进行跳转更新，更新为用嵌套路由+动态路由实现tag1与tag2交互 -->
 	<div class="travel-place-type">
 	   <ul>
 		<div>
 		<template>
 			 <li  v-for="(item,index) in firstMenu" :tag1id="item.id" @click="changeTag(item.id)">
-			    <router-link v-bind:to="'/index/'+item.id">
+			    <router-link :to="{path:'/index/iSecondMenu/',query: {Totag1id:item.id}}">
 				  <span  v-if="index==curTag-1" v-bind:class="[tagActive,TagplaceCon]" :index="index" >{{item.name}}</span>
 				  <span class=""  v-if="index!=curTag-1" v-bind:class="[TagplaceCon]" :index="index" :tag1id="item.id">{{item.name}}</span>
 				</router-link>
@@ -17,9 +15,9 @@
 	    </ul>
 	</div>
 	<transition name="fade" mode="out-in" appear>
-		<router-view></router-view>
+		<router-view :Totag1id="Totag1id"></router-view>
 	</transition>
-	
+	<div v-if="InitisActive==true"><lineSMenu :Totag1id="Totag1id"></lineSMenu></div>
 	
 </div>
 </template>

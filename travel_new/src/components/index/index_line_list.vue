@@ -16,21 +16,30 @@
 	export default {
 		data(){
 			return {
-				linelist:[]
-			}
-			
+				linelist:[],
+				tag1: 1,
+		        tag2:1,
+		        page: 1
+			}			
 		},
 		created(){
 			this.getLineList()
+		},
+		watch:{
+			'$route':function(){
+				this.tag1=this.$route.params.tag1id
+				this.tag2=this.$route.params.tag2id
+				this.getLineList()
+			}
 		},
 		methods:{
 			getLineList(){
 				//var LinelistUrl=dataApi.indexLineList+'?tag1='+'1'+"&tag2="+'1'+'&page='+'1'
 				const data = {
 		          params: {
-		            tag1: 1,
-		            tag2:1,
-		            page: 1
+		            tag1: this.tag1,
+		            tag2:this.tag2,
+		            page: this.page
 		          }
 		        }
 				this.httpGet(dataApi.indexLineList,data)
@@ -54,6 +63,7 @@
 	}
 </script>
 <style>
+
 	.goodslist{background: #fff;}
 	.goodslist>ul>li{border-bottom:4px solid #eee;}
 	.swiper-img{height:210px; position: relative;overflow: hidden;}
@@ -65,7 +75,7 @@
 	.goodslist ul li{text-align: left;}
 	.goodslist ul li .good-img{position:relative;}
 	.goodslist ul li .good-img img{width:100%;}
-	.goodslist ul li .good-type{position:absolute;top:0.5rem;left:1rem;line-height: 2rem; font-size:1rem;text-align: center;background: #333;opacity: 0.8;color:#fff;padding:0 0.5rem;}
+	.goodslist ul li .good-type{position:absolute;top:0.5rem;left:1rem;line-height: 2rem; font-size:1rem;text-align: center;background: #333;opacity: 0.8;color:#fff;padding:0 0.5rem;}  
 	.goodslist ul li .good-price{border-radius:4px 0 0 4px;position:absolute;bottom:1rem;right:0rem;height:3rem;line-height: 3.2rem;font-size: 1.4rem;text-align: center; background:#f8791c;padding:0 0.5rem;color:#fff;}
 	.goodslist ul li .good-price span{font-size: 2.2rem;}
 	.goodslist ul li .good-desc{padding:1rem 1rem;}

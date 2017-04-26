@@ -16,12 +16,13 @@ const axiosHttp={
           resolve(response.data)
         }, (response) => {
           reject(response)
-          _g.closeGlobalLoading()
+          // _g.closeGlobalLoading()
           bus.$message({
             message: '请求超时，请检查网络',
             type: 'warning'
           })
         })
+        
       })
     },
 		httpPost(url,data){
