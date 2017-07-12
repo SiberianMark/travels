@@ -57,7 +57,7 @@
 			getSwiperData(){
 				this.httpGet(dataApi.indexSwiper)
 					.then((res)=>{
-						if(res.status==1){
+						if(res.status==1   ){
 							this.lilist=res.data
 							this.swiperOption=this.swiperOption
 							console.log('swiper:',res)

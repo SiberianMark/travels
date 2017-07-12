@@ -51,7 +51,7 @@
 <!-- 商品图片模板 -->
 <script type="text/template" id="line-img-tmp">
 
-    <div class="line-remark"><span>{{=it.line_type}}</span>&nbsp;|&nbsp;<span>线路编号:</span> <span>{{=it.id}}</span></div>
+    <div class="line-remark"><span>{{=it.line_type}}</span>&nbsp;|&nbsp;<span>产品编号:</span> <span>{{=it.id}}</span></div>
 
     <div id="line-img-container" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
         {{~it.image:item:index}}
@@ -196,7 +196,7 @@
             {{?}}
             <div class="tel-content">          
                 <p>为了节省您的时间，请告知客服此产品的产品编号</p>           
-                <p class="tel-proid">线路编号：{{it.id}}</p>
+                <p class="tel-proid">产品编号：210432601</p>
                 <p class="tel-proid">客服人员：{{=it.counselor_name}}</p>
                 <p class="tel-proid">
                 客服人员电话：{{=it.counselor_phone}}</p> 
@@ -434,19 +434,30 @@
                 console.log(res);
                 $('.you-like-swiper').html(youlikeRender(res.data));
 
-                var swiper = new Swiper('#swiper-youkike', {
-                    pagination: '#pagination-youlike',
-                    initialSlide :1,//从0开始,
-                    slidesPerView: 2,
-                    slidesPerColumn: 2,
-                    paginationClickable: true,
-                    spaceBetween: 10,
-                    observer:true,//修改swiper自己或子元素时，自动初始化swiper 
-                    observeParents:true,//修改swiper的父元素时，自动初始化swiper 
-                    onSlideChangeEnd: function(swiper){ 
-                        swiper.update(); //swiper更新
-                    } 
-                });
+                if(res.data.length<=2){
+                    console.log('data；2')
+                    var swiper = new Swiper('#swiper-youkike', {
+                         pagination: '.swiper-pagination',
+                        slidesPerView: 2.06,
+                        paginationClickable: true,
+                        spaceBetween: 10,
+                        freeMode: true
+                    });
+                }else{
+                    var swiper = new Swiper('#swiper-youkike', {
+                        pagination: '#pagination-youlike',
+                        initialSlide :1,//从0开始,
+                        slidesPerView: 2,
+                        slidesPerColumn: 2,
+                        paginationClickable: true,
+                        spaceBetween: 10,
+                        observer:true,//修改swiper自己或子元素时，自动初始化swiper 
+                        observeParents:true,//修改swiper的父元素时，自动初始化swiper 
+                        onSlideChangeEnd: function(swiper){ 
+                            swiper.update(); //swiper更新
+                        } 
+                    });
+                }
                 Endload();
     
             }else{

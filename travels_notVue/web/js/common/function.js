@@ -1,5 +1,6 @@
 var jObj = new Object();
 var pull_action='down';
+var modalFlag=false;//是否是弹出层，用于禁止弹出层底层滚动
 var tag1=1,//一级菜单id
     tag2=1;//二级菜单id
 function ajaxJson(_url,param){
@@ -75,6 +76,11 @@ $(document).ready(function(){
     // }
    // $('body').append(loadgif());
     appStart();
+    document.addEventListener('touchmove', function (event) { 　　 //监听滚动事件
+    if(modalFlag==1){　　　　　　　　　　　　　　　　　　　　　　　　　　　　//判断是遮罩显示时执行，禁止滚屏
+        event.preventDefault();　　　　　　　　　　　　　　　　　　　//最关键的一句，禁止浏览器默认行为
+    }
+})
 });
 
 
@@ -84,7 +90,7 @@ function Endload(){
 }
 //在页面加载完之后插入loading动画
 function loadgif(){
-	var loadgif='<div id="loader_model" style="position: fixed;bottom:0; top:0;left:0;right:0;background: url(/web/img/loading.gif);z-index: 999;background-position: -130px 50px"></div>'
+	var loadgif='<div id="loader_model" style="position: fixed;bottom:0; top:0;left:0;right:0;background: url(../img/loading.gif);z-index: 999;background-position: -130px 50px"></div>'
 	return loadgif;
 }
 
@@ -133,10 +139,15 @@ function PageGoto(_page,params){
         if (PAGE[_page].indexOf('?') > -1) {
             url = PAGE[_page] + '&' + objToUrl(params).substr(1);
         } else {
-            url = PAGE[_page] + '?' + objToUrl(params).substr(1);
+            if((params== undefined || JSON.stringify(params)=='{}') && ['index','search'].indexOf(_page)>-1){
+                url = PAGE[_page] + objToUrl(params).substr(1);
+            }else{
+                url = PAGE[_page] + '?' + objToUrl(params).substr(1);
+            }
+            
         }
     }
-	location.href=url;
+    location.href=url;
 }
 
 //JS对象转URL参数
@@ -318,13 +329,13 @@ function urlparamToobj(){
 
             // Mobiscroll Date & Time initialization
             $('#datetimeInvalid-riqizao').mobiscroll().date({
-                theme: 'Mobiscroll',      // Specify theme like: theme: 'ios' or omit setting to use default
+                theme: 'material',      // Specify theme like: theme: 'ios' or omit setting to use default
                 lang: 'zh',    // Specify language like: lang: 'pl' or omit setting to use default
                 display:'bottom',  // Specify display mode like: display: 'bottom' or omit setting to use default
                 mode: 'scroller'         // More info about mode: https://docs.mobiscroll.com/3-0-0_beta3/datetime#!opt-mode
             });
                $('#datetimeInvalid-riqiwan').mobiscroll().date({
-                theme: 'Mobiscroll',      // Specify theme like: theme: 'ios' or omit setting to use default
+                theme: 'material',      // Specify theme like: theme: 'ios' or omit setting to use default
                 lang: 'zh',    // Specify language like: lang: 'pl' or omit setting to use default
                 display:'bottom',  // Specify display mode like: display: 'bottom' or omit setting to use default
                 mode: 'scroller'         // More info about mode: https://docs.mobiscroll.com/3-0-0_beta3/datetime#!opt-mode
@@ -333,10 +344,12 @@ function urlparamToobj(){
             $('.datetimeInvalid-zuizao').click(function () {
                 
                 $('#datetimeInvalid-riqizao').mobiscroll('show');
+                $('.riqifilter').css('display','none');
                 return false;
             });
             $('.datetimeInvalid-zuiwan').click(function () {
                 $('#datetimeInvalid-riqiwan').mobiscroll('show');
+                 $('.riqifilter').css('display','none');
                 return false;
             });
 
@@ -423,21 +436,58 @@ function localStore(_key){
 //验证码倒计时
 var remainTime=60;
 var remainTimeobj;
+var t;
+var sent=false;
 function settime(obj){//开始倒计时
     if (typeof obj != "object") return
     remainTimeobj=obj;  
-    setInterval(function(){
+    t=setInterval(function(){
         remainTime--;
         if(remainTime==0){
             $.cookie("secondsremained",null);
             $(remainTimeobj).html('重新发送');
             $(remainTimeobj).removeClass('sent');
+            remainTime=60;
+            sent=false;
+            $('.code-image').attr('src',config.SERVER_URL+'/validate.php');
+            $('.code-input input').val('');
+            clearInterval(t);
         }else{
-            $(remainTimeobj).html('<div class="set-time">'+remainTime+'</div>');
+             $(remainTimeobj).addClass('sent');
+            $(remainTimeobj).html('<div>'+remainTime+'</div>');
         }
         
     },1000);
 }
 
+//禁止弹出层滚动
+function stopscroll(flag){
+    if(flag){
+        $("body").height($(window).height()).css({
+          "overflow-y": "hidden"
+        });
+    }else{
+        $("body").height('100%').css({
+          "overflow-y": "scroll"
+        });
+    }
+}
+// //60s倒计时
+// var countdown=60; 
+// function settime(obj) { 
+//     if (countdown == 0) { 
+//         obj.attr("disabled",false);    
+//         obj.value="获取验证码"; 
+//         countdown = 60; 
+//         return;
+//     } else { 
+//         obj.attr("disabled", true); 
+//         obj.value="重新发送(" + countdown + ")";
+//         countdown--; 
+//     } 
+//     setTimeout(function() { 
+//         settime(obj) }
+//         ,1000) 
+// }
 
 

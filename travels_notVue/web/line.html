@@ -66,7 +66,7 @@
 <script type="text/template" id="line-head-tmp">
      <div class="good-info-head">
         <p class="good-title">{{=it.title}}</p>
-        <p class="good-price"><i><span>促销价：</span><span>￥</span><span class="price-count">{{=it.line_date[0].adult_price}}</span>起</i></p>      
+        <p class="good-price"><i><span>促销价：</span><span>￥</span><span class="price-count">{{=it.line_date[0]?it.line_date[0].adult_price:'0.00'}}</span>起</i></p>      
     </div>
     <div class="good-liscece">
         <div class="liscence-title">
@@ -212,7 +212,7 @@
         {{~it:item:index}}
             
                 <div class="swiper-slide swiper-slide-active" data-swiper-column="0" data-swiper-row="0" style="order: 0;" lineid="{{=item.id}}">
-                    <a class="cmAddClick" data-cm="H-1" href="/tuan/seckill/product-557860"><div class="img-wrap"><div class="prd-pic" style="background-image: url({{=config.SERVER_URL+item.img}});height:8rem"></div><div class="name"><span>{{=item.start_palce}}</span>|s<span>{{=item.line_type}}</span></div></div><div class="prd-info"><p>{{=item.main_name}}|{{=item.sub_name}}</p><div class="prd-pri"><span><i>¥</i>{{=item.price}}<i>起</i></span></div></div></a>
+                    <a class="cmAddClick" data-cm="H-1" href="javascript:;"><div class="img-wrap"><div class="prd-pic" style="background-image: url({{=config.SERVER_URL+item.img}});height:8rem"></div><div class="name"><span>{{=item.line_type}}</span></div></div><div class="prd-info"><p>{{=item.main_name}}|{{=item.sub_name}}</p><div class="prd-pri"><span><i>¥</i>{{=item.price}}<i>起</i></span></div></div></a>
                 </div>
            
         {{~}}
@@ -396,6 +396,13 @@
             }
 
         });
+        //喜欢跳转
+        $('.guess-you-like').on('click','.swiper-slide',function(){
+            var obj={};
+            obj.lineid=$(this).attr('lineid');
+            obj.frompage=frompage;
+            PageGoto('goodDetail',obj);
+        })
 	}
    
     function getData(){
@@ -434,19 +441,30 @@
                 console.log(res);
                 $('.you-like-swiper').html(youlikeRender(res.data));
 
-                var swiper = new Swiper('#swiper-youkike', {
-                    pagination: '#pagination-youlike',
-                    initialSlide :1,//从0开始,
-                    slidesPerView: 2,
-                    slidesPerColumn: 2,
-                    paginationClickable: true,
-                    spaceBetween: 10,
-                    observer:true,//修改swiper自己或子元素时，自动初始化swiper 
-                    observeParents:true,//修改swiper的父元素时，自动初始化swiper 
-                    onSlideChangeEnd: function(swiper){ 
-                        swiper.update(); //swiper更新
-                    } 
-                });
+                if(res.data.length<=2){
+                    console.log('data；2')
+                    var swiper = new Swiper('#swiper-youkike', {
+                         pagination: '.swiper-pagination',
+                        slidesPerView: 2.06,
+                        paginationClickable: true,
+                        spaceBetween: 10,
+                        freeMode: true
+                    });
+                }else{
+                    var swiper = new Swiper('#swiper-youkike', {
+                        pagination: '#pagination-youlike',
+                        initialSlide :1,//从0开始,
+                        slidesPerView: 2,
+                        slidesPerColumn: 2,
+                        paginationClickable: true,
+                        spaceBetween: 10,
+                        observer:true,//修改swiper自己或子元素时，自动初始化swiper 
+                        observeParents:true,//修改swiper的父元素时，自动初始化swiper 
+                        onSlideChangeEnd: function(swiper){ 
+                            swiper.update(); //swiper更新
+                        } 
+                    });
+                }
                 Endload();
     
             }else{

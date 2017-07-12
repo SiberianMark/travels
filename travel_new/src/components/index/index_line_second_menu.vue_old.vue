@@ -40,8 +40,7 @@
 				var id=this.$route.params.tag1id
 				this.getlsMenu(id)
 		}},
-		methods:{
-			
+		methods:{	
 			getlsMenu(id){
 				// var secondMenuUrl=dataApi.indexSecondMenu+'?tag1='+'1'
 				const data = {

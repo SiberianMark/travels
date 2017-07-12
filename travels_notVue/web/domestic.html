@@ -57,13 +57,13 @@
                 </ul>
     </div>
      <div id="load-data"></div>
-     <div class="travel-nav">
+    <div class="travel-nav" style="margin: 0.3rem auto">
         <ul class="flex">
-            <li class="flex-c">客服</li>
-            <li class="flex-c">登录</li>
-            <li class="flex-c">注册</li>
-            <li class="flex-c">电脑版</li>
-            <li class="flex-c">回到首页</li>
+            <li class="flex-c"><a href="./login.html"><i class=''></i><p>登录</p></a></li>
+            <li class="flex-c"><a href="./register.html"><i class=''></i><p>注册</p></a></li>
+            <li class="flex-c"><a href="./about-us.html"><i class=''></i><p>关于我们</p></a></li>
+            <li class="flex-c"><a href="./gongzhang.html"><i class=''></i><p>收款公账</p></a></li>
+            <li class="flex-c"><a href="http://www.otcsz.com"><i class=''></i><p>总部网站</p></a></li>
         </ul>
     </div>
     <div class="footer">
@@ -99,8 +99,8 @@
 <script type="text/template" id="index-copyright">
     <p>{{=it.company_name}}</p>
     <p>{{=it.company_addr}}</p>
-    <p>Copyright  @2015 恒博旅行网</p>
-    <p>经营许可编号：粤ICP备 {{=it.web_id}}</p>
+    <p>Copyright  @2017-2019 海外国旅</p>
+    <p>经营许可证编号：粤ICP备 {{=it.web_id}}</p>
     <p>{{=it.web_tel}}</p>
 </script>
 <!-- 热门目的地模板 -->
@@ -111,21 +111,21 @@
                 {{~it.lists:itemlist:listindex}}
                 {{?listindex<=2}}
                     {{?listindex==0}}
-                        <li class="bordertop"><div class="hot-li-content"><span class="champion"></span>{{=itemlist}}</div></li>
+                        <li class="bordertop"><div class="hot-li-content"><span class="champion"></span><span class="hot-text">{{=itemlist}}</span></div></li>
                     {{??listindex==1}}
-                        <li class="bordertop"><div class="hot-li-content"><span class="second-hot">2</span><span>{{=itemlist}}</span></div></li>
+                        <li class="bordertop"><div class="hot-li-content"><span class="second-hot">2</span><span class="hot-text">{{=itemlist}}</span></div></li>
                     {{??listindex==2}}
-                        <li class="bordertop"><div class="hot-li-content"><span class="third-hot">3</span><span>{{=itemlist}}</span></div></li>    
+                        <li class="bordertop"><div class="hot-li-content"><span class="third-hot">3</span><span class="hot-text">{{=itemlist}}</span></div></li>    
                     {{?}}     
                 {{??listindex==3}}
-                    <li class="fixed-border bordertop">{{=itemlist}}</li>
+                    <li class="fixed-border bordertop"><span class="hot-text">{{=itemlist}}</span></li>
                 {{??listindex==7}}  
-                    <li class="fixed-border">{{=itemlist}}</li>
+                    <li class="fixed-border"><span class="hot-text">{{=itemlist}}</span></li>
                 {{??listindex+1==it.lists.length}}
-                    <li class="">{{=itemlist}}</li>
-                    <li class="fixed-border">更多</li>
+                    <li class=""><span class="hot-text">{{=itemlist}}</span></li>
+                    <li class="fixed-border hotsell-more"><span>更多</span></li>
                 {{??}}
-                    <li>{{=itemlist}}</li>
+                    <li><span class="hot-text">{{=itemlist}}</span></li>
                 {{?}}
                     
                 {{~}}
@@ -284,8 +284,14 @@
         //热门目的地点击
         $('.hot-place').on('click','ul li',function(){
             var obj={};
-            obj.searchword=$(this).html();
-            PageGoto('searchresult',obj);
+            
+            if($(this).hasClass('hotsell-more')==true){
+                PageGoto('search',obj);
+            }else{
+                obj.searchword=$(this).find('.hot-text').text();
+                PageGoto('searchresult',obj);
+            }
+            
         });
         //跳转路线详情
         $('.prd-list').on('click','a.cmAddClick',function(){
@@ -382,7 +388,7 @@
                  {
                         pagination: '.swiper-pagination',
                      loop : true,
-                     //autoplay : 5000,
+                     autoplay : 5000,
                      noSwiping : false,
                      watchSlidesProgress : true,
                         watchSlidesVisibility : true,

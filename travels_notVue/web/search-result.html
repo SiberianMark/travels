@@ -181,7 +181,7 @@
 <script type="text/template" id="date-select-tmp">
 	<li  id="yuefen-nolimit"  class="active">不限<br/>月份</li>
 	{{~it:item:index}}
-	<li>{{=item}}</li>
+	<li>{{=item.substring(0,item.indexOf('年')+1)+'<br/>'+item.substring(item.indexOf('年')+1)}}</li>
 	{{~}}
 </script>
 <!-- 特色标签模板 -->

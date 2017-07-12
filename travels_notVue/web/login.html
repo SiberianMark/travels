@@ -66,7 +66,7 @@
 <script type="text/javascript" src="//at.alicdn.com/t/font_9m5y5nghp7tu766r.js"></script>
 <script>
  	var goparam=urlparamToobj();//获取所有参数并转化为json对象
- 	var frompage=goparam.frompage;
+ 	var frompage=goparam.frompage?goparam.frompage:'index';
  	delete goparam.frompage;
 	function appStart(){
 		//获取图片验证码

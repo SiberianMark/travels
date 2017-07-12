@@ -692,6 +692,80 @@ location / {
 	4.用命名视图（name属性）实现（在同级下（同一个路径下））展示多个视图：例如创建一个布局，有 sidebar（侧导航） 和 main（主内容） 两个视图
 
 
+### VUE组件化开发步骤（参考结合elment.ui的源代码进行解析）
+	1. 创建组件构造器
+	2. 注册组件
+	3. 挂载使用
+	#### 目录结构
+		node_nodules
+			element-ui
+				libs
+				packages//组件包
+					...
+					pagination
+						src
+							pager.vue //子组件构造template/CSS/script
+							pagination //pagination组件构造template/CSS/script
+						index.js  //组件注册
+							```
+
+							import Pagination from './src/pagination';
+							/* istanbul ignore next 用于单个组件引入时全局注册并导出 */
+							Pagination.install = function(Vue) {
+							  Vue.component(Pagination.name, Pagination);
+							};
+							export default Pagination;
+
+							```
+				src //项目源码
+					locale
+					...
+					index.js//组件库注册，用于注册整个库的所有组件
+					```
+					import Pagination from './src/pagination';
+					import Dialog from '../packages/dialog';
+					...
+					const install = function(Vue, opts = {}) {
+					  /* istanbul ignore if */
+					  if (install.installed) return;
+					  locale.use(opts.locale);
+					  locale.i18n(opts.i18n);
+
+					  Vue.component(Pagination.name, Pagination);
+					  Vue.component(Dialog.name, Dialog);
+					  ...
+					}
+					module.exports = {
+					  version: '1.1.3',
+					  locale: locale.use,
+					  i18n: locale.i18n,
+					  install,
+					  Loading,
+					  Pagination,
+					  Dialog,
+					  Autocomplete,
+					  Dropdown,
+					  DropdownMenu,
+					  ...
+					}
+					
+
+					```
+					
+				LICENSE
+				package.json
+				README.md
+	#### 使用element-ui
+		1. import Vue from 'vue'
+		   import elementUI from 'element' //引入node_modules中的elemnt模块
+		   1.1 如需引入单个组件，需配合webpack babel-plugin-component 详见[element引入单个组件](http://element.eleme.io/#/zh-CN/component/quickstart?_blank)
+
+		2. Vue.use(elementUI)  //use ，默认调用index.js中的install方法进行组件注册
+		3. 使用element组件。。。
+
+	#### vue.extend({}),vue.component({}),vue.use()
+
+
 
 
 Todo:

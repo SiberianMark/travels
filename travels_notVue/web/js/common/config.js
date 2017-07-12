@@ -1,5 +1,5 @@
 var config={
-	SERVER_URL:"http://hyu2594430001.my3w.com",//服务器地址
+	SERVER_URL:"http://39.108.65.188",//服务器地址
 	JSONMETHOD: 'get',//JSON默认请求方式
 	PLATFORM:'web',//默认平台
 	TIMEOUT :30000,//超时时间为30秒
@@ -18,11 +18,12 @@ var API={//后台数据API
 
 	PLATE_SLIDE:'/Home/APITravel/plate_slide',//板块轮播图
 	AREA_LINESELECT1:'/Home/APITravel/plate_tag1',//板块路线选择一级菜单
-	AREA_LINESELECT2:'/Home/APITravel/first_tag2',//板块路线选择一级菜单
+	AREA_LINESELECT2:'/Home/APITravel/plate_tag2',//板块路线选择一级菜单
 	AREA_LINESELECT3:'/Home/APITravel/plate_lines',//板块路线选择一级菜单
 
 
 	LOGIN_LOGIN:'/Home/APILogin/login',//登录
+	LOGIN_LOGOUT:'/Home/APILogin/loginOut',//退出登录
 	LOGIN_REG:'/Home/APILogin/reg',//注册
 	LOGIN_VALIDATE:'/validate.php',//图形验证码
 	LOGIN_PHONEVAL:'/Home/APILogin/sendCode',//手机验证码
@@ -46,17 +47,20 @@ var API={//后台数据API
 
 }
 var PAGE={//页面路由
-	index:'./index.html',//首页
+	index:config.SERVER_URL,//首页
 	login:'./login.html',//登录页面
 	regist:'./register.html',//注册页面
 	forgetPSW:'./find-psw.html',//忘记密码
-	mycenter:'./mycenter.html',//我的个人中心
+	mycenter:'/web/mycenter.html',//我的个人中心
 	searchresult:'./search-result.html',//查找结果
 	search:'./search.html',//搜索页面
 	myinfo:'./myinfo.html',//我的信息
 	changepsw:'./changepsw.html',//修改密码
-	goodDetail:'./goodinfo.html',//路线详情
+	//goodDetail:'./goodinfo.html',//路线详情
+	goodDetail:'/web/line.html',//路线详情
 	determinorder:'./determin-order.html',//订单确认页面
 	orderresult:'./order-result.html',//下订单结果
+	areatravel:'./areatravel.html',//区域游
+
 
 }
